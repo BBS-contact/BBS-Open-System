@@ -152,5 +152,75 @@ These pages demonstrate how BBS modules could look in reality.
 ---
 
 # 6. Repository Structure
+platform/
+modules/
+library/
+integrity/
+core/
+server/
+admin/
+docs/
+site/ ← UI prototypes
+LICENSE
+README.md
+
+---
+
+# 7. License — BBS Public License v1.0 (BBS-PL)
+
+This license prohibits:
+
+- corruption  
+- political misuse  
+- corporate exploitation  
+- surveillance abuse  
+- patenting BBS concepts  
+
+All derivative works must remain open and transparent.
+
+Full text:  
+https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
+
+---
+
+# 8. Development Status
+
+BBS is currently in:
+
+- active research  
+- structural modelling  
+- prototype development  
+- architectural documentation  
+- early-stage internal testing  
+- repository structuring  
+
+Core algorithms remain protected until system maturity is reached.
+
+---
+
+# 9. Participation
+
+We welcome contributors from all fields:
+
+developers  
+designers  
+auditors  
+accountants  
+legal experts  
+researchers  
+philosophers  
+civic innovators  
+
+BBS belongs to those who build it with truth.
+
+---
+
+# 10. Contact
+
+**Website:** https://leonexus.org  
+**Email:** bbs.contactproton.me@proton.me
+
+**Everything great begins small.  
+Everything true begins with transparency.**
 
 
