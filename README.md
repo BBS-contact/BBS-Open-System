@@ -76,7 +76,7 @@ These conceptual subsystems form the philosophical and technical foundation of B
 | Doors — Ethical Access | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
 | Time Loops — Immutable Chronology | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops |
 | Knowledge Library | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
-| Self-Reflection Engine | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/reflection |
+| Self-Reflection Engine | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/self-reflection |
 
 Together these layers form an ecosystem resistant to corruption, manipulation, falsification, or structural sabotage.
 
