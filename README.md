@@ -74,7 +74,7 @@ These conceptual subsystems form the philosophical and technical foundation of B
 | Labyrinth — Security Layer | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
 | Mirrors — Intent Reflection | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
 | Doors — Ethical Access | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
-| Time Loops — Immutable Chronology | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops |
+| Time Loops — Immutable Chronology | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/timeloops |
 | Knowledge Library | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
 | Self-Reflection Engine | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/self-reflection |
 
