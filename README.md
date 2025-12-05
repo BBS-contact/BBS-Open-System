@@ -43,7 +43,7 @@ These modules represent the fundamental functions of a modern society.
 
 | Domain | Description Link |
 |--------|------------------|
-| LEO — Ethical AI Core | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo |
+| LEO — Ethical AI Core | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo-ai |
 | Unified Knowledge Base | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge |
 | Security & Privacy | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security |
 | International Cooperation | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international |
