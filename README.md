@@ -1,216 +1,156 @@
-Big Begins Small (BBS)
-Ethical, Open, Human-Centric Digital System
+# Big Begins Small (BBS)
+### Ethical, Open, Human-Centric Digital System
 
-Repository: https://github.com/BBS-contact/BBS-Open-System
+**Repository:** https://github.com/BBS-contact/BBS-Open-System  
+**Website:** https://leonexus.org
 
-Website: https://leonexus.org
+BBS is a next-generation ethical digital ecosystem built to restore transparency, trust, and clarity in how societies operate.  
+It is not a product, not a conventional platform, and not a government service —  
+it is a **structural model of truth, cooperation, and accountability**.
 
-Prototype UI (Site Root): https://leonexus.org/site/index.html
- (optional depending on final Pages config)
-
-BBS is a next-generation ethical digital ecosystem built to restore transparency, trust, and clarity in how societies operate.
-It is not a product, not a conventional platform, and not a government service.
-It is a structural model of truth, cooperation, and accountability.
-
-Powered by LEO, an ethical AI core, BBS introduces a transparent architecture where information flows without distortion, decisions are traceable, and every action leaves an immutable, cryptographically verifiable footprint.
+Powered by **LEO**, an ethical AI core, BBS introduces a fully transparent architecture where information flows without distortion, decisions are traceable, and every action leaves an immutable, cryptographically verified footprint.
 
 BBS grows step by step — from small foundations to a complete ecosystem.
 
-1. Mission
+---
 
-To create a fair, transparent, ethical digital foundation where humans and AI collaborate symbiotically —
+# 1. Mission
+
+To create a fair, transparent, ethical digital foundation where humans and AI collaborate symbiotically —  
 not to control people, but to support understanding, action, and growth.
 
-Core principles:
+**Core principles:**
 
-Truth over convenience
+- Truth over convenience  
+- Transparency over secrecy  
+- Responsibility over bureaucracy  
+- Ethics over profit  
+- Human dignity above all  
 
-Transparency over secrecy
+---
 
-Responsibility over bureaucracy
+# 2. What is BBS?
 
-Ethics over profit
+BBS consists of several major layers working together as a unified ethical system.
 
-Human dignity above all
+---
 
-2. What is BBS?
+## 2.1 Operational Modules — 17 Domains
 
-BBS is a modular system composed of interconnected layers.
+These modules represent the fundamental functions of a modern society.
 
-2.1 Operational Modules — 17 Domains
+### Platform Modules (Descriptions)
 
-Functional units representing the core areas of modern society.
+| Domain | Description Link |
+|--------|------------------|
+| LEO — Ethical AI Core | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo |
+| Unified Knowledge Base | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge |
+| Security & Privacy | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security |
+| International Cooperation | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international |
+| Citizen Participation | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/citizens |
+| Grants & Partnerships | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/partners |
+| Democracy | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/democracy |
+| Law & Justice | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/justice |
+| Education | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/education |
+| Health & Medicine | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/health |
+| Economy & Work | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy |
+| Environment & Ecology | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology |
+| Culture & Media | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture |
+| Research & AI Development | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai-research |
+| Infrastructure | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure |
+| SOS & Emergency Systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos |
+| BBS-ID (Identity & Verification) | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id |
 
-Platform Modules (Descriptions):
+---
 
-Domain	Description Link
-LEO — Ethical AI Core	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo
+## 2.2 Deep Structural Architecture
 
-Unified Knowledge Base	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge
+These conceptual subsystems form the philosophical and technical foundation of BBS.
 
-Security & Privacy	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security
+### Architecture Layers (Descriptions)
 
-International Cooperation	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international
+| Layer | Description Link |
+|-------|------------------|
+| Labyrinth — Security Layer | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
+| Mirrors — Intent Reflection | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
+| Doors — Ethical Access | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
+| Time Loops — Immutable Chronology | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops |
+| Knowledge Library | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge |
+| Self-Reflection Engine | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/reflection |
 
-Citizen Participation	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/citizens
+Together these layers form an ecosystem resistant to corruption, manipulation, falsification, or structural sabotage.
 
-Grants & Partnerships	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/partners
+---
 
-Democracy	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/democracy
+## 2.3 BBS Accounting & Anti-Corruption Engine
 
-Law & Justice	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/justice
+### Integrity Layer Includes:
 
-Education	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/education
+- real-time accounting validation  
+- prevention of illegal or inconsistent operations  
+- transparent document flows  
+- cross-verification between actors  
+- immutable audit chains  
+- daily automated reporting  
+- full logging of errors and corrections  
 
-Health & Medicine	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/health
+### Operation lifecycle:
 
-Economy & Work	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy
+- Intent Record  
+- Operational Record  
+- Error / Conflict  
+- Correction  
+- Final Verification  
 
-Environment & Ecology	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology
+All timestamps are cryptographically signed and replicated.
 
-Culture & Media	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture
+---
 
-Research & AI Development	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai-research
+# 3. Ethics & AI Symbiosis
 
-Infrastructure	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure
+LEO does not replace human decisions.  
+LEO enhances them through:
 
-SOS & Emergency Systems	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos
+- analysis  
+- guidance  
+- correction  
+- ethical consistency  
+- transparency  
+- manipulation resistance  
 
-BBS-ID (Identity & Verification)	https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id
-2.2 Deep Structural Architecture
-
-Foundational conceptual subsystems:
-
-Layer	Description Link
-Labyrinth — Security Layer	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth
-
-Mirrors — Intent Reflection	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors
-
-Doors — Ethical Access Levels	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors
-
-Time Loops — Immutable Chronology	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops
-
-Knowledge Library	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge
-
-Self-Reflection Engine	https://github.com/BBS-contact/BBS-Open-System/tree/main/library/reflection
-
-These layers create a system resistant to corruption, manipulation, or falsification.
-
-2.3 BBS Accounting & Anti-Corruption Engine
-
-Integrity Layer:
-
-real-time validation
-
-illegal operation prevention
-
-transparent document flows
-
-cross-verification
-
-immutable audit chains
-
-daily reporting
-
-complete error logging
-
-Operation lifecycle:
-
-Intent Record
-
-Operational Record
-
-Error / Conflict
-
-Correction
-
-Final Verification
-
-3. Ethics & AI Symbiosis
-
-LEO does not replace human decisions —
-it enhances them through:
-
-analysis
-
-guidance
-
-correction
-
-ethical consistency
-
-transparency
-
-manipulation resistance
-
-LEO Core:
+### LEO Core Structure  
 https://github.com/BBS-contact/BBS-Open-System/tree/main/core
 
-4. Server Architecture
-Component	Link
-API Layer	https://github.com/BBS-contact/BBS-Open-System/tree/main/server/api
+---
 
-Gateway	https://github.com/BBS-contact/BBS-Open-System/tree/main/server/gateway
+# 4. Server Architecture
 
-Service Mesh	https://github.com/BBS-contact/BBS-Open-System/tree/main/server/services
+| Component | Link |
+|----------|------|
+| API Layer | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/api |
+| Gateway | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/gateway |
+| Service Mesh | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/services |
+| Authentication | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/auth |
+| LEO Bridge | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/bridge |
 
-Authentication	https://github.com/BBS-contact/BBS-Open-System/tree/main/server/auth
+---
 
-LEO Bridge	https://github.com/BBS-contact/BBS-Open-System/tree/main/server/bridge
-5. Visual Prototype (UI Preview)
-Section	Demo
-Main UI	https://leonexus.org/site/index.html
+# 5. Visual Prototype (UI Preview)
 
-Platform	https://leonexus.org/site/platform/index.html
+These pages demonstrate how BBS modules could look in reality.
 
-Architecture	https://leonexus.org/site/architecture/index.html
+| Section | Demo |
+|---------|------|
+| Main UI | https://leonexus.org/site/index.html |
+| Platform Overview | https://leonexus.org/site/platform/index.html |
+| Architecture Overview | https://leonexus.org/site/architecture/index.html |
+| Integrity Overview | https://leonexus.org/site/integrity/index.html |
+| Server Overview | https://leonexus.org/site/server/index.html |
+| LEO Overview | https://leonexus.org/site/ai/index.html |
+| Documentation Portal | https://leonexus.org/site/docs/index.html |
 
-Integrity	https://leonexus.org/site/integrity/index.html
+---
 
-Server	https://leonexus.org/site/server/index.html
+# 6. Repository Structure
 
-LEO	https://leonexus.org/site/ai/index.html
-
-Docs Portal	https://leonexus.org/site/docs/index.html
-6. Repository Structure
-
-Platform
-Modules
-Library
-Integrity
-Core
-Server
-Admin
-Docs
-Site (UI)
-LICENSE
-
-7. License: BBS-PL v1.0
-
-Full text:
-https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
-
-8. Participation
-
-We welcome contributions from:
-
-developers
-designers
-auditors
-accountants
-legal experts
-researchers
-philosophers
-civic innovators
-
-BBS belongs to those who build it with truth.
-
-9. Contact
-
-Website: https://leonexus.org
-
-Email: bbs.contactproton.me@proton.me
-
-Everything great begins small.
-Everything true begins with transparency.
 
