@@ -56,7 +56,7 @@ These modules represent the fundamental functions of a modern society.
 | Economy & Work | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy |
 | Environment & Ecology | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology |
 | Culture & Media | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture |
-| Research & AI Development | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai-research |
+| Research & AI Development | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai |
 | Infrastructure | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure |
 | SOS & Emergency Systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos |
 | BBS-ID (Identity & Verification) | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id |
