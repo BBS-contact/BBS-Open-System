@@ -351,4 +351,7 @@ a:hover {
         grid-template-columns: minmax(0, 1fr);
     }
 }
+* {
+    pointer-events: auto !important;
+}
 
