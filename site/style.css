@@ -354,4 +354,9 @@ a:hover {
 * {
     pointer-events: auto !important;
 }
+a {
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 10;
+}
 
