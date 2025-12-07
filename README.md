@@ -1,6 +1,6 @@
 # **Big Begins Small (BBS)**
-## Executive Overview
 
+## Executive Overview
 BBS is a structural model for next-generation digital governance.  
 It is not a platform, not a product, and not a conventional IT system.  
 BBS introduces an ethical, incorruptible digital architecture designed to restore trust, integrity, and clarity across societal operations.
@@ -27,7 +27,6 @@ This repository presents the public architecture, conceptual documentation, and 
 Core algorithms, security mechanisms, and high-risk components remain protected until formal evaluation frameworks are established with qualified institutions.
 
 ### **Ethical, Transparent, Human-Centric Digital Ecosystem**
-
 **Repository:** https://github.com/BBS-contact/BBS-Open-System  
 **Website:** https://leonexus.org  
 
