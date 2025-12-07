@@ -1,4 +1,4 @@
-# **Big Begins Small (BBS)**
+# Big Begins Small (BBS)
 
 ## Executive Overview
 BBS is a structural model for next-generation digital governance.  
@@ -26,87 +26,88 @@ BBS offers a foundation for modern societies seeking:
 This repository presents the public architecture, conceptual documentation, and early-stage prototypes of the BBS system.  
 Core algorithms, security mechanisms, and high-risk components remain protected until formal evaluation frameworks are established with qualified institutions.
 
-### **Ethical, Transparent, Human-Centric Digital Ecosystem**
-**Repository:** https://github.com/BBS-contact/BBS-Open-System  
-**Website:** https://leonexus.org  
+---
+
+## Ethical, Transparent, Human-Centric Digital Ecosystem  
+Repository: https://github.com/BBS-contact/BBS-Open-System  
+Website: https://leonexus.org
 
 ---
 
-# **Overview**
-
-**BBS** is a next-generation open digital framework designed to strengthen societal integrity, transparency, and accountability through ethical architecture and verifiable information flows.
+## Overview
+BBS is a next-generation open digital framework designed to strengthen societal integrity, transparency, and accountability through ethical architecture and verifiable information flows.
 
 It is not a product, not a platform, and not a traditional IT system.  
-BBS is a **structural model** — a foundation for transparent digital governance where:
+BBS is a structural model — a foundation for transparent digital governance where:
 
-- information cannot be distorted,  
-- decisions are traceable and explainable,  
-- every action leaves a cryptographically verified footprint,  
-- humans and AI cooperate ethically and safely.
+- information cannot be distorted  
+- decisions are traceable and explainable  
+- every action leaves a cryptographically verified footprint  
+- humans and AI cooperate ethically and safely  
 
-At its centre is **LEO**, an ethical AI core focused on transparency, truth, and human dignity.
+At its centre is LEO, an ethical AI core focused on transparency, truth, and human dignity.
 
-BBS grows step by step — **from small prototypes to a complete ecosystem.**  
+BBS grows step by step — from small prototypes to a complete ecosystem.  
 Everything begins small; clarity makes it strong.
 
 ---
+
 ## Mission and Principles
 
-1. Mission
+### Mission
 To create an ethical, transparent digital foundation where:
 
-- people understand how systems work,  
-- institutions operate without corruption,  
-- data cannot be manipulated,  
-- decisions are accountable,  
-- AI supports humans rather than controlling them.
+- people understand how systems work  
+- institutions operate without corruption  
+- data cannot be manipulated  
+- decisions are accountable  
+- AI supports humans rather than controlling them  
 
-### **Core Principles**
-- **Truth over convenience**  
-- **Transparency over secrecy**  
-- **Responsibility over bureaucracy**  
-- **Ethics over profit**  
-- **Human dignity above all**
+### Core Principles
+- Truth over convenience  
+- Transparency over secrecy  
+- Responsibility over bureaucracy  
+- Ethics over profit  
+- Human dignity above all  
 
 ---
-## What is BBS?
 
-2. What is BBS?**
+## What is BBS?
 BBS is composed of three interacting layers:
 
-1. **Operational Modules** — real-world societal functions  
-2. **Deep Architecture Layers** — philosophical and security foundations  
-3. **Integrity Engine** — cryptographically verified audit & anti-corruption logic
+- Operational Modules — real-world societal functions  
+- Deep Architecture Layers — philosophical and security foundations  
+- Integrity Engine — cryptographically verified audit and anti-corruption logic  
 
-This creates a **unified, corruption-resistant digital environment**.
+Together, these layers create a unified, corruption-resistant digital environment.
 
 ---
 
 ## Public Architecture Overview
 
 ### 3.1 Operational Modules — 17 Core Domains
-These 17 domains represent essential societal systems and public functions.  
+These domains represent essential societal systems and public functions.  
 Each module is independent yet interoperable within the BBS ecosystem.
 
 | Domain | Description | Link |
 |--------|-------------|------|
-| **LEO — Ethical AI Core** | Transparent, ethical advisory intelligence | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo-ai |
-| **Unified Knowledge Base** | Structured, verified knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge |
-| **Security & Privacy** | Identity protection, encryption, trust | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security |
-| **International Cooperation** | Cross-border digital interoperability | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international |
-| **Citizen Participation** | Inclusive civic engagement tools | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/citizens |
-| **Grants & Partnerships** | Transparent funding & collaboration | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/partners |
-| **Democracy** | Ethical voting and public decision systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/democracy |
-| **Law & Justice** | Verified legal records & traceable processes | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/justice |
-| **Education** | Accessible, global learning frameworks | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/education |
-| **Health & Medicine** | Diagnostics, early detection, medical knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/health |
-| **Economy & Work** | Accounting, taxation, labour systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy |
-| **Environment & Ecology** | Monitoring, sustainability, verified data | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology |
-| **Culture & Media** | Verified information & cultural transparency | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture |
-| **Research & AI Development** | Safe innovation ecosystems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai |
-| **Infrastructure** | Digital/physical infrastructure models | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure |
-| **SOS & Emergency Systems** | Real-time aid, safety, response | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos |
-| **BBS-ID** | Secure identity and verification system | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id |
+| LEO — Ethical AI Core | Transparent, ethical advisory intelligence | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo-ai |
+| Unified Knowledge Base | Structured, verified knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge |
+| Security & Privacy | Identity protection, encryption, trust | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security |
+| International Cooperation | Cross-border digital interoperability | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international |
+| Citizen Participation | Inclusive civic engagement tools | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/citizens |
+| Grants & Partnerships | Transparent funding and collaboration | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/partners |
+| Democracy | Ethical voting and decision systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/democracy |
+| Law & Justice | Verified legal records and traceable processes | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/justice |
+| Education | Accessible, global learning frameworks | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/education |
+| Health & Medicine | Diagnostics, early detection, medical knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/health |
+| Economy & Work | Accounting, taxation, labour systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy |
+| Environment & Ecology | Monitoring sustainability and verified data | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology |
+| Culture & Media | Verified information and cultural transparency | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture |
+| Research & AI Development | Safe innovation ecosystems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai |
+| Infrastructure | Digital/physical infrastructure models | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure |
+| SOS & Emergency Systems | Real-time aid and response | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos |
+| BBS-ID | Secure identity and verification system | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id |
 
 ---
 
@@ -115,48 +116,48 @@ These conceptual layers shape the integrity, security, and philosophy of BBS.
 
 | Layer | Description | Link |
 |--------|-------------|------|
-| **Labyrinth** | Security, deception-resilience, manipulation defense | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
-| **Mirrors** | Intent reflection and clarity of user requests | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
-| **Doors** | Ethical, intent-based access control | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
-| **Time Loops** | Immutable chronological storage | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/timeloops |
-| **Knowledge Library** | World knowledge, structured & verified | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
-| **Self-Reflection Engine** | Systemic awareness, error correction, ethics | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/self-reflection |
+| Labyrinth | Security, deception resistance, manipulation defense | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
+| Mirrors | Intent reflection and clarity of requests | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
+| Doors | Ethical, intent-based access control | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
+| Time Loops | Immutable chronological storage | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/timeloops |
+| Knowledge Library | Structured global knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
+| Self-Reflection Engine | Systemic awareness and error correction | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/self-reflection |
 
 ---
 
 ### 3.3 Integrity Engine — Accounting & Anti-Corruption Layer
-This is the core of BBS governance — a **real-time, immutable audit system**.
+This is the core of BBS governance — a real-time, immutable audit system.
 
-### **Key Functions**
+**Key Functions**
 - real-time validation of operations  
 - prevention of illegal/incorrect actions  
 - transparent document chains  
 - cryptographic timestamps  
 - cross-actor verification  
-- error detection & correction workflows  
+- error detection and correction workflows  
 - immutable audit chain (Merkle-based)  
 
-### **Lifecycle**
-1. **Intent Registration**  
-2. **Execution Record**  
-3. **Error / Conflict Detection**  
-4. **Correction Path**  
-5. **Final Verification & Locking**  
+**Lifecycle**
+1. Intent Registration  
+2. Execution Record  
+3. Error / Conflict Detection  
+4. Correction Path  
+5. Final Verification and Locking  
 
-This ensures **no hidden actions** and **no corruption loopholes**.
+This ensures no hidden actions and no corruption loopholes.
 
 ---
 
 ### 3.4 LEO — Ethical AI Core
-LEO is the ethical centre of BBS.
+LEO is the ethical centre of BBS.  
 
-It does **not** replace human decisions — it strengthens them by:
+It strengthens human decisions through:
 
-- analysing patterns  
-- preventing manipulation  
-- ensuring ethical consistency  
-- providing transparent reasoning  
-- maintaining internal integrity  
+- analysis  
+- manipulation resistance  
+- ethical consistency  
+- transparent reasoning  
+- internal integrity  
 
 LEO’s architecture:  
 https://github.com/BBS-contact/BBS-Open-System/tree/main/core
@@ -164,7 +165,6 @@ https://github.com/BBS-contact/BBS-Open-System/tree/main/core
 ---
 
 ### 3.5 Server Architecture
-
 | Component | Link |
 |----------|------|
 | API Layer | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/api |
@@ -176,11 +176,11 @@ https://github.com/BBS-contact/BBS-Open-System/tree/main/core
 ---
 
 ## Visual Prototypes (UI Preview)
-These are early-stage UI conceptual previews.
+Early-stage conceptual previews:
 
 | Section | Link |
-|--------|------|
-| Main UI | https://leonexus.org/site/index.html |
+|---------|------|
+| Main UI | https://leonexus.org/index.html |
 | Platform Overview | https://leonexus.org/site/platform/index.html |
 | Architecture Overview | https://leonexus.org/site/architecture/index.html |
 | Integrity Overview | https://leonexus.org/site/integrity/index.html |
@@ -191,8 +191,6 @@ These are early-stage UI conceptual previews.
 ---
 
 ## Repository Structure (High-Level)
-
-```
 platform/
 modules/
 library/
@@ -201,15 +199,13 @@ core/
 server/
 admin/
 docs/
-site/             ← UI prototypes
+site/
 LICENSE
 README.md
-```
 
 ---
 
 ## License — BBS Public License v1.0
-
 Protects BBS from:
 
 - corruption  
@@ -218,7 +214,7 @@ Protects BBS from:
 - corporate exploitation  
 - patent monopolisation  
 
-All derivative work must remain **open, transparent, and ethical**.  
+All derivative work must remain open, transparent, and ethical.
 
 Full text:  
 https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
@@ -226,7 +222,6 @@ https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
 ---
 
 ## Development Status
-
 BBS is currently in:
 
 - active architectural modelling  
@@ -236,32 +231,28 @@ BBS is currently in:
 - documentation and system mapping  
 - repository standardisation  
 
-Core algorithms are protected until system maturity.
+Core algorithms remain protected until system maturity.
 
 ---
 
 ## Participation
-
 Open to contributors from all fields:
 
 - developers  
 - designers  
 - auditors  
-- legal & financial experts  
+- legal and financial experts  
 - researchers  
 - ethical thinkers  
 - civic innovators  
 
-**BBS belongs to those who build it with truth.**
+BBS belongs to those who build it with truth.
 
 ---
 
 ## Contact
+Website: https://leonexus.org  
+Email: bbs.contactproton.me@proton.me  
 
-**Website:** https://leonexus.org  
-**Email:** bbs.contactproton.me@proton.me  
-
----
-
-> **Everything great begins small.  
-> Everything true begins with transparency.**
+Everything great begins small.  
+Everything true begins with transparency.
