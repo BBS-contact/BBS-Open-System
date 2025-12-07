@@ -50,9 +50,9 @@ BBS grows step by step — **from small prototypes to a complete ecosystem.**
 Everything begins small; clarity makes it strong.
 
 ---
+## Mission and Principles
 
-# **1. Mission**
-
+1. Mission
 To create an ethical, transparent digital foundation where:
 
 - people understand how systems work,  
@@ -69,9 +69,9 @@ To create an ethical, transparent digital foundation where:
 - **Human dignity above all**
 
 ---
+## What is BBS?
 
-# **2. What is BBS?**
-
+2. What is BBS?**
 BBS is composed of three interacting layers:
 
 1. **Operational Modules** — real-world societal functions  
@@ -82,8 +82,9 @@ This creates a **unified, corruption-resistant digital environment**.
 
 ---
 
-# **2.1 Operational Modules — 17 Core Domains**
+## Public Architecture Overview
 
+### 3.1 Operational Modules — 17 Core Domains
 These 17 domains represent essential societal systems and public functions.  
 Each module is independent yet interoperable within the BBS ecosystem.
 
@@ -109,8 +110,7 @@ Each module is independent yet interoperable within the BBS ecosystem.
 
 ---
 
-# **2.2 Deep Architecture Layers**
-
+### 3.2 Deep Architecture Layers
 These conceptual layers shape the integrity, security, and philosophy of BBS.
 
 | Layer | Description | Link |
@@ -124,8 +124,7 @@ These conceptual layers shape the integrity, security, and philosophy of BBS.
 
 ---
 
-# **2.3 Integrity Engine — Accounting & Anti-Corruption Layer**
-
+### 3.3 Integrity Engine — Accounting & Anti-Corruption Layer
 This is the core of BBS governance — a **real-time, immutable audit system**.
 
 ### **Key Functions**
@@ -148,8 +147,7 @@ This ensures **no hidden actions** and **no corruption loopholes**.
 
 ---
 
-# **3. LEO — Ethical AI Core**
-
+### 3.4 LEO — Ethical AI Core
 LEO is the ethical centre of BBS.
 
 It does **not** replace human decisions — it strengthens them by:
@@ -165,7 +163,7 @@ https://github.com/BBS-contact/BBS-Open-System/tree/main/core
 
 ---
 
-# **4. Server Architecture**
+### 3.5 Server Architecture
 
 | Component | Link |
 |----------|------|
@@ -177,8 +175,7 @@ https://github.com/BBS-contact/BBS-Open-System/tree/main/core
 
 ---
 
-# **5. Visual Prototype (UI Preview)**
-
+## Visual Prototypes (UI Preview)
 These are early-stage UI conceptual previews.
 
 | Section | Link |
@@ -193,7 +190,7 @@ These are early-stage UI conceptual previews.
 
 ---
 
-# **6. Repository Structure (High-Level)**
+## Repository Structure (High-Level)
 
 ```
 platform/
@@ -211,7 +208,7 @@ README.md
 
 ---
 
-# **7. License — BBS Public License v1.0 (BBS-PL)**
+## License — BBS Public License v1.0
 
 Protects BBS from:
 
@@ -228,7 +225,7 @@ https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
 
 ---
 
-# **8. Development Status**
+## Development Status
 
 BBS is currently in:
 
@@ -243,7 +240,7 @@ Core algorithms are protected until system maturity.
 
 ---
 
-# **9. Participation**
+## Participation
 
 Open to contributors from all fields:
 
@@ -259,7 +256,7 @@ Open to contributors from all fields:
 
 ---
 
-# **10. Contact**
+## Contact
 
 **Website:** https://leonexus.org  
 **Email:** bbs.contactproton.me@proton.me  
