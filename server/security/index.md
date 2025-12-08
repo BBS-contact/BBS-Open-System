@@ -1,115 +1,200 @@
-# BBS Server Security — Transparent, Ethical, and Tamper-Resistant Architecture
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BBS Server Security — Public Showcase Overview</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-The server security model ensures that all backend operations
-within the BBS ecosystem are ethical, verifiable, and immune
-to unauthorized manipulation.
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0f17;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 40px;
+            line-height: 1.7;
+        }
+        h1, h2 {
+            color: #58a6ff;
+        }
+        h3 {
+            color: #8ab4ff;
+        }
+        a {
+            color: #7ab4ff;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #a8d1ff;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        footer {
+            margin-top: 80px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
 
-This document outlines the public-facing security structure,
-without revealing internal mechanisms or sensitive logic.
+</head>
+<body>
 
----
+<h1>BBS Server Security — Public Showcase Overview</h1>
 
-## Purpose
+<p>
+    The server security architecture of BBS ensures that all backend operations remain 
+    ethical, verifiable, and immune to unauthorized manipulation.  
+    This public overview describes the conceptual structure without revealing internal implementation.
+</p>
 
-To protect the BBS server environment through:
+<div class="section">
+    <h2>Purpose</h2>
 
-- behavioural security  
-- immutable verification  
-- responsibility-based access  
-- distributed trust  
-- transparent logs  
-- attack resistance  
-- ethical constraints on all operations  
+    <p>The security layer protects the BBS server environment through:</p>
 
-The goal is to create a backend that cannot be secretly corrupted.
+    <ul>
+        <li>behavioural security</li>
+        <li>immutable verification</li>
+        <li>responsibility-based access</li>
+        <li>distributed trust</li>
+        <li>transparent logs</li>
+        <li>attack resistance</li>
+        <li>ethical constraints on all operations</li>
+    </ul>
 
----
+    <p>
+        The objective is simple:  
+        <strong>to build a backend that cannot be secretly corrupted.</strong>
+    </p>
+</div>
 
-## Core Principles
+<div class="section">
+    <h2>Core Principles</h2>
 
-### • No privileged administrators  
-There is no superuser access, root override, or hidden master key.
+    <h3>No privileged administrators</h3>
+    <p>No superusers, no root override, no hidden master key.</p>
 
-### • Immutable backend logs  
-All critical backend operations are recorded in the Integrity Layer.
+    <h3>Immutable backend logs</h3>
+    <p>All significant operations are permanently recorded in the Integrity Layer.</p>
 
-### • Behavioural-based access  
-Server access is determined by behaviour, not by authority.
+    <h3>Behaviour-based access</h3>
+    <p>Access is determined by behaviour and context, not authority.</p>
 
-### • Distributed trust  
-No single node or operator can compromise the system.
+    <h3>Distributed trust</h3>
+    <p>No single operator or node can compromise the system.</p>
 
-### • Ethical constraints  
-Every server-side action is filtered through LEO's ethical rules.
+    <h3>Ethical constraints</h3>
+    <p>All server-side actions are filtered through LEO’s ethical reasoning rules.</p>
 
-### • Transparency  
-Nothing important happens invisibly.
+    <h3>Transparency</h3>
+    <p>Nothing important happens invisibly. Every critical operation is observable.</p>
+</div>
 
----
+<div class="section">
+    <h2>Security Components (Public Overview)</h2>
 
-## Security Components (Public Overview)
+    <h3>Gateway Security</h3>
+    <p>Validates all incoming requests through contextual and ethical filters.</p>
 
-1. **Gateway Security**  
-   Controls all incoming requests through ethical and contextual validation.
+    <h3>Internal Access Control</h3>
+    <p>Ensures that no module or service can bypass ethical or security rules.</p>
 
-2. **Internal Access Control**  
-   Ensures no module or service can bypass ethical rules.
+    <h3>Integrity Sync Layer</h3>
+    <p>
+        Replicates logs, hashes, and Merkle chain data across independent nodes.  
+        Prevents tampering and ensures multi-node verification.
+    </p>
 
-3. **Integrity Sync Layer**  
-   Replicates logs, hashes, and audit chains across multiple nodes.
+    <h3>Tamper Detection Engine</h3>
+    <p>
+        Identifies unauthorized changes, anomalies, or suspicious activity patterns.
+    </p>
 
-4. **Tamper Detection Engine**  
-   Identifies unauthorized changes or suspicious behaviour.
+    <h3>Server Event Monitor</h3>
+    <p>
+        Provides a read-only view into system behaviour and performance.  
+        Only non-sensitive, high-level events are visible publicly.
+    </p>
 
-5. **Server Event Monitor**  
-   Tracks backend performance and security events (public façade only).
+    <h3>Rate & Behaviour Limits</h3>
+    <p>
+        Protects the system from flooding, misuse, or hostile request patterns.
+    </p>
+</div>
 
-6. **Rate & Behaviour Limits**  
-   Protects against flooding, misuse, or hostile patterns.
+<div class="section">
+    <h2>Threat Protection</h2>
 
----
+    <p>BBS is designed to resist:</p>
 
-## Threat Protection
+    <ul>
+        <li>insider attacks</li>
+        <li>external hacking attempts</li>
+        <li>data manipulation</li>
+        <li>log erasure</li>
+        <li>privilege escalation</li>
+        <li>unauthorized access</li>
+        <li>political or institutional interference</li>
+    </ul>
 
-BBS is designed to resist:
+    <p>
+        Security is achieved not through secrecy,  
+        <strong>but through transparency and distributed verification.</strong>
+    </p>
+</div>
 
-- insider attacks  
-- external hacking attempts  
-- data manipulation  
-- log erasure  
-- privilege escalation  
-- unauthorized access  
-- political or institutional interference  
+<div class="section">
+    <h2>Why Server Security Matters</h2>
 
-Security is achieved not by secrecy,
-but by transparency and distributed verification.
+    <p>Traditional servers fail because:</p>
 
----
+    <ul>
+        <li>administrators have hidden powers</li>
+        <li>logs can be altered</li>
+        <li>backdoors exist</li>
+        <li>privilege escalation is possible</li>
+        <li>access rules depend on authority, not accountability</li>
+    </ul>
 
-## Why Server Security Matters
+    <p>BBS solves these failures with:</p>
 
-Traditional servers fail because:
+    <ul>
+        <li>immutable records</li>
+        <li>zero-trust architecture</li>
+        <li>ethical access</li>
+        <li>multi-node verification</li>
+        <li>LEO-assisted behavioural oversight</li>
+    </ul>
 
-- administrators have hidden powers  
-- logs are alterable  
-- backdoors exist  
-- access rules are inconsistent  
+    <p>
+        This creates an incorruptible server backbone where  
+        <strong>no one can silently override the system.</strong>
+    </p>
+</div>
 
-BBS solves this with:
+<div class="section">
+    <h2>Development Status</h2>
 
-- immutable records  
-- zero-trust architecture  
-- ethical access  
-- multi-node verification  
-- LEO-assisted behavioural oversight  
+    <p>
+        The Server Security architecture is conceptually complete.  
+        Technical implementation will follow as part of the Integrity Layer 
+        and Gateway integration during prototype phases.
+    </p>
 
-This creates an incorruptible server backbone.
+    <p>
+        This page presents only the public, non-sensitive design.
+    </p>
+</div>
 
----
+<footer>
+    © 2023–2025 Big Begins Small (BBS).  
+    All intellectual rights reserved to the original creator — Pavlo Martseniuk.  
+    Released under the BBS Public License v1.0 (BBS-PL).
+</footer>
 
-## Development Status
-
-The Server Security architecture is conceptually complete.
-Technical implementation will follow as part of the broader
-Integrity Layer and Gateway integration during prototype phases.
-
+</body>
+</html>
