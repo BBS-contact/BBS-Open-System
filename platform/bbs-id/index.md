@@ -1,75 +1,103 @@
 # BBS-ID — Ethical, Secure, and Universal Digital Identity
 
-BBS-ID is the ethical digital identity layer of the BBS ecosystem.
-It provides a transparent, secure, and human-centered alternative
-to invasive, manipulative, or centralized identification systems.
+BBS-ID is the ethical digital identity layer of the BBS ecosystem.  
+It provides a transparent, secure, and human-centered alternative to invasive, manipulative, or centralized identification systems.
 
-Its purpose is to protect identity, dignity, and privacy —  
-while enabling verified, safe, and trustworthy interaction across all modules.
+Its purpose is simple and foundational: to protect identity, dignity, and personal safety —  
+while enabling verified, trustworthy interaction across all BBS modules and institutions.
 
 ---
 
 ## Objectives
 
-### • Human dignity first  
-Identity must never be used to exploit, control, or surveil a person.
+### • Human dignity first
+Identity must never become a tool for exploitation, control, profiling, or surveillance.
 
-### • Ethical verification  
-Only essential information is used — no unnecessary data collection.
+### • Ethical verification
+Only the minimum necessary information is used.  
+No excessive data collection. No unnecessary exposure.
 
-### • Security without centralization  
-Identity is cryptographically protected and distributed across secure channels.
+### • Security without centralization
+Identity is protected by distributed cryptographic markers —  
+not by a single database or vulnerable authority.
 
-### • Transparency  
-Every identity-related action leaves a verifiable audit trail.
+### • Transparency
+Every identity-related action generates a verifiable audit trace  
+recorded by the Integrity Core.
 
-### • Universal access  
-One ethical identity for all BBS modules, countries, and institutions.
+### • Universal access
+One ethical identity for people, institutions, and cross-border cooperation.
 
 ---
 
 ## Core Components (Public Overview)
 
-1. **Identity Verification Framework**  
-   Establishes ethical rules for confirming that a person is who they claim to be.
+### Identity Verification Framework
+Establishes ethical rules and verification protocols that confirm identity  
+without violating privacy or autonomy.
 
-2. **Privacy-Preserving Credentials**  
-   Allows verification without exposing private data.
+### Privacy-Preserving Credentials
+Enables confirmation of identity attributes *without revealing the attributes themselves*  
+(minimal disclosure, zero-knowledge proofs).
 
-3. **Distributed Identity Ledger**  
-   Stores identity markers in tamper-proof, multi-channel records.
+### Distributed Identity Ledger
+Tamper-proof, multi-channel identity record protected by Merkle-based integrity chains.
 
-4. **Access Control Engine**  
-   Provides intention-based authorization across all modules of BBS.
+### Access Control Engine
+Provides intention-based authorization —  
+permissions are granted based on behaviour, context, and ethical responsibility.
 
-5. **Identity Protection Layer**  
-   Shields people from fraud, impersonation, and data misuse.
+### Identity Protection Layer
+Guards against fraud, impersonation, coercion, and data misuse.  
+Identity cannot be stolen, sold, or exploited.
 
 ---
 
 ## Why BBS-ID Is Different
 
-Modern digital identity systems often include:
+Modern digital identities often suffer from:
 
-- excessive data collection  
-- centralization  
-- political influence  
-- commercial exploitation  
+- excessive personal data collection  
+- political or institutional influence  
+- corporate exploitation  
 - surveillance risks  
+- centralized failure points  
 
-BBS-ID replaces these vulnerabilities with:
+BBS-ID eliminates these problems through:
 
-- ethical design  
-- minimal data philosophy  
-- distributed protection  
-- immutable audit trails  
-- verifiable transparency  
+- ethical-first design  
+- minimal data principles  
+- distributed trust  
+- immutable auditability  
+- transparent identity logic  
+
+Identity becomes a responsibility — not a vulnerability.
 
 ---
 
 ## Development Status
 
-The architectural design is ready.
-Technical identity algorithms will be released gradually as safety,
-legal, and ethical frameworks reach full maturity.
+The conceptual architecture of BBS-ID is complete.  
+Technical identity algorithms, cryptographic implementations, and verification protocols  
+will be released in controlled phases as legal, ethical, and safety frameworks mature.
 
+BBS-ID is designed to be the safest and most transparent identity model  
+ever proposed for digital governance.
+
+---
+
+## Legal & Copyright Notice
+
+© 2023–2025 **Big Begins Small (BBS)**.  
+All intellectual rights reserved to the original creator — **Pavlo Martseniuk**.  
+
+This document is released under the  
+**BBS Public License v1.0 (BBS-PL)** — an ethical license that prohibits:
+
+- corruption  
+- political misuse  
+- surveillance abuse  
+- corporate exploitation  
+- patent monopolisation  
+
+All derivative work must remain transparent, ethical, and aligned with public benefit.
