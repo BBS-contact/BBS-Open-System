@@ -1,90 +1,115 @@
 # Mirrors — Intent Reflection and Behaviour Transparency Layer
 
-The Mirrors subsystem is the ethical and analytical layer of BBS
-that reflects user intentions, behaviours, and patterns.
+The Mirrors subsystem is the ethical and analytical reflection layer of the BBS ecosystem.  
+Its purpose is not to judge or punish, but to reveal patterns, intentions,  
+and contradictions in a clear, neutral, and explainable way.
 
-Its purpose is to detect:
-- manipulation,
-- deception,
-- contradiction,
-- harmful motives,
-- hidden aggression,
-- or unethical behaviour.
+The Mirrors help ensure that people and institutions act with:
 
-The Mirrors do not punish.  
-They **reveal** — clearly, neutrally, and transparently.
+- integrity  
+- clarity  
+- self-awareness  
+- responsibility  
+- ethical consistency  
+
+The system does *not* expose private data.  
+It reflects behaviour, not identity.
 
 ---
 
 ## Purpose
 
-To create a system where behaviour remains visible and accountable,
-not through surveillance, but through **logical and ethical consistency checks**.
+To create an environment where behaviour is:
 
-The Mirrors help people act truthfully, consciously, and responsibly.
+- visible in its ethical meaning  
+- consistent with stated intentions  
+- logically coherent  
+- resistant to manipulation  
+- accountable without surveillance  
+
+The Mirrors strengthen trust by helping people **see themselves** —  
+their intentions, contradictions, and behavioural patterns.
+
+The goal is awareness, not enforcement.
 
 ---
 
 ## Core Principles
 
-### • Behaviour reflects intention  
-Every action carries a pattern that reveals its underlying motive.
+### • Behaviour Reveals Intention  
+Every action expresses a motive.  
+Mirrors analyse patterns — not isolated events.
 
-### • Transparency without exposure  
-The system reveals contradictions without exposing private details.
+### • Transparency Without Exposure  
+The system highlights contradictions and risks  
+without revealing hidden or personal information.
 
-### • No manipulation  
-Attempts to deceive or exploit the system naturally become visible.
+### • Anti-Manipulation  
+Attempts to deceive the system or others naturally  
+become visible through inconsistency and intent misalignment.
 
-### • Consistency analysis  
-Actions are checked against previous behaviour, context, and ethics.
+### • Contextual Consistency  
+Actions are analysed relative to past behaviour, context,  
+and ethical expectations.
 
-### • Soft correction  
-The system guides the user, offering clarity rather than punishment.
+### • Soft Ethical Correction  
+If contradictions or harmful patterns appear,  
+the system provides reflection — not punishment.
+
+Mirrors guide people toward clarity.
 
 ---
 
 ## System Components (Public Overview)
 
-1. **Intent Pattern Analyzer**  
-   Identifies consistency between a user’s actions and stated intentions.
+### **Intent Pattern Analyzer**  
+Evaluates whether behaviour aligns with stated goals or intentions.
 
-2. **Contradiction Detector**  
-   Highlights unclear, conflicting, or manipulative behaviour.
+### **Contradiction Detector**  
+Identifies unclear, conflicting, or manipulative actions.
 
-3. **Ethical Reflection Layer**  
-   Reveals whether actions align with shared ethical principles.
+### **Ethical Reflection Layer**  
+Shows how actions correlate with core ethical principles  
+(truth, dignity, responsibility, transparency).
 
-4. **Behaviour Mapping Engine**  
-   Shows behavioural patterns over time (non-invasive, contextual).
+### **Behaviour Mapping Engine**  
+Builds non-invasive, contextual behavioural patterns over time.
 
-5. **Transparency Interface**  
-   Users can see why their behaviour triggered warnings or reflections.
+### **Transparency Interface**  
+Allows users to understand why reflections were triggered  
+and what contradictions or risks were detected.
 
 ---
 
 ## Why It Matters
 
-Human systems fail when:
-- lies go unnoticed,
-- manipulation succeeds,
-- inconsistency is ignored,
-- harmful intentions remain hidden.
+Human and institutional systems fail when:
 
-BBS replaces this with:
-- accountability,
-- transparency,
-- behavioural clarity,
-- self-reflection,
-- ethical awareness.
+- manipulation goes undetected  
+- contradictions accumulate  
+- bias and emotion distort decisions  
+- harmful intentions remain hidden  
+- people stop reflecting on consequences  
 
-People become more conscious, not more controlled.
+BBS solves this through:
+
+- behavioural clarity  
+- ethical transparency  
+- accountability without fear  
+- structural detection of harmful patterns  
+- support for honest self-improvement  
+
+The Mirrors subsystem makes people *more conscious*,  
+not more controlled.
 
 ---
 
 ## Development Status
 
-The conceptual framework is defined.
-Internal logic, intent mapping, and behavioural models remain protected
-until safety and verification stages are complete.
+The conceptual architecture is complete.  
+Internal behavioural models, reflection algorithms,  
+and intent-mapping mechanisms remain protected until  
+safety, legal, and verification frameworks are finalized.
+
+Only high-level documentation is public at this stage.
 
