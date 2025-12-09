@@ -1,49 +1,46 @@
 # Grants & Partnerships — Ethical Collaboration and Resource Transparency
 
-The Grants & Partnerships module provides an ethical, transparent,
-and verifiable structure for cooperation with organizations,
-institutions, donors, universities, non-profits, foundations, and governments.
+The Grants & Partnerships module provides an ethical, transparent, and verifiable structure for cooperation with organizations, institutions, donors, universities, non-profits, foundations, and governments.
 
-Its mission is to eliminate corruption, hidden influence, and political pressure
-in all forms of funding, collaboration, and support.
+Its mission is to eliminate corruption, hidden influence, and political pressure in all forms of funding, collaboration, and support.
 
 ---
 
 ## Objectives
 
-### • Transparency  
-Every resource, partnership, and decision is fully traceable.
+• **Transparency**  
+Every partnership, resource flow, and decision must be fully traceable and publicly explainable.
 
-### • Ethical alignment  
-Partners must share values of integrity, fairness, and human dignity.
+• **Ethical alignment**  
+Partners must share core values of integrity, fairness, responsibility, and human dignity.
 
-### • Accountability  
-Use of funds is visible, audited, and cannot be manipulated.
+• **Accountability**  
+Use of funds is visible, auditable, and cannot be manipulated or redirected in secret.
 
-### • Open opportunities  
-Equal access for all organizations — no privileged groups.
+• **Open opportunities**  
+Equal access to funding and collaboration — no privileged groups, no gatekeeping.
 
-### • Simplification  
-Removes unnecessary bureaucracy and replaces it with clear workflows.
+• **Simplification**  
+Removes unnecessary bureaucracy and replaces it with clear, verifiable workflows.
 
 ---
 
 ## Core Components (Public Overview)
 
-1. **Grant Lifecycle System**  
-   Manages proposals, approvals, funding, and reporting with immutable audit trails.
+### Grant Lifecycle System  
+Manages proposals, approvals, funding, and reporting through immutable audit trails and transparent checkpoints.
 
-2. **Partnership Integrity Map**  
-   Evaluates and verifies institutions based on ethics, transparency, and performance.
+### Partnership Integrity Map  
+Evaluates organizations based on ethics, transparency, past performance, and alignment with BBS values.
 
-3. **Open Funding Dashboard**  
-   Shows where resources come from and how they are used.
+### Open Funding Dashboard  
+Publicly shows where resources originate and how they are allocated, used, and verified.
 
-4. **Collaboration Hub**  
-   Connects researchers, NGOs, cities, and institutions for joint initiatives.
+### Collaboration Hub  
+Connects researchers, NGOs, cities, institutions, and global partners for joint initiatives.
 
-5. **Anti-Corruption Controls**  
-   Detect and prevent misuse, manipulation, or unauthorized influence.
+### Anti-Corruption Controls  
+Detect and prevent misuse, manipulation, unethical influence, or hidden financial channels.
 
 ---
 
@@ -52,19 +49,27 @@ Removes unnecessary bureaucracy and replaces it with clear workflows.
 Global funding systems often suffer from:
 
 - corruption  
-- hidden influence  
 - selective access  
-- bureaucracy  
-- lack of accountability  
+- hidden influence  
+- political pressure  
+- opaque decision-making  
+- inefficient bureaucracy  
 
-BBS replaces this with an ethical, transparent, and neutral model
-that benefits society as a whole.
+BBS replaces this with a model where:
+
+- funding is transparent  
+- partnerships are ethical  
+- records are immutable  
+- influence is traceable  
+- opportunities are fair and open  
+
+This ensures that public resources truly serve the public good.
 
 ---
 
 ## Development Status
 
-The framework is defined at a high level.
-Technical implementation will be introduced gradually
-as legal, ethical, and security standards mature.
+The Grants & Partnerships framework is defined at a conceptual, high level.  
+Technical implementation, verification protocols, and legal alignment will be introduced gradually as the BBS ecosystem matures.
 
+Only the public, non-sensitive layer is presented here.
