@@ -1,69 +1,105 @@
 # Health & Medicine — Ethical, Transparent, and People-Centered Healthcare
 
-The Health & Medicine module of BBS establishes a transparent,
-evidence-based, and corruption-resistant healthcare framework.
+The Health & Medicine module provides a transparent, scientific, and corruption-resistant
+foundation for modern healthcare within the BBS ecosystem.
 
-Its purpose is to protect human life, ensure fairness,
-and remove hidden corporate or political influence from medical decisions.
+Its purpose is to ensure that every medical decision respects human dignity, follows
+verified scientific knowledge, and remains free from political, corporate, or financial
+manipulation.
 
 ---
 
 ## Objectives
 
 ### • Ethical healthcare  
-Medical decisions must always prioritize human dignity and well-being.
+All decisions must prioritize human life, dignity, autonomy, and well-being.
 
-### • Verified knowledge  
-All diagnoses and recommendations rely on validated scientific evidence.
+### • Verified medical knowledge  
+Diagnostics, treatments, and recommendations rely exclusively on validated,
+peer-reviewed scientific evidence originating from the Unified Knowledge Base.
 
-### • Transparency  
-Every procedure, pathway, and decision is explainable and traceable.
+### • Full transparency  
+Medical pathways, institutional decisions, and clinical actions are explainable,
+traceable, and accountable.
 
 ### • Anti-corruption integrity  
-No hidden partnerships, inflated pricing, or manipulation of medical records.
+No hidden pricing, no falsified records, no commercial influence on medical outcomes.
 
-### • Accessibility  
-Equal access to healthcare regardless of income, background, or status.
+### • Equal access  
+Every person receives fair, safe, and dignified healthcare regardless of income,
+background, geography, or status.
 
 ---
 
 ## Core Components (Public Overview)
 
-1. **Medical Knowledge Engine**  
-   Connects healthcare decisions to verified medical science.
+### **Medical Knowledge Engine**  
+A structured interface that links healthcare decisions to verified scientific data,
+clinical guidelines, and global research.
 
-2. **Transparent Treatment Pathways**  
-   Shows patients how and why medical recommendations are made.
+### **Transparent Treatment Pathways**  
+Clear, explainable models that show patients how diagnoses and recommendations are made,
+including context, reasoning, and alternatives.
 
-3. **Health Integrity Ledger**  
-   Stores medical actions with immutable, multi-channel audit trails.
+### **Health Integrity Ledger**  
+An immutable, multi-source audit trail of medical actions, ensuring that no record
+can be altered, erased, or manipulated.
 
-4. **Early Detection & Diagnostics Layer**  
-   Ethical AI-supported analysis for early detection of diseases.
+### **Early Detection & Diagnostics Layer**  
+Ethically constrained analytical tools supporting early detection of diseases,
+risk assessment, and prevention — without replacing medical professionals.
 
-5. **Patient Rights & Protection Model**  
-   Ensures dignity, fairness, and protection against malpractice.
+### **Patient Rights & Protection Model**  
+A framework guaranteeing dignity, safety, fairness, and protection against:
+- malpractice  
+- coercion  
+- hidden financial influence  
+- discrimination  
+- misinformation  
 
 ---
 
 ## Why It Matters
 
-Modern healthcare often suffers from:
+Healthcare systems worldwide frequently suffer from:
 
-- corruption  
-- financial manipulation  
-- misinformation  
-- opaque pricing  
-- fragmented medical records  
+- corruption and financial manipulation  
+- inconsistent or outdated medical knowledge  
+- opaque pricing and billing  
+- fragmented or falsifiable medical records  
+- unequal access  
+- clinical decisions influenced by profit instead of science  
 
-BBS replaces this with ethical, transparent,
-human-centered medical processes.
+BBS replaces these weaknesses with:
+
+- verified scientific knowledge  
+- transparent pathways  
+- immutable medical records  
+- ethical safeguards  
+- equal, people-centered access  
+- a structural barrier against corruption or hidden interests  
+
+This establishes a healthcare environment that is fair, evidence-based,
+and fundamentally human-centered.
 
 ---
 
 ## Development Status
 
-The Health & Medicine module is in early conceptual integration.  
-Technical and clinical layers will be introduced step by step
-as safety, ethics, and regulatory requirements are met.
+The conceptual and architectural foundations of this module are complete.
+
+Technical, clinical, and regulatory layers — including diagnostic pipelines,
+treatment-pathway builders, interoperability tools, and verification systems —
+will be introduced gradually in alignment with:
+
+- medical safety standards  
+- clinical ethics frameworks  
+- the Integrity Core  
+- the Unified Knowledge Base  
+- LEO’s ethical and consistency layers  
+- national and international healthcare regulations  
+
+The Health & Medicine module is designed to support a transparent, ethical,
+and globally interoperable medical ecosystem.
+
 
