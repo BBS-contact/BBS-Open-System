@@ -1,90 +1,112 @@
-# Doors — Ethical Access and Intent-Based Authorization System
+# Doors — Ethical, Intent-Based, and Behaviour-Driven Access System
 
-The Doors subsystem defines how access is granted within the BBS ecosystem.
-It is a revolutionary model where **ethics and behaviour** — not rank,
-status, or authority — determine what a person or system is allowed to do.
+The **Doors** subsystem defines how access is granted within the BBS ecosystem.  
+It replaces traditional hierarchical permissions with a model based entirely on:
 
-Traditional access control relies on:
-- hierarchy,
-- positions,
-- privilege.
+- ethics,  
+- intent,  
+- behaviour over time,  
+- responsibility,  
+- contextual awareness.
 
-BBS replaces this with **ethical, behavioural access paths**.
+In BBS, access is **not a privilege**.  
+It is an *earned, transparent, and ethically justified action pathway*.
+
+Doors ensures that no administrator, operator, institution, or system can gain access
+through rank, authority, or manipulation.  
+Only ethical alignment and consistent behaviour open doors.
 
 ---
 
 ## Purpose
 
-To ensure that access is:
-- fair,
-- transparent,
-- context-aware,
-- behaviour-based,
-- incorruptible.
+To create an incorruptible access model where every interaction is:
 
-No person, administrator, or authority can bypass these rules.
+- **fair**  
+- **transparent**  
+- **context-aware**  
+- **behaviour-based**  
+- **ethically aligned**
+
+Access becomes a responsibility — not a weapon of authority.
 
 ---
 
 ## Core Principles
 
 ### • Ethics before hierarchy  
-No one receives access because of position — only through ethical alignment.
+Positions, titles, and roles do not grant special access.  
+Only ethical consistency over time does.
 
 ### • Intent before permission  
-Why you act matters more than what you try to access.
+The *reason* behind an action matters more than the action itself.
 
-### • Consistency before privilege  
-Behaviour over time determines trust and access levels.
+### • Behaviour before privilege  
+Trust is earned through long-term behaviour — not assigned by default.
 
 ### • Zero backdoors  
-No hidden systems, “special admin rights,” or silent overrides.
+No hidden admin accounts, secret rights, or silent overrides exist in BBS.
 
 ### • Transparent access history  
-Every access attempt is logged and explainable.
+Every access attempt is recorded with full ethical and contextual explanation.
 
 ---
 
 ## System Components (Public Overview)
 
-1. **Intent-Based Authorization Engine**  
-   Evaluates the purpose behind each action before granting access.
+### **Intent-Based Authorization Engine**  
+Analyses *why* the request is made, not only *what* is requested.
 
-2. **Behavioural Trust Model**  
-   Access grows or shrinks based on long-term behavioural consistency.
+### **Behavioural Trust Model**  
+Monitors consistency, responsibility, and ethical behaviour over time to determine access levels.
 
-3. **Ethical Access Framework**  
-   Defines what actions require what levels of responsibility and care.
+### **Ethical Access Framework**  
+Defines requirements for sensitive, moderate, and low-risk actions.
 
-4. **Zero-Privilege Structure**  
-   Administrators have no automatic special rights.
+### **Zero-Privilege Structure**  
+Administrators and developers have no inherent rights — only behaviour-based access.
 
-5. **Access Integrity Trail**  
-   Immutable logs of access attempts, outcomes, and ethical context.
+### **Access Integrity Trail**  
+Immutable, multi-channel logs documenting:
+
+- intent  
+- outcome  
+- ethical evaluation  
+- behavioural score changes  
+
+Nothing about access is hidden or modifiable.
 
 ---
 
 ## Why It Matters
 
-Modern systems fail because:
-- admins can override rules,
-- corruption creates hidden access,
-- privileged users can manipulate data.
+Traditional access systems collapse because:
 
-BBS eliminates these vulnerabilities by:
-- removing privilege,
-- enforcing transparency,
-- linking access to ethics,
-- making behaviour accountable,
-- ensuring incorruptibility.
+- administrators can override rules  
+- corruption creates invisible “doors”  
+- privileged users can manipulate or delete data  
+- access is tied to hierarchy instead of responsibility  
 
-Access becomes a **moral responsibility**, not a badge of authority.
+BBS eliminates these failures by designing access as a **moral and behavioural contract**, not a political or technical privilege.
+
+This ensures:
+
+- transparency  
+- accountability  
+- incorruptibility  
+- trust  
+- complete verifiability  
+
+Access becomes a **living ethical process**, not a static permission list.
 
 ---
 
 ## Development Status
 
-The Doors subsystem is conceptually complete.
-Implementation details remain protected until safety,
-alignment, and verification standards are established.
+The conceptual model of **Doors** is complete.  
+Full implementation — including ethical scoring matrices, behavioural models,  
+and intent-evaluation logic — will be released gradually as safety, legal,  
+and verification frameworks mature.
 
+The internal access logic, algorithmic thresholds, and decision trees  
+remain protected for security and integrity reasons.
