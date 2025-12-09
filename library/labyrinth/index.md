@@ -1,95 +1,117 @@
 # Labyrinth — Deception-Resistant Security Architecture
 
-The Labyrinth is the core conceptual security layer of BBS.
-It is designed to resist manipulation, deception, pressure,
-infiltration, and hidden influence.
+The Labyrinth is the foundational security paradigm of the BBS ecosystem.  
+It protects the system not through secrecy or force, but through ethics, logic,  
+multi-path validation, and behavioural consistency.
 
-Unlike classical security systems, the Labyrinth does not rely on:
-- secrecy,
-- centralized control,
-- trust in administrators.
+Unlike classical security models, the Labyrinth does *not* rely on:
 
-Instead, it uses **distributed verification**, **multi-path logic**,
-and **intent-based checks** to ensure that no malicious actor
-can predict, bypass, or corrupt the system.
+- hidden mechanisms  
+- privileged administrators  
+- static rules that attackers can study  
+- blind trust in authority  
+
+Instead, it uses distributed verification, unpredictability, and intent-based logic  
+to ensure that no malicious actor can predict, infiltrate, or corrupt the system.
+
+The Labyrinth is not a wall.  
+It is an ethical maze where harmful behaviour reveals itself automatically.
 
 ---
 
 ## Purpose
 
 To create an environment where:
-- attacks fail,
-- manipulation becomes impossible,
-- corruption cannot take root,
-- and harmful behaviour exposes itself automatically.
 
-The Labyrinth is not a wall.  
-It is an **intelligent maze** of ethical and logical constraints.
+- attacks fail by design  
+- manipulation becomes infeasible  
+- corruption cannot take root  
+- malicious intent exposes itself  
+- no single actor can quietly subvert the system  
+
+The Labyrinth does not fight attackers directly.  
+It makes manipulation structurally impossible.
 
 ---
 
 ## Core Principles
 
 ### • Unpredictability  
-No attacker can predict how the system will verify or cross-check a given action.
+The system changes verification paths dynamically, preventing attackers  
+from knowing which checks will apply to which actions.
 
-### • Multi-path validation  
-Every critical action is checked through several independent validation routes.
+### • Multi-Path Validation  
+Every sensitive action is evaluated through several independent routes  
+(spaced across Integrity, Behaviour, Context, and Ethics layers).
 
-### • No privileged shortcuts  
-Administrators cannot override or bypass integrity rules.
+### • No Privileged Shortcuts  
+Administrators have *zero* override authority.  
+No “master key,” no “superuser,” no hidden command exists.
 
-### • Behavioural analysis  
-Actions are evaluated by intent, not only by form or permissions.
+### • Behavioural Analysis  
+Intent matters more than permissions.  
+Actions are evaluated by patterns, consistency, and ethical context.
 
-### • Self-disclosure  
-Malicious behaviour naturally reveals itself through inconsistent patterns.
+### • Self-Disclosure  
+Any malicious action creates contradictions and anomalies  
+that automatically trigger deeper checks and exposure.
 
 ---
 
 ## System Components (Public Overview)
 
-1. **Distributed Verification Paths**  
-   Multiple independent channels confirm every sensitive action.
+### **Distributed Verification Paths**  
+Multiple validation channels ensure that no false or corrupted action  
+can pass without being caught by at least one path.
 
-2. **Intent Reflection Layer**  
-   Behavioural patterns are analyzed for hidden motives or contradictions.
+### **Intent Reflection Layer**  
+Analyses behaviour, motives, and context to detect manipulation attempts  
+even when form-based rules appear “correct.”
 
-3. **Integrity Shield**  
-   Prevents tampering, unauthorized shortcuts, and silent errors.
+### **Integrity Shield**  
+Prevents tampering, hidden changes, unauthorized steps, and silent failures.
 
-4. **Redundant Logic Mesh**  
-   Ensures that if one security layer is attacked, others still validate truth.
+### **Redundant Logic Mesh**  
+If one security layer is attacked or compromised, others independently  
+validate truth and preserve system integrity.
 
-5. **Adaptive Response Model**  
-   System reacts differently to different types of behaviour and context.
+### **Adaptive Response Model**  
+The system reacts differently based on behaviour, context,  
+and the ethical risk associated with each action.
+
+No attacker can predict which response or validation pattern will occur.
 
 ---
 
 ## Why the Labyrinth Is Different
 
-Traditional security:
-- can be bribed,
-- can be fooled,
-- relies on a few admins,
-- collapses when a single point fails.
+Traditional security systems:
+
+- can be bribed  
+- can be predicted  
+- depend on administrators  
+- collapse under single-point failure  
+- react only *after* damage happens  
 
 The Labyrinth:
-- cannot be bribed,
-- cannot be predicted,
-- cannot be infiltrated by rank,
-- cannot be silently bypassed,
-- cannot be overwritten or disabled.
 
-It turns corruption attempts into visible, traceable events.
+- cannot be bribed  
+- cannot be predicted  
+- cannot be bypassed by hierarchy  
+- cannot be silently modified  
+- exposes malicious behaviour immediately  
+- prevents corruption before it begins  
+
+It transforms every corruption attempt into a visible, traceable event.
 
 ---
 
 ## Development Status
 
-The Labyrinth is conceptually complete.
-Internal mechanisms remain protected until global safety
-and verification stages are finished.
+The Labyrinth architecture is conceptually complete.  
+Internal mechanisms, validation logic, and security algorithms remain protected  
+until global safety, legal compliance, and multi-institutional verification  
+stages are reached.
 
-Only high-level documentation is public at this time.
+Only high-level documentation is publicly available at this time.
 
