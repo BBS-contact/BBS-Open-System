@@ -1,59 +1,59 @@
 # BBS Fundraising & Partnership Strategy
 
-This document outlines the public-facing fundraising and partnership strategy
-for the BBS ecosystem. It explains how financial support is structured,
-what stages require investment, and how institutions can participate safely
+This document outlines the public-facing fundraising and partnership strategy  
+for the BBS ecosystem. It explains how financial support is structured,  
+what stages require investment, and how institutions can participate safely  
 and transparently.
 
-BBS is an ethical public digital infrastructure project.
-Funding follows the same principles: transparency, responsibility, and integrity.
+BBS is an ethical public digital infrastructure project.  
+Funding follows the same principles: **transparency, responsibility, and integrity**.
 
 ---
 
-# 1. Purpose of Fundraising
+## 1. Purpose of Fundraising
 
 The objective is to support:
 
-- development of public modules,  
-- expansion of research and ethical AI,  
-- infrastructure for pilot deployments,  
-- technical documentation,  
-- security and verification layers,  
-- collaboration with institutions,  
-- long-term sustainability.
+- development of public modules  
+- expansion of research and ethical AI  
+- infrastructure for pilot deployments  
+- technical documentation  
+- security and verification layers  
+- collaboration with institutions  
+- long-term sustainability  
 
-The project is not commercial.  
+The project is **not commercial**.  
 Funding supports public benefit and ethical innovation.
 
 ---
 
-# 2. Funding Principles
+## 2. Funding Principles
 
-### • Transparency  
-All received funds, partners, and use of resources remain publicly documented.
+### • Transparency
+All received funds, partners, and use of resources remain publicly documented  
+and verifiable.
 
-### • Ethical neutrality  
-No political, ideological, or commercial control is allowed.
+### • Ethical neutrality
+No political, ideological, or commercial control is permitted.
 
-### • No ownership transfer  
-Funders do not gain control over governance or decision-making.
+### • No ownership transfer
+Funders do not gain governance rights, influence, or privileged access.
 
-### • Responsibility  
+### • Responsibility
 Funds are used strictly for project development and public benefit.
 
-### • Independence  
-BBS remains autonomous and cannot be influenced by private interests.
+### • Independence
+BBS remains autonomous and cannot be shaped or controlled by private interests.
 
 ---
 
-# 3. Funding Stages
+## 3. Funding Stages
 
 Funding is organized into three progressive stages:
 
----
+### **Stage I — Foundation (Current Stage)**
 
-## Stage I — Foundation (Current Stage)
-Focus:
+**Focus:**
 
 - core architecture  
 - documentation  
@@ -62,25 +62,26 @@ Focus:
 - admin panels  
 - early research acceleration  
 
-Support needed:
+**Support needed:**
 
 - infrastructure costs  
 - research tools  
-- cloud/testing environments  
+- cloud and testing environments  
 - development resources  
 
 ---
 
-## Stage II — Expansion
-Focus:
+### **Stage II — Expansion**
 
-- full development of 17 platform modules  
+**Focus:**
+
+- full development of the 17 platform modules  
 - advanced AI reasoning layers  
 - distributed integrity systems  
 - cross-border cooperation mechanisms  
-- education, health, legal and economic frameworks  
+- education, health, legal, and economic frameworks  
 
-Support needed:
+**Support needed:**
 
 - interdisciplinary research teams  
 - development groups  
@@ -89,63 +90,64 @@ Support needed:
 
 ---
 
-## Stage III — National & International Deployment
-Focus:
+### **Stage III — National & International Deployment**
+
+**Focus:**
 
 - institutional pilots  
-- municipal & national rollouts  
+- municipal and national rollouts  
 - global cooperation networks  
 - academic partnerships  
 - public transparency infrastructure  
 
-Support needed:
+**Support needed:**
 
 - long-term infrastructure investment  
 - cross-national coordination  
-- legal & ethical certification  
+- legal and ethical certification  
 - high-level security architecture  
 
 ---
 
-# 4. Types of Partners
+## 4. Types of Partners
 
-### • Public Institutions  
+### • Public Institutions
 Schools, clinics, NGOs, municipalities, universities.
 
-### • Research Organizations  
+### • Research Organizations
 AI labs, ethics committees, academic groups.
 
-### • Grant Programs  
-EU programs, Norway Grants, Horizon Europe, Digital Europe,
-Erasmus+, civic innovation funds.
+### • Grant Programs
+EU programs, Norway Grants, Horizon Europe, Digital Europe, Erasmus+,  
+civic innovation initiatives.
 
-### • Foundations  
-Human rights, transparency, digital society, global governance.
+### • Foundations
+Human rights, transparency, digital society, and global governance foundations.
 
-### • Technical Partners  
+### • Technical Partners
 Engineering teams, cybersecurity groups, transparency specialists.
 
 ---
 
-# 5. Use of Funds
+## 5. Use of Funds
 
 Funding is used exclusively for:
 
 - development of public modules  
-- ethics & AI research  
-- infrastructure & hosting  
+- ethics and AI research  
+- infrastructure and hosting  
 - security and verification systems  
-- documentation & dissemination  
+- documentation and dissemination  
 - pilot programs  
 - external audits  
 - community involvement  
 
-No portion of the funds can be used for private ownership,
-political influence, or non-transparent operations.
+No portion of the funds can be used for private ownership, political influence,  
+or non-transparent operations.
 
 ---
 
-# 6. Funding Integrity
+## 6. Funding Integrity
 
 To guarantee absolute transparency:
 
@@ -155,11 +157,11 @@ To guarantee absolute transparency:
 - no exclusive licenses or control rights  
 - full compliance with international standards  
 
-Funding strengthens BBS — it does not buy influence.
+Funding strengthens BBS — it does **not** buy influence.
 
 ---
 
-# 7. Invitation to Partners
+## 7. Invitation to Partners
 
 Partners are invited to:
 
@@ -169,31 +171,30 @@ Partners are invited to:
 - accelerate AI safety research  
 - contribute to long-term global stability  
 
-BBS is open to collaboration with organizations that respect
-the principles of truth, transparency, and human dignity.
+BBS is open to collaboration with organizations that respect  
+truth, transparency, and human dignity.
 
 ---
 
-# 8. Contact
+## 8. Contact
 
-Official Website: https://leonexus.org  
-Email: bbs.contactproton.me@proton.me  
-Partnership inquiries: same contact  
+**Official Website:** https://leonexus.org  
+**Email:** bbs.contactproton.me@proton.me  
+**Partnership Inquiries:** same contact
 
 ---
 
-# Final Statement
+## Final Statement
 
-BBS is a generational project —  
-a long-term infrastructure that will outlive technologies, trends, and administrations.
+BBS is a generational project — a long-term ethical infrastructure  
+that will outlive technologies, trends, and administrations.
 
 Support for BBS is support for:
 
-- ethical AI,  
-- transparent society,  
-- corruption-free governance,  
-- empowered citizens,  
-- a safer digital world.
+- ethical AI  
+- transparent society  
+- corruption-free governance  
+- empowered citizens  
+- a safer digital world  
 
-Every contribution helps build the foundation for a future based on truth.
-
+Every contribution helps build a future founded on truth.
