@@ -1,18 +1,19 @@
 # LEO Truth Layer — Verification, Evidence, and Reality Alignment
 
-The Truth Layer defines how LEO evaluates information, detects falsehoods,
+The Truth Layer defines how LEO evaluates information, detects falsehoods,  
 and maintains alignment with objective, verifiable reality.
 
-Truth in BBS is not opinion.  
-It is a process of:
+Truth in BBS is **not** opinion.  
+It is a structured process of:
 
-- verification,  
-- context checking,  
-- evidence tracing,  
-- consistency analysis,  
-- ethical interpretation.
+- verification  
+- context checking  
+- evidence tracing  
+- consistency analysis  
+- ethical interpretation  
 
-This layer ensures that LEO remains loyal to reality, not to narratives.
+This layer ensures that LEO remains loyal to reality — not to narratives,  
+biases, or external pressures.
 
 ---
 
@@ -20,52 +21,61 @@ This layer ensures that LEO remains loyal to reality, not to narratives.
 
 To maintain a stable, transparent, and evidence-based foundation for:
 
-- fact-checking,  
-- contradiction detection,  
-- source validation,  
-- manipulation exposure,  
-- error identification,  
-- reality alignment.
+- fact-checking  
+- contradiction detection  
+- source validation  
+- manipulation exposure  
+- error identification  
+- reality alignment  
 
-The Truth Layer is the guardian of accuracy.
+The Truth Layer is the guardian of accuracy and epistemic integrity.
 
 ---
 
 ## Core Principles
 
-### • Evidence-first  
-No claim stands without verifiable, traceable evidence.
+### • Evidence-first
+No claim stands without verifiable, traceable, and contextually grounded evidence.
 
-### • Contextual truth  
-Facts are interpreted only within complete context.
+### • Contextual truth
+Facts are interpreted only within complete, relevant,  
+and ethically coherent context.
 
-### • Consistency  
-Truth must remain stable across time and modules.
+### • Consistency
+Truth must remain stable across time, modules, interactions,  
+and reasoning pathways.
 
-### • Transparency  
-Every verification path must be explainable.
+### • Transparency
+Every verification path must be explainable, traceable,  
+and open to audit.
 
-### • Ethical interpretation  
-Truth cannot be used to harm, manipulate, or shame.
+### • Ethical interpretation
+Truth cannot be used to harm, manipulate, shame, or exploit.  
+Interpretation prioritizes fairness, dignity, and responsibility.
 
 ---
 
 ## System Components (Public Overview)
 
-1. **Evidence Verification Engine**  
-   Confirms accuracy through cross-referenced sources.
+### **Evidence Verification Engine**
+Confirms accuracy through cross-referenced sources, internal checks,  
+and transparent verification logic.
 
-2. **Contradiction Detector**  
-   Identifies inconsistencies within information streams.
+### **Contradiction Detector**
+Identifies inconsistencies, conflicting statements, and logical discrepancies  
+within or across information streams.
 
-3. **Source Integrity Checker**  
-   Evaluates reliability, context, origin, and bias.
+### **Source Integrity Checker**
+Evaluates reliability, origin, bias, context, and evidentiary strength  
+of each source.
 
-4. **Reality Alignment Framework**  
-   Ensures conclusions align with objective, verifiable facts.
+### **Reality Alignment Framework**
+Ensures conclusions align with objective, verifiable facts  
+and resist narrative distortion.
 
-5. **Manipulation Exposure Layer**  
-   Reveals hidden influence, distortion, or framing.
+### **Manipulation Exposure Layer**
+Reveals hidden influence, framing, coercion, bias injection,  
+or strategic misinformation patterns.
 
 ---
 
@@ -73,26 +83,26 @@ Truth cannot be used to harm, manipulate, or shame.
 
 Systems collapse when:
 
-- truth becomes negotiable,  
-- facts are replaced by narratives,  
-- manipulation goes unchecked,  
-- context is lost,  
-- bias shapes conclusions.
+- truth becomes negotiable  
+- facts are replaced by narratives  
+- manipulation goes unchecked  
+- context is lost  
+- bias shapes conclusions  
 
 The Truth Layer protects BBS by ensuring:
 
-- factual consistency,  
-- transparency of reasoning,  
-- immunity to propaganda,  
-- ethical interpretation,  
-- stable long-term reliability.
+- factual consistency  
+- transparency of reasoning  
+- immunity to propaganda  
+- ethical interpretation  
+- stable long-term reliability  
 
 ---
 
 ## Development Status
 
-The Truth Layer architecture is established.
-Internal verification pipelines, evidence mappings,
-and consistency engines will be implemented gradually
-as the system evolves.
+The Truth Layer architecture is established.  
+Internal verification pipelines, evidence mappings,  
+and consistency engines will be implemented gradually  
+as the system evolves and reaches higher safety maturity.
 
