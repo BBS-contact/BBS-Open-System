@@ -102,9 +102,9 @@ Each domain is independent yet interoperable within the BBS ecosystem.
 | Labyrinth | Security, deception resistance, manipulation defense | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
 | Mirrors | Intent reflection and clarity of requests | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
 | Doors | Ethical, intent-based access control | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
-| Time Loops | Immutable chronological storage | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/timeloops |
+| Time Loops | Immutable chronological storage | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops |
 | Knowledge Library | Structured global knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
-| Self-Reflection Engine | Systemic awareness & error correction | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/self-reflection |
+| Self-Reflection Engine | Systemic awareness & error correction | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/reflection |
 
 ---
 
