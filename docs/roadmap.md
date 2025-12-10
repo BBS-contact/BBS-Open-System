@@ -10,27 +10,27 @@ This roadmap is structured into three stages: **Development → Expansion → In
 
 ## 1. Stage I — Development (Current Phase)
 
-### ✔ 1.1 Architectural Design
+###  1.1 Architectural Design
 - Full multi-layer system architecture completed  
 - Platform, Library, Integrity, and Core layers defined  
 - Ethical AI (LEO) structure established  
 
-### ✔ 1.2 Repository Structure
+###  1.2 Repository Structure
 - Canonical folder and module layout created  
 - Public façade prepared  
 - Internal mechanics protected until maturity  
 
-### ✔ 1.3 Prototype Modules
+###  1.3 Prototype Modules
 - BBS Accounting & Anti-Corruption Module (v1)  
 - SOS emergency communication prototype  
 - Transparency portal scaffolding  
 - Admin and monitoring panels (public façade only)  
 
-### ✔ 1.4 Documentation
+###  1.4 Documentation
 - Overview, architecture, ethics, security, FAQ prepared  
 - Legal documents and policies assembled  
 
-### ✔ 1.5 Internal Testing
+###  1.5 Internal Testing
 - Concept validation  
 - Behaviour and interaction modelling  
 - Safety logic refinement  
