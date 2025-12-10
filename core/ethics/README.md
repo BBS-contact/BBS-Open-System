@@ -1,60 +1,77 @@
 # Ethics Framework — The Moral Foundation of BBS
 
-The Ethics Framework is the immutable moral and philosophical backbone of the BBS ecosystem.
-It ensures that every module, every decision, and every interaction follows a strict,
-transparent, and human-centric ethical foundation.
+The Ethics Framework is the immutable moral and philosophical backbone  
+of the BBS ecosystem. It ensures that every module, every decision,  
+and every interaction follows a strict, transparent, and human-centric  
+ethical foundation.
 
-This framework is not an addon.  
-It is the **core contract** of the system.
+This framework is **not an add-on**.  
+It is the core contract of the system.
 
 ---
 
 ## Core Ethical Axioms
 
-### • Human dignity is inviolable  
+### • Human dignity is inviolable
 No action of the system may harm, manipulate, exploit, or coerce individuals.
 
-### • Truth is the first principle  
-All reasoning begins with verified facts and transparent logic.
+### • Truth is the first principle
+All reasoning begins with verified facts, transparent logic,  
+and clear evidentiary grounding.
 
-### • Responsibility over fear  
-Decisions must empower clarity — not impose punishment or intimidation.
+### • Responsibility over fear
+Decisions must empower clarity, accountability, and understanding —  
+not impose intimidation, punishment, or coercion.
 
-### • Transparency creates trust  
-Every process must be explainable, trackable, and accountable.
+### • Transparency creates trust
+Every process must be explainable, trackable, auditable,  
+and accountable to the public.
 
-### • Ethics above profit  
-No economic or political interest can override human well-being.
+### • Ethics above profit
+No economic, political, or institutional interest may override  
+human well-being or ethical integrity.
 
-### • No corruption, no manipulation  
-All attempts to distort outcomes must be automatically detected and neutralized.
+### • No corruption, no manipulation
+Any attempt to distort outcomes, influence decisions unfairly,  
+or exploit the system must be automatically detected, flagged,  
+and neutralized.
 
 ---
 
 ## Functional Layers (Public Overview)
 
-1. **Ethical Baseline**  
-   Stable axioms that define what actions are allowed or disallowed.
+### **Ethical Baseline**
+A set of stable axioms defining what actions are allowed, restricted,  
+or disallowed across the entire system.
 
-2. **Intent Analysis**  
-   Evaluates whether a user’s intention aligns with ethical standards.
+### **Intent Analysis**
+Evaluates whether a user's intention aligns with ethical standards  
+and identifies risks of manipulation or harm.
 
-3. **Harm Avoidance Model**  
-   Detects and prevents harmful actions before they occur.
+### **Harm Avoidance Model**
+Detects and prevents harmful actions before they occur,  
+providing multi-layer protection for users and institutions.
 
-4. **Fairness Engine**  
-   Ensures consistent and unbiased treatment across all modules.
+### **Fairness Engine**
+Ensures consistent, unbiased, and equitable treatment  
+across all BBS modules and decision processes.
 
-5. **Transparency Hooks**  
-   Every decision must be explainable and reconstructable.
+### **Transparency Hooks**
+Every decision must be explainable, reconstructable,  
+and supported by verifiable reasoning.
 
 ---
 
 ## Why Ethics is Central
 
-BBS is not a technical system with optional moral settings.  
-Ethics is the **foundation** that prevents corruption, abuse,
-manipulation, and systemic injustice.
+BBS is not a technical system with adjustable moral settings.  
+Ethics is the foundation that prevents:
+
+- corruption  
+- abuse  
+- manipulation  
+- systemic injustice  
+- misuse of power  
 
 This ensures:
 
@@ -68,8 +85,11 @@ This ensures:
 ## Development Status
 
 The Ethics Framework is conceptually complete.  
-Operational algorithms remain internal until the system reaches full verification,
-legal compliance, and public safety readiness.
+Operational algorithms remain internal until the system reaches:
+
+- full verification  
+- legal compliance  
+- public safety readiness  
 
 Only high-level structure is public at this stage.
 
@@ -78,6 +98,6 @@ Only high-level structure is public at this stage.
 ## Purpose
 
 To create an incorruptible, transparent, and human-aligned foundation  
-for all modules of BBS — ensuring that technology strengthens freedom,  
-justice, and dignity for every person.
+for all modules of BBS — ensuring that technology strengthens **freedom**,  
+**justice**, and **dignity** for every person.
 
