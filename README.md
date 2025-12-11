@@ -252,3 +252,15 @@ https://bbs-contact.github.io/BBS-Open-System/site/bbs-executive-overview.html
 
 Visual high-level architecture map:  
 docs/bbs-architecture-map.svg
+
+## EU Evaluation Package
+
+For institutional and scientific review, the complete BBS EU package is available here:
+
+- Main index: [`docs/eu-package/INDEX.md`](docs/eu-package/INDEX.md)
+- Strategic overview: [`docs/eu-package/BBS-EU-Strategic-Package.md`](docs/eu-package/BBS-EU-Strategic-Package.md)
+- Technical annex: [`docs/eu-package/BBS-Technical-Annex.md`](docs/eu-package/BBS-Technical-Annex.md)
+- Pilot protocol: [`docs/eu-package/BBS-Pilot-Protocol.md`](docs/eu-package/BBS-Pilot-Protocol.md)
+- Impact assessment: [`docs/eu-package/BBS-Impact-Assessment.md`](docs/eu-package/BBS-Impact-Assessment.md)
+
+This section is intended for the European Commission, STOA, JRC and related EU bodies evaluating BBS as an ethical digital infrastructure model.
