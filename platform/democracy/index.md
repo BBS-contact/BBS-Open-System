@@ -25,6 +25,17 @@ No political privilege.
 No hidden agendas.  
 No coercive influence.
 
+## Online Voting & Verifiable Digital Democracy
+
+BBS includes a dedicated Online Voting module designed for legally compliant,
+verifiable, and anti-fraud democratic processes.
+
+This module enables secure digital voting for elections, referendums, and
+public-law consultations while preserving ballot secrecy and full system integrity.
+
+→ Public module overview:
+platform/democracy/online-voting/
+
 ---
 
 ## Core Components (Public Overview)
