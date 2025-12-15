@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Unified Knowledge Base (Prototype) | BBS</title>
+  <meta name="description" content="BBS Unified Knowledge Base — prototype page for documents, policies, templates, and terminology. Demo only." />
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <style>
+    :root { --bg:#0b1220; --panel:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#10b981; --accent2:#06b6d4; --border:#1e293b; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:linear-gradient(#0b1220,#0a101c); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .container { max-width:1200px; margin:0 auto; padding:0 16px; }
+    header { position:sticky; top:0; backdrop-filter:blur(8px); background:rgba(11,18,32,.6); border-bottom:1px solid var(--border); z-index:10; }
+    nav { display:flex; justify-content:space-between; align-items:center; height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:600; }
+    .pill { padding:8px; border-radius:14px; border:1px solid var(--border); background:linear-gradient(135deg, rgba(16,185,129,.2), rgba(6,182,212,.2)); }
+    .btn { border:1px solid rgba(16,185,129,.4); padding:8px 12px; border-radius:12px; }
+    .btn.primary { border:0; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+    section { padding:36px 0; }
+    .panel { background:rgba(15,23,42,.6); border:1px solid var(--border); border-radius:18px; padding:20px; }
+    .grid { display:grid; gap:16px; grid-template-columns:repeat(3,1fr); }
+    @media (max-width:1100px){ .grid{ grid-template-columns:1fr; } }
+    .feature { border:1px solid var(--border); border-radius:16px; padding:16px; background:rgba(15,23,42,.6); }
+    .muted { color:var(--muted); }
+    .input { width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#0b1220; color:#fff; }
+    .tag { display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid var(--border); color:var(--muted); font-size:12px; }
+    footer { border-top:1px solid var(--border); padding:32px 0; margin-top:24px; color:var(--muted); }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="pill"></div>
+        <span>BBS — Big Begins Small</span>
+        <span class="muted">Unified Knowledge Base (Prototype)</span>
+      </div>
+      <div>
+        <a class="btn" href="./index.html">Platform</a>
+        <a class="btn primary" href="/leo-interface/chat.html">Ask Leo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h1>Unified Knowledge Base</h1>
+      <p class="muted">
+        This page demonstrates how a centralized knowledge system
+        could be organized within the BBS platform.
+      </p>
+      <p class="muted">
+        <strong>Demo notice:</strong> This is a conceptual prototype.
+        Content, structure, and features are illustrative only.
+      </p>
+      <div style="display:flex; gap:8px; margin-top:10px;">
+        <input id="q" class="input" placeholder="Search by title or tags..." />
+        <button id="clear" class="btn">Clear</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container grid">
+    <div class="feature">
+      <h3>Structure</h3>
+      <ul class="muted">
+        <li>Policies and documents</li>
+        <li>Decisions and records</li>
+        <li>Glossary and templates</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Functions</h3>
+      <ul class="muted">
+        <li>Versioning and tags</li>
+        <li>Search and filtering</li>
+        <li>Cross-linking with platform modules</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Future directions</h3>
+      <ul class="muted">
+        <li>Open data APIs</li>
+        <li>Community contributions</li>
+        <li>Multi-language support</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h2>Materials (Demo)</h2>
+      <div id="list" style="display:grid; gap:12px;">
+        <a class="feature" data-tags="privacy policy security" href="../docs/legal.html">
+          <h3>Privacy Policy</h3>
+          <div class="muted">Example policy document <span class="tag">policy</span></div>
+        </a>
+        <a class="feature" data-tags="leo guide style" href="./leo.html">
+          <h3>LEO Style Guide</h3>
+          <div class="muted">Writing principles and interaction rules <span class="tag">guide</span></div>
+        </a>
+        <a class="feature" data-tags="template report" href="#">
+          <h3>Internal Report Template</h3>
+          <div class="muted">Illustrative structure <span class="tag">template</span></div>
+        </a>
+        <a class="feature" data-tags="glossary terms" href="#">
+          <h3>BBS Glossary</h3>
+          <div class="muted">Unified terminology <span class="tag">glossary</span></div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  (function(){
+    const q = document.getElementById('q');
+    const clear = document.getElementById('clear');
+    const items = Array.from(document.querySelectorAll('#list > a.feature'));
+    function apply(){
+      const needle = (q.value||'').toLowerCase().trim();
+      items.forEach(el=>{
+        const text = (el.innerText||'').toLowerCase();
+        const tags = (el.getAttribute('data-tags')||'').toLowerCase();
+        el.style.display = (!needle || text.includes(needle) || tags.includes(needle)) ? '' : 'none';
+      });
+    }
+    q.addEventListener('input', apply);
+    clear.addEventListener('click', ()=>{ q.value=''; apply(); });
+    apply();
+  })();
+</script>
+
+</body>
+</html>
