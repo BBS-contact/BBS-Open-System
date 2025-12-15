@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BBS — Transparency Statement</title>
+  <meta name="description" content="Transparency and accountability statement of BBS — public integrity proofs, daily Merkle root, and Change Log."/>
+  <link rel="icon" href="/img/favicon.ico"/>
+  <link rel="stylesheet" href="../assets/styles/bbs-theme.css"/>
+  <style>
+    .hero { text-align:center; padding:50px 20px; }
+    .hero h1 { font-size:clamp(26px,5vw,46px); margin-bottom:16px; }
+    section { margin:30px 0; }
+    h2 { margin-bottom:8px; }
+  </style>
+</head>
+<body>
+
+  <header class="sticky">
+    <div class="container header-inner">
+      <div class="brand"><span>BBS</span><span class="tag">Docs</span></div>
+      <nav class="top">
+        <a href="../index.html" class="btn">Home</a>
+        <a href="manifesto.html" class="btn">Manifesto</a>
+        <a href="constitution_bbs.html" class="btn">Constitution</a>
+        <a href="legal.html" class="btn">Legal</a>
+        <a href="faq.html" class="btn">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <h1 class="gradient">Transparency Statement</h1>
+    <p class="muted">
+      BBS is fully open, accountable, and verifiable.
+      We publish integrity proofs for everyone to check.
+    </p>
+  </main>
+
+  <section class="container">
+
+    <div class="panel">
+      <h2>1. Daily Integrity Proofs</h2>
+      <p>
+        Every day, BBS publishes a Merkle root of verified files and actions.
+        Anyone can independently confirm the integrity of the system.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>2. Change Log</h2>
+      <p>
+        All legal, technical, and governance changes are recorded in the
+        <a href="change_log.html">Change Log</a>, which is publicly available to all.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>3. Independent Oversight</h2>
+      <p>
+        BBS encourages external review and welcomes independent auditors
+        to verify its operations and fairness.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>4. Public Accountability</h2>
+      <p>
+        No hidden decisions, no secret deals, no corruption.
+        BBS operates on truth, transparency, and fairness as non-negotiable principles.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>5. Updates</h2>
+      <p>
+        This statement may evolve with BBS.
+        All changes are published transparently in the
+        <a href="change_log.html">Change Log</a>.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
