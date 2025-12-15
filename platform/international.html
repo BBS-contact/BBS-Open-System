@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>International Cooperation (Prototype) | BBS</title>
+  <meta name="description" content="BBS International Cooperation — prototype page for partnerships and cross-border collaboration. Demo only." />
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <style>
+    :root { --bg:#0b1220; --panel:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#10b981; --accent2:#06b6d4; --border:#1e293b; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:linear-gradient(#0b1220,#0a101c); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .container { max-width:1200px; margin:0 auto; padding:0 16px; }
+    header { position:sticky; top:0; backdrop-filter:blur(8px); background:rgba(11,18,32,.6); border-bottom:1px solid var(--border); z-index:10; }
+    nav { display:flex; justify-content:space-between; align-items:center; height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:600; }
+    .pill { padding:8px; border-radius:14px; border:1px solid var(--border); background:linear-gradient(135deg, rgba(16,185,129,.2), rgba(6,182,212,.2)); }
+    .btn { border:1px solid rgba(16,185,129,.4); padding:8px 12px; border-radius:12px; }
+    .btn.primary { border:0; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+    section { padding:36px 0; }
+    .panel { background:rgba(15,23,42,.6); border:1px solid var(--border); border-radius:18px; padding:20px; }
+    .grid { display:grid; gap:16px; grid-template-columns:repeat(3,1fr); }
+    @media (max-width:1100px){ .grid{ grid-template-columns:1fr; } }
+    .feature { border:1px solid var(--border); border-radius:16px; padding:16px; background:rgba(15,23,42,.6); }
+    .muted { color:var(--muted); }
+    .input { width:100%; padding:10px 12px; border-radius:12px; border:1px solid var(--border); background:#0b1220; color:#fff; }
+    footer { border-top:1px solid var(--border); padding:32px 0; margin-top:24px; color:var(--muted); }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="pill"></div>
+        <span>BBS — Big Begins Small</span>
+        <span class="muted">International Cooperation (Prototype)</span>
+      </div>
+      <div>
+        <a class="btn" href="../index.html">Home</a>
+        <a class="btn primary" href="/leo-interface/chat.html">Ask Leo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h1>International Cooperation</h1>
+      <p class="muted">
+        This page outlines how international collaboration could be organized
+        within the BBS platform.
+      </p>
+      <p class="muted">
+        <strong>Demo notice:</strong> This is a prototype page. It does not represent
+        a registered organization, official office, or binding partnership offer.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container grid">
+    <div class="feature">
+      <h3>Languages</h3>
+      <ul class="muted">
+        <li>Ukrainian, Polish, English</li>
+        <li>Localized content and interfaces</li>
+        <li>Clear and accessible language</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Partnerships</h3>
+      <ul class="muted">
+        <li>Institutional, civic, and business cooperation</li>
+        <li>Cross-border initiatives and projects</li>
+        <li>Transparent and open collaboration models</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>Connection</h3>
+      <ul class="muted">
+        <li>Expression of interest forms (demo)</li>
+        <li>Non-binding discussions</li>
+        <li>Support for international communities</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h2>Expression of Interest (Demo)</h2>
+      <p class="muted">
+        This form is for demonstration purposes only.
+        No data is stored or transmitted automatically.
+      </p>
+      <input class="input" placeholder="Organization / Name" />
+      <input class="input" placeholder="Country / City" />
+      <textarea class="input" rows="5" placeholder="Briefly describe your interest..."></textarea>
+      <div style="margin-top:10px;">
+        <a class="btn primary" href="mailto:bbs.contactproton.me@proton.me?subject=BBS%20International%20Interest">Contact via email</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
