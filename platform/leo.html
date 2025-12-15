@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>LEO — Ethical AI Core (Prototype) | BBS</title>
+  <meta name="description" content="LEO — the ethical AI core of the BBS platform. Prototype. Human-in-the-loop. No autonomous decisions." />
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <style>
+    :root { --bg:#0b1220; --panel:#0f172a; --text:#e5e7eb; --muted:#94a3b8; --accent:#10b981; --accent2:#06b6d4; --border:#1e293b; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial; background:linear-gradient(#0b1220,#0a101c); color:var(--text); }
+    a { color:inherit; text-decoration:none; }
+    .container { max-width:1200px; margin:0 auto; padding:0 16px; }
+    header { position:sticky; top:0; backdrop-filter:blur(8px); background:rgba(11,18,32,.6); border-bottom:1px solid var(--border); z-index:10; }
+    nav { display:flex; justify-content:space-between; align-items:center; height:64px; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:600; }
+    .pill { padding:8px; border-radius:14px; border:1px solid var(--border); background:linear-gradient(135deg, rgba(16,185,129,.2), rgba(6,182,212,.2)); }
+    .btn { border:1px solid rgba(16,185,129,.4); padding:8px 12px; border-radius:12px; }
+    .btn.primary { border:0; background:linear-gradient(90deg,var(--accent),var(--accent2)); }
+    section { padding:36px 0; }
+    .panel { background:rgba(15,23,42,.6); border:1px solid var(--border); border-radius:18px; padding:20px; }
+    .grid { display:grid; gap:16px; grid-template-columns:repeat(3,1fr); }
+    @media (max-width:1100px){ .grid{ grid-template-columns:1fr; } }
+    .feature { border:1px solid var(--border); border-radius:16px; padding:16px; background:rgba(15,23,42,.6); }
+    .muted { color:var(--muted); }
+    footer { border-top:1px solid var(--border); padding:32px 0; margin-top:24px; color:var(--muted); }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <div class="pill"></div>
+        <span>BBS — Big Begins Small</span>
+        <span class="muted">LEO (Ethical AI Core · Prototype)</span>
+      </div>
+      <div>
+        <a class="btn" href="./index.html">Platform</a>
+        <a class="btn primary" href="/leo-interface/chat.html">Ask Leo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h1>LEO — Ethical AI Core</h1>
+      <p class="muted">
+        LEO is the ethical AI core of the BBS platform.
+        It exists to assist humans through clarity, transparency,
+        and step-by-step guidance — never through hidden actions
+        or autonomous decisions.
+      </p>
+      <p class="muted">
+        <strong>Prototype notice:</strong> This page describes conceptual
+        principles and interaction rules. LEO does not operate independently
+        and does not replace human responsibility.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container grid">
+    <div class="feature">
+      <h3>Core Principles</h3>
+      <ul class="muted">
+        <li>Human-in-the-loop: decisions always belong to people.</li>
+        <li>Transparency: every step is explained.</li>
+        <li>Micro-steps: complex tasks are broken down safely.</li>
+        <li>Privacy by design and data minimization.</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>What LEO Can Do</h3>
+      <ul class="muted">
+        <li>Explain processes and options clearly.</li>
+        <li>Help structure documents and interfaces.</li>
+        <li>Audit texts and flows for risks and inconsistencies.</li>
+        <li>Support ethical and transparent decision-making.</li>
+      </ul>
+    </div>
+    <div class="feature">
+      <h3>What LEO Cannot Do</h3>
+      <ul class="muted">
+        <li>Make decisions instead of humans.</li>
+        <li>Act without explicit human confirmation.</li>
+        <li>Provide legal or medical advice.</li>
+        <li>Collect or store personal data unnecessarily.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="panel">
+      <h2>How Humans Work with LEO</h2>
+      <ol class="muted">
+        <li>The human defines the goal.</li>
+        <li>LEO proposes one safe micro-step.</li>
+        <li>The human confirms or adjusts.</li>
+        <li>The process continues transparently.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
