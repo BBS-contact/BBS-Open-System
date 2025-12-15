@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health & Medicine (Prototype) | BBS</title>
+  <meta name="description" content="BBS Health & Medicine prototype. UI demonstration only. No real patients, no medical advice." />
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <style>
+    :root{
+      --bg1:#0b1220; --bg2:#111a2e; --accent:#4cc9f0;
+      --text:#e6eef8; --muted:#9ab; --panel:#0f1729;
+      --border:#26324a; --ok:#7ee787; --warn:#e3b341; --err:#ef4444;
+    }
+    body{
+      margin:0;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,var(--bg1),var(--bg2)) fixed;
+    }
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:1200px;margin:0 auto;padding:28px 20px}
+    header{position:sticky;top:0;z-index:10;
+      background:rgba(11,18,32,.9);backdrop-filter:blur(6px);
+      border-bottom:1px solid var(--border)}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700}
+    .pill{padding:6px 10px;border-radius:999px;
+      background:#16233a;border:1px solid var(--border);
+      font-size:12px;color:var(--muted)}
+    nav{display:flex;justify-content:space-between;align-items:center}
+    .panel{background:var(--panel);border:1px solid var(--border);
+      border-radius:16px;padding:18px;margin-bottom:16px}
+    .muted{color:var(--muted)}
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+    .tab{padding:8px 12px;border-radius:12px;
+      border:1px solid var(--border);background:#131c31;cursor:pointer}
+    .tab.active{background:var(--accent);color:#031225;border-color:transparent}
+    .tabpanel{display:none}
+    .tabpanel.active{display:block}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:10px;border-bottom:1px solid var(--border);text-align:left}
+    th{font-size:12px;color:var(--muted);text-transform:uppercase}
+    .status.ok{color:var(--ok)}
+    .status.warn{color:var(--warn)}
+    .status.err{color:var(--err)}
+    footer{border-top:1px solid var(--border);color:var(--muted)}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <div class="brand">
+        <span class="pill">BBS • Platform</span>
+        <span>Health & Medicine</span>
+      </div>
+      <div>
+        <span class="pill">PROTOTYPE • DEMO</span>
+        <a href="/leo-interface/chat.html" class="pill">Ask Leo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="panel">
+    <h1>Health & Medicine</h1>
+    <p class="muted">
+      Prototype user interface demonstrating how health-related data
+      <strong>could be visualized</strong> in the BBS platform.
+    </p>
+    <p class="muted">
+      <strong>Important:</strong> This page is a DEMO. All records are fictional,
+      stored locally in the browser, and do not represent real people,
+      medical advice, or clinical systems.
+    </p>
+  </div>
+
+  <div class="tabs">
+    <button class="tab active" data-tab="patients">Patients (Demo)</button>
+    <button class="tab" data-tab="cases">Cases (Demo)</button>
+    <button class="tab" data-tab="inventory">Inventory (Demo)</button>
+    <button class="tab" data-tab="facilities">Facilities (Demo)</button>
+  </div>
+
+  <section id="patients" class="panel tabpanel active">
+    <p class="muted">Fictional patient-like records for UI demonstration only.</p>
+    <table>
+      <thead>
+        <tr><th>ID</th><th>Name</th><th>Condition</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>P-001</td><td>A. N.</td><td>Hypertension</td><td>Active</td></tr>
+        <tr><td>P-002</td><td>B. K.</td><td>Diabetes (Type 2)</td><td>Active</td></tr>
+        <tr><td>P-003</td><td>C. Z.</td><td>Asthma</td><td>Closed</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="cases" class="panel tabpanel">
+    <p class="muted">Illustrative clinical-case-like entries.</p>
+    <table>
+      <thead>
+        <tr><th>Case</th><th>Topic</th><th>Type</th><th>Date</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>C-1001</td><td>Blood pressure review</td><td>Outpatient</td><td>2025-01-12</td></tr>
+        <tr><td>C-1002</td><td>Medication follow-up</td><td>Inpatient</td><td>2025-02-03</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="inventory" class="panel tabpanel">
+    <p class="muted">Example inventory items (fictional).</p>
+    <table>
+      <thead>
+        <tr><th>Item</th><th>Category</th><th>Qty</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Medical gloves</td><td>Supplies</td><td>120</td><td class="status ok">OK</td></tr>
+        <tr><td>Masks</td><td>PPE</td><td>3</td><td class="status warn">LOW</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="facilities" class="panel tabpanel">
+    <p class="muted">Fictional healthcare facilities for load visualization.</p>
+    <table>
+      <thead>
+        <tr><th>Facility</th><th>City</th><th>Capacity</th><th>Load</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Central Clinic</td><td>Warsaw</td><td>120</td><td class="status warn">72%</td></tr>
+        <tr><td>North Health Center</td><td>Gdańsk</td><td>80</td><td class="status ok">50%</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.querySelectorAll('.tab').forEach(b=>{
+    b.onclick=()=>{
+      document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+      document.querySelectorAll('.tabpanel').forEach(p=>p.classList.remove('active'));
+      b.classList.add('active');
+      document.getElementById(b.dataset.tab).classList.add('active');
+    }
+  });
+</script>
+
+</body>
+</html>
