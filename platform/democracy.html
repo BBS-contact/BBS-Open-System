@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BBS • Democracy (Prototype)</title>
+  <meta name="description" content="BBS Democracy (Prototype) — demonstration of audit-first voting concepts. Demo only, local, non-binding." />
+  <link rel="icon" href="/img/favicon.ico" />
+
+  <style>
+    :root{
+      --bg:#0b0f14; --panel:#111722; --ink:#e7eefc; --muted:#a8b3c7;
+      --accent:#80eaff; --ok:#8cffb7; --warn:#ffd27a; --bad:#ff9b9b;
+      --line:#1e2838; --pill:#162233;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:var(--bg); color:var(--ink)
+    }
+    a{color:var(--accent);text-decoration:none}
+    header{
+      position:sticky;top:0;z-index:10;
+      background:linear-gradient(180deg,rgba(11,15,20,.92),rgba(11,15,20,.7));
+      backdrop-filter:blur(10px);border-bottom:1px solid var(--line)
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:24px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#62d4ff,#9cf59a)}
+    main{max-width:1100px;margin:20px auto;padding:0 24px 64px}
+    .grid{display:grid;gap:18px}
+    @media(min-width:940px){.grid{grid-template-columns:1fr 1fr}}
+    .card{
+      background:var(--panel);border:1px solid var(--line);
+      border-radius:16px;padding:20px
+    }
+    h1{font-size:20px;margin:0}
+    h2{font-size:18px;margin:0 0 10px}
+    .pill{
+      display:inline-block;padding:6px 10px;border-radius:999px;
+      background:#102138;border:1px solid var(--line);color:var(--muted);font-size:12px
+    }
+    .muted{color:var(--muted)}
+    .mono{font-family:ui-monospace,monospace}
+    button{
+      border:1px solid var(--line);background:var(--pill);color:var(--ink);
+      padding:10px 14px;border-radius:12px;cursor:pointer
+    }
+    button.primary{
+      background:linear-gradient(135deg,#3ab7ff,#7cf5c6);
+      color:#061018;border:none;font-weight:700
+    }
+    .row{display:flex;gap:10px;flex-wrap:wrap}
+    input{
+      width:100%;padding:12px 14px;border-radius:12px;
+      border:1px solid var(--line);background:#0e1522;color:var(--ink)
+    }
+    .tiny{font-size:12px}
+    .hr{border-top:1px dashed var(--line);margin:14px 0}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="wrap brand">
+    <div class="logo"></div>
+    <div>
+      <h1>BBS • Democracy <span class="pill">PROTOTYPE • DEMO • NON-BINDING</span></h1>
+      <div class="tiny muted">
+        Big Begins Small — demonstration of audit-first voting concepts.
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="grid">
+
+    <section class="card">
+      <h2>Demo ballot</h2>
+      <p class="muted tiny">
+        This is a <strong>local demonstration</strong>. Votes are stored only in your browser.
+        No identity, no network, no real election.
+      </p>
+
+      <label>Demo token</label>
+      <div class="row">
+        <input id="token" type="text" placeholder="e.g. DEMO-1234" />
+        <button class="primary" onclick="openBallot()">Open ballot</button>
+      </div>
+
+      <div id="ballot" hidden>
+        <div class="hr"></div>
+        <div class="row">
+          <button onclick="cast('A')">Candidate A</button>
+          <button onclick="cast('B')">Candidate B</button>
+          <button onclick="cast('C')">Candidate C</button>
+        </div>
+      </div>
+
+      <div id="result" class="tiny muted" style="margin-top:10px"></div>
+    </section>
+
+    <section class="card">
+      <h2>Audit (local demo)</h2>
+      <p class="tiny muted">
+        Each action appends a record to a local event log.
+        Any change alters the calculated hash.
+      </p>
+      <button onclick="exportLog()">Export audit.json</button>
+      <div class="hr"></div>
+      <div class="tiny">Events: <span id="count" class="mono">0</span></div>
+      <div class="tiny">Demo hash: <span id="hash" class="mono">—</span></div>
+    </section>
+
+    <section class="card">
+      <h2>How this demo works</h2>
+      <ul class="tiny">
+        <li>No backend, no network</li>
+        <li>Local-only storage</li>
+        <li>Illustrative audit-first logic</li>
+        <li>Not a real or binding vote</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Disclaimer</h2>
+      <p class="tiny muted">
+        This page is a <strong>prototype demonstration</strong> of concepts only.
+        It does not constitute a voting system, legal mechanism, or official election.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<script>
+  const KEY = 'bbs_demo_votes';
+  let log = JSON.parse(localStorage.getItem(KEY) || '[]');
+
+  function openBallot(){
+    document.getElementById('ballot').hidden = false;
+  }
+
+  function cast(choice){
+    const ev = { ts: new Date().toISOString(), choice };
+    log.push(ev);
+    localStorage.setItem(KEY, JSON.stringify(log));
+    update();
+    document.getElementById('result').textContent =
+      'Demo vote recorded. Receipt #' + log.length;
+  }
+
+  function hashLog(){
+    return btoa(unescape(encodeURIComponent(JSON.stringify(log)))).slice(0,24);
+  }
+
+  function exportLog(){
+    const blob = new Blob([JSON.stringify(log,null,2)],{type:'application/json'});
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'audit-demo.json';
+    a.click();
+  }
+
+  function update(){
+    document.getElementById('count').textContent = log.length;
+    document.getElementById('hash').textContent = hashLog();
+  }
+
+  update();
+</script>
+
+</body>
+</html>
