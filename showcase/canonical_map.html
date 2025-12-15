@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BBS Canonical Map — Vision & Architecture Overview</title>
+
+  <style>
+    :root{
+      --bg:#0d1117;--panel:#111826;--ink:#e6edf3;--muted:#9aa7b4;
+      --accent:#7aa2f7;--ok:#22c55e;--wip:#f59e0b;--lock:#ef4444;
+      --plan:#8b5cf6;--active:#06b6d4;--border:#1f2937;
+    }
+    html,body{
+      margin:0;padding:0;background:var(--bg);color:var(--ink);
+      font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Arial;
+    }
+    .wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px}
+    header{
+      position:sticky;top:0;
+      background:linear-gradient(180deg, rgba(13,17,23,.97) 0%, rgba(13,17,23,.85) 100%);
+      backdrop-filter: blur(6px);
+      z-index:10;border-bottom:1px solid var(--border)
+    }
+    header .inner{
+      max-width:1100px;margin:0 auto;
+      display:flex;align-items:center;gap:18px;padding:14px 20px
+    }
+    .title{font-size:20px;font-weight:700}
+    .actions{margin-left:auto;display:flex;gap:10px}
+    button{
+      background:var(--panel);color:var(--ink);
+      border:1px solid var(--border);
+      padding:8px 12px;border-radius:10px;cursor:pointer
+    }
+    button:hover{border-color:var(--accent)}
+    .lead{margin:28px 0 8px;color:var(--muted)}
+    .panel{
+      background:var(--panel);border:1px solid var(--border);
+      border-radius:14px;padding:20px;margin:18px 0
+    }
+    .legend{display:flex;flex-wrap:wrap;gap:10px}
+    .tag{
+      font-size:12px;border:1px solid var(--border);
+      border-radius:999px;padding:4px 10px
+    }
+    .tag.ok{border-color:var(--ok);color:var(--ok)}
+    .tag.wip{border-color:var(--wip);color:var(--wip)}
+    .tag.lock{border-color:var(--lock);color:var(--lock)}
+    .tag.plan{border-color:var(--plan);color:var(--plan)}
+    .tag.active{border-color:var(--active);color:var(--active)}
+    .muted{color:var(--muted)}
+    h2{margin:26px 0 10px;font-size:22px}
+
+    details.module{
+      border:1px solid var(--border);
+      border-radius:14px;margin:14px 0;background:#0f1522
+    }
+    details.module[open]{background:#121a2b}
+    summary{
+      list-style:none;cursor:pointer;
+      padding:14px 16px;display:flex;align-items:center;gap:10px
+    }
+    summary::-webkit-details-marker{display:none}
+    .caret{transition:transform .2s ease}
+    details[open] .caret{transform:rotate(90deg)}
+    .module-body{padding:0 16px 16px}
+    .status{
+      font-size:12px;border:1px solid var(--border);
+      border-radius:8px;padding:2px 8px
+    }
+    .s-ok{border-color:var(--ok);color:var(--ok)}
+    .s-wip{border-color:var(--wip);color:var(--wip)}
+    .s-lock{border-color:var(--lock);color:var(--lock)}
+    .s-plan{border-color:var(--plan);color:var(--plan)}
+    .s-active{border-color:var(--active);color:var(--active)}
+    .list{margin:6px 0 0 0;padding-left:18px}
+    .list li{margin:6px 0}
+    .note{
+      border-left:3px solid var(--accent);
+      padding:10px 12px;background:#0f1724;
+      border-radius:8px
+    }
+    footer{margin-top:36px;color:var(--muted)}
+    .mono{font-family:ui-monospace,Menlo,Monaco,Consolas,"Courier New",monospace}
+  </style>
+</head>
+
+<body>
+<header>
+  <div class="inner">
+    <div class="title">BBS Canonical Map — Vision & Architecture</div>
+    <div class="actions">
+      <button id="expand">Expand all</button>
+      <button id="collapse">Collapse all</button>
+      <button id="print">Print / PDF</button>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <p class="lead">
+    BBS (Big Begins Small) is an ethics-first digital platform designed for transparent governance,
+    open knowledge, and protection of human dignity.  
+    This document presents the **canonical structure of the system without exposing private code
+    or protected internal logic**.
+  </p>
+
+  <div class="panel">
+    <strong>Module status legend:</strong>
+    <div class="legend" style="margin-top:8px">
+      <span class="tag ok">READY</span>
+      <span class="tag wip">IN DEVELOPMENT</span>
+      <span class="tag active">ACTIVE WORK</span>
+      <span class="tag plan">PLANNED</span>
+      <span class="tag lock">CLOSED</span>
+    </div>
+  </div>
+
+  <section class="panel note">
+    <p>
+      <strong>Vision.</strong> BBS is a bridge between technology and humanity.
+      It is not another application — it is a new standard of trust.
+      Every module is subordinated to ethics, transparency, and cause-and-effect logic.
+    </p>
+  </section>
+
+  <!-- CORE -->
+  <details class="module" open>
+    <summary><span class="caret">▶</span><strong>core/ — Central system core</strong> <span class="status s-lock">CLOSED</span></summary>
+    <div class="module-body">
+      <p>
+        The heart of BBS: memory, reasoning, ethical governance, security, and awareness.
+        This layer is responsible for truth preservation and ethical balance.
+      </p>
+      <ul class="list">
+        <li><span class="mono">leo-interface/</span> <span class="status s-wip">IN DEVELOPMENT</span> — Human–AI ethical interface.</li>
+        <li><span class="mono">memory/</span> <span class="status s-lock">CLOSED</span> — Contextual, causal, and ethical memory.</li>
+        <li><span class="mono">security/</span> <span class="status s-ok">READY</span> — Integrity, signatures, audits.</li>
+        <li><span class="mono">api/</span> <span class="status s-ok">READY</span> — Internal system gateways.</li>
+        <li><span class="mono">meta/</span> <span class="status s-wip">IN DEVELOPMENT</span> — Decision metadata registry.</li>
+        <li><span class="mono">mind/</span> <span class="status s-wip">IN DEVELOPMENT</span> — Explainability and manipulation detection.</li>
+        <li><span class="mono">sanctum/heart/</span> <span class="status s-lock">CLOSED</span> — Ethical core and moral balance.</li>
+      </ul>
+    </div>
+  </details>
+
+  <!-- PLATFORM -->
+  <details class="module">
+    <summary><span class="caret">▶</span><strong>platform/ — Societal domains</strong> <span class="status s-wip">MIXED</span></summary>
+    <div class="module-body">
+      <p>
+        The visible layer of BBS — real-world domains where technology serves the public good.
+      </p>
+      <ol class="list">
+        <li><span class="mono">education/</span> — Open knowledge and learning.</li>
+        <li><span class="mono">law/</span> — Digital law and transparent justice.</li>
+        <li><span class="mono">health/</span> — Early diagnostics and SOS systems.</li>
+        <li><span class="mono">ecology/</span> — Environmental balance.</li>
+        <li><span class="mono">economy/</span> — Transparent economic models.</li>
+        <li><span class="mono">democracy/</span> — Civic participation and voting.</li>
+        <li><span class="mono">infrastructure/</span> — Networks, protocols, BBS-ID.</li>
+        <li><span class="mono">culture/</span> — Cultural memory and media ethics.</li>
+      </ol>
+    </div>
+  </details>
+
+  <!-- DOCS -->
+  <details class="module">
+    <summary><span class="caret">▶</span><strong>docs/ — Documentation & legal layer</strong> <span class="status s-ok">READY</span></summary>
+    <div class="module-body">
+      <ul class="list">
+        <li><span class="mono">legal/</span> — Statute, AI Policy, Privacy, Terms.</li>
+        <li><span class="mono">manifesto.html</span></li>
+        <li><span class="mono">constitution_bbs.html</span></li>
+        <li><span class="mono">faq.html</span></li>
+      </ul>
+    </div>
+  </details>
+
+  <section class="panel">
+    <h2>Authorship & Intellectual Property</h2>
+    <p>
+      The structure, module names, and conceptual architecture of BBS constitute
+      the intellectual contribution of the system’s initiator.
+      Any use must respect applicable intellectual property laws,
+      including provisions for quotation, research, and public-interest use
+      under European and international law.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      This document is intended for public repositories as an architectural
+      and vision overview. It does not expose internal algorithms or protected logic.
+    </p>
+  </footer>
+</div>
+
+<script>
+  document.getElementById('expand').onclick =
+    () => document.querySelectorAll('details.module').forEach(d => d.open = true);
+  document.getElementById('collapse').onclick =
+    () => document.querySelectorAll('details.module').forEach(d => d.open = false);
+  document.getElementById('print').onclick = () => window.print();
+</script>
+</body>
+</html>
