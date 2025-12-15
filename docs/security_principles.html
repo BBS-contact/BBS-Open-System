@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>BBS — Security Principles</title>
+  <meta name="description" content="Security Principles of BBS — Integrity Core, audit trail, verification, transparency, and data protection."/>
+  <link rel="icon" href="/img/favicon.ico"/>
+  <link rel="stylesheet" href="../assets/styles/bbs-theme.css"/>
+  <style>
+    .hero { text-align:center; padding:50px 20px; }
+    .hero h1 { font-size:clamp(26px,5vw,46px); margin-bottom:16px; }
+    section { margin:30px 0; }
+    h2 { margin-bottom:8px; }
+    ul { margin:10px 0 10px 20px; }
+  </style>
+</head>
+<body>
+
+  <header class="sticky">
+    <div class="container header-inner">
+      <div class="brand"><span>BBS</span><span class="tag">Docs</span></div>
+      <nav class="top">
+        <a href="../index.html" class="btn">Home</a>
+        <a href="manifesto.html" class="btn">Manifesto</a>
+        <a href="constitution_bbs.html" class="btn">Constitution</a>
+        <a href="legal.html" class="btn">Legal</a>
+        <a href="faq.html" class="btn">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <h1 class="gradient">Security Principles</h1>
+    <p class="muted">The Integrity Core of BBS: trust, transparency, and protection for all users.</p>
+  </main>
+
+  <section class="container">
+
+    <div class="panel">
+      <h2>1. Purpose</h2>
+      <p>
+        These Security Principles define the ethical and technical framework that protects users,
+        data, and society in the BBS ecosystem.
+        They ensure that no manipulation, corruption, or hidden exploitation can exist within the system.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>2. Integrity Core</h2>
+      <p>The Integrity Core is the backbone of BBS security. It includes:</p>
+      <ul>
+        <li><strong>Audit Trail:</strong> Every action is logged with cryptographic signatures and previous-hash linkage.</li>
+        <li><strong>Verification Service:</strong> Independent cross-checking of events, anomaly detection, and validation.</li>
+        <li><strong>Policy Engine:</strong> Rules for decision-making defined in open, auditable YAML/JSON formats.</li>
+        <li><strong>Transparency Portal:</strong> Public access to daily Merkle root snapshots of verified events.</li>
+        <li><strong>Keys & Roles:</strong> Role-based and attribute-based access control, multi-signature requirements, and key rotation.</li>
+      </ul>
+      <p>Flow: <em>Action → Audit → Verification → Decision → Public Record.</em></p>
+    </div>
+
+    <div class="panel">
+      <h2>3. Data Protection</h2>
+      <ul>
+        <li>Encryption at rest and in transit.</li>
+        <li>Minimal data collection, aligned with <a href="privacy_policy.html">Privacy Policy</a>.</li>
+        <li>GDPR-compliant storage, with clear rules for access and deletion.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>4. Data Retention & Deletion</h2>
+      <p>
+        Data is retained only as long as necessary for transparency and accountability.
+        Users have the right to request deletion of their data.
+        System audit records may be anonymized but preserved for integrity verification.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>5. Prohibited Practices</h2>
+      <ul>
+        <li>No hidden surveillance or unauthorized profiling.</li>
+        <li>No backdoors, secret keys, or privileged manipulation.</li>
+        <li>No corruption, bribery, or bureaucracy — by design.</li>
+      </ul>
+    </div>
+
+    <div class="panel">
+      <h2>6. Transparency & Accountability</h2>
+      <p>
+        All security measures and audits are publicly verifiable.
+        BBS publishes daily integrity proofs (Merkle root) and logs updates in the
+        <a href="change_log.html">Change Log</a>.
+        Every participant has the right to verify that the system functions truthfully.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>7. Oversight</h2>
+      <p>
+        Independent community reviewers and trusted human auditors oversee BBS modules.
+        All security-critical changes require multi-signature approval.
+      </p>
+    </div>
+
+    <div class="panel">
+      <h2>8. Updates</h2>
+      <p>
+        These principles may evolve with new knowledge and technology.
+        All changes are recorded transparently in the
+        <a href="change_log.html">Change Log</a>.
+      </p>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
