@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BBS — Authenticity & Human Dignity</title>
+  <meta name="description" content="Authenticity & Human Dignity: a core value of the BBS platform, ensuring respect, freedom, and identity for every person." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+
+  <style>
+    :root {
+      --bg:#0b1220; --panel:#0f172a; --text:#e5e7eb; --muted:#94a3b8;
+      --accent:#10b981; --accent2:#06b6d4; --border:#1e293b;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans;
+      background:linear-gradient(#0b1220,#0a101c);
+      color:var(--text);
+    }
+    a{color:var(--accent2);text-decoration:none}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    .panel{
+      background:linear-gradient(180deg,var(--panel),#0b1220);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:24px;
+      margin-bottom:24px;
+    }
+    header.sticky{
+      position:sticky;top:0;z-index:50;
+      backdrop-filter: blur(8px);
+      background:rgba(11,18,32,.7);
+      border-bottom:1px solid var(--border);
+    }
+    nav.top{display:flex;justify-content:space-between;align-items:center}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:600}
+    .pill{width:10px;height:10px;border-radius:50%;background:var(--accent)}
+    .btn{
+      padding:8px 14px;border-radius:999px;border:1px solid var(--border);
+      color:var(--text);margin-left:6px
+    }
+    .btn.primary{background:var(--accent);color:#06261d;border-color:transparent}
+    .hero h1{
+      font-size:clamp(28px,5vw,48px);
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color:transparent;
+      margin-top:0;
+    }
+    .muted{color:var(--muted)}
+    footer{border-top:1px solid var(--border);padding:24px 0;color:var(--muted)}
+  </style>
+</head>
+
+<body>
+
+<header class="sticky">
+  <div class="container">
+    <nav class="top">
+      <div class="brand">
+        <div class="pill"></div>
+        <span>BBS Platform</span>
+      </div>
+      <div>
+        <a class="btn" href="../index.html">Home</a>
+        <a class="btn" href="../docs/legal.html">Legal</a>
+        <a class="btn" href="/leo-interface/chat.html">Ask Leo</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <div class="panel hero">
+    <h1>Authenticity & Human Dignity</h1>
+    <p class="muted">
+      A foundational value of the BBS platform.
+    </p>
+  </div>
+
+  <div class="panel">
+    <p>
+      Authenticity means that every person interacting with the BBS platform
+      is recognized as a real human being — not as a data object, profile,
+      or resource.
+    </p>
+    <p>
+      BBS is designed to protect human dignity, freedom of thought,
+      and the right to personal identity, without manipulation,
+      coercion, or hidden influence.
+    </p>
+    <p>
+      Systems built within BBS must always prioritize truth,
+      responsibility, and respect over efficiency, profit, or control.
+    </p>
+  </div>
+
+  <div class="panel">
+    <h2>What Authenticity Means in Practice</h2>
+    <ul>
+      <li>No hidden behavioral manipulation</li>
+      <li>No artificial pressure or psychological exploitation</li>
+      <li>No reduction of people to scores or abstract labels</li>
+      <li>Clear distinction between human decisions and automated processes</li>
+    </ul>
+  </div>
+
+  <div class="panel">
+    <h2>Human Dignity as a Non-Negotiable Principle</h2>
+    <p>
+      Any system that compromises human dignity, even in the name of
+      optimization or security, contradicts the core values of BBS.
+    </p>
+    <p>
+      Technology must remain a tool that serves people —
+      never a force that replaces or dominates them.
+    </p>
+  </div>
+
+  <div class="panel muted">
+    <p>
+      This page expresses the core values of the BBS platform.
+      It does not constitute a legal, contractual, or policy document.
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
