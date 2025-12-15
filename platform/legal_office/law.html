@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Legal Office (Prototype) — Law Detail</title>
+  <meta name="description" content="BBS Legal Office (Prototype): Law detail demo page. Prototype UI only. Not legal advice."/>
+  <link rel="icon" href="/img/favicon.ico"/>
+  <link rel="stylesheet" href="../../assets/styles/bbs-theme.css"/>
+  <style>
+    .hero { padding: 36px 20px; text-align: center; }
+    .badge { display:inline-block; padding:6px 10px; border-radius:999px; font-size:12px; }
+    .badge.demo { background:#2a2a2a; border:1px solid #444; }
+    .meta { display:grid; grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); gap:12px; }
+    .meta .panel { padding:12px; }
+    .section { margin-top:18px; }
+    pre { background:#111; border:1px solid #333; padding:14px; overflow:auto; }
+    .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px; }
+    .tabs .btn { opacity:.8; }
+    .tabs .btn.active { opacity:1; }
+    .hidden { display:none; }
+  </style>
+</head>
+<body>
+
+<header class="sticky">
+  <div class="container header-inner">
+    <div class="brand">
+      <span>BBS</span>
+      <span class="tag">Legal Office (Prototype)</span>
+    </div>
+    <nav class="top">
+      <a href="laws.html" class="btn">← Registry</a>
+      <a href="../../docs/transparency.html" class="btn">Transparency</a>
+      <a href="/leo-interface/chat.html" class="btn primary">Ask Leo</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero panel">
+    <h1 id="title" class="gradient">Law</h1>
+    <p class="muted" id="subtitle">Demo law overview</p>
+    <span class="badge demo">Prototype · Demo · Not legal advice</span>
+
+    <div class="panel note section">
+      <p>
+        This page is a <strong>demonstration prototype</strong>. All texts and analyses
+        are <strong>example-only</strong> and must not be treated as legal advice
+        or an official interpretation of law.
+      </p>
+    </div>
+  </section>
+
+  <section class="meta">
+    <div class="panel">
+      <strong>Jurisdiction</strong>
+      <div id="jurisdiction">—</div>
+    </div>
+    <div class="panel">
+      <strong>Status</strong>
+      <div id="status">—</div>
+    </div>
+    <div class="panel">
+      <strong>Last Update</strong>
+      <div id="updated">—</div>
+    </div>
+    <div class="panel">
+      <strong>Identifier</strong>
+      <div id="identifier">—</div>
+    </div>
+  </section>
+
+  <section class="panel section">
+    <div class="tabs">
+      <button class="btn active" data-tab="overview">Overview</button>
+      <button class="btn" data-tab="text">Text (Excerpt)</button>
+      <button class="btn" data-tab="analysis">Analysis (Demo)</button>
+      <button class="btn" data-tab="history">Version History</button>
+    </div>
+
+    <div id="overview" class="tab">
+      <p id="overviewText"></p>
+    </div>
+
+    <div id="text" class="tab hidden">
+      <pre id="lawText"></pre>
+    </div>
+
+    <div id="analysis" class="tab hidden">
+      <p class="muted">
+        Demo analytical notes (illustrative only):
+      </p>
+      <ul id="analysisList"></ul>
+    </div>
+
+    <div id="history" class="tab hidden">
+      <ul id="historyList"></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    © <span id="year"></span> BBS — Big Begins Small. All rights reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // DEMO DATA
+  const DB = {
+    gdpr: {
+      id: "gdpr",
+      title: "General Data Protection Regulation (GDPR)",
+      subtitle: "Regulation (EU) 2016/679",
+      jurisdiction: "EU",
+      status: "Active",
+      updated: "2024-06-01",
+      overview: "EU regulation on personal data protection and privacy.",
+      text: "Article 5 — Principles relating to processing of personal data...\n\nArticle 6 — Lawfulness of processing...",
+      analysis: [
+        "Defines lawful bases for data processing (Art. 6).",
+        "Introduces data minimization and purpose limitation.",
+        "Requires transparency and accountability."
+      ],
+      history: [
+        "2016 — Adopted",
+        "2018 — Entered into force",
+        "2024 — Latest consolidated text"
+      ]
+    },
+    eprivacy: {
+      id: "eprivacy",
+      title: "ePrivacy Regulation (Draft)",
+      subtitle: "Electronic communications privacy",
+      jurisdiction: "EU",
+      status: "Draft",
+      updated: "2023-11-15",
+      overview: "Draft regulation on privacy in electronic communications.",
+      text: "Draft Article 8 — Protection of terminal equipment...",
+      analysis: [
+        "Aims to complement GDPR for communications data.",
+        "Still under legislative negotiation."
+      ],
+      history: [
+        "2017 — Initial proposal",
+        "2023 — Ongoing negotiations"
+      ]
+    },
+    kpa: {
+      id: "kpa",
+      title: "Kodeks postępowania administracyjnego",
+      subtitle: "Administrative Procedure Code (PL)",
+      jurisdiction: "PL",
+      status: "Active",
+      updated: "2022-09-30",
+      overview: "Polish administrative procedure framework.",
+      text: "Art. 7 — Principle of legality...\nArt. 8 — Principle of trust...",
+      analysis: [
+        "Ensures legality and proportionality.",
+        "Defines duties of public administration."
+      ],
+      history: [
+        "1960 — Adopted",
+        "2022 — Latest amendment"
+      ]
+    }
+  };
+
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id") || "gdpr";
+  const law = DB[id];
+
+  // Fill content
+  document.getElementById("title").textContent = law.title;
+  document.getElementById("subtitle").textContent = law.subtitle;
+  document.getElementById("jurisdiction").textContent = law.jurisdiction;
+  document.getElementById("status").textContent = law.status;
+  document.getElementById("updated").textContent = law.updated;
+  document.getElementById("identifier").textContent = law.id;
+  document.getElementById("overviewText").textContent = law.overview;
+  document.getElementById("lawText").textContent = law.text;
+
+  const analysisList = document.getElementById("analysisList");
+  law.analysis.forEach(x => {
+    const li = document.createElement("li");
+    li.textContent = x;
+    analysisList.appendChild(li);
+  });
+
+  const historyList = document.getElementById("historyList");
+  law.history.forEach(x => {
+    const li = document.createElement("li");
+    li.textContent = x;
+    historyList.appendChild(li);
+  });
+
+  // Tabs
+  document.querySelectorAll(".tabs .btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".tabs .btn").forEach(b => b.classList.remove("active"));
+      document.querySelectorAll(".tab").forEach(t => t.classList.add("hidden"));
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.tab).classList.remove("hidden");
+    });
+  });
+</script>
+
+</body>
+</html>
