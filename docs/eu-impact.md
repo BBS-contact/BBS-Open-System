@@ -1,112 +1,93 @@
-# EU Impact and Strategic Alignment — BBS Contribution to European Priorities
+# EU Strategic Alignment Overview  
+Fundacja BBS — Better Balance System
 
-This document outlines how BBS contributes to key European Union priorities 
-in the areas of digital transformation, governance, AI safety, and 
-fundamental rights.
+## 1. Purpose
 
----
+This document outlines how the research and governance framework of Fundacja BBS — Better Balance System aligns with selected European Union priorities in the areas of digital transformation, AI governance, transparency, and institutional resilience.
 
-## 1. Alignment with EU Digital and Governance Agendas
-
-BBS directly supports:
-
-- **Digital transformation of public services**
-  - structured, interoperable, citizen-centered digital infrastructure.
-- **Good governance and rule of law**
-  - transparent, auditable, and explainable decision paths.
-- **Trust in public institutions**
-  - verifiable records, open processes, and integrity by design.
-
-BBS is not a private platform but a public digital framework that can be 
-adopted by EU Member States, regions, and institutions.
+The Foundation operates as a Polish non-profit research entity. The statements below describe alignment and potential contribution areas rather than formal EU endorsement or institutional mandate.
 
 ---
 
-## 2. Support for AI Ethics and Safety in Europe
+## 2. Alignment with EU Digital Transformation Priorities
 
-BBS and LEO are designed to:
+The Foundation’s research activities relate to:
 
-- comply with EU AI ethics and future AI Act requirements,
-- prevent manipulation and opaque AI decision-making,
-- ensure explainability and traceability of AI outputs,
-- protect human dignity and fundamental rights.
+- digitalization of governance processes,
+- structured documentation and traceability models,
+- interoperability-oriented system design,
+- citizen-facing transparency mechanisms.
 
-This directly aligns with:
-
-- EU human-centric AI principles,
-- trustworthy AI guidelines,
-- long-term AI governance and accountability goals.
+These themes correspond with broader EU initiatives concerning digital public services and administrative modernization.
 
 ---
 
-## 3. Contribution to Anti-Corruption and Integrity
+## 3. AI Governance and Regulatory Readiness
 
-BBS introduces:
+The Foundation’s AI-related activities are developed in reference to:
 
-- immutable integrity mechanisms (Merkle-based),
-- multi-channel audit trails,
-- transparency portals for institutions,
-- responsibility-based access models.
+- the EU Artificial Intelligence Act,
+- GDPR,
+- European Commission guidance on trustworthy AI,
+- OECD AI Principles.
 
-Impact:
+Research emphasis includes:
 
-- reduced opportunities for hidden corruption,
-- lower systemic risk of manipulation,
-- increased accountability in public and semi-public sectors.
+- risk-based classification of AI systems,
+- documentation and traceability of analytical outputs,
+- human oversight mechanisms,
+- procedural bias mitigation strategies.
 
----
-
-## 4. Social and Economic Impact
-
-BBS enables:
-
-- more efficient public service workflows,
-- reduction of bureaucratic friction,
-- clearer allocation and tracking of resources,
-- better protection of public funds.
-
-Long-term benefits:
-
-- stronger public trust,
-- higher institutional performance,
-- fewer losses due to fraud and opaque procedures,
-- improved conditions for innovation and investment.
+AI systems operate in advisory roles and do not exercise autonomous public authority.
 
 ---
 
-## 5. Support for Research, Innovation, and Collaboration
+## 4. Transparency and Institutional Integrity
 
-BBS provides a structured framework for:
+The Foundation explores technical mechanisms that may support:
 
-- experimentation with ethical AI in real-world contexts,
-- collaboration with universities and research labs,
-- development of open methodologies for transparency and governance.
+- documentation of decision processes,
+- version-controlled recordkeeping,
+- structured audit trails,
+- verification-oriented system design.
 
-It can serve as:
-
-- a testbed for AI governance models,
-- an educational platform for public administration and civil society,
-- a reference implementation for future EU digital frameworks.
+These mechanisms are intended to strengthen procedural clarity and institutional accountability within lawful frameworks.
 
 ---
 
-## 6. Human Rights, Democracy, and Fundamental Values
+## 5. Research and Innovation Ecosystem
 
-BBS is designed around:
+The Foundation provides a structured research environment for:
 
-- dignity,
-- fairness,
-- non-discrimination,
-- transparency,
-- accountability.
+- governance modeling experiments,
+- ethical AI prototyping,
+- compliance-oriented system design,
+- interdisciplinary collaboration with academic and technical partners.
 
-It reinforces:
+Potential areas of cooperation include pilot research projects, methodological testing, and policy-oriented digital innovation.
 
-- democratic participation,
-- clarity of institutional processes,
-- access to information,
-- long-term cultural and institutional resilience.
+---
 
-BBS is not just a technical project —  
-it is a structural contribution to a more transparent, fair, 
-and trustworthy European digital future.
+## 6. Societal and Public Interest Considerations
+
+The Foundation’s statutory objectives include:
+
+- support for public-interest technology development,
+- protection of fundamental rights,
+- promotion of transparency and accountability,
+- integration with European and international cooperation frameworks.
+
+All activities remain subject to applicable law and regulatory oversight.
+
+---
+
+## 7. Conclusion
+
+Fundacja BBS — Better Balance System positions itself as a research-oriented contributor to ongoing European discussions on digital governance, AI safety, and institutional transparency.
+
+The Foundation does not claim institutional authority but seeks constructive alignment with European regulatory and policy frameworks.
+
+---
+
+**Status:** EU Strategic Alignment Overview  
+**Year:** 2026
