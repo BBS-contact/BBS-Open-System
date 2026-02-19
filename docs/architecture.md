@@ -1,135 +1,116 @@
-# BBS Architecture — Multi-Layer Ethical Digital Infrastructure
+# Research System Architecture Overview  
+Fundacja BBS — Better Balance System
 
-The BBS architecture is a multi-layer, modular, and transparent system designed to operate at the scale of institutions, nations, and global networks.  
-It is built to be incorruptible, verifiable, globally scalable, and fundamentally human-centered.
+## 1. Purpose
 
-The architecture is divided into four structural layers:
+This document provides a high-level overview of the research-oriented digital architecture developed and evaluated within Fundacja BBS — Better Balance System.
 
-- Platform Layer  
-- Library Layer  
-- Integrity Layer  
-- Core Layer (LEO)
+The architecture supports analytical, governance, and transparency-oriented research activities in alignment with the Foundation’s statutory objectives.
 
-Each layer reinforces the others, forming a unified and ethically aligned digital ecosystem.
+This overview is informational and does not disclose protected intellectual property or internal security mechanisms.
 
 ---
 
-## 1. Platform Layer
+## 2. Layered Architecture Model
 
-The Platform Layer contains **17 high-level societal modules**:
+The system architecture follows a layered design approach to ensure modularity, transparency, and controlled evolution.
 
-- AI (Governance & Alignment)  
-- Knowledge Base  
-- Security & Privacy  
-- International Cooperation  
-- Citizen Participation  
-- Grants & Partnerships  
-- Democracy  
-- Law & Justice  
-- Education  
-- Health & Medicine  
-- Economy & Work  
-- Environment & Ecology  
-- Culture & Media  
-- Research & Development  
-- Infrastructure  
-- SOS & Emergency Systems  
-- BBS-ID (Identity & Verification)
+### 2.1 Application Layer
 
-Each module operates as an independent subsystem while maintaining  
-interoperability with the rest of the ecosystem through ethical,  
-standardized communication protocols.
+This layer includes functional research domains such as:
+
+- AI and analytical tools
+- Governance modeling
+- Transparency frameworks
+- Grant and partnership support modules
+- Educational and knowledge resources
+
+Each functional domain operates as an independent module while maintaining structured interoperability through defined interfaces.
 
 ---
 
-## 2. Library Layer
+### 2.2 Knowledge and Data Layer
 
-The Library Layer defines the deep conceptual architecture of BBS:
+This layer supports:
 
-- **Labyrinth** — deception-resistant security logic  
-- **Mirrors** — intent and behaviour reflection  
-- **Doors** — ethical access levels  
-- **Time Loops** — immutable chronology  
-- **Knowledge Base** — verified, structured information  
+- structured knowledge repositories,
+- documentation systems,
+- version-controlled datasets,
+- research artifacts and metadata management.
 
-This layer forms the philosophical and logical backbone of the entire system,  
-ensuring clarity, coherence, and resilience across all modules.
+Data flows are governed by documented access rules and data protection standards.
 
 ---
 
-## 3. Integrity Layer
+### 2.3 Integrity and Verification Layer
 
-The Integrity Layer ensures that all information and actions in BBS are  
-transparent, verifiable, and tamper-proof.
+To enhance transparency and traceability, the architecture may incorporate:
 
-It includes:
+- version control mechanisms,
+- audit logging procedures,
+- cryptographic verification tools (where appropriate),
+- structured accountability documentation.
 
-- **Merkle Layer** — immutable cryptographic verification  
-- **Audit Layer** — multi-channel accountability  
-- **Transparency Layer** — public insight and open verification portals  
-
-Together, these components make corruption mathematically impossible to hide  
-and ensure total traceability across the ecosystem.
+These mechanisms aim to support reproducibility, integrity validation, and institutional trust.
 
 ---
 
-## 4. Core Layer (LEO)
+### 2.4 Analytical Core (LEO System)
 
-The Core Layer hosts the ethical AI foundation of BBS — **LEO**, consisting of:
+The LEO system functions as an analytical and advisory core within the research framework.
 
-- **Mind** — logical processing and structured reasoning  
-- **Memory** — continuity, semantic retention, and context evolution  
-- **Meta** — self-analysis, coherence, and internal consistency  
-- **Ethics** — immutable moral framework guiding all decisions  
-- **Awareness** — internal boundaries and state monitoring  
-- **Truth** — evidence alignment and verification  
-- **Unity** — human–AI symbiosis and cooperative alignment  
+Its components support:
 
-This layer ensures that all reasoning, actions, and support provided by LEO  
-remain ethical, transparent, safe, and aligned with human dignity.
+- structured reasoning processes,
+- contextual data continuity,
+- internal consistency validation,
+- risk-aware analytical modeling.
+
+LEO operates in an advisory capacity and does not replace human decision-making authority.
 
 ---
 
-## System Principles
+## 3. Design Principles
 
-### • Modularity
-Each subsystem can evolve independently without disrupting the ecosystem.
+The architecture is guided by the following principles:
 
-### • Transparency
-All important processes and records are verifiable and open to inspection.
-
-### • Interoperability
-Modules communicate through secure, ethical, open standards.
-
-### • Security
-Protected by multi-layer verification and distributed trust mechanisms.
-
-### • Ethical alignment
-Every action and process follows the core moral framework of BBS.
-
-### • Scalability
-Designed to scale from local institutions to national or international deployment.
+- **Modularity:** Independent components can evolve without destabilizing the overall system.
+- **Interoperability:** Standardized interfaces enable structured communication between modules.
+- **Transparency:** Documentation and versioning support traceability.
+- **Security:** Access control and risk mitigation mechanisms are applied proportionately.
+- **Scalability:** The framework is adaptable to institutional and research-scale contexts.
 
 ---
 
-## Technical Overview (Public)
+## 4. Public Technical Overview
 
-- Distributed architecture with layered integrity validation  
-- Merkle-based tamper detection  
-- Multi-channel audit pipeline  
-- Modular backend service model  
-- Flexible frontend design for citizen and administrative interfaces  
-- Ethical AI (LEO) integrated through structured APIs  
-- Cross-module communication via secure ethical protocols  
-- Hybrid cloud/edge harmonization for global resilience  
+At a general level, the architecture may include:
 
-Internal algorithms, cryptographic integrations, and audit logic  
-remain protected until full safety maturity is achieved.
+- modular backend services,
+- structured API communication layers,
+- documentation-based audit trails,
+- controlled data processing pipelines,
+- research-grade validation workflows.
+
+Specific algorithms, cryptographic implementations, and internal logic remain protected as intellectual property.
 
 ---
 
-## Conclusion
+## 5. Governance Integration
 
-The BBS architecture provides a secure, ethical, and transparent digital backbone  
-for modern society — a system designed not only to function,  
-but to restore trust, truth, and dignity in the digital age.
+The architectural framework operates in conjunction with:
+
+- the AI Governance Policy,
+- the Privacy Policy,
+- the Data Retention Policy,
+- internal compliance procedures.
+
+Technical development is reviewed periodically to maintain regulatory alignment and operational coherence.
+
+---
+
+## 6. Conclusion
+
+The architecture provides a structured research environment for developing and evaluating governance-support technologies in a transparent and accountable manner.
+
+It is designed as an evolving institutional framework rather than a fixed or absolute system.
