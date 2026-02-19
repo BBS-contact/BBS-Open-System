@@ -1,146 +1,110 @@
-# BBS Security Framework — Ethical, Transparent, and Tamper-Proof Protection
+# Information Security and Integrity Overview  
+Fundacja BBS — Better Balance System
 
-The BBS security model is designed to resist corruption, manipulation, tampering,  
-and unauthorized influence at every level of the ecosystem.  
-It is built on ethical foundations and mathematical verification.
+## 1. Purpose
 
-Unlike traditional systems, BBS does **not** rely on secrecy.  
-It relies on transparency, distributed trust, and immutable verification.
+This document outlines the information security and integrity principles applied within the research and development activities of Fundacja BBS — Better Balance System.
 
----
-
-## 1. Security Philosophy
-
-BBS follows three core principles:
-
-### • Transparency over obscurity
-Security is achieved through openness, verifiability, and public traceability —  
-not hidden mechanisms.
-
-### • Distributed trust
-No single party can compromise or control the system.  
-Trust is established through cryptographic proofs, redundancy,  
-and interdependent verification.
-
-### • Immutable verification
-All critical events are cryptographically validated, timestamped,  
-and chained into integrity structures.
-
-These principles eliminate insider threats, hidden corruption,  
-and invisible changes in data.
+The framework supports compliance, traceability, and risk mitigation in alignment with European regulatory standards.
 
 ---
 
-## 2. Multi-Layer Security Architecture
+## 2. Security Principles
 
-BBS security is composed of several protective layers:
+The Foundation follows the following security principles:
 
-### • Labyrinth (Behavioral Security)
-A deception-resistant structure that prevents targeted manipulation,  
-pattern exploitation, and social engineering vectors.
+- Proportionate transparency
+- Risk-based access control
+- Documentation traceability
+- Human oversight
+- Continuous review
 
-### • Mirrors (Intent Reflection)
-Detects inconsistent behaviour, unusual patterns,  
-and potential malicious actions.
+Security mechanisms are implemented through technical and organizational measures appropriate to the system’s risk profile.
 
-### • Doors (Ethical Access Control)
-Access is based on behaviour, responsibility, and ethical consistency —  
-not power, privilege, or position.
-
-### • Time Loops (Immutable Chronology)
-All critical actions are timestamped, hashed, and chained.  
-Nothing can be secretly deleted or altered.
-
-### • Knowledge Base
-Ensures that decisions and processes rely on verified,  
-structured, and contextual information.
+No absolute guarantees of invulnerability are asserted.
 
 ---
 
-## 3. Integrity Layer
+## 3. Layered Security Approach
 
-The Integrity Layer provides:
+Security is structured across multiple layers, including:
 
-- Merkle-based data validation  
-- tamper detection  
-- multi-channel replication  
-- transparent audit trails  
-- public verification portals  
+- application-level access control,
+- documented workflow traceability,
+- logging and monitoring procedures,
+- version-controlled configurations,
+- controlled deployment environments.
 
-Together, these mechanisms make corruption mathematically impossible to hide.
-
----
-
-## 4. Secure Access Model
-
-BBS uses a responsibility-based, non-privileged access system:
-
-- no superuser accounts  
-- no hidden administrative powers  
-- no override capabilities  
-- all access attempts are logged  
-- access expands only through ethical behaviour  
-
-This model prevents abuse, privilege escalation,  
-and insider manipulation.
+Each layer is designed to reduce risk exposure and improve accountability.
 
 ---
 
-## 5. Safe AI Operations (LEO)
+## 4. Logging and Traceability
 
-LEO, the ethical AI core, is constrained by:
+Where appropriate, system events may be:
 
-- immutable ethical rules  
-- explainable reasoning  
-- truth alignment  
-- manipulation resistance  
-- state & boundary awareness  
-- transparent decision paths  
+- recorded in structured logs,
+- timestamped,
+- subject to integrity validation mechanisms.
 
-LEO cannot override safety rules, change records,  
-or act independently of ethical constraints.
+Logging practices comply with applicable legal and data protection requirements.
+
+Records are managed according to documented retention policies.
 
 ---
 
-## 6. Threat Resistance
+## 5. Access Control Model
 
-BBS is designed to resist:
+Access is governed by:
 
-- internal corruption  
-- political manipulation  
-- targeted cyber attacks  
-- misinformation injection  
-- privilege escalation  
-- unauthorized access  
-- tampering with logs or records  
+- defined user roles,
+- documented authorization rules,
+- principle of least privilege,
+- logging of administrative actions.
 
-Threats are mitigated through **transparency**, **verification**,  
-and **ethical control structures** — not reliance on secrecy.
+Access rights are subject to periodic review.
 
 ---
 
-## 7. Why Security Matters
+## 6. AI-Specific Safeguards
 
-In traditional systems, corruption and manipulation thrive because:
+AI-related components operate under:
 
-- logs can be erased  
-- access can be hidden  
-- internal actions are invisible  
-- data can be altered  
-- truth can be rewritten  
+- advisory-only functionality,
+- documented decision pathways,
+- human oversight,
+- compliance review procedures.
 
-BBS eliminates these weaknesses completely.
-
-Security is not an add-on —  
-it is a foundational architecture designed for trust.
+AI systems do not independently override safety constraints or assume legal authority.
 
 ---
 
-## 8. Development Status
+## 7. Threat Awareness
 
-The Security Framework architecture is complete.  
-Technical implementations — Merkle engine, Integrity Core,  
-ethical access systems, behavioural detection —  
-will be deployed gradually as the ecosystem advances  
-in maturity, safety, and scale.
+The Foundation recognizes common digital risks, including:
 
+- unauthorized access,
+- data manipulation,
+- misuse of administrative privileges,
+- configuration errors,
+- social engineering risks.
+
+Mitigation strategies are proportionate and continuously reviewed.
+
+---
+
+## 8. Ongoing Security Review
+
+Security practices are reviewed periodically in light of:
+
+- regulatory developments,
+- technical evolution,
+- risk assessments,
+- pilot feedback.
+
+Adjustments are implemented as needed to maintain compliance and institutional integrity.
+
+---
+
+**Status:** Information Security Overview  
+**Year:** 2026
