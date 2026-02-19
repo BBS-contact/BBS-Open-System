@@ -1,145 +1,110 @@
-# Contribution Guide — How to Participate in the BBS Ecosystem
+# Contribution and Collaboration Guidelines  
+Fundacja BBS — Better Balance System
 
-This document outlines how individuals, institutions, and contributors can safely  
-and ethically participate in the development of BBS.
+## 1. Purpose
 
-BBS is an open, human-centered digital ecosystem built on truth, transparency,  
-and responsibility. Participation follows the same principles.
+This document outlines the principles and procedures for contributing to research, documentation, and non-sensitive technical components associated with Fundacja BBS — Better Balance System.
 
----
-
-## 1. Participation Principles
-
-### • Ethical contribution
-All contributions must align with the ethical standards of truth, non-harm,  
-transparency, and respect for human dignity.
-
-### • Open collaboration
-BBS welcomes contributors from all backgrounds, disciplines, and expertise levels.
-
-### • Responsibility-based structure
-No contributor receives privileged control, hidden authority, or influence  
-outside transparent governance.
-
-### • Transparency
-All public contributions remain visible, traceable, and openly verifiable.
-
-### • Safety
-Sensitive components of BBS remain protected until full safety and integrity  
-maturity are achieved.
+The Foundation operates as a research-oriented and governance-focused institution under Polish law. Contributions must align with its statutory objectives and compliance framework.
 
 ---
 
-## 2. Who Can Contribute?
+## 2. Scope of Participation
 
-- Developers  
-- Designers  
-- Researchers  
-- Data analysts  
-- Ethical technologists  
-- Auditors  
-- Lawyers  
-- Educators  
-- Medics  
-- Civic innovators  
-- Volunteers  
+The Foundation may collaborate with:
 
-Anyone who aligns with the mission, ethics, and vision of BBS is welcome.
+- researchers and academic institutions,
+- software developers and technical experts,
+- legal and compliance professionals,
+- auditors and evaluators,
+- designers and communication specialists,
+- volunteers and external advisors.
+
+Participation may take the form of research collaboration, documentation support, technical prototyping, or advisory input.
 
 ---
 
-## 3. What Contributions Are Accepted?
+## 3. Principles of Contribution
 
-✔ **Public-facing modules**  
-Documentation, interface design, public code layers, and tooling.
+All contributions must adhere to:
 
-✔ **Research and analysis**  
-Studies, domain expertise, modelling, and validation.
+- applicable law (Polish and EU),
+- GDPR and data protection standards,
+- intellectual property rules,
+- internal governance and review procedures.
 
-✔ **Ethical review**  
-Input from ethicists, legal professionals, auditors, and compliance experts.
-
-✔ **Community support**  
-Translations, outreach, communication, and educational materials.
-
-✔ **Testing**  
-Interface evaluations, usability reviews, and systems testing feedback.
+Contributors are expected to act professionally, respectfully, and transparently.
 
 ---
 
-## 4. What Contributions Are Not Accepted?
+## 4. Acceptable Contributions
 
-✘ **Manipulative content**  
-Anything aimed at harm, misinformation, exploitation, or biased influence.
+The Foundation may accept:
 
-✘ **Privileged access requests**  
-No contributor may request hidden powers, internal keys, or system-level control.
+- documentation improvements,
+- research analyses and academic input,
+- usability and accessibility feedback,
+- non-sensitive technical modules,
+- translation and educational materials,
+- structured compliance or risk assessments.
 
-✘ **Unsafe code**  
-No unverified modules that may compromise integrity, ethics, or security.
-
-✘ **Political or ideological content**  
-BBS remains neutral, non-partisan, and resistant to political influence.
-
----
-
-## 5. Contribution Process
-
-### 5.1 Discussion  
-Contributors may propose ideas publicly through approved channels.
-
-### 5.2 Review  
-All proposals undergo transparency, ethics, and feasibility review.
-
-### 5.3 Approval  
-Accepted ideas are added to the roadmap or official documentation.
-
-### 5.4 Implementation  
-Contributors work on non-sensitive modules, documentation,  
-or community-facing components.
-
-Sensitive algorithms, internal architectures, and integrity-critical layers  
-remain closed until safety maturity.
+Acceptance of contributions is subject to internal review.
 
 ---
 
-## 6. Code of Conduct
+## 5. Review Process
 
-All contributors must follow these rules:
+Proposed contributions follow a structured process:
 
-- Operate respectfully and responsibly  
-- Avoid corruption, exploitation, and manipulation  
-- Maintain transparency in communication and contribution  
-- Respect privacy, rights, and dignity of others  
-- Uphold truth-based, evidence-grounded dialogue  
-- Avoid hostile, abusive, or harmful behaviour  
+1. Submission of proposal or request for collaboration.
+2. Preliminary assessment for legal, ethical, and technical compatibility.
+3. Governance review where necessary.
+4. Formal approval prior to integration.
 
-Violations result in immediate removal from participation.
+The Foundation reserves the right to decline contributions that do not align with its objectives or compliance standards.
 
 ---
 
-## 7. How to Start
+## 6. Sensitive Components
 
-You can begin by:
+Certain components of the system architecture, analytical core, and integrity mechanisms are not publicly accessible.
 
-- reading the architecture and ethics documents  
-- learning the platform modules  
-- joining discussions and proposing improvements  
-- contributing documentation or non-sensitive code  
-- participating in research, testing, or ethical review  
+Access to sensitive components is restricted and governed by separate internal agreements.
 
 ---
 
-## 8. Contact
+## 7. Intellectual Property
 
-**Official Website:** https://leonexus.org  
-**Email:** bbs.contactproton.me@proton.me  
-**Repository:** public façade only (core & integrity are protected)
+Unless otherwise agreed in writing:
+
+- Contributors retain ownership of their original work.
+- The Foundation receives appropriate usage rights necessary for integration.
+- Licensing terms are defined on a case-by-case basis.
+
+Formal agreements may be required for substantial collaboration.
 
 ---
 
-## Final Note
+## 8. Conduct Expectations
 
-BBS is a long-term ethical public infrastructure project.  
-Every contribution — no matter how small — helps build a transparent,  
-trustworthy, and human-centered foundation for the future.
+Participants must:
+
+- respect confidentiality where applicable,
+- avoid conflicts of interest,
+- refrain from misuse of access privileges,
+- comply with professional and ethical standards.
+
+Violations may result in termination of collaboration.
+
+---
+
+## 9. Contact
+
+Collaboration inquiries may be directed to the Foundation through its official communication channels.
+
+The Foundation evaluates cooperation proposals in accordance with its statutory mission and governance framework.
+
+---
+
+**Status:** Institutional Collaboration Framework  
+**Year:** 2026
