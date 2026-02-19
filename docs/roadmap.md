@@ -1,111 +1,101 @@
-# BBS Roadmap — Development Timeline and Future Milestones
+# Research and Development Roadmap  
+Fundacja BBS — Better Balance System
 
-The BBS roadmap outlines the long-term development plan of the ecosystem.  
-It is designed to grow gradually, ethically, and transparently, while maintaining  
-full alignment with truth, safety, and human dignity.
+## 1. Purpose
 
-This roadmap is structured into three stages: **Development → Expansion → Integration**.
+This roadmap outlines the phased research and development trajectory of Fundacja BBS — Better Balance System.
 
----
-
-## 1. Stage I — Development (Current Phase)
-
-###  1.1 Architectural Design
-- Full multi-layer system architecture completed  
-- Platform, Library, Integrity, and Core layers defined  
-- Ethical AI (LEO) structure established  
-
-###  1.2 Repository Structure
-- Canonical folder and module layout created  
-- Public façade prepared  
-- Internal mechanics protected until maturity  
-
-###  1.3 Prototype Modules
-- BBS Accounting & Anti-Corruption Module (v1)  
-- SOS emergency communication prototype  
-- Transparency portal scaffolding  
-- Admin and monitoring panels (public façade only)  
-
-###  1.4 Documentation
-- Overview, architecture, ethics, security, FAQ prepared  
-- Legal documents and policies assembled  
-
-###  1.5 Internal Testing
-- Concept validation  
-- Behaviour and interaction modelling  
-- Safety logic refinement  
+It reflects research priorities, compliance alignment efforts, and institutional collaboration goals.  
+The roadmap does not constitute a commitment to national or large-scale deployment.
 
 ---
 
-## 2. Stage II — Expansion (Upcoming)
+## 2. Phase I — Foundation and Internal Development (Current Phase)
 
-### 2.1 Module Development
-- Expansion of the 17 societal modules  
-- Legal & judiciary extension  
-- Health & cyber-medicine models  
-- Education digital framework  
-- Economic and tax transparency components  
+### 2.1 Architectural Research
+- Definition of modular system architecture.
+- Documentation of governance and transparency layers.
+- Advisory AI framework development (LEO).
 
-### 2.2 Integrity Systems
-- Merkle tree engine  
-- Multi-channel audit trails  
-- Public verification interfaces  
+### 2.2 Compliance and Legal Structuring
+- Establishment of legal documentation.
+- GDPR and AI governance alignment.
+- Internal policy framework development.
 
-### 2.3 AI Development (LEO)
-- Reasoning enhancements  
-- Semantic memory structuring  
-- Truth-alignment framework  
-- Ethical boundaries enforcement  
-- Awareness, context, and unity integrations  
+### 2.3 Prototype Development
+- Analytical workflow models.
+- Documentation traceability tools.
+- Transparency-support mechanisms.
 
-### 2.4 Cross-Module Interoperability
-- Secure data flows  
-- Ethical communication protocols  
-- Distributed verification across modules  
+### 2.4 Internal Testing and Validation
+- Controlled testing environments.
+- Risk assessment procedures.
+- Documentation refinement.
 
 ---
 
-## 3. Stage III — Integration (Future)
+## 3. Phase II — Structured Research Expansion (Mid-Term)
 
-### 3.1 Institutional Pilots
-- Small institutions (schools, clinics, NGOs)  
-- Municipal-level deployments  
-- Cross-border cooperation pilots  
+### 3.1 Enhanced Analytical Models
+- Improvement of reasoning logic in advisory systems.
+- Structured documentation frameworks.
+- Risk-aware modeling processes.
 
-### 3.2 National-Level Implementation
-- Full integrity infrastructure  
-- Digital identity and verification  
-- Societal module unification  
-- Public transparency governance  
+### 3.2 Interoperability Research
+- Secure data flow modeling.
+- Cross-module interface standardization.
+- Documentation consistency mechanisms.
 
-### 3.3 Global Partnerships
-- Research networks  
-- Academic institutions  
-- International cooperation structures  
-- Ethical AI research labs  
+### 3.3 External Research Collaboration
+- Academic research partnerships.
+- Limited-scope pilot research projects.
+- Methodological validation initiatives.
 
----
-
-## Long-Term Vision
-
-BBS is not a project for months —  
-it is an ethical digital architecture for decades ahead.
-
-The long-term goal:
-
-- restore trust  
-- eliminate corruption  
-- empower people  
-- ensure transparency  
-- build human–AI symbiosis  
-- create a new model of ethical governance  
-
-Step by step, BBS becomes a trustworthy foundation for societies.
+Expansion is contingent upon compliance review and resource availability.
 
 ---
 
-## Notes
+## 4. Phase III — Institutional Cooperation (Long-Term)
 
-This roadmap is a public-facing document.  
-Internal development steps, security mechanisms, and algorithmic details  
-remain protected until safety maturity is reached.
+### 4.1 Extended Pilot Research
+- Evaluation of additional use cases in controlled environments.
+- Structured feedback integration.
+
+### 4.2 Governance Model Refinement
+- Iterative policy updates.
+- Enhanced transparency documentation.
+- Risk management evolution.
+
+Any broader application is subject to legal feasibility, regulatory compliance, and formal institutional agreements.
+
+---
+
+## 5. Guiding Principles
+
+The roadmap is guided by:
+
+- proportional growth,
+- regulatory alignment,
+- human oversight,
+- documentation transparency,
+- ethical governance review.
+
+No claims of guaranteed societal transformation are asserted.
+
+---
+
+## 6. Long-Term Orientation
+
+The Foundation aims to:
+
+- contribute to discussions on digital governance,
+- develop responsible AI support systems,
+- enhance transparency in structured environments,
+- maintain compliance with European regulatory standards.
+
+Development proceeds incrementally and subject to oversight.
+
+---
+
+**Status:** Research and Development Roadmap  
+**Year:** 2026
