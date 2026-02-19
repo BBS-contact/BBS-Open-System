@@ -1,200 +1,115 @@
-# BBS Fundraising & Partnership Strategy
+# Funding and Partnership Framework  
+Fundacja BBS — Better Balance System
 
-This document outlines the public-facing fundraising and partnership strategy  
-for the BBS ecosystem. It explains how financial support is structured,  
-what stages require investment, and how institutions can participate safely  
-and transparently.
+## 1. Purpose
 
-BBS is an ethical public digital infrastructure project.  
-Funding follows the same principles: **transparency, responsibility, and integrity**.
+This document outlines the funding and partnership framework of Fundacja BBS — Better Balance System.
 
----
+The Foundation operates as a Polish non-profit research entity. Funding supports research, development, compliance alignment, and institutional collaboration activities consistent with its statutory objectives.
 
-## 1. Purpose of Fundraising
-
-The objective is to support:
-
-- development of public modules  
-- expansion of research and ethical AI  
-- infrastructure for pilot deployments  
-- technical documentation  
-- security and verification layers  
-- collaboration with institutions  
-- long-term sustainability  
-
-The project is **not commercial**.  
-Funding supports public benefit and ethical innovation.
+The Foundation does not operate as a commercial enterprise.
 
 ---
 
 ## 2. Funding Principles
 
-### • Transparency
-All received funds, partners, and use of resources remain publicly documented  
-and verifiable.
+The Foundation follows these principles in fundraising and partnerships:
 
-### • Ethical neutrality
-No political, ideological, or commercial control is permitted.
-
-### • No ownership transfer
-Funders do not gain governance rights, influence, or privileged access.
-
-### • Responsibility
-Funds are used strictly for project development and public benefit.
-
-### • Independence
-BBS remains autonomous and cannot be shaped or controlled by private interests.
+- **Legal compliance:** All funding is managed in accordance with Polish foundation law and EU regulations.
+- **Transparency:** Financial reporting follows statutory and grant-specific requirements.
+- **Independence:** Financial support does not grant governance control beyond formal agreements.
+- **Public-interest orientation:** Funds are allocated to statutory objectives.
+- **Accountability:** Use of funds is documented and auditable.
 
 ---
 
-## 3. Funding Stages
+## 3. Funding Categories
 
-Funding is organized into three progressive stages:
+Funding may support:
 
-### **Stage I — Foundation (Current Stage)**
+- research and development of governance-support technologies,
+- AI governance and compliance research,
+- documentation and transparency tools,
+- prototype development and pilot studies,
+- infrastructure and hosting costs,
+- interdisciplinary research collaboration,
+- external audits and expert reviews.
 
-**Focus:**
-
-- core architecture  
-- documentation  
-- prototype modules  
-- integrity systems  
-- admin panels  
-- early research acceleration  
-
-**Support needed:**
-
-- infrastructure costs  
-- research tools  
-- cloud and testing environments  
-- development resources  
+Allocation of funds is determined by the Management Board in accordance with statutory rules.
 
 ---
 
-### **Stage II — Expansion**
+## 4. Stages of Development
 
-**Focus:**
+The Foundation’s development roadmap may include:
 
-- full development of the 17 platform modules  
-- advanced AI reasoning layers  
-- distributed integrity systems  
-- cross-border cooperation mechanisms  
-- education, health, legal, and economic frameworks  
+### Phase I — Research and Prototyping
+- architectural research,
+- early-stage analytical models,
+- compliance documentation,
+- technical prototyping.
 
-**Support needed:**
+### Phase II — Structured Pilot Projects
+- collaboration with academic or institutional partners,
+- limited-scope implementation studies,
+- evaluation and validation processes.
 
-- interdisciplinary research teams  
-- development groups  
-- external audits  
-- integration tools  
+### Phase III — Institutional Cooperation
+- formal research partnerships,
+- grant-funded initiatives,
+- structured public-interest pilot programs.
 
----
-
-### **Stage III — National & International Deployment**
-
-**Focus:**
-
-- institutional pilots  
-- municipal and national rollouts  
-- global cooperation networks  
-- academic partnerships  
-- public transparency infrastructure  
-
-**Support needed:**
-
-- long-term infrastructure investment  
-- cross-national coordination  
-- legal and ethical certification  
-- high-level security architecture  
+Expansion is contingent on regulatory compliance, funding availability, and risk assessment.
 
 ---
 
-## 4. Types of Partners
+## 5. Types of Partners
 
-### • Public Institutions
-Schools, clinics, NGOs, municipalities, universities.
+The Foundation may collaborate with:
 
-### • Research Organizations
-AI labs, ethics committees, academic groups.
+- academic institutions,
+- public-sector research bodies,
+- non-profit organizations,
+- EU and international grant programs,
+- technical and compliance advisory partners.
 
-### • Grant Programs
-EU programs, Norway Grants, Horizon Europe, Digital Europe, Erasmus+,  
-civic innovation initiatives.
-
-### • Foundations
-Human rights, transparency, digital society, and global governance foundations.
-
-### • Technical Partners
-Engineering teams, cybersecurity groups, transparency specialists.
+Partnerships are governed by written agreements.
 
 ---
 
-## 5. Use of Funds
+## 6. Financial Governance
 
-Funding is used exclusively for:
+The Foundation:
 
-- development of public modules  
-- ethics and AI research  
-- infrastructure and hosting  
-- security and verification systems  
-- documentation and dissemination  
-- pilot programs  
-- external audits  
-- community involvement  
+- maintains accounting in accordance with Polish law,
+- prepares annual financial statements,
+- publishes required reports,
+- separates statutory and economic activity where applicable.
 
-No portion of the funds can be used for private ownership, political influence,  
-or non-transparent operations.
+Grant-specific reporting follows the requirements of funding institutions.
 
 ---
 
-## 6. Funding Integrity
+## 7. Independence and Governance Boundaries
 
-To guarantee absolute transparency:
+Financial support does not automatically grant:
 
-- all financial flows are publicly logged  
-- expenditures are verifiable  
-- no private contracts or hidden clauses  
-- no exclusive licenses or control rights  
-- full compliance with international standards  
+- voting rights,
+- governance control,
+- system-level authority,
+- privileged technical access.
 
-Funding strengthens BBS — it does **not** buy influence.
-
----
-
-## 7. Invitation to Partners
-
-Partners are invited to:
-
-- support ethical technology  
-- strengthen public institutions  
-- build transparent governance  
-- accelerate AI safety research  
-- contribute to long-term global stability  
-
-BBS is open to collaboration with organizations that respect  
-truth, transparency, and human dignity.
+Any structured collaboration is defined contractually and remains subject to the Foundation’s statutory governance framework.
 
 ---
 
 ## 8. Contact
 
-**Official Website:** https://leonexus.org  
-**Email:** bbs.contactproton.me@proton.me  
-**Partnership Inquiries:** same contact
+Funding and partnership inquiries may be submitted through the Foundation’s official communication channels.
+
+Proposals are evaluated based on statutory alignment, compliance requirements, and institutional capacity.
 
 ---
 
-## Final Statement
-
-BBS is a generational project — a long-term ethical infrastructure  
-that will outlive technologies, trends, and administrations.
-
-Support for BBS is support for:
-
-- ethical AI  
-- transparent society  
-- corruption-free governance  
-- empowered citizens  
-- a safer digital world  
-
-Every contribution helps build a future founded on truth.
+**Status:** Institutional Funding Framework  
+**Year:** 2026
