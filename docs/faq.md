@@ -1,223 +1,125 @@
-# BBS — Frequently Asked Questions (FAQ)
-
-This document provides clear answers to the most common questions about BBS,  
-its architecture, purpose, safety, and development roadmap.
-
-It is written for partners, grant committees, auditors, institutions,  
-and contributors who want to understand the system quickly.
+# Frequently Asked Questions (FAQ)  
+Fundacja BBS — Better Balance System
 
 ---
 
-## 1. What is BBS?
+## 1. What is Fundacja BBS — Better Balance System?
 
-BBS (Big Begins Small) is an ethical, transparent, and modular digital ecosystem  
-designed to restore trust, integrity, and clarity in modern societies.
+Fundacja BBS — Better Balance System is a Polish non-profit foundation registered in the National Court Register (KRS 0001220296).
 
-It combines:
-
-- modular societal functions  
-- ethical AI (LEO)  
-- immutable audit trails  
-- secure digital identity  
-- open knowledge systems  
-- transparent decision logic  
-
-BBS is **not** a government service, **not** a corporate product,  
-and **not** a private platform.  
-It is a structural model of truth, cooperation, and public integrity.
+The Foundation conducts research and development activities focused on digital governance models, transparency-enhancing system design, and ethical AI integration.
 
 ---
 
-## 2. Why was BBS created?
+## 2. Is BBS a government platform?
 
-Societies today suffer from:
+No.
 
-- hidden corruption  
-- unreliable data  
-- fragmented services  
-- bureaucratic waste  
-- manipulation  
-- lack of accountability  
+The Foundation is an independent non-profit entity operating under Polish law. It does not exercise public authority and does not replace governmental institutions.
 
-BBS addresses these problems through systemic transparency,  
-ethical AI reasoning, and verifiable processes.
+Its systems function in research and advisory capacities.
 
 ---
 
-## 3. Who owns BBS?
+## 3. What is LEO?
 
-No one.
+LEO is an analytical and advisory AI-based system developed within the Foundation’s research framework.
 
-BBS does **not** belong to a corporation, government,  
-or private institution.
+It supports structured reasoning, documentation analysis, and risk-aware modeling.
 
-It belongs to the people who build it:
-
-- researchers  
-- developers  
-- auditors  
-- designers  
-- civic innovators  
-
-BBS is a public infrastructure project.
+Final decisions remain under human responsibility.
 
 ---
 
-## 4. What is LEO?
+## 4. Who owns the system?
 
-LEO is the ethical AI core of BBS. It is responsible for:
+The Foundation operates as a registered legal entity.
 
-- reasoning and analysis  
-- contextual understanding  
-- truth alignment  
-- ethical filtering  
-- stable memory  
-- safety logic  
-- decision-support transparency  
+According to the registered Statute:
 
-LEO does **not** control people.  
-It exists to support them ethically, responsibly, and transparently.
+- The Foundation is a non-profit organization.
+- Intellectual property rights to certain core components, including the LEO system, remain with the Founder.
+- The Foundation uses such systems under defined licensing arrangements.
 
 ---
 
-## 5. How is BBS different from government or corporate systems?
+## 5. What stage is the project currently in?
 
-BBS is:
+The Foundation is engaged in:
 
-- transparent  
-- open  
-- ethical  
-- verifiable  
-- tamper-proof  
-- human-centered  
+- architectural research,
+- prototype development,
+- documentation building,
+- compliance alignment,
+- institutional outreach.
 
-Traditional systems obscure information.  
-BBS exposes processes through immutable verification and open integrity layers.
+Certain internal components remain protected as intellectual property.
 
 ---
 
-## 6. Is BBS safe?
+## 6. How does BBS address regulatory compliance?
+
+The Foundation aligns its activities with:
+
+- GDPR,
+- the EU AI Act,
+- Polish accounting and foundation law,
+- relevant European governance standards.
+
+Compliance is procedural and continuously reviewed.
+
+---
+
+## 7. Can public institutions cooperate with the Foundation?
+
+Yes, cooperation may take place in the form of:
+
+- research partnerships,
+- pilot studies,
+- methodological evaluation projects,
+- academic collaboration.
+
+Any cooperation must comply with applicable legal and regulatory requirements.
+
+---
+
+## 8. How is data handled?
+
+Data processing is governed by:
+
+- the Privacy Policy,
+- the Data Retention Policy,
+- internal GDPR procedures.
+
+AI systems operate under human oversight and documented safeguards.
+
+---
+
+## 9. Can individuals contribute?
 
 Yes.
 
-Security is based on:
+The Foundation welcomes structured collaboration proposals from researchers, developers, legal professionals, and other qualified experts.
 
-- Merkle verification  
-- multi-channel audit  
-- immutable logs  
-- behaviour-based access rules  
-- ethical AI constraints  
-- distributed trust  
-- no superusers  
-- no hidden powers  
-
-The system cannot be silently corrupted or manipulated.
+All contributions undergo review procedures.
 
 ---
 
-## 7. Can BBS be used by governments?
+## 10. Does the system guarantee elimination of corruption or misuse?
 
-Yes — but only under strict ethical conditions:
+No system can provide absolute guarantees.
 
-- full transparency  
-- no political influence  
-- no hidden manipulation  
-- independent ethical oversight  
-- open verification  
-
-BBS is public infrastructure, not a political instrument.
+The Foundation’s approach focuses on improving transparency, documentation, and risk awareness through structured technical design and governance processes.
 
 ---
 
-## 8. Can individuals or organizations contribute?
+## 11. Where can more information be found?
 
-Absolutely.
+Official information is available through the Foundation’s website and published documentation.
 
-BBS welcomes contributions from:
-
-- developers  
-- auditors  
-- researchers  
-- ethicists  
-- lawyers  
-- educators  
-- medics  
-- designers  
-- volunteers  
-
-Participation is open, traceable, and transparent.
+Cooperation inquiries may be submitted through official contact channels.
 
 ---
 
-## 9. What stage is BBS currently in?
-
-BBS is in:
-
-- architectural design  
-- prototype development  
-- internal testing  
-- documentation building  
-- partner outreach  
-- early research collaboration  
-
-Core concepts are public.  
-Internal mechanics remain protected until safety and maturity are confirmed.
-
----
-
-## 10. How does BBS handle data?
-
-Under strict ethical rules:
-
-- no unnecessary data collection  
-- full transparency  
-- immutable records  
-- verifiable timelines  
-- strong privacy boundaries  
-- ethical memory retention  
-- no commercial exploitation  
-
-Data belongs to the user — not the system.
-
----
-
-## 11. What problems can BBS solve?
-
-- corruption  
-- unreliable accounting  
-- fraudulent documentation  
-- fragmented services  
-- unsafe systems  
-- misinformation  
-- bureaucratic delays  
-- lack of trust  
-
-BBS provides a new digital foundation based on truth and verifiable integrity.
-
----
-
-## 12. How does BBS scale?
-
-BBS scales gradually and safely:
-
-- small institutions → cities → regions → nations → global networks  
-- each module can operate independently  
-- integrity systems ensure consistency during expansion  
-
----
-
-## 13. How to contact the BBS team?
-
-**Official Website:** https://leonexus.org  
-**Email:** bbs.contactproton.me@proton.me  
-**GitHub Repository:** public façade only (core protected)
-
----
-
-## Conclusion
-
-BBS is a long-term ethical public infrastructure project —  
-a new digital architecture for modern societies.
-
-It is built on truth, transparency, cooperation,  
-and the protection of human dignity.
+**Status:** Institutional FAQ  
+**Year:** 2026
