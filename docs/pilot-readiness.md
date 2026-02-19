@@ -1,111 +1,99 @@
-# BBS Pilot Readiness — Conditions, Scope, and Deployment Approach
+# Controlled Pilot Eligibility and Safeguards Framework  
+Fundacja BBS — Better Balance System
 
-This document defines the conditions under which BBS can be safely and 
-ethically deployed as a pilot project in real institutions.
+## 1. Purpose
 
-The goal is to ensure that every pilot is:
+This document defines the eligibility conditions and safeguard requirements for conducting limited-scope pilot research activities in collaboration with institutional partners.
 
-- transparent,
-- ethically supervised,
-- technically controlled,
-- reversible,
-- measurable in impact.
+Pilot activities are research-oriented and do not constitute mandatory system adoption or operational public-sector deployment.
 
 ---
 
-## 1. Pilot Preconditions
+## 2. Preconditions for Pilot Research
 
-Before any pilot is launched, the following conditions must be met:
+Before initiating any pilot research activity, the following conditions must be satisfied:
 
-- A clearly defined institutional partner (e.g. school, clinic, municipality, NGO).
-- A written ethical and legal agreement on the scope of the pilot.
-- No use of BBS for political, commercial, or manipulative purposes.
-- Data protection compliance in line with EU GDPR and local regulations.
-- A clear definition of what will and will not be tested.
-- A designated human oversight and review group.
+- Identification of a voluntary institutional research partner.
+- Formal written agreement defining scope, duration, and responsibilities.
+- Legal and regulatory compliance review.
+- Data protection assessment consistent with GDPR.
+- Defined human oversight structure.
+- Clear delineation of functionalities under evaluation.
 
-Pilots are designed to be safe, narrow in scope, and reversible.
-
----
-
-## 2. Pilot Scope (Minimal Viable Deployment)
-
-A standard pilot may include a subset of the following modules:
-
-- **Transparency Portal (read-only)**
-  - publishing non-sensitive decisions, processes, or status updates.
-- **Integrity Layer (Merkle + Audit)**
-  - verifiable logs of actions and workflows.
-- **Citizen / User Feedback Channel**
-  - structured, transparent submission of feedback or reports.
-- **SOS or Alert Prototype (optional)**
-  - only in coordination with local services and under strict ethical rules.
-
-Core LEO reasoning is used for:
-
-- explanation support,
-- pattern detection,
-- ethical consistency checks,
-
-but **not for autonomous decision-making**.
+Pilot activities are narrow in scope and reversible.
 
 ---
 
-## 3. Ethical and Legal Safeguards
+## 3. Scope of Research Evaluation
 
-During the pilot:
+A pilot may evaluate selected research components such as:
 
-- No decision with legal consequences is taken solely by the system.
-- All AI outputs are treated as recommendations, not commands.
-- Humans remain fully responsible for final decisions.
-- No profiling, no scoring, no hidden reputation systems.
-- No commercial exploitation of pilot data.
-- All participants are informed in clear, human language.
+- documentation transparency tools,
+- structured workflow modeling,
+- traceability-support mechanisms,
+- analytical advisory modules.
 
-An independent ethics and oversight committee must have the right to:
+AI-based components operate in advisory capacity only.
 
-- pause the pilot,
-- request data on system behaviour,
-- review logs and decisions.
+No legally binding decisions are made solely by automated systems.
 
 ---
 
-## 4. Technical Safeguards
+## 4. Ethical and Governance Safeguards
 
-- All actions inside the pilot are recorded with immutable integrity mechanisms.
-- Logs are non-editable and auditable by independent parties.
-- Access to administrative interfaces is strictly limited and logged.
-- No unsafe or experimental code is deployed directly in production environments.
-- Fail-safe paths exist for quickly disabling the pilot if needed.
+During pilot activities:
 
----
+- Human responsibility remains primary.
+- AI outputs are treated as analytical recommendations.
+- No hidden profiling or behavioral scoring mechanisms are used.
+- No commercial exploitation of pilot data is permitted.
+- Participants are informed of pilot parameters.
 
-## 5. Evaluation Criteria
-
-A pilot is considered successful if it demonstrates:
-
-- increased transparency and trust,
-- improved clarity of processes,
-- reduction in ambiguity and corruption risk,
-- better understanding of patterns and bottlenecks,
-- no ethical or legal violations.
-
-Evaluation includes:
-
-- qualitative feedback from staff and participants,
-- quantitative metrics (time saved, errors reduced),
-- ethical and legal review outcomes.
+Oversight mechanisms may include internal or jointly appointed review bodies, as defined by agreement.
 
 ---
 
-## 6. Scaling Decision
+## 5. Technical Safeguards
 
-Scaling from pilot to wider deployment can only happen when:
+Pilot environments implement proportionate technical controls, including:
 
-- an independent evaluation confirms positive impact,
-- identified risks are addressed,
-- ethical and legal frameworks are updated accordingly,
-- the institutional partner and affected communities consent.
+- structured logging procedures,
+- access control mechanisms,
+- version-controlled configurations,
+- controlled testing environments.
 
-BBS is designed to grow gradually and responsibly —  
-from small pilots to larger networks, without skipping safety steps.
+Logging and documentation practices aim to enhance traceability, subject to applicable legal requirements.
+
+No guarantee of absolute immutability is asserted.
+
+---
+
+## 6. Evaluation Criteria
+
+Pilot research may be evaluated using criteria such as:
+
+- clarity of documentation,
+- workflow transparency,
+- consistency of analytical outputs,
+- stakeholder feedback,
+- compliance alignment.
+
+Impact assessment is proportional and context-dependent.
+
+---
+
+## 7. Review and Expansion Considerations
+
+Any continuation or expansion of pilot activities requires:
+
+- documented evaluation outcomes,
+- updated risk assessment,
+- legal and ethical review,
+- renewed institutional consent.
+
+Broader implementation is contingent upon regulatory feasibility and formal agreement.
+
+---
+
+**Status:** Pilot Safeguards Framework  
+**Year:** 2026
