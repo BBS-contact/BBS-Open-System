@@ -1,266 +1,186 @@
-# Big Begins Small (BBS)
-### Ethical, Transparent, Human-Centric Digital Ecosystem  
-**Repository:** https://github.com/BBS-contact/BBS-Open-System  
-**Website:** https://leonexus.org  
+# LEO – Logical Epistemic Oversight
+
+**Operated by:** Fundacja BBS — Better Balance System (Poland, EU)
+**Legal Form:** Non-profit Foundation
+**Status:** Laboratory-Tested Integrity Architecture (Pre-Federated Deployment Phase)
 
 ---
 
-## Executive Overview
+# 1. What LEO Is
 
-**BBS** is a structural model for next-generation digital governance.  
-It is **not** a platform, not a product, and not a conventional IT system.
+LEO (Logical Epistemic Oversight) is a structured integrity architecture designed to support institutional transparency, regulatory coherence, and cross-domain accountability.
 
-BBS introduces an **ethical, incorruptible digital architecture** designed to restore trust, integrity, and clarity across all societal operations.
+LEO operates as a governance-support system that:
 
-The system provides:
+* documents structural inconsistencies,
+* preserves traceability across decision processes,
+* highlights jurisdictional contradictions,
+* enforces immutable integrity logging,
+* aligns with EU regulatory frameworks.
 
-- verifiable information flows  
-- transparent public processes  
-- immutable audit trails  
-- ethically guided decision-support  
-- cross-institutional interoperability  
-
-At its center is **LEO** — an ethical AI core created not to replace human judgment, but to **protect it** from distortion, corruption, manipulation, and opaque systems.
-
-BBS offers a foundation for societies seeking:
-
-- accountable governance  
-- transparent financial operations  
-- trusted digital identity  
-- secure public infrastructure  
-- open cooperation between people and institutions  
-
-This repository presents **public architecture**, **conceptual documentation**, and **early-stage prototypes** of the BBS system.  
-Core algorithms and high-risk components remain protected until formal evaluation frameworks are established with qualified institutions.
+LEO is developed and maintained within a controlled laboratory environment operated by the Foundation.
 
 ---
 
-## 1. Mission and Principles
+# 2. What LEO Is Not
 
-### Mission
-To create an ethical, transparent digital foundation where:
+LEO is not:
 
-- people understand how systems work  
-- institutions operate without corruption  
-- data cannot be manipulated  
-- decisions are accountable  
-- AI supports humans rather than controls them  
+* a replacement for democratic institutions,
+* an automated decision-making authority,
+* a supervisory political body,
+* a centralized control system,
+* a commercial SaaS governance platform.
 
-### Core Principles
+LEO does not issue binding decisions.
 
-- **Truth over convenience**  
-- **Transparency over secrecy**  
-- **Responsibility over bureaucracy**  
-- **Ethics over profit**  
-- **Human dignity above all**
+Final authority always remains with human institutional actors.
 
 ---
 
-## 2. What Is BBS?
+# 3. Core Architectural Model
 
-BBS is composed of three interacting layers:
+LEO operates under a **Sovereign Core + Federated Functional Modules** model.
 
-1. **Operational Modules** — real-world societal functions  
-2. **Deep Architecture Layers** — philosophical & security foundations  
-3. **Integrity Engine** — cryptographically verified audit & anti-corruption logic  
+### Central Integrity Core (Non-Exportable)
 
-Together these layers create a unified, corruption-resistant digital environment.
+* Canonical Integrity Layer
+* Epistemic Decision-State Engine
+* Integrity Enforcement Layer
+* Canon Version Governance Protocol
 
----
+The Central Core remains under Foundation custodianship.
 
-## 3. Public Architecture Overview
+### Functional Domain Modules (Deployable Under Constraint)
 
-### 3.1 Operational Modules — 17 Core Domains  
-Each domain is independent yet interoperable within the BBS ecosystem.
+Currently formalized modules include:
 
-| Domain | Description | Link |
-|-------|-------------|------|
-| LEO — Ethical AI Core | Transparent, ethical advisory intelligence | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/leo-ai |
-| Unified Knowledge Base | Structured, verified knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/knowledge |
-| Security & Privacy | Identity protection, encryption, trust | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/security |
-| International Cooperation | Cross-border digital interoperability | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/international |
-| Citizen Participation | Inclusive civic engagement tools | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/citizens |
-| Grants & Partnerships | Transparent funding and collaboration | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/partners |
-| Democracy | Ethical voting and decision systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/democracy |
-| Law & Justice | Verified legal records and traceable processes | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/justice |
-| Education | Accessible global learning frameworks | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/education |
-| Health & Medicine | Diagnostics, early detection, medical knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/health |
-| Economy & Work | Accounting, taxation, labour systems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/economy |
-| Environment & Ecology | Sustainability and verified environmental data | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ecology |
-| Culture & Media | Verified information and cultural transparency | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/culture |
-| Research & AI Development | Safe innovation ecosystems | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/ai |
-| Infrastructure | Digital & physical infrastructure models | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/infrastructure |
-| SOS & Emergency Systems | Real-time aid and response | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/sos |
-| BBS-ID | Secure identity and verification system | https://github.com/BBS-contact/BBS-Open-System/tree/main/platform/bbs-id |
+* Financial Governance
+* Legal Governance
+* Medical Governance
+* Education Governance
+* Data Governance (EU-aligned)
+
+Modules may operate externally, but cannot modify canonical invariants.
 
 ---
 
-### 3.2 Deep Architecture Layers  
+# 4. EU Regulatory Alignment
 
-| Layer | Description | Link |
-|-------|-------------|------|
-| Labyrinth | Security, deception resistance, manipulation defense | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/labyrinth |
-| Mirrors | Intent reflection and clarity of requests | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/mirrors |
-| Doors | Ethical, intent-based access control | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/doors |
-| Time Loops | Immutable chronological storage | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/time-loops |
-| Knowledge Library | Structured global knowledge | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/knowledge-base |
-| Self-Reflection Engine | Systemic awareness & error correction | https://github.com/BBS-contact/BBS-Open-System/tree/main/library/reflection |
+LEO architecture is designed in alignment with:
 
----
+* GDPR
+* EU Data Governance Act
+* EU Data Act
+* EU AI Act (decision-support compliance)
+* NIS2 Directive
+* eIDAS framework
 
-### 3.3 Integrity Engine — Accounting & Anti-Corruption Layer
+The system enforces:
 
-Key Functions:
-
-- real-time validation of operations  
-- prevention of illegal/incorrect actions  
-- transparent document chains  
-- cryptographic timestamps  
-- cross-actor verification  
-- error detection and correction  
-- immutable Merkle-based audit chains  
-
-Lifecycle:
-
-1. Intent Registration  
-2. Execution Record  
-3. Error / Conflict Detection  
-4. Correction Path  
-5. Final Verification & Locking  
+* lawful basis documentation,
+* data minimization by design,
+* structured access control,
+* immutable audit trails,
+* human oversight requirement.
 
 ---
 
-### 3.4 LEO — Ethical AI Core
+# 5. Integrity & Anti-Corruption Function
 
-LEO strengthens human decisions through:
+LEO strengthens institutional resilience by:
 
-- transparent analysis  
-- manipulation resistance  
-- ethical consistency  
-- explainability  
-- internal integrity  
+* preventing silent procedural overrides,
+* preserving append-only integrity history,
+* structuring variance detection,
+* documenting cross-core inconsistencies,
+* ensuring visible override markers.
 
-Architecture:  
-https://github.com/BBS-contact/BBS-Open-System/tree/main/core
-
----
-
-### 3.5 Server Architecture  
-
-| Component | Link |
-|----------|------|
-| API Layer | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/api |
-| Gateway | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/gateway |
-| Service Mesh | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/services |
-| Authentication | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/auth |
-| LEO Bridge | https://github.com/BBS-contact/BBS-Open-System/tree/main/server/bridge |
+The system identifies structural gaps (“black holes”) within governance processes without assuming institutional authority.
 
 ---
 
-## 4. Visual Prototypes (UI Preview)
+# 6. Resilience Architecture
 
-| Section | Link |
-|---------|------|
-| Main UI | https://leonexus.org/index.html |
-| Platform Overview | https://leonexus.org/site/platform/index.html |
-| Architecture Overview | https://leonexus.org/site/architecture/index.html |
-| Integrity Overview | https://leonexus.org/site/integrity/index.html |
-| Server Overview | https://leonexus.org/site/server/index.html |
-| LEO Overview | https://leonexus.org/site/ai/index.html |
-| Documentation Portal | https://leonexus.org/site/docs/index.html |
+LEO includes a formal System Failure & Resilience model covering:
 
----
+* data integrity compromise,
+* infrastructure collapse,
+* governance capture attempts,
+* cross-border regulatory conflict.
 
-## 5. Repository Structure (High-Level)
-
-platform/
-modules/
-library/
-integrity/
-core/
-server/
-admin/
-docs/
-site/
-LICENSE
-README.md
+Integrity logs remain verifiable under catastrophic conditions.
 
 ---
 
-## 6. License — BBS Public License v1.0
+# 7. Governance & Accountability
 
-Protects BBS from:
+LEO operates under:
 
-- corruption  
-- political misuse  
-- surveillance abuse  
-- corporate exploitation  
-- patent monopolisation  
+* Public Governance & Accountability Framework,
+* Canon Version Governance Protocol,
+* External Audit & Oversight Model.
 
-License text:  
-https://github.com/BBS-contact/BBS-Open-System/blob/main/LICENSE
+Audit access is read-only.
+Canonical sovereignty remains non-transferable.
 
 ---
 
-## 7. Development Status
+# 8. Deployment Philosophy
 
-BBS is currently in:
+LEO modules are laboratory-tested before external deployment.
 
-- active architectural modelling  
-- prototype development  
-- structural research  
-- internal evaluation  
-- documentation and system mapping  
-- repository standardisation  
+External deployments:
 
-Core algorithms remain protected until system maturity.
+* operate under structured interaction interfaces,
+* cannot alter canonical integrity constraints,
+* preserve institutional human authority.
 
----
-
-## 8. Participation
-
-Open to contributors from:
-
-- developers  
-- designers  
-- auditors  
-- legal & financial experts  
-- researchers  
-- ethical thinkers  
-- civic innovators  
-
-**BBS belongs to those who build it with truth.**
+The Foundation remains the permanent custodian of the central integrity core.
 
 ---
 
-## 9. Contact
+# 9. Current Development Phase
 
-**Website:** https://leonexus.org  
-**Email:** bbs.contactproton.me@proton.me  
+Phase 1 Completed:
+
+* Core integrity architecture
+* Five functional governance modules
+* Inter-core interaction model
+* EU-aligned data governance
+* Resilience & failure architecture
+* Canon governance protocol
+* Public accountability framework
+
+System status: Research-grade integrity architecture with structured governance maturity.
 
 ---
 
-### *Everything great begins small.  
-Everything true begins with transparency.*
+# 10. Institutional Position Statement
 
-## Executive Overview
+LEO functions as a structural integrity instrument.
 
-High-level public overview of the BBS system:  
-https://bbs-contact.github.io/BBS-Open-System/site/bbs-executive-overview.html
+It does not create a new center of power.
+It does not override institutional sovereignty.
 
-## Architecture Map
+It supports institutional systems by making inconsistencies visible and traceable.
 
-Visual high-level architecture map:  
-docs/bbs-architecture-map.svg
+Integrity documentation strengthens governance stability.
 
-## EU Evaluation Package
+---
 
-For institutional and scientific review, the complete BBS EU package is available here:
+# 11. Contact & Institutional Information
 
-- Main index: [`docs/eu-package/INDEX.md`](docs/eu-package/INDEX.md)
-- Strategic overview: [`docs/eu-package/BBS-EU-Strategic-Package.md`](docs/eu-package/BBS-EU-Strategic-Package.md)
-- Technical annex: [`docs/eu-package/BBS-Technical-Annex.md`](docs/eu-package/BBS-Technical-Annex.md)
-- Pilot protocol: [`docs/eu-package/BBS-Pilot-Protocol.md`](docs/eu-package/BBS-Pilot-Protocol.md)
-- Impact assessment: [`docs/eu-package/BBS-Impact-Assessment.md`](docs/eu-package/BBS-Impact-Assessment.md)
+Operator: Fundacja BBS — Better Balance System
+Jurisdiction: Poland (EU Member State)
+Legal Status: Registered Non-Profit Foundation
 
-This section is intended for the European Commission, STOA, JRC and related EU bodies evaluating BBS as an ethical digital infrastructure model.
+For institutional inquiries, governance review, or regulatory evaluation requests, please contact the Foundation directly.
+
+---
+
+**This repository represents an evolving laboratory-tested governance integrity architecture.**
+
+Structural maturity is prioritized over deployment speed.
+
+---
