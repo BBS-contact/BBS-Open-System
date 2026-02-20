@@ -1,99 +1,86 @@
-# Contributing to BBS Open System
+# Contributing to the BBS Open System
 
-Thank you for your interest in contributing to BBS (Big Begins Small).  
-This document explains how to participate in a way that is safe, ethical, 
-and aligned with the goals of the project.
+Thank you for your interest in contributing to the BBS Open System repository.
 
----
-
-## 1. Principles
-
-By contributing, you agree to:
-
-- respect human dignity,
-- avoid harm and manipulation,
-- preserve transparency and integrity,
-- avoid political or ideological campaigning,
-- accept that public benefit is the primary goal.
-
-BBS is an ethical public infrastructure project — not a commercial product.
+This repository supports research and development activities conducted by Fundacja BBS — Better Balance System (Poland, EU).
 
 ---
 
-## 2. Types of Contributions
+## 1. Scope of Contributions
 
-You can contribute in several ways:
+Contributions may include:
 
-- **Documentation**  
-  Improve clarity, translations, structure, and accessibility.
+- Documentation improvements
+- Technical refinements
+- Research commentary
+- Structured feedback
+- Bug reports
+- Non-sensitive interface enhancements
 
-- **Public-Facing Modules**  
-  Non-sensitive frontend components, visualisations, and interfaces.
-
-- **Research and Analysis**  
-  Studies, models, ethical and legal analysis, use-case exploration.
-
-- **Testing and Feedback**  
-  Manual testing, reporting usability issues, proposing improvements.
-
-- **Ethical and Legal Review**  
-  Comments from ethicists, lawyers, and governance experts.
+All contributions must align with applicable law and the Foundation’s governance framework.
 
 ---
 
-## 3. How to Propose Changes
+## 2. Contribution Process
 
 1. Fork the repository.
-2. Create a branch for your changes.
-3. Make changes in a focused, minimal way.
-4. Add or update documentation where relevant.
-5. Submit a pull request with:
-   - a clear description,
-   - motivation and context,
-   - any risks or limitations.
+2. Create a dedicated branch.
+3. Keep changes focused and documented.
+4. Submit a pull request with:
+   - clear description,
+   - rationale,
+   - potential impact.
 
-Pull requests that introduce:
+The maintainers reserve the right to request revisions or decline changes.
 
-- opaque behaviour,
-- backdoors,
-- unsafe code,
-- political messaging,
+---
 
-will be rejected.
+## 3. Governance and Review
+
+All proposed changes are subject to:
+
+- technical review,
+- legal and compliance considerations (where applicable),
+- alignment with documented project objectives.
+
+Contributions must not introduce:
+
+- undocumented behaviour,
+- security vulnerabilities,
+- unauthorized access mechanisms,
+- legally non-compliant functionality.
 
 ---
 
 ## 4. Code of Conduct
 
-Contributors must:
+Participants are expected to:
 
-- act respectfully and constructively,
-- avoid harassment or hostile behaviour,
-- not promote discrimination or hate,
-- not attempt to subvert the ethics of the project.
+- communicate respectfully,
+- provide constructive feedback,
+- comply with applicable laws,
+- respect intellectual property rights.
 
-Violations may result in removal of contributions and blocking from further participation.
-
----
-
-## 5. What Is Out of Scope
-
-The following will not be accepted:
-
-- attempts to weaken integrity or transparency mechanisms,
-- features aimed at surveillance or control of individuals,
-- hidden profiling, scoring, or covert analytics,
-- partisan political tools or propaganda modules.
+Disruptive or non-compliant behaviour may result in contribution restrictions.
 
 ---
 
-## 6. Contact
+## 5. Intellectual Property
 
-For discussion of larger contributions or institutional cooperation:
+By submitting a contribution, you confirm that:
 
-- Official contact: `bbs.contactproton.me@proton.me`
-- Project overview: see `/docs/executive-summary.md`
-- Architecture: see `/docs/architecture.md` and `/docs/technical-overview.md`
+- you have the right to submit the material,
+- the contribution does not violate third-party rights,
+- you agree to the repository’s licensing terms.
 
-Thank you for helping to build a transparent, ethical, 
-and human-centered digital ecosystem.
+---
+
+## 6. Further Information
+
+Project documentation is available in the `/docs` directory.
+
+For institutional or research cooperation inquiries, please use official Foundation contact channels.
+
+---
+
+Thank you for supporting responsible and structured research development.
