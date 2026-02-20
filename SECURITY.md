@@ -1,96 +1,71 @@
-# Security Policy — BBS Open System
+# Security Policy
 
-This document describes how security is approached in the BBS Open System 
-repository and how security-related issues should be handled.
-
----
-
-## 1. Security Philosophy
-
-BBS is designed with:
-
-- transparency over obscurity,
-- distributed trust over centralised control,
-- immutable integrity over editable logs.
-
-Security is not achieved through secrecy, but through:
-
-- verifiable mechanisms,
-- layered protection,
-- ethical and responsibility-based access.
+This document describes how security issues related to this repository should be reported and handled.
 
 ---
 
-## 2. Scope
+## 1. Scope
 
-This security policy applies to:
+This policy applies to:
 
-- code and documentation in this repository,
-- public-facing modules and prototypes,
-- configuration of integrity, audit, and transparency layers.
+- Source code contained in this repository
+- Documentation in the `/docs` directory
+- Public prototypes and non-sensitive components
 
-Core protected algorithms and internal secrets are **not** stored in this 
-repository and are handled separately.
-
----
-
-## 3. Reporting a Vulnerability
-
-If you discover a security vulnerability related to this repository or any 
-BBS public module, please:
-
-1. **Do not disclose it publicly.**
-2. Contact the maintainers via:
-
-   - Email: `bbs.contactproton.me@proton.me`
-   - Subject line: `SECURITY REPORT — BBS`
-
-3. Provide:
-   - a clear description of the issue,
-   - steps to reproduce (if applicable),
-   - any potential impact you foresee.
-
-We will acknowledge receipt and coordinate an appropriate response.
+Certain internal components or credentials (if any) are managed separately and are not stored in this repository.
 
 ---
 
-## 4. Handling of Security Issues
+## 2. Reporting a Vulnerability
 
-- Reported issues will be assessed in terms of impact and scope.
-- Fixes will be prioritised according to severity.
-- Where appropriate, a public disclosure may be made after mitigation,
-  respecting responsible disclosure principles.
+If you discover a potential security vulnerability, please:
 
-No party is allowed to exploit vulnerabilities for personal or institutional gain.
+1. Do not disclose it publicly.
+2. Report it privately via email:
 
----
+   **bbs.contactproton.me@proton.me**  
+   Subject: `Security Report — BBS Open System`
 
-## 5. Dependencies and Third-Party Services
+Please include:
 
-Where BBS prototypes use third-party libraries or services:
-
-- standard security best practices should be applied,
-- updates and patches are to be monitored and applied when relevant,
-- no hardcoded secrets (keys, passwords, tokens) should be committed to this repository.
+- A clear description of the issue
+- Steps to reproduce (if applicable)
+- Any known impact or risk assessment
 
 ---
 
-## 6. Integrity and Tamper Protection
+## 3. Handling of Reports
 
-BBS integrates integrity measures such as:
+Upon receiving a report:
 
-- hash-based verification,
-- audit trails,
-- tamper-detection mechanisms.
+- The issue will be reviewed and assessed.
+- Severity and impact will be evaluated.
+- A mitigation plan will be prepared where necessary.
+- Responsible disclosure principles will be followed.
 
-These mechanisms are essential to:
-- prevent silent changes,
-- detect manipulation attempts,
-- provide long-term verifiability.
-
-Contributors are expected to respect and preserve these mechanisms.
+Public disclosure may occur after a fix is implemented.
 
 ---
 
-For any questions regarding security, please use the same contact channel 
-as for vulnerability reports.
+## 4. Security Expectations for Contributors
+
+Contributors must:
+
+- Avoid introducing undocumented behavior
+- Avoid committing secrets, keys, or credentials
+- Follow standard secure coding practices
+- Respect repository governance rules
+
+---
+
+## 5. Third-Party Dependencies
+
+Where applicable:
+
+- Dependencies should be kept up to date.
+- Known vulnerabilities should be monitored.
+- Standard patching practices should be followed.
+
+---
+
+For further information, please refer to the documentation in the `/docs` directory.
