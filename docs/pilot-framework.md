@@ -1,79 +1,97 @@
-# Pilot Research Evaluation Framework  
+# Pilot Research Framework  
 Fundacja BBS — Better Balance System
 
 ## 1. Purpose
 
-This document outlines the framework for limited-scope pilot research activities conducted by Fundacja BBS — Better Balance System in collaboration with partner institutions.
+This document defines the structure, eligibility criteria, safeguards, and evaluation methodology for limited-scope pilot research activities conducted by Fundacja BBS — Better Balance System.
 
-Pilot activities are exploratory and research-oriented. They do not constitute mandatory system adoption or public-sector deployment.
-
----
-
-## 2. Phase I — Preparation
-
-- Define pilot research objectives and scope.
-- Identify participating institutions or research partners.
-- Conduct legal and compliance assessment.
-- Define data protection and governance safeguards.
-- Establish evaluation criteria and documentation standards.
-
-Participation is voluntary and governed by formal agreements.
+Pilot initiatives are research-oriented and do not constitute mandatory system adoption or public-sector deployment.
 
 ---
 
-## 3. Phase II — Controlled Activation
+## 2. Preconditions for Pilot Research
 
-During pilot testing, selected research components may be evaluated, such as:
+Before initiating any pilot activity, the following conditions must be met:
 
-- documentation and transparency-support tools,
-- structured audit and traceability mechanisms,
-- analytical advisory modules,
-- workflow modeling frameworks.
+- Identification of a voluntary institutional research partner.
+- Formal written agreement defining scope, duration, and responsibilities.
+- Legal and regulatory compliance review.
+- Data protection assessment in accordance with GDPR.
+- Defined human oversight structure.
+- Clearly delimited functional scope under evaluation.
 
-Components are implemented in controlled and proportionate environments.
-
-No autonomous decision-making authority is delegated to AI systems.
+Pilot activities are proportionate and reversible.
 
 ---
 
-## 4. Phase III — Evaluation
+## 3. Scope of Evaluation
 
-Pilot outcomes may be assessed using criteria such as:
+Pilot projects may evaluate selected research components, such as:
+
+- documentation transparency tools,
+- workflow modeling frameworks,
+- traceability-support mechanisms,
+- advisory analytical modules.
+
+AI systems operate strictly in an advisory capacity.
+
+No legally binding decisions are made solely by automated systems.
+
+---
+
+## 4. Technical and Organizational Safeguards
+
+Pilot environments implement proportionate safeguards, including:
+
+- structured logging procedures,
+- role-based access control,
+- documented configuration management,
+- controlled testing environments,
+- version tracking of evaluated components.
+
+No guarantees of absolute immutability or invulnerability are asserted.
+
+---
+
+## 5. Ethical and Governance Oversight
+
+During pilot activities:
+
+- Human responsibility remains primary.
+- AI outputs are treated as analytical recommendations.
+- No hidden profiling or behavioral scoring is applied.
+- No commercial exploitation of pilot data is permitted.
+- Participants are informed of pilot parameters.
+
+Oversight mechanisms are defined within formal cooperation agreements.
+
+---
+
+## 6. Evaluation Criteria
+
+Pilot outcomes may be assessed using:
 
 - documentation completeness,
-- traceability of analytical steps,
 - workflow clarity,
-- procedural consistency,
-- regulatory alignment,
-- stakeholder feedback.
+- traceability of analytical steps,
+- compliance alignment,
+- stakeholder feedback,
+- proportional risk assessment.
 
-Impact is evaluated proportionately and without presumption of guaranteed outcomes.
-
----
-
-## 5. Phase IV — Review and Scaling Considerations
-
-Following evaluation:
-
-- continuation or expansion may be considered,
-- additional compliance review may be required,
-- risk assessment is updated,
-- institutional readiness is re-evaluated.
-
-Any broader application is subject to legal feasibility, regulatory compliance, and institutional agreement.
+Impact is context-dependent and not presumed.
 
 ---
 
-## 6. Governance and Safeguards
+## 7. Review and Continuation
 
-All pilot activities operate under:
+Any continuation or expansion of pilot activities requires:
 
-- Polish foundation law,
-- GDPR requirements,
-- AI Governance Policy,
-- internal ethical and risk review procedures.
+- documented evaluation results,
+- updated risk assessment,
+- renewed legal review,
+- formal institutional agreement.
 
-Pilot research is conducted transparently and proportionately.
+Broader application remains contingent upon regulatory feasibility.
 
 ---
 
