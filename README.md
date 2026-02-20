@@ -1,186 +1,99 @@
 # LEO – Logical Epistemic Oversight
 
-**Operated by:** Fundacja BBS — Better Balance System (Poland, EU)
-**Legal Form:** Non-profit Foundation
-**Status:** Laboratory-Tested Integrity Architecture (Pre-Federated Deployment Phase)
+**Operated by:** Fundacja BBS — Better Balance System  
+**Jurisdiction:** Poland (European Union)  
+**Legal Form:** Registered Non-Profit Foundation  
 
 ---
 
-# 1. What LEO Is
+## Overview
 
-LEO (Logical Epistemic Oversight) is a structured integrity architecture designed to support institutional transparency, regulatory coherence, and cross-domain accountability.
+LEO (Logical Epistemic Oversight) is a research-oriented governance support architecture developed by Fundacja BBS — Better Balance System.
 
-LEO operates as a governance-support system that:
+The system is designed to enhance:
 
-* documents structural inconsistencies,
-* preserves traceability across decision processes,
-* highlights jurisdictional contradictions,
-* enforces immutable integrity logging,
-* aligns with EU regulatory frameworks.
+- documentation traceability,
+- structured decision-support processes,
+- institutional transparency,
+- AI risk awareness,
+- regulatory alignment within EU frameworks.
 
-LEO is developed and maintained within a controlled laboratory environment operated by the Foundation.
-
----
-
-# 2. What LEO Is Not
-
-LEO is not:
-
-* a replacement for democratic institutions,
-* an automated decision-making authority,
-* a supervisory political body,
-* a centralized control system,
-* a commercial SaaS governance platform.
-
-LEO does not issue binding decisions.
-
-Final authority always remains with human institutional actors.
+LEO operates as an advisory and documentation-support system.  
+It does not replace institutional authority and does not issue legally binding decisions.
 
 ---
 
-# 3. Core Architectural Model
+## Institutional Position
 
-LEO operates under a **Sovereign Core + Federated Functional Modules** model.
+LEO is developed within a controlled research and laboratory environment.
 
-### Central Integrity Core (Non-Exportable)
+The Foundation’s objectives include:
 
-* Canonical Integrity Layer
-* Epistemic Decision-State Engine
-* Integrity Enforcement Layer
-* Canon Version Governance Protocol
+- studying structured governance modeling,
+- improving traceability in complex decision environments,
+- developing compliance-aware AI advisory tools,
+- supporting responsible digital governance practices.
 
-The Central Core remains under Foundation custodianship.
-
-### Functional Domain Modules (Deployable Under Constraint)
-
-Currently formalized modules include:
-
-* Financial Governance
-* Legal Governance
-* Medical Governance
-* Education Governance
-* Data Governance (EU-aligned)
-
-Modules may operate externally, but cannot modify canonical invariants.
+All development is conducted in accordance with Polish law and relevant EU regulations.
 
 ---
 
-# 4. EU Regulatory Alignment
+## System Characteristics
 
-LEO architecture is designed in alignment with:
+The architecture emphasizes:
 
-* GDPR
-* EU Data Governance Act
-* EU Data Act
-* EU AI Act (decision-support compliance)
-* NIS2 Directive
-* eIDAS framework
+- modular system design,
+- human oversight integration,
+- structured logging and documentation,
+- risk-based AI classification,
+- regulatory compliance alignment.
 
-The system enforces:
-
-* lawful basis documentation,
-* data minimization by design,
-* structured access control,
-* immutable audit trails,
-* human oversight requirement.
+No absolute guarantees of systemic invulnerability are asserted.
 
 ---
 
-# 5. Integrity & Anti-Corruption Function
+## Regulatory Context
 
-LEO strengthens institutional resilience by:
+LEO development considers alignment with:
 
-* preventing silent procedural overrides,
-* preserving append-only integrity history,
-* structuring variance detection,
-* documenting cross-core inconsistencies,
-* ensuring visible override markers.
+- GDPR (Regulation (EU) 2016/679),
+- EU Artificial Intelligence Act,
+- EU data governance frameworks,
+- relevant Polish foundation and accounting law.
 
-The system identifies structural gaps (“black holes”) within governance processes without assuming institutional authority.
-
----
-
-# 6. Resilience Architecture
-
-LEO includes a formal System Failure & Resilience model covering:
-
-* data integrity compromise,
-* infrastructure collapse,
-* governance capture attempts,
-* cross-border regulatory conflict.
-
-Integrity logs remain verifiable under catastrophic conditions.
+The system operates strictly within advisory and research boundaries.
 
 ---
 
-# 7. Governance & Accountability
+## Repository Structure
 
-LEO operates under:
+This repository contains:
 
-* Public Governance & Accountability Framework,
-* Canon Version Governance Protocol,
-* External Audit & Oversight Model.
+- research documentation (`/docs`),
+- architectural models,
+- governance frameworks,
+- prototype components,
+- laboratory-tested modules.
 
-Audit access is read-only.
-Canonical sovereignty remains non-transferable.
-
----
-
-# 8. Deployment Philosophy
-
-LEO modules are laboratory-tested before external deployment.
-
-External deployments:
-
-* operate under structured interaction interfaces,
-* cannot alter canonical integrity constraints,
-* preserve institutional human authority.
-
-The Foundation remains the permanent custodian of the central integrity core.
+Public-facing institutional documents are located in the `/docs` directory.
 
 ---
 
-# 9. Current Development Phase
+## Current Development Phase
 
-Phase 1 Completed:
+The project is currently in a research and structured pilot readiness phase.
 
-* Core integrity architecture
-* Five functional governance modules
-* Inter-core interaction model
-* EU-aligned data governance
-* Resilience & failure architecture
-* Canon governance protocol
-* Public accountability framework
-
-System status: Research-grade integrity architecture with structured governance maturity.
+Any external pilot cooperation is governed by formal agreements and regulatory review.
 
 ---
 
-# 10. Institutional Position Statement
+## Contact
 
-LEO functions as a structural integrity instrument.
+Fundacja BBS — Better Balance System  
+Poland (EU)
 
-It does not create a new center of power.
-It does not override institutional sovereignty.
-
-It supports institutional systems by making inconsistencies visible and traceable.
-
-Integrity documentation strengthens governance stability.
+For institutional or regulatory inquiries, please contact the Foundation through official channels.
 
 ---
 
-# 11. Contact & Institutional Information
-
-Operator: Fundacja BBS — Better Balance System
-Jurisdiction: Poland (EU Member State)
-Legal Status: Registered Non-Profit Foundation
-
-For institutional inquiries, governance review, or regulatory evaluation requests, please contact the Foundation directly.
-
----
-
-**This repository represents an evolving laboratory-tested governance integrity architecture.**
-
-Structural maturity is prioritized over deployment speed.
-
----
+**This repository reflects an evolving research initiative focused on responsible digital governance.**
