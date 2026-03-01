@@ -97,6 +97,9 @@ LEO follows a structured three-layer licensing model:
 
 See /licensing directory for details.
 
+Initial conceptual release (v0.1) was distributed under Apache 2.0.
+Subsequent releases follow the structured licensing model defined in /licensing.
+
 ---
 
 ## Contact
