@@ -87,6 +87,18 @@ Any external pilot cooperation is governed by formal agreements and regulatory r
 
 ---
 
+## Licensing Model
+
+LEO follows a structured three-layer licensing model:
+
+1. Public Knowledge Layer – CC BY-NC-SA 4.0
+2. Institutional Integration Layer – Controlled academic license
+3. Core Runtime Layer – Proprietary Fund IP
+
+See /licensing directory for details.
+
+---
+
 ## Contact
 
 Fundacja BBS — Better Balance System  
