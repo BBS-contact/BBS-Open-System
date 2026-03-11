@@ -68,3 +68,72 @@ The system operates exclusively within **research and advisory functions**.
 # Repository Structure
 
 This repository contains elements of the LEO research infrastructure:
+
+/docs — institutional and research documentation
+/demonstration — prototype investigation pipeline demonstration
+/licensing — licensing structure
+/architecture — system architecture descriptions
+
+
+Public institutional documents are located in the **/docs** directory.
+
+---
+
+# Current Development Phase
+
+The project is currently in a **research and structured pilot-readiness phase**.
+
+Any external pilot collaborations are conducted under **formal agreements and regulatory supervision**.
+
+---
+
+# Prototype Demonstration
+
+A technical demonstration of the **LEO investigative pipeline prototype** can be viewed here:
+
+### ➜ [LEO Prototype Demonstration](./demonstration/LEO_PROTOTYPE_DEMONSTRATION.md)
+
+The demonstration presents runtime outputs from the **BBS Foundation sandbox environment**, including:
+
+- anomaly detection  
+- graph analysis  
+- pattern detection  
+- cluster analysis  
+- investigation report generation  
+- risk escalation  
+- institutional alert creation  
+
+The prototype demonstrates a **structured analytical pipeline for institutional anomaly analysis**.
+
+---
+
+# Licensing Model
+
+LEO follows a structured **three-layer licensing model**:
+
+Public Knowledge Layer  
+→ **CC BY-NC-SA 4.0**
+
+Institutional Integration Layer  
+→ controlled academic license
+
+Core Execution Layer  
+→ intellectual property of **Fundacja BBS**
+
+See details in the **/licensing** directory.
+
+The initial conceptual release (v0.1) was distributed under **Apache License 2.0**.  
+Subsequent releases follow the structured licensing model defined in the repository.
+
+---
+
+# Contact
+
+**Fundacja BBS – Better Balance System**  
+Poland (European Union)
+
+Institutional or regulatory inquiries should be directed to the Foundation through official channels.
+
+---
+
+This repository reflects the development of a **research initiative focused on responsible digital governance and institutional integrity infrastructure**.
