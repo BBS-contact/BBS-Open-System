@@ -1,130 +1,70 @@
 # LEO – Logical Epistemic Oversight
 
-**Operated by:** Fundacja BBS — Better Balance System  
-**Jurisdiction:** Poland (European Union)  
-**Legal Form:** Registered Non-Profit Foundation  
+Developed by **Fundacja BBS – Better Balance System**  
+Jurisdiction: Poland (European Union)  
+Legal form: Registered non-profit research foundation
 
 ---
 
-## Overview
+# Overview
 
-LEO (Logical Epistemic Oversight) is a research-oriented governance support architecture developed by Fundacja BBS — Better Balance System.
+LEO (Logical Epistemic Oversight) is a research-oriented governance support architecture developed by **Fundacja BBS – Better Balance System**.
 
-The system is designed to enhance:
+The system explores new approaches to improving:
 
-- documentation traceability,
-- structured decision-support processes,
-- institutional transparency,
-- AI risk awareness,
-- regulatory alignment within EU frameworks.
+- documentation traceability  
+- structured decision-support processes  
+- institutional transparency  
+- AI risk awareness  
+- regulatory alignment within the European Union
 
-LEO operates as an advisory and documentation-support system.  
-It does not replace institutional authority and does not issue legally binding decisions.
-
----
-
-## Institutional Position
-
-LEO is developed within a controlled research and laboratory environment.
-
-The Foundation’s objectives include:
-
-- studying structured governance modeling,
-- improving traceability in complex decision environments,
-- developing compliance-aware AI advisory tools,
-- supporting responsible digital governance practices.
-
-All development is conducted in accordance with Polish law and relevant EU regulations.
+LEO operates as an **advisory and documentation support system**.  
+It does **not replace institutional authority** and **does not issue legally binding decisions**.
 
 ---
 
-## System Characteristics
+# Institutional Position
 
-The architecture emphasizes:
+LEO is developed within a **controlled research and laboratory environment** operated by the BBS Foundation.
 
-- modular system design,
-- human oversight integration,
-- structured logging and documentation,
-- risk-based AI classification,
-- regulatory compliance alignment.
+The foundation’s objectives include:
 
-No absolute guarantees of systemic invulnerability are asserted.
+- studying structured governance modelling
+- improving traceability in complex decision environments
+- developing compliance-aware AI advisory tools
+- supporting responsible digital governance practices
 
----
-
-## Regulatory Context
-
-LEO development considers alignment with:
-
-- GDPR (Regulation (EU) 2016/679),
-- EU Artificial Intelligence Act,
-- EU data governance frameworks,
-- relevant Polish foundation and accounting law.
-
-The system operates strictly within advisory and research boundaries.
+All development is conducted in accordance with **Polish law and relevant EU regulations**.
 
 ---
 
-## Repository Structure
+# System Characteristics
 
-This repository contains:
+The architecture emphasises:
 
-- research documentation (`/docs`),
-- architectural models,
-- governance frameworks,
-- prototype components,
-- laboratory-tested modules.
+- modular system design
+- human-in-the-loop oversight
+- structured logging and documentation
+- risk-aware AI classification
+- regulatory alignment
 
-Public-facing institutional documents are located in the `/docs` directory.
-
----
-
-## Current Development Phase
-
-The project is currently in a research and structured pilot readiness phase.
-
-Any external pilot cooperation is governed by formal agreements and regulatory review.
+No claims of absolute system infallibility are made.
 
 ---
 
-## Licensing Model
+# Regulatory Context
 
-LEO follows a structured three-layer licensing model:
+Development of LEO considers alignment with:
 
-1. Public Knowledge Layer – CC BY-NC-SA 4.0
-2. Institutional Integration Layer – Controlled academic license
-3. Core Runtime Layer – Proprietary Fund IP
+- **GDPR (Regulation (EU) 2016/679)**
+- **EU Artificial Intelligence Act**
+- **EU data governance frameworks**
+- relevant **Polish foundation and accounting law**
 
-See /licensing directory for details.
-
-Initial conceptual release (v0.1) was distributed under the Apache License 2.0.
-Subsequent releases follow the structured licensing model defined in the /licensing directory.
+The system operates exclusively within **research and advisory functions**.
 
 ---
 
-## Prototype Demonstration
+# Repository Structure
 
-A technical demonstration of the LEO prototype investigative pipeline can be viewed here:
-
-[LEO Prototype Demonstration] (./demonstration/LEO_PROTOTYPE_DEMONSTRATION.md)
-
-The demonstration presents runtime outputs from the BBS Foundation sandbox environment, including:
-
-- anomaly detection
-- graph analysis
-- pattern detection
-- cluster analysis
-- investigation reporting
-- risk escalation
-- institutional alert generation
-
-## Contact
-
-Fundacja BBS — Better Balance System  
-Poland (EU)
-
-For institutional or regulatory inquiries, please contact the Foundation through official channels.
-
----
-
-**This repository reflects an evolving research initiative focused on responsible digital governance.**
+This repository contains elements of the LEO research infrastructure:
