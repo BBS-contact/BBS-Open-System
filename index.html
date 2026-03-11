@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <title>LEO – Institutional Integrity Infrastructure</title>
 
 <style>
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     background:#f4f6f8;
     margin:0;
 }
 
+.header{
+    background:#1f3c5c;
+    color:white;
+    padding:40px;
+}
+
 .container{
-    max-width:900px;
+    max-width:1000px;
     margin:auto;
     padding:40px;
 }
 
-h1{
-    color:#1f3c5c;
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
-.section{
+.card{
     background:white;
     padding:25px;
-    margin-top:20px;
     border-radius:8px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
 }
 
-a{
-    color:#1f5fbf;
+.card h3{
+    margin-top:0;
+}
+
+.card a{
     text-decoration:none;
     font-weight:bold;
+    color:#1f5fbf;
 }
 
-a:hover{
+.card a:hover{
     text-decoration:underline;
 }
 
-.links a{
-    display:block;
-    margin:10px 0;
+.section{
+    margin-top:40px;
 }
 
 .footer{
-    margin-top:40px;
+    margin-top:50px;
     font-size:14px;
-    color:#666;
+    color:#777;
 }
+
 </style>
+
 </head>
 
 <body>
 
-<div class="container">
+<div class="header">
 
 <h1>LEO – Logical Epistemic Oversight</h1>
 
 <p>
-Developed by <strong>Fundacja BBS – Better Balance System</strong><br>
-Jurisdiction: Poland (European Union)
+Research infrastructure developed by  
+<strong>Fundacja BBS – Better Balance System</strong><br>
+Poland · European Union
 </p>
+
+</div>
+
+<div class="container">
 
 <div class="section">
 
@@ -69,13 +88,13 @@ Jurisdiction: Poland (European Union)
 
 <p>
 LEO (Logical Epistemic Oversight) is a research-oriented governance support architecture 
-developed by Fundacja BBS. The project explores structured anomaly detection, 
-institutional transparency and compliance-aware AI advisory systems.
+designed to explore structured anomaly detection, institutional transparency 
+and compliance-aware AI advisory systems.
 </p>
 
 <p>
-The system operates as a <strong>research and advisory infrastructure</strong> and does not 
-replace institutional authority or issue legally binding decisions.
+The system operates as a research and advisory infrastructure and does not replace 
+institutional authority or issue legally binding decisions.
 </p>
 
 </div>
@@ -84,27 +103,39 @@ replace institutional authority or issue legally binding decisions.
 
 <h2>LEO Research Infrastructure</h2>
 
-<div class="links">
+<div class="cards">
 
+<div class="card">
+<h3>System Architecture</h3>
+<p>Technical architecture of the LEO system.</p>
 <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture">
-LEO System Architecture
+View Architecture →
 </a>
+</div>
 
+<div class="card">
+<h3>Prototype Demonstration</h3>
+<p>Runtime demonstration of the LEO analytical pipeline.</p>
 <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/demonstration/LEO_PROTOTYPE_DEMONSTRATION.md">
-LEO Prototype Demonstration
+View Demonstration →
 </a>
+</div>
 
+<div class="card">
+<h3>Project Status</h3>
+<p>Current development phase of the LEO research project.</p>
 <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/PROJECT_STATUS.md">
-LEO Development Status
+View Status →
 </a>
+</div>
 
-<a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/docs">
-Research Documentation
-</a>
-
+<div class="card">
+<h3>Full Repository</h3>
+<p>Complete research repository of the BBS Open System.</p>
 <a href="https://github.com/BBS-contact/BBS-Open-System">
-Full GitHub Repository
+Open Repository →
 </a>
+</div>
 
 </div>
 
@@ -113,10 +144,6 @@ Full GitHub Repository
 <div class="section">
 
 <h2>Regulatory Context</h2>
-
-<p>
-Development of the LEO system considers alignment with:
-</p>
 
 <ul>
 <li>GDPR (Regulation EU 2016/679)</li>
@@ -129,10 +156,8 @@ Development of the LEO system considers alignment with:
 
 <div class="footer">
 
-<p>
-Fundacja BBS – Better Balance System<br>
-Poland (European Union)
-</p>
+Fundacja BBS – Better Balance System  
+Poland · European Union
 
 </div>
 
