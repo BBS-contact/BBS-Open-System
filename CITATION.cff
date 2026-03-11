@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+title: "LEO – Logical Epistemic Oversight"
+message: "If you use this research infrastructure in academic or institutional work, please cite it as follows."
+type: software
+
+authors:
+  - family-names: "Martseniuk"
+    given-names: "Pavlo"
+    affiliation: "Fundacja BBS – Better Balance System"
+
+repository-code: https://github.com/leonexus/leo
+
+abstract: >
+  LEO (Logical Epistemic Oversight) is a research-oriented governance
+  support architecture designed to explore structured anomaly detection,
+  institutional transparency and compliance-aware AI advisory systems.
+
+keywords:
+  - digital governance
+  - institutional integrity
+  - anomaly detection
+  - governance infrastructure
+  - AI advisory systems
+
+license: "See /licensing directory"
+
+date-released: 2026
