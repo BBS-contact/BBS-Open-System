@@ -106,7 +106,7 @@ Subsequent releases follow the structured licensing model defined in the /licens
 
 A technical demonstration of the LEO prototype investigative pipeline can be viewed here:
 
-[LEO Prototype Demonstration](./demonstration/LEO_PROTOTYPE_DEMONSTRATION.md)
+[LEO Prototype Demonstration] (./demonstration/LEO_PROTOTYPE_DEMONSTRATION.md)
 
 The demonstration presents runtime outputs from the BBS Foundation sandbox environment, including:
 
