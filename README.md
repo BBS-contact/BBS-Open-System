@@ -73,6 +73,7 @@ This repository contains elements of the LEO research infrastructure:
 /demonstration — prototype investigation pipeline demonstration
 /licensing — licensing structure
 /architecture — system architecture descriptions
+/PROJECT_STATUS.md — current development phase of the LEO project
 
 
 Public institutional documents are located in the **/docs** directory.
