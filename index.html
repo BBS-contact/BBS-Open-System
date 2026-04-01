@@ -1,386 +1,391 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>LEO – Institutional Integrity Infrastructure</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEO – Institutional Integrity Infrastructure</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      margin: 0;
+      color: #1f3c5c;
+    }
 
-<style>
+    .header {
+      background: #1f3c5c;
+      color: white;
+      padding: 40px;
+    }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
-    margin:0;
-}
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px;
+    }
 
-.header{
-    background:#1f3c5c;
-    color:white;
-    padding:40px;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
 
-.container{
-    max-width:1000px;
-    margin:auto;
-    padding:40px;
-}
+    .card {
+      background: white;
+      color: #1f3c5c;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-}
+    .card h3 {
+      margin-top: 0;
+    }
 
-.card{
-    background:white;
-    color:#1f3c5c;
-    padding:25px;
-    border-radius:8px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.1);
-}
+    .card a,
+    .section a,
+    .footer a {
+      text-decoration: none;
+      font-weight: bold;
+      color: #1f5fbf;
+    }
 
-.card h3{
-    margin-top:0;
-}
+    .card a:hover,
+    .section a:hover,
+    .footer a:hover,
+    .navbar a:hover {
+      text-decoration: underline;
+    }
 
-.card a{
-    text-decoration:none;
-    font-weight:bold;
-    color:#1f5fbf;
-}
+    .section {
+      margin-top: 40px;
+    }
 
-.card a:hover{
-    text-decoration:underline;
-}
+    .system-map {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
 
-.section{
-    margin-top:40px;
-}
+    .map-box {
+      background: white;
+      color: #1f3c5c;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 200px;
+    }
 
-.system-map{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
-    margin-top:20px;
-}
+    .footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #777;
+    }
 
-.map-box{
-    background:white;
-    color:#1f3c5c;
-    padding:20px;
-    border-radius:8px;
-    box-shadow:0 2px 6px rgba(0,0,0,0.1);
-    flex:1;
-    min-width:200px;
-}
+    .navbar {
+      background: #10293f;
+      padding: 12px 40px;
+      margin-top: 20px;
+    }
 
-.footer{
-    margin-top:50px;
-    font-size:14px;
-    color:#777;
-}
+    .navbar a {
+      color: #ffffff;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
 
-.footer a{
-    color:white;
-    text-decoration:none;
-}
+    .banner {
+      background: #9ec5ff;
+      padding: 15px 40px;
+      border-left: 4px solid #1f3c5c;
+      font-weight: bold;
+      color: #10293f;
+      margin-top: 20px;
+    }
 
-.footer a:hover{
-    text-decoration:underline;
-}
+    ul {
+      line-height: 1.7;
+    }
 
-.navbar{
-    background:#10293f;
-    padding:12px 40px;
-}
+    code {
+      background: #eef3f8;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
 
-.navbar a{
-    color:#ffffff;
-    margin-right:20px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.navbar a:hover{
-    text-decoration:underline;
-}
-
-.banner{
-    background:#9ec5ff;
-    padding:15px 40px;
-    border-left:4px solid #1f3c5c;
-    font-weight:bold;
-}
-    
-</style>
-
+    @media (max-width: 700px) {
+      .header,
+      .container,
+      .navbar,
+      .banner {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-
- 
-<div class="header">
-
-<h1>LEO – Logical Epistemic Oversight</h1>
-
-<div class="banner">
-
-Research Prototype · Institutional Integrity Infrastructure  
-Developed by Fundacja BBS – Better Balance System
-
-</div>
-
-<div class="navbar">
-
-<a href="#overview">Overview</a>
-<a href="#system">System Map</a>
-<a href="#infrastructure">Infrastructure</a>
-<a href="#governance">Governance</a>
-<a href="#transparency">Transparency</a>
-<a href="#reports">Reports</a>
-<a href="https://github.com/BBS-contact/BBS-Open-System">Repository</a>
-
-</div>
-
-<p>
-Research infrastructure developed by  
-<strong>Fundacja BBS – Better Balance System</strong><br>
-Poland · European Union
-</p>
-
-<div class="container">
-
-<!-- Overview -->
-
-<div class="section">
-
-<h2 id="overview">Overview</h2>
-
-<p>
-LEO (Logical Epistemic Oversight) is a research-oriented governance support architecture 
-developed by Fundacja BBS. The system explores structured anomaly detection, 
-institutional transparency and compliance-aware AI advisory systems.
-</p>
-
-<p>
-The platform operates as a <strong>research and advisory infrastructure</strong> designed to 
-support institutional analysis and decision transparency.  
-LEO does not replace institutional authority and does not issue legally binding decisions.
-</p>
-
-</div>
-
-
-<!-- System Map -->
-
-<div class="section">
-
-<h2 id="system">LEO System Map</h2>
-
-<p>
-The LEO architecture follows a structured analytical pipeline designed to detect 
-institutional anomalies and support investigative workflows.
-</p>
-
-<div class="system-map">
-
-<div class="map-box">
-<strong>Truth Ingestion</strong><br>
-Structured acquisition and verification of institutional information.
-</div>
-
-<div class="map-box">
-<strong>Anomaly Analysis</strong><br>
-Graph analysis, pattern detection and structural anomaly identification.
-</div>
-
-<div class="map-box">
-<strong>Investigation Pipeline</strong><br>
-Automated investigation reports and case construction.
-</div>
-
-<div class="map-box">
-<strong>Institutional Alerts</strong><br>
-Risk escalation and structured institutional notification.
-</div>
-
-</div>
-
-</div>
-
-
-<!-- Research Infrastructure -->
-
-<div class="section">
-
-<h2 id="infrastructure">LEO Research Infrastructure</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>System Architecture</h3>
-<p>Technical architecture and system structure of LEO.</p>
-<a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture">
-View Architecture →
-</a>
-</div>
-
-<div class="card">
-<h3>Prototype Demonstration</h3>
-<p>Runtime demonstration of the LEO analytical pipeline.</p>
-<a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/demonstration/LEO_PROTOTYPE_DEMONSTRATION.md">
-View Demonstration →
-</a>
-</div>
-
-<div class="card">
-<h3>Project Status</h3>
-<p>Current development phase of the LEO research project.</p>
-<a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/PROJECT_STATUS.md">
-View Status →
-</a>
-</div>
-
-<div class="card">
-<h3>Full Repository</h3>
-<p>Complete research repository of the BBS Open System.</p>
-<a href="https://github.com/BBS-contact/BBS-Open-System">
-Open Repository →
-</a>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- Regulatory Context -->
-
-<div class="section">
-
-<h2>Regulatory Context</h2>
-
-<ul>
-<li>GDPR (Regulation EU 2016/679)</li>
-<li>EU Artificial Intelligence Act</li>
-<li>EU Data Governance Frameworks</li>
-<li>Polish foundation and accounting law</li>
-</ul>
-
-</div>
-
-
-<!-- Institutional Position -->
-
-<div class="section">
-
-<h2 id="governance">Institutional Position</h2>
-
-<p>
-The LEO project is developed within the institutional framework of 
-Fundacja BBS – Better Balance System as part of a research initiative 
-exploring new models of institutional integrity infrastructure and 
-transparent governance support systems.
-</p>
-
-</div>
-
-
-<!-- Institutional Transparency -->
-
-<div class="section">
-
-<h2 id="transparency">Institutional Transparency</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Institution</h3>
-<p>Fundacja BBS – Better Balance System</p>
-</div>
-
-<div class="card">
-<h3>Legal Status</h3>
-<p>Registered non-profit foundation</p>
-</div>
-
-<div class="card">
-<h3>Jurisdiction</h3>
-<p>Poland · European Union</p>
-</div>
-
-<div class="card">
-<h3>Research Repository</h3>
-<a href="https://github.com/BBS-contact/BBS-Open-System">
-Open GitHub Repository →
-</a>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- Research Integrity -->
-
-<div class="section">
-
-<h2>Research Integrity Statement</h2>
-
-<p>
-The LEO project is developed as a research initiative focused on
-institutional transparency and governance support.
-</p>
-
-<p>
-The system operates as an analytical advisory infrastructure and
-does not replace institutional authority or legal processes.
-</p>
-
-<p>
-Development follows applicable regulatory frameworks including
-EU data protection principles and responsible AI practices.
-</p>
-
-<p>
-The objective of the project is to explore preventive integrity
-infrastructure capable of identifying structural anomalies in
-institutional systems before systemic failures occur.
-</p>
-
-</div>
-
- <div class="section">
-
-<h2>Contact</h2>
-
-<p>
-Fundacja BBS – Better Balance System<br>
-Poland · European Union
-</p>
-
-<p>
-For institutional or research inquiries regarding the LEO project,
-please contact the BBS Foundation through official channels.
-</p>
-
-<p>
-Repository:<br>
-<a href="https://github.com/BBS-contact/BBS-Open-System">
-https://github.com/BBS-contact/BBS-Open-System
-</a>
-</p>
-
-</div>   
-
-<div class="footer">
-
-Fundacja BBS – Better Balance System  
-Poland · European Union
-
-</div>
-
-</div>
-
+  <div class="header">
+    <h1>LEO – Logical Epistemic Oversight</h1>
+
+    <div class="banner">
+      Research Prototype · Institutional Integrity Infrastructure<br />
+      Developed by Fundacja BBS – Better Balance System
+    </div>
+
+    <div class="navbar">
+      <a href="#overview">Overview</a>
+      <a href="#system">System Map</a>
+      <a href="#infrastructure">Infrastructure</a>
+      <a href="#reports">Reports</a>
+      <a href="#governance">Governance</a>
+      <a href="#transparency">Transparency</a>
+      <a href="https://github.com/BBS-contact/BBS-Open-System">Repository</a>
+    </div>
+
+    <p>
+      Research infrastructure developed by<br />
+      <strong>Fundacja BBS – Better Balance System</strong><br />
+      Poland · European Union
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="section">
+      <h2 id="overview">Overview</h2>
+
+      <p>
+        LEO (Logical Epistemic Oversight) is a research-oriented governance support
+        architecture developed by Fundacja BBS. The system explores structured anomaly
+        detection, institutional transparency and compliance-aware AI advisory systems.
+      </p>
+
+      <p>
+        The platform operates as a <strong>research and advisory infrastructure</strong>
+        designed to support institutional analysis and decision transparency. LEO does
+        not replace institutional authority and does not issue legally binding decisions.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 id="system">LEO System Map</h2>
+
+      <p>
+        The LEO architecture follows a structured analytical pipeline designed to detect
+        institutional anomalies and support investigative workflows.
+      </p>
+
+      <div class="system-map">
+        <div class="map-box">
+          <strong>Truth Ingestion</strong><br />
+          Structured acquisition and verification of institutional information.
+        </div>
+
+        <div class="map-box">
+          <strong>Anomaly Analysis</strong><br />
+          Graph analysis, pattern detection and structural anomaly identification.
+        </div>
+
+        <div class="map-box">
+          <strong>Investigation Pipeline</strong><br />
+          Automated investigation reports and case construction.
+        </div>
+
+        <div class="map-box">
+          <strong>Institutional Alerts</strong><br />
+          Risk escalation and structured institutional notification.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 id="infrastructure">LEO Research Infrastructure</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>System Architecture</h3>
+          <p>Technical architecture and system structure of LEO.</p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture">
+            View Architecture →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Prototype Demonstration</h3>
+          <p>Runtime demonstration of the LEO analytical pipeline.</p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/demonstration/LEO_PROTOTYPE_DEMONSTRATION.md">
+            View Demonstration →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Project Status</h3>
+          <p>Current development phase of the LEO research project.</p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/PROJECT_STATUS.md">
+            View Status →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Documented Reports</h3>
+          <p>Monthly reports and verification materials documenting actual progress.</p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
+            Open Reports →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 id="reports">Reports &amp; Verification</h2>
+
+      <p>
+        This section provides documented evidence of actual development activity,
+        including monthly reports and machine-generated structural verification
+        artifacts confirming the state of the working system.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>March 2026 Activity Report</h3>
+          <p>
+            Official monthly report describing development progress, testing activity
+            and current operational state of the system.
+          </p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports/march_2026">
+            Open March 2026 Report →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>System Reality Audit</h3>
+          <p>
+            Machine-generated structural audit confirming actual directories, files
+            and system inventory present in the working environment.
+          </p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports/march_2026/attachments">
+            Open Audit Attachments →
+          </a>
+        </div>
+
+        <div class="card">
+          <h3>Reports Archive</h3>
+          <p>
+            Chronological archive of foundation reports and technical verification
+            materials.
+          </p>
+          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
+            Open Reports Archive →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Regulatory Context</h2>
+
+      <ul>
+        <li>GDPR (Regulation EU 2016/679)</li>
+        <li>EU Artificial Intelligence Act</li>
+        <li>EU Data Governance Frameworks</li>
+        <li>Polish foundation and accounting law</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2 id="governance">Institutional Position</h2>
+
+      <p>
+        The LEO project is developed within the institutional framework of Fundacja
+        BBS – Better Balance System as part of a research initiative exploring new
+        models of institutional integrity infrastructure and transparent governance
+        support systems.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2 id="transparency">Institutional Transparency</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Institution</h3>
+          <p>Fundacja BBS – Better Balance System</p>
+        </div>
+
+        <div class="card">
+          <h3>Legal Status</h3>
+          <p>Registered non-profit foundation</p>
+        </div>
+
+        <div class="card">
+          <h3>Jurisdiction</h3>
+          <p>Poland · European Union</p>
+        </div>
+
+        <div class="card">
+          <h3>Research Repository</h3>
+          <a href="https://github.com/BBS-contact/BBS-Open-System">
+            Open GitHub Repository →
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Research Integrity Statement</h2>
+
+      <p>
+        The LEO project is developed as a research initiative focused on institutional
+        transparency and governance support.
+      </p>
+
+      <p>
+        The system operates as an analytical advisory infrastructure and does not
+        replace institutional authority or legal processes.
+      </p>
+
+      <p>
+        Development follows applicable regulatory frameworks including EU data
+        protection principles and responsible AI practices.
+      </p>
+
+      <p>
+        The objective of the project is to explore preventive integrity infrastructure
+        capable of identifying structural anomalies in institutional systems before
+        systemic failures occur.
+      </p>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+
+      <p>
+        Fundacja BBS – Better Balance System<br />
+        Poland · European Union
+      </p>
+
+      <p>
+        For institutional or research inquiries regarding the LEO project, please
+        contact the BBS Foundation through official channels.
+      </p>
+
+      <p>
+        Repository:<br />
+        <a href="https://github.com/BBS-contact/BBS-Open-System">
+          https://github.com/BBS-contact/BBS-Open-System
+        </a>
+      </p>
+    </div>
+
+    <div class="footer">
+      Fundacja BBS – Better Balance System<br />
+      Poland · European Union
+    </div>
+  </div>
 </body>
 </html>
