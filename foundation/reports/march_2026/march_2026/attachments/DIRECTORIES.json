@@ -1,0 +1,2120 @@
+[
+  {
+    "relative_path": ".",
+    "depth": 0,
+    "direct_subdirs": 17,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "_SYSTEM_AUDIT",
+    "depth": 1,
+    "direct_subdirs": 0,
+    "direct_files": 16
+  },
+  {
+    "relative_path": "archives",
+    "depth": 1,
+    "direct_subdirs": 6,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "archives/deployments",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "archives/deployments/leo-institutional",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "archives/deployments/leo-institutional/human-interaction",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "archives/exports",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "archives/legacy",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "archives/leo-runtime",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "archives/leo-runtime/core",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "archives/leo-runtime/data",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "archives/reports",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "archives/snapshots",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit",
+    "depth": 1,
+    "direct_subdirs": 1,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW",
+    "depth": 2,
+    "direct_subdirs": 10,
+    "direct_files": 9
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/00_control",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/01_inventory",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 10
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/02_coverage",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/03_integrity",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/04_truth",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/05_anomalies",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/06_prototype",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/07_decisions",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/08_quarterly",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "audit/LEO_Q1_2026_SYSTEM_REVIEW/09_filesystem_report",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "data",
+    "depth": 1,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "epistemic_history",
+    "depth": 1,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1",
+    "depth": 1,
+    "direct_subdirs": 22,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_01",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_02",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_03",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_04",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_05",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_06",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_07",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_08",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_09",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_10",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_11",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_12",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_13",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_14",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_15",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_16",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/core_17",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/network_state",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_network_v1/network_state/activation_records",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/network_state/incidents",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_A",
+    "depth": 2,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_A/identity",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_A/index",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_A/state_roots",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_A/truths",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_B",
+    "depth": 2,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_B/identity",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_B/index",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_B/state_roots",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_B/truths",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_C",
+    "depth": 2,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_C/identity",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_C/index",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_C/state_roots",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_C/truths",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_network_v1/node_status",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_v1_storage",
+    "depth": 1,
+    "direct_subdirs": 4,
+    "direct_files": 10
+  },
+  {
+    "relative_path": "epistemic_v1_storage/identity",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_v1_storage/index",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_v1_storage/state_roots",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "epistemic_v1_storage/truths",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "epistemic_v1_storage_mirror",
+    "depth": 1,
+    "direct_subdirs": 3,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "epistemic_v1_storage_mirror/index",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_v1_storage_mirror/state_roots",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "epistemic_v1_storage_mirror/truths",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation",
+    "depth": 1,
+    "direct_subdirs": 18,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/01_GOVERNANCE_INTERNAL",
+    "depth": 2,
+    "direct_subdirs": 3,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/01_GOVERNANCE_INTERNAL/BHP",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/01_GOVERNANCE_INTERNAL/RODO",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "foundation/01_GOVERNANCE_INTERNAL/wolontariat",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "foundation/04_PROJECTS_AND_RnD",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/04_PROJECTS_AND_RnD/LEO",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/04_PROJECTS_AND_RnD/LEO/REPORTS",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/05_INTELLECTUAL_CAPITAL",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/05_INTELLECTUAL_CAPITAL/01_FOUNDER_CONTRIBUTION",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/06_LICENCES_AND_RIGHTS",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/07_REPORTING_PUBLIC",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/deployment",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "foundation/deployment/playbooks",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "foundation/external_relations",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/external_relations/academia",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/external_relations/academia/UMK_Torun",
+    "depth": 4,
+    "direct_subdirs": 3,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/external_relations/academia/UMK_Torun/incoming",
+    "depth": 5,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/external_relations/academia/UMK_Torun/outgoing",
+    "depth": 5,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/external_relations/academia/UMK_Torun/research_brief",
+    "depth": 5,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "foundation/finance",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "foundation/governance",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/institutional",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 20
+  },
+  {
+    "relative_path": "foundation/knowledge",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 18
+  },
+  {
+    "relative_path": "foundation/knowledge/17_CORES_SERIES",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 8
+  },
+  {
+    "relative_path": "foundation/legal",
+    "depth": 2,
+    "direct_subdirs": 3,
+    "direct_files": 6
+  },
+  {
+    "relative_path": "foundation/legal/agreements",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "foundation/legal/institutional",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/legal/registers",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "foundation/monthly-reports",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/monthly-reports/2026",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/monthly-reports/2026/03",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/positioning",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "foundation/public-docs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 15
+  },
+  {
+    "relative_path": "foundation/rejestry",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "foundation/reports",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "foundation/website",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 8
+  },
+  {
+    "relative_path": "foundation/website/public",
+    "depth": 3,
+    "direct_subdirs": 2,
+    "direct_files": 17
+  },
+  {
+    "relative_path": "foundation/website/public/en",
+    "depth": 4,
+    "direct_subdirs": 1,
+    "direct_files": 6
+  },
+  {
+    "relative_path": "foundation/website/public/en/legal",
+    "depth": 5,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "foundation/website/public/legal",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 6
+  },
+  {
+    "relative_path": "identity_storage",
+    "depth": 1,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo",
+    "depth": 1,
+    "direct_subdirs": 7,
+    "direct_files": 10
+  },
+  {
+    "relative_path": "leo/audit",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/audit/tests",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo/audit/tests/fixtures",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/docs",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo/docs/audit",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/identity",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo/identity/private",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/identity/public",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime",
+    "depth": 2,
+    "direct_subdirs": 20,
+    "direct_files": 118
+  },
+  {
+    "relative_path": "leo/runtime/accounting",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo/runtime/alerts",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo/runtime/analysis",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 17
+  },
+  {
+    "relative_path": "leo/runtime/cases",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/crypto",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/domain_cores",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/domain_cores/epistemic_core",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 10
+  },
+  {
+    "relative_path": "leo/runtime/epistemic",
+    "depth": 3,
+    "direct_subdirs": 7,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/graph",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 9
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/ingestion_v1",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/network_rebuild_v1",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/network_v1",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 9
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/network_v2",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 8
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/recovery_v1",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo/runtime/epistemic/v0_legacy",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/epistemology",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo/runtime/epoch",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/identity",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "leo/runtime/ingestion",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo/runtime/ingestion/_legacy_v01_ingestion",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/logs",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/memory",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/network",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/persistence",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo/runtime/routing",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 8
+  },
+  {
+    "relative_path": "leo/runtime/state",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 97
+  },
+  {
+    "relative_path": "leo/runtime/system",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/runtime/traces",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 133
+  },
+  {
+    "relative_path": "leo/state",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/tests",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo/tests/epistemic",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/tests/integration",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo/tools",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 9
+  },
+  {
+    "relative_path": "leo/tools/snapshot_archive",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core",
+    "depth": 1,
+    "direct_subdirs": 91,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/DECISIONS",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/INSTITUTIONAL FRAMEWORK",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/INSTITUTIONAL FRAMEWORK/EXIT & MISUSE",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON",
+    "depth": 2,
+    "direct_subdirs": 7,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/FOUNDATION & STABILITY",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/MEMORY & HUMAN CONTINUITY",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/PRIVACY & DATA SOVEREIGNTY",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/PUBLIC INTERFACE & TRANSPARENCY",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/SECURITY & THREAT MODEL",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/STRUCTURE & DEPENDENCIES",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/LEO CORE CANON/SYSTEM STATUS & CLOSURE",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/_AUDIT_LEO_CORE_20260322_201610",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 16
+  },
+  {
+    "relative_path": "leo-core/architecture",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/architecture/distributed",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/architecture-addendum",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/archival-and-succession",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "leo-core/archive",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/audit",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/audit-reconstruction-drill",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/auditability-transparency-evidence",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/canon",
+    "depth": 2,
+    "direct_subdirs": 7,
+    "direct_files": 19
+  },
+  {
+    "relative_path": "leo-core/canon/bridge_layers",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/canon/core",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/canon/core-alignment",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/canon/epistemology",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/canon/external-trust-cycle",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/canon/internal-alignment",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo-core/canon/runtime",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/canon-index-master-map",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/constitution",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "leo-core/deployment",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/design-notes-research-threads",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/design-notes-research-threads/recommendations",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/docs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/domains",
+    "depth": 2,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/domains/accounting",
+    "depth": 3,
+    "direct_subdirs": 2,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo-core/domains/accounting/cases",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/domains/accounting/legal",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/domains/audit",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/domains/governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/domains/hr",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/epistemic",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/epistemic/engine",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/ethical-scope-moral-boundary",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/ethics",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/evolution",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/evolution/adaptive",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/evolution/v1.1-integrity-hardening",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 6
+  },
+  {
+    "relative_path": "leo-core/exception-handling-system-failure",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/execution-mode-plan-bbs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains",
+    "depth": 3,
+    "direct_subdirs": 5,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains/accounting",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains/audit",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains/governance",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains/hr",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/expansion_rules/domains/voting",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/external",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/external/verifier",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/external/verifier/freeze",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/external-interface-principles",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/external-modules-concepts",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/external-regulatory-interface",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/external_interface",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/external_interface/legal",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/federation",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/formal_model",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/formal_verification",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/foundation-detachment-stewardship",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/founder-detachment-stewardship",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/founder-protection-interface",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/governance",
+    "depth": 2,
+    "direct_subdirs": 3,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/governance/checkpoints",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/governance/external_anchoring",
+    "depth": 3,
+    "direct_subdirs": 2,
+    "direct_files": 154
+  },
+  {
+    "relative_path": "leo-core/governance/external_anchoring/_AUDIT_EXTERNAL_ANCHORING_20260322_193027",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 12
+  },
+  {
+    "relative_path": "leo-core/governance/external_anchoring/_INACTIVE_OVERLAP_2026-03-22",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 13
+  },
+  {
+    "relative_path": "leo-core/governance/versioning",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/governance-review-dry-run",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/governance-review-framework",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/hard-limits-non-automation",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/human-interaction-cognitive-boundaries",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/implementation",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/implementation/audit",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/institutional-embedding",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 8
+  },
+  {
+    "relative_path": "leo-core/institutional-package-bbs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/institutional-readiness-brief",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/institutional-translation-layer",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/integration",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/integrity",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/integrity/cross_stage",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/interfaces",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/interfaces/external_readonly",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/laboratory",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/legal-authorship",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/legal-regulatory-jurisdictional-interface",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/leo-archive",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/leo-institutional",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/logic",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/memory",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo-core/modules",
+    "depth": 2,
+    "direct_subdirs": 5,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/accounting",
+    "depth": 3,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/modules/accounting/extensions",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/modules/accounting/governance",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/modules/accounting/integration",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/accounting/reviews",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/alignment",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/modules/audit",
+    "depth": 3,
+    "direct_subdirs": 2,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/modules/audit/governance",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/audit/reviews",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance",
+    "depth": 3,
+    "direct_subdirs": 10,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/modules/governance/bindings",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/canon",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/controls",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/freeze",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/governance",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/integration",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/protocols",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/public",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/reviews",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/governance/signals",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/modules/voting_elections_integrity",
+    "depth": 3,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "leo-core/modules/voting_elections_integrity/public_interface",
+    "depth": 4,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/normative-consistency",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/operational-embedding-principles",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/operational-pilot-profile-bbs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/operational-playbooks",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/personal",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/pilot",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/pilot/freeze",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/pilot/records",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 7
+  },
+  {
+    "relative_path": "leo-core/principles",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/prototype",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/public",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/public/freeze",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/public/manifests",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/public-assurance",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/public-docs",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 4
+  },
+  {
+    "relative_path": "leo-core/public-manifest-whitepaper",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/public-positioning",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/public-readonly",
+    "depth": 2,
+    "direct_subdirs": 1,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "leo-core/public-readonly/samples",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/red_rules",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/reinstantiation",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/research",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 20
+  },
+  {
+    "relative_path": "leo-core/resilience-self-healing",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/roadmap",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/runtime",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/security",
+    "depth": 2,
+    "direct_subdirs": 2,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/security/incident_response",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/security/key_governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/security-abuse-resistance-threat-boundary",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/status",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/system",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 47
+  },
+  {
+    "relative_path": "leo-core/system-closure-completeness-readiness",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/system-evolution-governance-change-control",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "leo-core/system-positioning",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/system_audit",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/system_integrity_layer",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 12
+  },
+  {
+    "relative_path": "leo-core/threat-model",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/transition",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/transparency",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "leo-core/v1.1-backlog-formation",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "leo-core/v1x-controlled-evolution-roadmap",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules",
+    "depth": 1,
+    "direct_subdirs": 3,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency",
+    "depth": 2,
+    "direct_subdirs": 7,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/algorithms",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/anti_corruption",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/boundaries",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 5
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/charter",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/control",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/accounting_financial_transparency/interface",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "modules/public_procurement_contracting",
+    "depth": 2,
+    "direct_subdirs": 4,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "modules/public_procurement_contracting/anti_corruption",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/public_procurement_contracting/charter",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/public_procurement_contracting/governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/public_procurement_contracting/interface",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity",
+    "depth": 2,
+    "direct_subdirs": 5,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity/anti_corruption",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity/boundaries",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity/charter",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity/governance",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "modules/voting_elections_integrity/interface",
+    "depth": 3,
+    "direct_subdirs": 0,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "reports",
+    "depth": 1,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "reports/system_reality_audit_march_2026",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "sandbox",
+    "depth": 1,
+    "direct_subdirs": 1,
+    "direct_files": 0
+  },
+  {
+    "relative_path": "sandbox/rebuilt_node",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  },
+  {
+    "relative_path": "tests_runtime",
+    "depth": 1,
+    "direct_subdirs": 0,
+    "direct_files": 64
+  },
+  {
+    "relative_path": "tools",
+    "depth": 1,
+    "direct_subdirs": 3,
+    "direct_files": 2
+  },
+  {
+    "relative_path": "tools/admin",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 3
+  },
+  {
+    "relative_path": "tools/audit",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 11
+  },
+  {
+    "relative_path": "tools/security",
+    "depth": 2,
+    "direct_subdirs": 0,
+    "direct_files": 1
+  }
+]
