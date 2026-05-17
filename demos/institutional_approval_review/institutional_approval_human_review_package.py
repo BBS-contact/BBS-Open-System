@@ -1,8 +1,8 @@
 r"""
 LEO Institutional Approval Human Review Package
 
-Canonical save path:
-D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\institutional_approval_human_review_package.py
+Public demo path:
+demos/institutional_approval_review/institutional_approval_human_review_package.py
 
 Purpose:
 Create a local, human-controlled review export package for the Institutional Approval
