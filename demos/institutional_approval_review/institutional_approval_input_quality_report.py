@@ -1,8 +1,8 @@
 r"""
 LEO Institutional Approval Review Input Quality Report v0.1
 
-Canonical Path:
-D:\BBS-09-01-2026\leo\runtime\demos\institutional_approval_review\institutional_approval_input_quality_report.py
+Public demo path:
+demos/institutional_approval_review/institutional_approval_input_quality_report.py
 
 Purpose:
 Validate the local CSV input files for the Institutional Approval Review demo slice
