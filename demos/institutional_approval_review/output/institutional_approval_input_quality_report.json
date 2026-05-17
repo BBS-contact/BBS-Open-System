@@ -17,7 +17,7 @@
   },
   "files": {
     "approval_requests": {
-      "path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\input\\approval_requests.csv",
+      "path": "input/approval_requests.csv"
       "exists": true,
       "rows_loaded": 20,
       "columns": [
