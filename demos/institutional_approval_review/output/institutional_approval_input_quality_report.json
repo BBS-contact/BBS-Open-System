@@ -44,7 +44,7 @@
       ]
     },
     "approval_steps": {
-      "path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\input\\approval_steps.csv",
+      "path": "input/approval_steps.csv"
       "exists": true,
       "rows_loaded": 49,
       "columns": [
@@ -64,7 +64,7 @@
       ]
     },
     "approval_policy_rules": {
-      "path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\input\\approval_policy_rules.csv",
+      "path": "input/approval_policy_rules.csv"
       "exists": true,
       "rows_loaded": 15,
       "columns": [
@@ -82,7 +82,7 @@
       ]
     },
     "approval_role_matrix": {
-      "path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\input\\approval_role_matrix.csv",
+      "path": "input/approval_role_matrix.csv"
       "exists": true,
       "rows_loaded": 17,
       "columns": [
@@ -99,7 +99,7 @@
       ]
     },
     "approval_exception_register": {
-      "path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\input\\approval_exception_register.csv",
+      "path": "input/approval_exception_register.csv",
       "exists": true,
       "rows_loaded": 8,
       "columns": [
