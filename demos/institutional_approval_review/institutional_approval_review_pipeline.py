@@ -1,8 +1,8 @@
 r"""
 LEO Institutional Approval Review Pipeline v0.1
 
-Canonical Path:
-D:\BBS-09-01-2026\leo\runtime\demos\institutional_approval_review\institutional_approval_review_pipeline.py
+Public demo path:
+demos/institutional_approval_review/institutional_approval_review_pipeline.py
 
 Purpose:
 Generate evidence-backed institutional approval continuity review findings from
