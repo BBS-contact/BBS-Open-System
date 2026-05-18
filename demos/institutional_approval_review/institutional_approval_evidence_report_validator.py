@@ -1,8 +1,8 @@
 r"""
 LEO Institutional Approval Evidence Report Validator v0.1
 
-Canonical Path:
-D:\BBS-09-01-2026\leo\runtime\demos\institutional_approval_review\institutional_approval_evidence_report_validator.py
+Public demo path:
+demos/institutional_approval_review/institutional_approval_evidence_report_validator.py
 
 Purpose:
 Validate the generated Institutional Approval Review evidence report before dashboard,
