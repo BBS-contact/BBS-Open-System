@@ -17,7 +17,7 @@
   },
   "files": {
     "approval_requests": {
-     "path": "input/approval_requests.csv",
+      "path": "input/approval_requests.csv",
       "exists": true,
       "rows_loaded": 20,
       "columns": [
