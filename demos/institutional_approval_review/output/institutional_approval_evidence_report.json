@@ -2,7 +2,7 @@
   "report_id": "LOCAL_INSTITUTIONAL_APPROVAL_EVIDENCE_REPORT",
   "report_version": "v0.1",
   "generated_at": "2026-05-15T17:34:39Z",
-  "source_input_quality_report": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\output\\institutional_approval_input_quality_report.json",
+  "source_input_quality_report": "output/institutional_approval_input_quality_report.json",
   "input_quality_status": "READY",
   "input_quality_ready_for_analysis": true,
   "summary": {
