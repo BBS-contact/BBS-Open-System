@@ -1,0 +1,138 @@
+{
+  "report_id": "LOCAL_INSTITUTIONAL_APPROVAL_INPUT_QUALITY_REPORT",
+  "report_version": "v0.1",
+  "generated_at": "2026-05-15T16:58:56Z",
+  "status": "READY",
+  "ready_for_analysis": true,
+  "summary": {
+    "files_expected": 5,
+    "files_loaded": 5,
+    "approval_requests_count": 20,
+    "approval_steps_count": 49,
+    "approval_policy_rules_count": 15,
+    "approval_role_matrix_count": 17,
+    "approval_exception_register_count": 8,
+    "error_count": 0,
+    "warning_count": 0
+  },
+  "files": {
+    "approval_requests": {
+      "path": "input/approval_requests.csv",
+      "exists": true,
+      "rows_loaded": 20,
+      "columns": [
+        "request_id",
+        "request_type",
+        "request_title",
+        "request_date",
+        "requested_by",
+        "department",
+        "amount_pln",
+        "risk_level",
+        "execution_status",
+        "handoff_status",
+        "current_owner",
+        "final_decision_state",
+        "requires_legal_review",
+        "requires_finance_review",
+        "requires_management_review",
+        "emergency_override_used",
+        "override_reason_present",
+        "linked_contract_reference",
+        "linked_budget_reference",
+        "notes"
+      ]
+    },
+    "approval_steps": {
+      "path": "input/approval_steps.csv",
+      "exists": true,
+      "rows_loaded": 49,
+      "columns": [
+        "step_id",
+        "request_id",
+        "step_order",
+        "role",
+        "reviewer_name",
+        "review_status",
+        "review_date",
+        "review_note",
+        "is_required",
+        "approval_scope",
+        "override_reference",
+        "review_layer",
+        "decision_owner_confirmed"
+      ]
+    },
+    "approval_policy_rules": {
+      "path": "input/approval_policy_rules.csv",
+      "exists": true,
+      "rows_loaded": 15,
+      "columns": [
+        "rule_id",
+        "request_type",
+        "risk_level",
+        "amount_threshold_pln",
+        "required_roles",
+        "required_order",
+        "exception_allowed",
+        "exception_requires_reason",
+        "exception_requires_documentation",
+        "human_readable_rule",
+        "verdict_boundary"
+      ]
+    },
+    "approval_role_matrix": {
+      "path": "input/approval_role_matrix.csv",
+      "exists": true,
+      "rows_loaded": 17,
+      "columns": [
+        "role",
+        "allowed_request_types",
+        "approval_limit_pln",
+        "can_override",
+        "requires_note",
+        "requires_secondary_review",
+        "review_scope",
+        "max_risk_level",
+        "active_role",
+        "human_readable_role_description"
+      ]
+    },
+    "approval_exception_register": {
+      "path": "input/approval_exception_register.csv",
+      "exists": true,
+      "rows_loaded": 8,
+      "columns": [
+        "exception_id",
+        "request_id",
+        "exception_type",
+        "approved_by",
+        "approved_role",
+        "exception_date",
+        "reason_provided",
+        "reason_text",
+        "documentation_reference",
+        "documentation_present",
+        "post_event_review_required",
+        "post_event_review_status",
+        "human_review_required",
+        "notes"
+      ]
+    }
+  },
+  "issues": [],
+  "zero_autonomy_boundary": {
+    "no_autonomous_approval": true,
+    "no_autonomous_rejection": true,
+    "no_payment_blocking": true,
+    "no_staff_punishment": true,
+    "no_legal_conclusion": true,
+    "no_donor_compliance_conclusion": true,
+    "no_board_decision": true,
+    "no_production_mutation": true,
+    "no_canonical_registry_mutation": true,
+    "no_signing_or_key_access": true,
+    "no_external_execution": true,
+    "statement": "This report validates local CSV input structure only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+  }
+}

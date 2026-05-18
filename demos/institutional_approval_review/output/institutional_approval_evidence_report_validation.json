@@ -1,0 +1,29 @@
+{
+  "status": "VALID",
+  "is_valid": true,
+  "report_path": "output/institutional_approval_evidence_report.json",
+  "summary": {
+    "error_count": 0,
+    "warning_count": 0,
+    "issue_count": 0,
+    "findings_count": 33,
+    "evidence_objects_count": 33,
+    "high_or_critical_findings_count": 21,
+    "autonomous_actions": 0
+  },
+  "issues": [],
+  "zero_autonomy_boundary": {
+    "no_autonomous_approval": true,
+    "no_autonomous_rejection": true,
+    "no_payment_blocking": true,
+    "no_staff_punishment": true,
+    "no_legal_conclusion": true,
+    "no_donor_compliance_conclusion": true,
+    "no_board_decision": true,
+    "no_production_mutation": true,
+    "no_canonical_registry_mutation": true,
+    "no_signing_or_key_access": true,
+    "no_external_execution": true,
+    "statement": "This validator checks local evidence report structure only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+  }
+}
