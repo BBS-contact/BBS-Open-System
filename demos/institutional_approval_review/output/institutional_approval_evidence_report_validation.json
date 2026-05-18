@@ -1,7 +1,7 @@
 {
   "status": "VALID",
   "is_valid": true,
-  "report_path": "D:\\BBS-09-01-2026\\leo\\runtime\\demos\\institutional_approval_review\\output\\institutional_approval_evidence_report.json",
+  "report_path": "output/institutional_approval_evidence_report.json",
   "summary": {
     "error_count": 0,
     "warning_count": 0,
