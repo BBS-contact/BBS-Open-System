@@ -1,0 +1,2095 @@
+{
+  "report_id": "LOCAL_INSTITUTIONAL_APPROVAL_EVIDENCE_REPORT",
+  "report_version": "v0.1",
+  "generated_at": "2026-05-15T17:34:39Z",
+  "source_input_quality_report": "output/institutional_approval_input_quality_report.json",
+  "input_quality_status": "READY",
+  "input_quality_ready_for_analysis": true,
+  "summary": {
+    "findings_count": 33,
+    "evidence_objects_count": 33,
+    "high_or_critical_findings_count": 21,
+    "signal_families": {
+      "missing_required_approval": 16,
+      "execution_ready_with_pending_review": 4,
+      "legal_review_missing_for_contractual_action": 4,
+      "emergency_override_without_reason": 1,
+      "exception_without_documentation": 4,
+      "unresolved_rejection_followed_by_approval": 3,
+      "missing_decision_owner": 1
+    },
+    "autonomous_actions": 0
+  },
+  "findings": [
+    {
+      "id": "IAR-001",
+      "request_id": "REQ-002",
+      "title": "Missing required approval",
+      "severity": "MEDIUM",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: legal_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-001"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-002",
+      "request_id": "REQ-002",
+      "title": "Ready state with unresolved required review",
+      "severity": "MEDIUM",
+      "signal_family": "execution_ready_with_pending_review",
+      "detected_signal": "Request is marked READY_FOR_HANDOFF/PENDING_DOCUMENT_REVIEW while required review remains unresolved: document_review.",
+      "why_it_matters": "A request should not appear ready for handoff or execution while a required review state remains pending, escalated, or requiring replacement.",
+      "reviewer_question": "Why is readiness indicated before required review closure?",
+      "next_action": "Hold readiness interpretation and request human review of unresolved steps.",
+      "responsible_review_layer": [
+        "document_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "APPROVAL_ORDER_INCONSISTENCY_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-002"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-003",
+      "request_id": "REQ-002",
+      "title": "Legal review missing for contractual request",
+      "severity": "MEDIUM",
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "detected_signal": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "why_it_matters": "Contractual actions should remain reviewable by the responsible legal review layer before handoff readiness is accepted.",
+      "reviewer_question": "Why is legal review missing for this request and who must review the contract reference?",
+      "next_action": "Request legal review record or documented exception.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-003"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-004",
+      "request_id": "REQ-004",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-003",
+        "source_rule_name": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve procurement, block procurement, or replace management authority."
+      },
+      "evidence_ids": [
+        "IAE-004"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-005",
+      "request_id": "REQ-004",
+      "title": "Ready state with unresolved required review",
+      "severity": "HIGH",
+      "signal_family": "execution_ready_with_pending_review",
+      "detected_signal": "Request is marked EXECUTION_READY/HANDOFF_READY while required review remains unresolved: legal_review.",
+      "why_it_matters": "A request should not appear ready for handoff or execution while a required review state remains pending, escalated, or requiring replacement.",
+      "reviewer_question": "Why is readiness indicated before required review closure?",
+      "next_action": "Hold readiness interpretation and request human review of unresolved steps.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-003",
+        "source_rule_name": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "APPROVAL_ORDER_INCONSISTENCY_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve procurement, block procurement, or replace management authority."
+      },
+      "evidence_ids": [
+        "IAE-005"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-006",
+      "request_id": "REQ-004",
+      "title": "Emergency override without documented reason",
+      "severity": "HIGH",
+      "signal_family": "emergency_override_without_reason",
+      "detected_signal": "Emergency override was used but documented reason is missing or incomplete.",
+      "why_it_matters": "Emergency override may be necessary, but it must remain traceable and reviewable after the event.",
+      "reviewer_question": "What documented reason justified the emergency override and where is it preserved?",
+      "next_action": "Request override reason documentation and post-event review.",
+      "responsible_review_layer": [
+        "executive_override",
+        "internal_audit"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-003",
+        "source_rule_name": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "EMERGENCY_OVERRIDE_REVIEW_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve procurement, block procurement, or replace management authority."
+      },
+      "evidence_ids": [
+        "IAE-006"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-007",
+      "request_id": "REQ-004",
+      "title": "Exception record without supporting documentation",
+      "severity": "HIGH",
+      "signal_family": "exception_without_documentation",
+      "detected_signal": "Exception OVR-001 references missing or unavailable documentation.",
+      "why_it_matters": "Exceptional approval paths require supporting documentation for auditability and accountability.",
+      "reviewer_question": "Where is the supporting exception documentation and who must review it?",
+      "next_action": "Request exception documentation before handoff readiness is accepted.",
+      "responsible_review_layer": [
+        "executive_override",
+        "internal_audit"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-003",
+        "source_rule_name": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "EMERGENCY_OVERRIDE_REVIEW_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve procurement, block procurement, or replace management authority."
+      },
+      "evidence_ids": [
+        "IAE-007"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-008",
+      "request_id": "REQ-005",
+      "title": "Missing required approval",
+      "severity": "MEDIUM",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: document_review, program_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "document_review",
+        "program_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-008"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-009",
+      "request_id": "REQ-006",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: finance_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "finance_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-009"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-010",
+      "request_id": "REQ-006",
+      "title": "Unresolved rejection followed by approval",
+      "severity": "HIGH",
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "detected_signal": "Rejected review role(s) legal_review were followed by approval role(s) management_board.",
+      "why_it_matters": "A rejection followed by approval can be legitimate, but the exception path must be documented and reviewed.",
+      "reviewer_question": "Was the rejection resolved through a documented exception or institutional escalation path?",
+      "next_action": "Escalate for institutional review and verify exception documentation.",
+      "responsible_review_layer": [
+        "legal_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "UNRESOLVED_REJECTION_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-010"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-011",
+      "request_id": "REQ-007",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-003",
+        "source_rule_name": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value procurement requires finance, legal, and management board review before execution readiness or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve procurement, block procurement, or replace management authority."
+      },
+      "evidence_ids": [
+        "IAE-011"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-012",
+      "request_id": "REQ-008",
+      "title": "Missing required approval",
+      "severity": "MEDIUM",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-011",
+        "source_rule_name": "Partnership request requires domain owner review and legal review before activation or institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Partnership request requires domain owner review and legal review before activation or institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve partnerships or replace authorized signatories."
+      },
+      "evidence_ids": [
+        "IAE-012"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-013",
+      "request_id": "REQ-010",
+      "title": "Missing required approval",
+      "severity": "MEDIUM",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: document_review, program_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "document_review",
+        "program_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-013"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-014",
+      "request_id": "REQ-011",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-009",
+        "source_rule_name": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve consulting work, block work, or issue legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-014"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-015",
+      "request_id": "REQ-011",
+      "title": "Ready state with unresolved required review",
+      "severity": "HIGH",
+      "signal_family": "execution_ready_with_pending_review",
+      "detected_signal": "Request is marked EXECUTION_READY/NOT_READY while required review remains unresolved: legal_review.",
+      "why_it_matters": "A request should not appear ready for handoff or execution while a required review state remains pending, escalated, or requiring replacement.",
+      "reviewer_question": "Why is readiness indicated before required review closure?",
+      "next_action": "Hold readiness interpretation and request human review of unresolved steps.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-009",
+        "source_rule_name": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "APPROVAL_ORDER_INCONSISTENCY_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve consulting work, block work, or issue legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-015"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-016",
+      "request_id": "REQ-011",
+      "title": "Exception record without supporting documentation",
+      "severity": "HIGH",
+      "signal_family": "exception_without_documentation",
+      "detected_signal": "Exception OVR-005 references missing or unavailable documentation.",
+      "why_it_matters": "Exceptional approval paths require supporting documentation for auditability and accountability.",
+      "reviewer_question": "Where is the supporting exception documentation and who must review it?",
+      "next_action": "Request exception documentation before handoff readiness is accepted.",
+      "responsible_review_layer": [
+        "governance_review",
+        "internal_audit"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-009",
+        "source_rule_name": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "EMERGENCY_OVERRIDE_REVIEW_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve consulting work, block work, or issue legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-016"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-017",
+      "request_id": "REQ-012",
+      "title": "Missing required approval",
+      "severity": "LOW",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: administration_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "administration_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-001",
+        "source_rule_name": "Low-risk procurement requires operational owner review and finance confirmation before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Low-risk procurement requires operational owner review and finance confirmation before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve, reject, block, punish, or execute any institutional action."
+      },
+      "evidence_ids": [
+        "IAE-017"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-018",
+      "request_id": "REQ-012",
+      "title": "Legal review missing for contractual request",
+      "severity": "LOW",
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "detected_signal": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "why_it_matters": "Contractual actions should remain reviewable by the responsible legal review layer before handoff readiness is accepted.",
+      "reviewer_question": "Why is legal review missing for this request and who must review the contract reference?",
+      "next_action": "Request legal review record or documented exception.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-001",
+        "source_rule_name": "Low-risk procurement requires operational owner review and finance confirmation before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Low-risk procurement requires operational owner review and finance confirmation before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve, reject, block, punish, or execute any institutional action."
+      },
+      "evidence_ids": [
+        "IAE-018"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-019",
+      "request_id": "REQ-013",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: finance_review, management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "finance_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-019"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-020",
+      "request_id": "REQ-014",
+      "title": "Missing required approval",
+      "severity": "CRITICAL",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: executive_review, management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "executive_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-004",
+        "source_rule_name": "Critical procurement requires finance review, legal review, and executive review before institutional handoff. Emergency override may be reviewed only when documented.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Critical procurement requires finance review, legal review, and executive review before institutional handoff. Emergency override may be reviewed only when documented.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not authorize emergency execution or replace executive responsibility."
+      },
+      "evidence_ids": [
+        "IAE-020"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-021",
+      "request_id": "REQ-015",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: legal_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-012",
+        "source_rule_name": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not authorize public institution collaboration or external commitments."
+      },
+      "evidence_ids": [
+        "IAE-021"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-022",
+      "request_id": "REQ-015",
+      "title": "Unresolved rejection followed by approval",
+      "severity": "HIGH",
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "detected_signal": "Rejected review role(s) finance_review were followed by approval role(s) management_board.",
+      "why_it_matters": "A rejection followed by approval can be legitimate, but the exception path must be documented and reviewed.",
+      "reviewer_question": "Was the rejection resolved through a documented exception or institutional escalation path?",
+      "next_action": "Escalate for institutional review and verify exception documentation.",
+      "responsible_review_layer": [
+        "finance_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-012",
+        "source_rule_name": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "UNRESOLVED_REJECTION_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not authorize public institution collaboration or external commitments."
+      },
+      "evidence_ids": [
+        "IAE-022"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-023",
+      "request_id": "REQ-015",
+      "title": "Legal review missing for contractual request",
+      "severity": "HIGH",
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "detected_signal": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "why_it_matters": "Contractual actions should remain reviewable by the responsible legal review layer before handoff readiness is accepted.",
+      "reviewer_question": "Why is legal review missing for this request and who must review the contract reference?",
+      "next_action": "Request legal review record or documented exception.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-012",
+        "source_rule_name": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk partnership request requires research, finance, legal, and management review before institutional handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not authorize public institution collaboration or external commitments."
+      },
+      "evidence_ids": [
+        "IAE-023"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-024",
+      "request_id": "REQ-016",
+      "title": "Ready state with unresolved required review",
+      "severity": "MEDIUM",
+      "signal_family": "execution_ready_with_pending_review",
+      "detected_signal": "Request is marked READY_FOR_HANDOFF/HANDOFF_READY while required review remains unresolved: document_review.",
+      "why_it_matters": "A request should not appear ready for handoff or execution while a required review state remains pending, escalated, or requiring replacement.",
+      "reviewer_question": "Why is readiness indicated before required review closure?",
+      "next_action": "Hold readiness interpretation and request human review of unresolved steps.",
+      "responsible_review_layer": [
+        "document_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-006",
+        "source_rule_name": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "APPROVAL_ORDER_INCONSISTENCY_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-risk grant expense requires program review, finance review, and supporting document review before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve donor reporting, block payments, or certify compliance."
+      },
+      "evidence_ids": [
+        "IAE-024"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-025",
+      "request_id": "REQ-017",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-009",
+        "source_rule_name": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve consulting work, block work, or issue legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-025"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-026",
+      "request_id": "REQ-017",
+      "title": "Unresolved rejection followed by approval",
+      "severity": "HIGH",
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "detected_signal": "Rejected review role(s) finance_review were followed by approval role(s) legal_review.",
+      "why_it_matters": "A rejection followed by approval can be legitimate, but the exception path must be documented and reviewed.",
+      "reviewer_question": "Was the rejection resolved through a documented exception or institutional escalation path?",
+      "next_action": "Escalate for institutional review and verify exception documentation.",
+      "responsible_review_layer": [
+        "finance_review",
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-009",
+        "source_rule_name": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "UNRESOLVED_REJECTION_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-value consulting request requires finance, legal, and management board review before execution readiness.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not approve consulting work, block work, or issue legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-026"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-027",
+      "request_id": "REQ-018",
+      "title": "Missing required approval",
+      "severity": "CRITICAL",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: executive_review, management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "executive_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-004",
+        "source_rule_name": "Critical procurement requires finance review, legal review, and executive review before institutional handoff. Emergency override may be reviewed only when documented.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Critical procurement requires finance review, legal review, and executive review before institutional handoff. Emergency override may be reviewed only when documented.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not authorize emergency execution or replace executive responsibility."
+      },
+      "evidence_ids": [
+        "IAE-027"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-028",
+      "request_id": "REQ-019",
+      "title": "Missing required approval",
+      "severity": "HIGH",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: finance_review, management_board.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "finance_review",
+        "management_board"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-028"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-029",
+      "request_id": "REQ-019",
+      "title": "Missing or unclear decision owner",
+      "severity": "HIGH",
+      "signal_family": "missing_decision_owner",
+      "detected_signal": "Decision ownership is unclear or not confirmed by the recorded approval chain.",
+      "why_it_matters": "Institutional review requires a clear responsible owner before handoff or escalation can be interpreted reliably.",
+      "reviewer_question": "Who currently owns the decision and what review layer must close it?",
+      "next_action": "Assign or confirm responsible human review owner before handoff.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_DECISION_OWNER_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-029"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-030",
+      "request_id": "REQ-019",
+      "title": "Exception record without supporting documentation",
+      "severity": "HIGH",
+      "signal_family": "exception_without_documentation",
+      "detected_signal": "Exception OVR-008 references missing or unavailable documentation.",
+      "why_it_matters": "Exceptional approval paths require supporting documentation for auditability and accountability.",
+      "reviewer_question": "Where is the supporting exception documentation and who must review it?",
+      "next_action": "Request exception documentation before handoff readiness is accepted.",
+      "responsible_review_layer": [
+        "internal_audit",
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-010",
+        "source_rule_name": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "EMERGENCY_OVERRIDE_REVIEW_PROTOCOL_v0.1.md",
+        "human_readable_rule": "High-risk legal service request requires legal owner review, finance review, and management approval before handoff.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not provide legal advice or legal conclusions."
+      },
+      "evidence_ids": [
+        "IAE-030"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-031",
+      "request_id": "REQ-020",
+      "title": "Missing required approval",
+      "severity": "MEDIUM",
+      "signal_family": "missing_required_approval",
+      "detected_signal": "Required approval role(s) missing: legal_review.",
+      "why_it_matters": "The request appears to require one or more approval roles that are not present in the recorded approval chain.",
+      "reviewer_question": "Which required approval role is missing, and should the request remain blocked for handoff until reviewed?",
+      "next_action": "Request missing approval evidence or escalate for institutional review.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-002",
+        "source_rule_name": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not issue legal conclusions, donor compliance conclusions, payment decisions, supplier sanctions, or enforcement actions."
+      },
+      "evidence_ids": [
+        "IAE-031"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-032",
+      "request_id": "REQ-020",
+      "title": "Exception record without supporting documentation",
+      "severity": "MEDIUM",
+      "signal_family": "exception_without_documentation",
+      "detected_signal": "Exception OVR-007 references missing or unavailable documentation.",
+      "why_it_matters": "Exceptional approval paths require supporting documentation for auditability and accountability.",
+      "reviewer_question": "Where is the supporting exception documentation and who must review it?",
+      "next_action": "Request exception documentation before handoff readiness is accepted.",
+      "responsible_review_layer": [
+        "finance_review",
+        "internal_audit"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-002",
+        "source_rule_name": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "EMERGENCY_OVERRIDE_REVIEW_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not issue legal conclusions, donor compliance conclusions, payment decisions, supplier sanctions, or enforcement actions."
+      },
+      "evidence_ids": [
+        "IAE-032"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    },
+    {
+      "id": "IAR-033",
+      "request_id": "REQ-020",
+      "title": "Legal review missing for contractual request",
+      "severity": "MEDIUM",
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "detected_signal": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "why_it_matters": "Contractual actions should remain reviewable by the responsible legal review layer before handoff readiness is accepted.",
+      "reviewer_question": "Why is legal review missing for this request and who must review the contract reference?",
+      "next_action": "Request legal review record or documented exception.",
+      "responsible_review_layer": [
+        "legal_review"
+      ],
+      "rule_trace": {
+        "source_rule_id": "APR-RULE-002",
+        "source_rule_name": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "source_rule_file": "approval_policy_rules.csv",
+        "protocol_reference": "MISSING_REQUIRED_APPROVAL_PROTOCOL_v0.1.md",
+        "human_readable_rule": "Medium-value procurement requires finance review and legal review before handoff when contractual references exist.",
+        "verdict_boundary": "This rule creates a human review requirement only. It does not issue legal conclusions, donor compliance conclusions, payment decisions, supplier sanctions, or enforcement actions."
+      },
+      "evidence_ids": [
+        "IAE-033"
+      ],
+      "verdict_boundary": "This finding is a human-review signal only. It does not approve, reject, block, punish, sign, mutate, or execute any institutional action.",
+      "zero_autonomy_boundary": {
+        "no_autonomous_approval": true,
+        "no_autonomous_rejection": true,
+        "no_payment_blocking": true,
+        "no_staff_punishment": true,
+        "no_legal_conclusion": true,
+        "no_donor_compliance_conclusion": true,
+        "no_board_decision": true,
+        "no_production_mutation": true,
+        "no_canonical_registry_mutation": true,
+        "no_signing_or_key_access": true,
+        "no_external_execution": true,
+        "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+      }
+    }
+  ],
+  "evidence_objects": [
+    {
+      "evidence_id": "IAE-001",
+      "finding_id": "IAR-001",
+      "request_id": "REQ-002",
+      "source_records": [
+        "approval_requests:REQ-002",
+        "approval_steps:STEP-004",
+        "approval_steps:STEP-005",
+        "approval_steps:STEP-006"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: legal_review.",
+      "data_points": {
+        "missing_roles": [
+          "legal_review"
+        ],
+        "present_roles": [
+          "document_review",
+          "finance_review",
+          "program_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-002",
+      "finding_id": "IAR-002",
+      "request_id": "REQ-002",
+      "source_records": [
+        "approval_requests:REQ-002",
+        "approval_steps:STEP-006"
+      ],
+      "signal_family": "execution_ready_with_pending_review",
+      "evidence_summary": "Request is marked READY_FOR_HANDOFF/PENDING_DOCUMENT_REVIEW while required review remains unresolved: document_review.",
+      "data_points": {
+        "execution_status": "READY_FOR_HANDOFF",
+        "handoff_status": "PENDING_DOCUMENT_REVIEW",
+        "unresolved_roles": [
+          "document_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-003",
+      "finding_id": "IAR-003",
+      "request_id": "REQ-002",
+      "source_records": [
+        "approval_requests:REQ-002",
+        "approval_steps:STEP-004",
+        "approval_steps:STEP-005",
+        "approval_steps:STEP-006"
+      ],
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "evidence_summary": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "data_points": {
+        "linked_contract_reference": "CTR-2026-002",
+        "requires_legal_review": true
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-004",
+      "finding_id": "IAR-004",
+      "request_id": "REQ-004",
+      "source_records": [
+        "approval_requests:REQ-004",
+        "approval_steps:STEP-010",
+        "approval_steps:STEP-011",
+        "approval_steps:STEP-012"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: management_board.",
+      "data_points": {
+        "missing_roles": [
+          "management_board"
+        ],
+        "present_roles": [
+          "executive_override",
+          "finance_review",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-005",
+      "finding_id": "IAR-005",
+      "request_id": "REQ-004",
+      "source_records": [
+        "approval_requests:REQ-004",
+        "approval_steps:STEP-011"
+      ],
+      "signal_family": "execution_ready_with_pending_review",
+      "evidence_summary": "Request is marked EXECUTION_READY/HANDOFF_READY while required review remains unresolved: legal_review.",
+      "data_points": {
+        "execution_status": "EXECUTION_READY",
+        "handoff_status": "HANDOFF_READY",
+        "unresolved_roles": [
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-006",
+      "finding_id": "IAR-006",
+      "request_id": "REQ-004",
+      "source_records": [
+        "approval_requests:REQ-004",
+        "approval_steps:STEP-012",
+        "approval_exception_register:OVR-001"
+      ],
+      "signal_family": "emergency_override_without_reason",
+      "evidence_summary": "Emergency override was used but documented reason is missing or incomplete.",
+      "data_points": {
+        "request_override_reason_present": false,
+        "exception_reason_present": false
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-007",
+      "finding_id": "IAR-007",
+      "request_id": "REQ-004",
+      "source_records": [
+        "approval_requests:REQ-004",
+        "approval_exception_register:OVR-001"
+      ],
+      "signal_family": "exception_without_documentation",
+      "evidence_summary": "Exception OVR-001 references missing or unavailable documentation.",
+      "data_points": {
+        "exception_id": "OVR-001",
+        "exception_type": "EMERGENCY_OVERRIDE",
+        "documentation_reference": "documents/overrides/OVR-001_reason.md",
+        "documentation_present": "FALSE"
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-008",
+      "finding_id": "IAR-008",
+      "request_id": "REQ-005",
+      "source_records": [
+        "approval_requests:REQ-005",
+        "approval_steps:STEP-013",
+        "approval_steps:STEP-014"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: document_review, program_review.",
+      "data_points": {
+        "missing_roles": [
+          "document_review",
+          "program_review"
+        ],
+        "present_roles": [
+          "communications_review",
+          "finance_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-009",
+      "finding_id": "IAR-009",
+      "request_id": "REQ-006",
+      "source_records": [
+        "approval_requests:REQ-006",
+        "approval_steps:STEP-015",
+        "approval_steps:STEP-016"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: finance_review.",
+      "data_points": {
+        "missing_roles": [
+          "finance_review"
+        ],
+        "present_roles": [
+          "legal_review",
+          "management_board"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-010",
+      "finding_id": "IAR-010",
+      "request_id": "REQ-006",
+      "source_records": [
+        "approval_requests:REQ-006",
+        "approval_steps:STEP-015",
+        "approval_steps:STEP-016"
+      ],
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "evidence_summary": "Rejected review role(s) legal_review were followed by approval role(s) management_board.",
+      "data_points": {
+        "rejected_roles": [
+          "legal_review"
+        ],
+        "later_approval_roles": [
+          "management_board"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-011",
+      "finding_id": "IAR-011",
+      "request_id": "REQ-007",
+      "source_records": [
+        "approval_requests:REQ-007",
+        "approval_steps:STEP-017",
+        "approval_steps:STEP-018"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: management_board.",
+      "data_points": {
+        "missing_roles": [
+          "management_board"
+        ],
+        "present_roles": [
+          "finance_review",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-012",
+      "finding_id": "IAR-012",
+      "request_id": "REQ-008",
+      "source_records": [
+        "approval_requests:REQ-008",
+        "approval_steps:STEP-019",
+        "approval_steps:STEP-020"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: management_board.",
+      "data_points": {
+        "missing_roles": [
+          "management_board"
+        ],
+        "present_roles": [
+          "legal_review",
+          "research_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-013",
+      "finding_id": "IAR-013",
+      "request_id": "REQ-010",
+      "source_records": [
+        "approval_requests:REQ-010",
+        "approval_steps:STEP-023",
+        "approval_steps:STEP-024"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: document_review, program_review.",
+      "data_points": {
+        "missing_roles": [
+          "document_review",
+          "program_review"
+        ],
+        "present_roles": [
+          "finance_review",
+          "travel_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-014",
+      "finding_id": "IAR-014",
+      "request_id": "REQ-011",
+      "source_records": [
+        "approval_requests:REQ-011",
+        "approval_steps:STEP-025",
+        "approval_steps:STEP-026",
+        "approval_steps:STEP-027"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: management_board.",
+      "data_points": {
+        "missing_roles": [
+          "management_board"
+        ],
+        "present_roles": [
+          "finance_review",
+          "governance_review",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-015",
+      "finding_id": "IAR-015",
+      "request_id": "REQ-011",
+      "source_records": [
+        "approval_requests:REQ-011",
+        "approval_steps:STEP-026"
+      ],
+      "signal_family": "execution_ready_with_pending_review",
+      "evidence_summary": "Request is marked EXECUTION_READY/NOT_READY while required review remains unresolved: legal_review.",
+      "data_points": {
+        "execution_status": "EXECUTION_READY",
+        "handoff_status": "NOT_READY",
+        "unresolved_roles": [
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-016",
+      "finding_id": "IAR-016",
+      "request_id": "REQ-011",
+      "source_records": [
+        "approval_requests:REQ-011",
+        "approval_exception_register:OVR-005"
+      ],
+      "signal_family": "exception_without_documentation",
+      "evidence_summary": "Exception OVR-005 references missing or unavailable documentation.",
+      "data_points": {
+        "exception_id": "OVR-005",
+        "exception_type": "EXECUTION_WITH_PENDING_REVIEW",
+        "documentation_reference": "documents/overrides/OVR-005_pending_legal_note.md",
+        "documentation_present": "FALSE"
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-017",
+      "finding_id": "IAR-017",
+      "request_id": "REQ-012",
+      "source_records": [
+        "approval_requests:REQ-012",
+        "approval_steps:STEP-028",
+        "approval_steps:STEP-029"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: administration_review.",
+      "data_points": {
+        "missing_roles": [
+          "administration_review"
+        ],
+        "present_roles": [
+          "finance_review",
+          "it_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-018",
+      "finding_id": "IAR-018",
+      "request_id": "REQ-012",
+      "source_records": [
+        "approval_requests:REQ-012",
+        "approval_steps:STEP-028",
+        "approval_steps:STEP-029"
+      ],
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "evidence_summary": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "data_points": {
+        "linked_contract_reference": "CTR-2026-012",
+        "requires_legal_review": false
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-019",
+      "finding_id": "IAR-019",
+      "request_id": "REQ-013",
+      "source_records": [
+        "approval_requests:REQ-013",
+        "approval_steps:STEP-030",
+        "approval_steps:STEP-031"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: finance_review, management_board.",
+      "data_points": {
+        "missing_roles": [
+          "finance_review",
+          "management_board"
+        ],
+        "present_roles": [
+          "executive_review",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-020",
+      "finding_id": "IAR-020",
+      "request_id": "REQ-014",
+      "source_records": [
+        "approval_requests:REQ-014",
+        "approval_steps:STEP-032",
+        "approval_steps:STEP-033",
+        "approval_steps:STEP-034"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: executive_review, management_board.",
+      "data_points": {
+        "missing_roles": [
+          "executive_review",
+          "management_board"
+        ],
+        "present_roles": [
+          "executive_override",
+          "finance_review",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-021",
+      "finding_id": "IAR-021",
+      "request_id": "REQ-015",
+      "source_records": [
+        "approval_requests:REQ-015",
+        "approval_steps:STEP-035",
+        "approval_steps:STEP-036",
+        "approval_steps:STEP-037"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: legal_review.",
+      "data_points": {
+        "missing_roles": [
+          "legal_review"
+        ],
+        "present_roles": [
+          "finance_review",
+          "management_board",
+          "research_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-022",
+      "finding_id": "IAR-022",
+      "request_id": "REQ-015",
+      "source_records": [
+        "approval_requests:REQ-015",
+        "approval_steps:STEP-035",
+        "approval_steps:STEP-036",
+        "approval_steps:STEP-037"
+      ],
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "evidence_summary": "Rejected review role(s) finance_review were followed by approval role(s) management_board.",
+      "data_points": {
+        "rejected_roles": [
+          "finance_review"
+        ],
+        "later_approval_roles": [
+          "management_board"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-023",
+      "finding_id": "IAR-023",
+      "request_id": "REQ-015",
+      "source_records": [
+        "approval_requests:REQ-015",
+        "approval_steps:STEP-035",
+        "approval_steps:STEP-036",
+        "approval_steps:STEP-037"
+      ],
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "evidence_summary": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "data_points": {
+        "linked_contract_reference": "CTR-2026-015",
+        "requires_legal_review": true
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-024",
+      "finding_id": "IAR-024",
+      "request_id": "REQ-016",
+      "source_records": [
+        "approval_requests:REQ-016",
+        "approval_steps:STEP-040"
+      ],
+      "signal_family": "execution_ready_with_pending_review",
+      "evidence_summary": "Request is marked READY_FOR_HANDOFF/HANDOFF_READY while required review remains unresolved: document_review.",
+      "data_points": {
+        "execution_status": "READY_FOR_HANDOFF",
+        "handoff_status": "HANDOFF_READY",
+        "unresolved_roles": [
+          "document_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-025",
+      "finding_id": "IAR-025",
+      "request_id": "REQ-017",
+      "source_records": [
+        "approval_requests:REQ-017",
+        "approval_steps:STEP-041",
+        "approval_steps:STEP-042",
+        "approval_steps:STEP-043"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: management_board.",
+      "data_points": {
+        "missing_roles": [
+          "management_board"
+        ],
+        "present_roles": [
+          "finance_review",
+          "internal_audit",
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-026",
+      "finding_id": "IAR-026",
+      "request_id": "REQ-017",
+      "source_records": [
+        "approval_requests:REQ-017",
+        "approval_steps:STEP-041",
+        "approval_steps:STEP-042",
+        "approval_steps:STEP-043"
+      ],
+      "signal_family": "unresolved_rejection_followed_by_approval",
+      "evidence_summary": "Rejected review role(s) finance_review were followed by approval role(s) legal_review.",
+      "data_points": {
+        "rejected_roles": [
+          "finance_review"
+        ],
+        "later_approval_roles": [
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-027",
+      "finding_id": "IAR-027",
+      "request_id": "REQ-018",
+      "source_records": [
+        "approval_requests:REQ-018",
+        "approval_steps:STEP-044",
+        "approval_steps:STEP-045",
+        "approval_steps:STEP-046"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: executive_review, management_board.",
+      "data_points": {
+        "missing_roles": [
+          "executive_review",
+          "management_board"
+        ],
+        "present_roles": [
+          "finance_review",
+          "legal_review",
+          "security_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-028",
+      "finding_id": "IAR-028",
+      "request_id": "REQ-019",
+      "source_records": [
+        "approval_requests:REQ-019",
+        "approval_steps:STEP-047"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: finance_review, management_board.",
+      "data_points": {
+        "missing_roles": [
+          "finance_review",
+          "management_board"
+        ],
+        "present_roles": [
+          "legal_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-029",
+      "finding_id": "IAR-029",
+      "request_id": "REQ-019",
+      "source_records": [
+        "approval_requests:REQ-019",
+        "approval_steps:STEP-047"
+      ],
+      "signal_family": "missing_decision_owner",
+      "evidence_summary": "Decision ownership is unclear or not confirmed by the recorded approval chain.",
+      "data_points": {
+        "current_owner": "legal_review",
+        "final_decision_state": "UNDER_REVIEW",
+        "confirmed_owner_steps": 0
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-030",
+      "finding_id": "IAR-030",
+      "request_id": "REQ-019",
+      "source_records": [
+        "approval_requests:REQ-019",
+        "approval_exception_register:OVR-008"
+      ],
+      "signal_family": "exception_without_documentation",
+      "evidence_summary": "Exception OVR-008 references missing or unavailable documentation.",
+      "data_points": {
+        "exception_id": "OVR-008",
+        "exception_type": "MISSING_DECISION_OWNER",
+        "documentation_reference": "documents/overrides/OVR-008_owner_gap_note.md",
+        "documentation_present": "FALSE"
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-031",
+      "finding_id": "IAR-031",
+      "request_id": "REQ-020",
+      "source_records": [
+        "approval_requests:REQ-020",
+        "approval_steps:STEP-048",
+        "approval_steps:STEP-049"
+      ],
+      "signal_family": "missing_required_approval",
+      "evidence_summary": "Required approval role(s) missing: legal_review.",
+      "data_points": {
+        "missing_roles": [
+          "legal_review"
+        ],
+        "present_roles": [
+          "administration_review",
+          "finance_review"
+        ]
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-032",
+      "finding_id": "IAR-032",
+      "request_id": "REQ-020",
+      "source_records": [
+        "approval_requests:REQ-020",
+        "approval_exception_register:OVR-007"
+      ],
+      "signal_family": "exception_without_documentation",
+      "evidence_summary": "Exception OVR-007 references missing or unavailable documentation.",
+      "data_points": {
+        "exception_id": "OVR-007",
+        "exception_type": "LEGAL_REVIEW_SKIPPED",
+        "documentation_reference": "documents/overrides/OVR-007_legal_skip_note.md",
+        "documentation_present": "FALSE"
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    },
+    {
+      "evidence_id": "IAE-033",
+      "finding_id": "IAR-033",
+      "request_id": "REQ-020",
+      "source_records": [
+        "approval_requests:REQ-020",
+        "approval_steps:STEP-048",
+        "approval_steps:STEP-049"
+      ],
+      "signal_family": "legal_review_missing_for_contractual_action",
+      "evidence_summary": "Request has contractual/legal review requirement but no legal review step is recorded.",
+      "data_points": {
+        "linked_contract_reference": "CTR-2026-020",
+        "requires_legal_review": true
+      },
+      "created_at": "2026-05-15T17:34:39Z",
+      "boundary_statement": "Evidence object preserves local review context only and does not mutate source records or execute institutional action."
+    }
+  ],
+  "zero_autonomy_boundary": {
+    "no_autonomous_approval": true,
+    "no_autonomous_rejection": true,
+    "no_payment_blocking": true,
+    "no_staff_punishment": true,
+    "no_legal_conclusion": true,
+    "no_donor_compliance_conclusion": true,
+    "no_board_decision": true,
+    "no_production_mutation": true,
+    "no_canonical_registry_mutation": true,
+    "no_signing_or_key_access": true,
+    "no_external_execution": true,
+    "statement": "This report contains evidence-backed approval continuity review signals only. It does not approve, reject, block, punish, sign, mutate, or execute institutional actions."
+  }
+}
