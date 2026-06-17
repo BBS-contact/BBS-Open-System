@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEO Institutional Approval Review Dashboard v0.2</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --panel-soft: #f1f3f5;
+      --text: #17202a;
+      --muted: #627080;
+      --line: #d9dee5;
+      --accent: #26384d;
+      --accent-soft: #e9eef5;
+      --high: #8b1e1e;
+      --medium: #8a5b00;
+      --low: #2d5f3f;
+      --critical: #5b1230;
+      --ok: #1f5c43;
+      --warning: #8a5b00;
+      --shadow: 0 10px 30px rgba(20, 35, 50, 0.08);
+      --radius: 16px;
+      --mono: Consolas, Monaco, "Courier New", monospace;
+      --sans: Inter, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      line-height: 1.5;
+    }
+
+    header {
+      background: linear-gradient(135deg, #17202a, #26384d);
+      color: #fff;
+      padding: 30px 36px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 30px;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin: 0;
+      max-width: 1000px;
+      color: #d7dee8;
+      font-size: 15px;
+    }
+
+    main {
+      padding: 24px 36px 48px;
+      max-width: 1500px;
+      margin: 0 auto;
+    }
+
+    .path-box {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 12px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: #f1f5f9;
+      overflow-wrap: anywhere;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 16px;
+    }
+
+    .card h2,
+    .card h3 {
+      margin-top: 0;
+      letter-spacing: -0.01em;
+    }
+
+    .card h2 { font-size: 20px; }
+    .card h3 { font-size: 16px; }
+
+    .span-12 { grid-column: span 12; }
+    .span-8 { grid-column: span 8; }
+    .span-6 { grid-column: span 6; }
+    .span-4 { grid-column: span 4; }
+    .span-3 { grid-column: span 3; }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .control-group {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      min-width: 180px;
+    }
+
+    label {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    input, select, textarea, button { font: inherit; }
+
+    input, select, textarea {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 9px 10px;
+      background: #fff;
+      color: var(--text);
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      resize: vertical;
+    }
+
+    button {
+      border: 0;
+      border-radius: 10px;
+      padding: 9px 13px;
+      color: #fff;
+      background: var(--accent);
+      cursor: pointer;
+      font-weight: 800;
+    }
+
+    button.secondary { background: #52616f; }
+    button.warning { background: var(--warning); }
+    button:disabled { opacity: 0.55; cursor: not-allowed; }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      margin-top: 12px;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 11px 12px;
+      font-weight: 800;
+      color: var(--accent);
+      user-select: none;
+    }
+
+    details > .details-body { padding: 0 12px 12px; }
+
+    .metric {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .metric .value {
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .metric .label {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      background: var(--accent-soft);
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    .badge.high { color: var(--high); background: #f7eaea; border-color: #e7c9c9; }
+    .badge.medium { color: var(--medium); background: #fff3d8; border-color: #ead59f; }
+    .badge.low { color: var(--low); background: #e9f4ee; border-color: #c9dfd2; }
+    .badge.critical { color: var(--critical); background: #f4e5ec; border-color: #dfbfd0; }
+    .badge.ok { color: var(--ok); background: #e7f4ee; border-color: #bfdccd; }
+    .badge.warn { color: var(--warning); background: #fff3d8; border-color: #ead59f; }
+
+    .priority-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 10px;
+    }
+
+    .priority-item {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 11px;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .priority-item:hover,
+    .finding-item:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(38, 56, 77, 0.08);
+    }
+
+    .finding-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-height: 720px;
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .finding-item {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px;
+      background: #fff;
+      cursor: pointer;
+    }
+
+    .finding-item.active {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(38, 56, 77, 0.12);
+    }
+
+    .finding-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 7px;
+    }
+
+    .finding-title {
+      font-weight: 900;
+      letter-spacing: -0.01em;
+    }
+
+    .muted { color: var(--muted); }
+    .small { font-size: 12px; }
+    .mono { font-family: var(--mono); }
+
+    .kv {
+      display: grid;
+      grid-template-columns: 190px 1fr;
+      gap: 7px 14px;
+      font-size: 14px;
+    }
+
+    .kv .k {
+      color: var(--muted);
+      font-weight: 800;
+    }
+
+    .detail-section {
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      margin-top: 14px;
+    }
+
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 14px;
+      border-radius: 12px;
+      overflow: auto;
+      font-family: var(--mono);
+      font-size: 12px;
+      max-height: 360px;
+    }
+
+    .boundary-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .boundary-item {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      font-size: 13px;
+    }
+
+    .status-bar {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+
+    .empty {
+      background: var(--panel-soft);
+      border: 1px dashed #b7c0cb;
+      color: var(--muted);
+      padding: 16px;
+      border-radius: 14px;
+    }
+
+    .review-record {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .review-form {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .review-form .full { grid-column: span 2; }
+
+    .compact-summary {
+      background: var(--panel-soft);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 12px;
+      margin-top: 12px;
+    }
+
+    .summary-line {
+      margin: 0 0 8px;
+    }
+
+    .summary-line:last-child { margin-bottom: 0; }
+
+    @media (max-width: 1100px) {
+      .span-8, .span-6, .span-4, .span-3 { grid-column: span 12; }
+      .review-form, .boundary-list { grid-template-columns: 1fr; }
+      .review-form .full { grid-column: span 1; }
+      .kv { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LEO Institutional Approval Review Dashboard v0.2</h1>
+    <p>
+      Compact local reviewer dashboard for institutional approval evidence review. It shows priority findings first,
+      keeps raw JSON collapsed by default, supports human review actions, and preserves the zero-autonomy boundary.
+    </p>
+    <div class="path-box">
+      Canonical save path: D:\BBS-09-01-2026\leo\runtime\demos\institutional_approval_review\leo_institutional_approval_dashboard.html
+    </div>
+  </header>
+
+  <main>
+    <section class="grid">
+      <div class="card span-12">
+        <h2>Local data inputs</h2>
+        <p class="muted">
+          Load the evidence report first. The human review package is optional and should be loaded only if the file is
+          `institutional_approval_human_review_package.json`. Do not load the validation JSON into the package field.
+        </p>
+        <div class="controls">
+          <div class="control-group">
+            <label for="evidenceFile">Evidence report JSON</label>
+            <input id="evidenceFile" type="file" accept="application/json,.json" />
+          </div>
+          <div class="control-group">
+            <label for="packageFile">Human review package JSON</label>
+            <input id="packageFile" type="file" accept="application/json,.json" />
+          </div>
+          <button id="loadLocalReviewBtn" class="secondary" type="button">Load browser review state</button>
+          <button id="clearStateBtn" class="warning" type="button">Clear browser review state</button>
+        </div>
+        <div class="status-bar" id="loadStatus"></div>
+      </div>
+
+      <div class="card span-3 metric"><div class="value" id="findingsCount">0</div><div class="label">Findings</div></div>
+      <div class="card span-3 metric"><div class="value" id="criticalHighCount">0</div><div class="label">Critical / High</div></div>
+      <div class="card span-3 metric"><div class="value" id="reviewedCount">0</div><div class="label">Reviewed findings</div></div>
+      <div class="card span-3 metric"><div class="value" id="boundaryStatus">OK</div><div class="label">Zero-autonomy boundary</div></div>
+
+      <div class="card span-12">
+        <h2>Top priorities</h2>
+        <p class="muted">Critical and high findings are shown first to reduce review noise. Select an item to inspect it.</p>
+        <div id="priorityStrip" class="priority-strip">
+          <div class="empty">Load an evidence report to display priorities.</div>
+        </div>
+      </div>
+
+      <div class="card span-12">
+        <h2>Filters</h2>
+        <div class="controls">
+          <div class="control-group">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="search" placeholder="finding id, signal, request id..." />
+          </div>
+          <div class="control-group">
+            <label for="severityFilter">Severity</label>
+            <select id="severityFilter"><option value="">All</option></select>
+          </div>
+          <div class="control-group">
+            <label for="signalFilter">Signal family</label>
+            <select id="signalFilter"><option value="">All</option></select>
+          </div>
+          <div class="control-group">
+            <label for="reviewFilter">Review state</label>
+            <select id="reviewFilter">
+              <option value="">All</option>
+              <option value="reviewed">Reviewed</option>
+              <option value="unreviewed">Unreviewed</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card span-4">
+        <h2>Findings</h2>
+        <div id="findingList" class="finding-list">
+          <div class="empty">Load an evidence report to display findings.</div>
+        </div>
+      </div>
+
+      <div class="card span-8">
+        <h2>Selected finding</h2>
+        <div id="findingDetail" class="empty">Select a finding to inspect compact details and record human review.</div>
+      </div>
+
+      <div class="card span-6">
+        <h2>Human review records</h2>
+        <div id="reviewRecords"><div class="empty">No human review records yet.</div></div>
+      </div>
+
+      <div class="card span-6">
+        <h2>Zero-autonomy boundary</h2>
+        <p class="muted">
+          This local interface does not approve, reject, enforce, write to production, mutate canonical registries, or issue legal verdicts.
+        </p>
+        <div id="boundaryList" class="boundary-list"></div>
+      </div>
+
+      <div class="card span-12">
+        <h2>Export package</h2>
+        <p class="muted">The preview is collapsed by default to keep the dashboard readable.</p>
+        <div class="controls">
+          <button id="refreshPreviewBtn" type="button">Refresh preview</button>
+          <button id="downloadPackageBtn" class="secondary" type="button">Download JSON package</button>
+        </div>
+        <details>
+          <summary>Show export package JSON preview</summary>
+          <div class="details-body"><pre id="packagePreview">No package preview available.</pre></div>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    "use strict";
+
+    const PACKAGE_TYPE = "LEO_INSTITUTIONAL_APPROVAL_HUMAN_REVIEW_PACKAGE";
+    const PACKAGE_VERSION = "v0.2-dashboard-local";
+    const SOURCE_SLICE = "institutional_approval_review";
+    const STORAGE_KEY = "leo_institutional_approval_review_records_v0_2";
+
+    const REVIEW_ACTIONS = [
+      "ESCALATE_FOR_REVIEW",
+      "ACCEPT_AS_JUSTIFIED",
+      "MARK_FALSE_POSITIVE",
+      "REQUEST_MORE_EVIDENCE",
+      "DEFER_REVIEW"
+    ];
+
+    const ACTIONS_REQUIRING_NOTE = new Set([
+      "ESCALATE_FOR_REVIEW",
+      "MARK_FALSE_POSITIVE",
+      "REQUEST_MORE_EVIDENCE",
+      "DEFER_REVIEW"
+    ]);
+
+    const ZERO_AUTONOMY_BOUNDARY = {
+      autonomous_approval: false,
+      autonomous_rejection: false,
+      autonomous_enforcement: false,
+      production_mutation: false,
+      canonical_registry_mutation: false,
+      legal_verdict: false,
+      donor_compliance_verdict: false,
+      payment_blocking: false
+    };
+
+    const state = {
+      evidenceReport: null,
+      reviewPackage: null,
+      reviewRecords: [],
+      selectedFindingId: null,
+      filters: { search: "", severity: "", signal: "", review: "" }
+    };
+
+    const els = {
+      evidenceFile: document.getElementById("evidenceFile"),
+      packageFile: document.getElementById("packageFile"),
+      loadLocalReviewBtn: document.getElementById("loadLocalReviewBtn"),
+      clearStateBtn: document.getElementById("clearStateBtn"),
+      loadStatus: document.getElementById("loadStatus"),
+      findingsCount: document.getElementById("findingsCount"),
+      criticalHighCount: document.getElementById("criticalHighCount"),
+      reviewedCount: document.getElementById("reviewedCount"),
+      boundaryStatus: document.getElementById("boundaryStatus"),
+      priorityStrip: document.getElementById("priorityStrip"),
+      searchInput: document.getElementById("searchInput"),
+      severityFilter: document.getElementById("severityFilter"),
+      signalFilter: document.getElementById("signalFilter"),
+      reviewFilter: document.getElementById("reviewFilter"),
+      findingList: document.getElementById("findingList"),
+      findingDetail: document.getElementById("findingDetail"),
+      reviewRecords: document.getElementById("reviewRecords"),
+      boundaryList: document.getElementById("boundaryList"),
+      packagePreview: document.getElementById("packagePreview"),
+      refreshPreviewBtn: document.getElementById("refreshPreviewBtn"),
+      downloadPackageBtn: document.getElementById("downloadPackageBtn")
+    };
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("'", "&#039;");
+    }
+
+    function normalizeText(value) { return String(value ?? "").toLowerCase(); }
+    function toArray(value) { return Array.isArray(value) ? value : []; }
+
+    function findFirstString(object, keys, fallback = "UNSPECIFIED") {
+      for (const key of keys) {
+        const value = object?.[key];
+        if (typeof value === "string" && value.trim()) return value.trim();
+      }
+      return fallback;
+    }
+
+    function getFindings() {
+      return toArray(state.evidenceReport?.findings).filter(item => item && typeof item === "object");
+    }
+
+    function getEvidenceObjects() {
+      const report = state.evidenceReport || {};
+      for (const key of ["evidence_objects", "evidence", "evidence_items"]) {
+        if (Array.isArray(report[key])) return report[key].filter(item => item && typeof item === "object");
+      }
+      return [];
+    }
+
+    function getFindingId(finding) { return findFirstString(finding, ["finding_id", "id", "findingId"], "UNSPECIFIED_FINDING_ID"); }
+    function getRequestId(finding) { return findFirstString(finding, ["request_id", "approval_request_id", "record_id"], "UNSPECIFIED_REQUEST"); }
+    function getTitle(finding) { return findFirstString(finding, ["title", "finding_title", "summary"], "Institutional approval review signal"); }
+    function getSeverity(finding) { return findFirstString(finding, ["severity", "risk_level", "priority"], "UNSPECIFIED"); }
+    function getSignalFamily(finding) { return findFirstString(finding, ["signal_family", "finding_type", "risk_signal", "category"], "UNSPECIFIED"); }
+    function getEvidenceId(evidence) { return findFirstString(evidence, ["evidence_id", "id", "evidenceId"], "UNSPECIFIED_EVIDENCE_ID"); }
+
+    function getSourceReportId() {
+      const report = state.evidenceReport || {};
+      return findFirstString(report, ["report_id", "evidence_report_id", "source_report_id", "run_id", "generated_report_id"], "LOCAL_INSTITUTIONAL_APPROVAL_EVIDENCE_REPORT");
+    }
+
+    function getFindingEvidenceIds(finding) {
+      const direct = finding?.source_evidence_ids || finding?.evidence_ids || finding?.related_evidence_ids;
+      if (Array.isArray(direct)) return direct.filter(item => typeof item === "string" && item.trim());
+      const single = finding?.evidence_id || finding?.source_evidence_id;
+      if (typeof single === "string" && single.trim()) return [single.trim()];
+      return [];
+    }
+
+    function getRelatedEvidence(finding) {
+      const ids = new Set(getFindingEvidenceIds(finding));
+      if (ids.size === 0) return [];
+      return getEvidenceObjects().filter(evidence => ids.has(getEvidenceId(evidence)));
+    }
+
+    function severityClass(severity) {
+      const value = normalizeText(severity);
+      if (value.includes("critical")) return "critical";
+      if (value.includes("high")) return "high";
+      if (value.includes("medium")) return "medium";
+      if (value.includes("low")) return "low";
+      return "";
+    }
+
+    function severityRank(severity) {
+      const value = normalizeText(severity);
+      if (value.includes("critical")) return 0;
+      if (value.includes("high")) return 1;
+      if (value.includes("medium")) return 2;
+      if (value.includes("low")) return 3;
+      return 4;
+    }
+
+    function countBy(items, getter) {
+      const result = {};
+      for (const item of items) {
+        const key = getter(item);
+        result[key] = (result[key] || 0) + 1;
+      }
+      return Object.fromEntries(Object.entries(result).sort(([a], [b]) => a.localeCompare(b)));
+    }
+
+    function buildSourceReportSummary() {
+      const findings = getFindings();
+      const evidence = getEvidenceObjects();
+      return {
+        source_report_id: getSourceReportId(),
+        findings_count: findings.length,
+        evidence_objects_count: evidence.length,
+        findings_by_severity: countBy(findings, getSeverity),
+        findings_by_signal_family: countBy(findings, getSignalFamily)
+      };
+    }
+
+    function loadStoredReviewRecords() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch (_error) {
+        return [];
+      }
+    }
+
+    function saveStoredReviewRecords() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state.reviewRecords, null, 2));
+    }
+
+    function readFileAsJson(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          try { resolve(JSON.parse(String(reader.result || ""))); }
+          catch (error) { reject(error); }
+        };
+        reader.onerror = () => reject(reader.error);
+        reader.readAsText(file, "utf-8");
+      });
+    }
+
+    function clearStatus() { els.loadStatus.innerHTML = ""; }
+
+    function addStatus(text, kind = "ok") {
+      const badge = document.createElement("span");
+      badge.className = `badge ${kind}`;
+      badge.textContent = text;
+      els.loadStatus.appendChild(badge);
+    }
+
+    function validateBoundary(boundary) {
+      const merged = { ...ZERO_AUTONOMY_BOUNDARY, ...(boundary || {}) };
+      return Object.entries(ZERO_AUTONOMY_BOUNDARY).every(([key]) => merged[key] === false);
+    }
+
+    function isValidHumanReviewPackage(payload) {
+      return payload && payload.package_type === PACKAGE_TYPE && Array.isArray(payload.review_records);
+    }
+
+    function isFindingReviewed(findingId) {
+      return state.reviewRecords.some(record => record.finding_id === findingId);
+    }
+
+    function getPriorityFindings() {
+      return getFindings()
+        .filter(finding => ["critical", "high"].some(level => normalizeText(getSeverity(finding)).includes(level)))
+        .sort((a, b) => severityRank(getSeverity(a)) - severityRank(getSeverity(b)))
+        .slice(0, 8);
+    }
+
+    function getFilteredFindings() {
+      const search = normalizeText(state.filters.search);
+      return getFindings()
+        .slice()
+        .sort((a, b) => severityRank(getSeverity(a)) - severityRank(getSeverity(b)) || getFindingId(a).localeCompare(getFindingId(b)))
+        .filter(finding => {
+          const findingId = getFindingId(finding);
+          const severity = getSeverity(finding);
+          const signal = getSignalFamily(finding);
+          const reviewed = isFindingReviewed(findingId);
+
+          if (state.filters.severity && severity !== state.filters.severity) return false;
+          if (state.filters.signal && signal !== state.filters.signal) return false;
+          if (state.filters.review === "reviewed" && !reviewed) return false;
+          if (state.filters.review === "unreviewed" && reviewed) return false;
+          if (search) return normalizeText(JSON.stringify(finding)).includes(search);
+          return true;
+        });
+    }
+
+    function buildPackagePreview() {
+      return {
+        package_type: PACKAGE_TYPE,
+        package_version: PACKAGE_VERSION,
+        source_slice: SOURCE_SLICE,
+        source_report_id: getSourceReportId(),
+        generated_at: new Date().toISOString(),
+        reviewed_findings_count: state.reviewRecords.length,
+        review_records: state.reviewRecords,
+        zero_autonomy_boundary: { ...ZERO_AUTONOMY_BOUNDARY },
+        source_report_summary: buildSourceReportSummary(),
+        export_integrity_notes: [
+          "Local human review package preview generated by dashboard.",
+          "Source evidence report is not modified by this dashboard.",
+          "Review records are stored separately from generated findings.",
+          "No autonomous approval, rejection, enforcement, production mutation, or legal verdict is produced."
+        ]
+      };
+    }
+
+    function renderMetrics() {
+      const findings = getFindings();
+      const criticalHigh = findings.filter(f => severityRank(getSeverity(f)) <= 1).length;
+      const boundaryOk = validateBoundary(state.reviewPackage?.zero_autonomy_boundary);
+      els.findingsCount.textContent = String(findings.length);
+      els.criticalHighCount.textContent = String(criticalHigh);
+      els.reviewedCount.textContent = String(state.reviewRecords.length);
+      els.boundaryStatus.textContent = boundaryOk ? "OK" : "CHECK";
+      els.boundaryStatus.style.color = boundaryOk ? "var(--ok)" : "var(--warning)";
+    }
+
+    function renderPriorityStrip() {
+      const priorities = getPriorityFindings();
+      if (priorities.length === 0) {
+        els.priorityStrip.innerHTML = '<div class="empty">No critical or high findings available.</div>';
+        return;
+      }
+      els.priorityStrip.innerHTML = priorities.map(finding => {
+        const findingId = getFindingId(finding);
+        const severity = getSeverity(finding);
+        return `
+          <div class="priority-item" data-finding-id="${escapeHtml(findingId)}">
+            <div class="finding-head">
+              <strong class="mono">${escapeHtml(findingId)}</strong>
+              <span class="badge ${severityClass(severity)}">${escapeHtml(severity)}</span>
+            </div>
+            <div>${escapeHtml(getTitle(finding))}</div>
+            <div class="muted small">${escapeHtml(getSignalFamily(finding))} · ${escapeHtml(getRequestId(finding))}</div>
+          </div>
+        `;
+      }).join("");
+      els.priorityStrip.querySelectorAll(".priority-item").forEach(item => {
+        item.addEventListener("click", () => {
+          state.selectedFindingId = item.getAttribute("data-finding-id");
+          renderAll(false);
+          document.getElementById("findingDetail").scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      });
+    }
+
+    function renderFilters() {
+      const findings = getFindings();
+      const severities = [...new Set(findings.map(getSeverity))].sort((a, b) => severityRank(a) - severityRank(b));
+      const signals = [...new Set(findings.map(getSignalFamily))].sort();
+      const currentSeverity = els.severityFilter.value;
+      const currentSignal = els.signalFilter.value;
+      els.severityFilter.innerHTML = '<option value="">All</option>' + severities.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
+      els.signalFilter.innerHTML = '<option value="">All</option>' + signals.map(v => `<option value="${escapeHtml(v)}">${escapeHtml(v)}</option>`).join("");
+      els.severityFilter.value = severities.includes(currentSeverity) ? currentSeverity : "";
+      els.signalFilter.value = signals.includes(currentSignal) ? currentSignal : "";
+    }
+
+    function renderFindingList() {
+      const findings = getFilteredFindings();
+      if (findings.length === 0) {
+        els.findingList.innerHTML = '<div class="empty">No findings match the current filters.</div>';
+        return;
+      }
+      els.findingList.innerHTML = findings.map(finding => {
+        const findingId = getFindingId(finding);
+        const severity = getSeverity(finding);
+        const reviewed = isFindingReviewed(findingId);
+        const active = state.selectedFindingId === findingId ? " active" : "";
+        return `
+          <article class="finding-item${active}" data-finding-id="${escapeHtml(findingId)}">
+            <div class="finding-head">
+              <div>
+                <div class="finding-title mono">${escapeHtml(findingId)}</div>
+                <div>${escapeHtml(getTitle(finding))}</div>
+                <div class="muted small">${escapeHtml(getSignalFamily(finding))} · ${escapeHtml(getRequestId(finding))}</div>
+              </div>
+              <span class="badge ${severityClass(severity)}">${escapeHtml(severity)}</span>
+            </div>
+            <span class="badge ${reviewed ? "ok" : ""}">${reviewed ? "Reviewed" : "Unreviewed"}</span>
+          </article>
+        `;
+      }).join("");
+      els.findingList.querySelectorAll(".finding-item").forEach(item => {
+        item.addEventListener("click", () => {
+          state.selectedFindingId = item.getAttribute("data-finding-id");
+          renderAll(false);
+        });
+      });
+    }
+
+    function renderFindingDetail() {
+      const finding = getFindings().find(item => getFindingId(item) === state.selectedFindingId);
+      if (!finding) {
+        els.findingDetail.innerHTML = '<div class="empty">Select a finding to inspect compact details and record human review.</div>';
+        return;
+      }
+
+      const findingId = getFindingId(finding);
+      const severity = getSeverity(finding);
+      const signal = getSignalFamily(finding);
+      const relatedEvidence = getRelatedEvidence(finding);
+      const existingReview = state.reviewRecords.find(record => record.finding_id === findingId);
+      const evidenceIds = getFindingEvidenceIds(finding);
+
+      els.findingDetail.innerHTML = `
+        <div class="kv">
+          <div class="k">Finding ID</div><div class="mono">${escapeHtml(findingId)}</div>
+          <div class="k">Request ID</div><div class="mono">${escapeHtml(getRequestId(finding))}</div>
+          <div class="k">Severity</div><div><span class="badge ${severityClass(severity)}">${escapeHtml(severity)}</span></div>
+          <div class="k">Signal family</div><div>${escapeHtml(signal)}</div>
+          <div class="k">Evidence IDs</div><div class="mono">${escapeHtml(evidenceIds.join(", ") || "Not explicitly linked")}</div>
+          <div class="k">Review state</div><div>${existingReview ? '<span class="badge ok">Reviewed</span>' : '<span class="badge">Unreviewed</span>'}</div>
+        </div>
+
+        <div class="compact-summary">
+          <p class="summary-line"><strong>${escapeHtml(getTitle(finding))}</strong></p>
+          <p class="summary-line">${escapeHtml(finding.detected_signal || finding.evidence_summary || "No compact detected signal field available.")}</p>
+          <p class="summary-line muted"><strong>Reviewer question:</strong> ${escapeHtml(finding.reviewer_question || "No reviewer question available.")}</p>
+          <p class="summary-line muted"><strong>Suggested next action:</strong> ${escapeHtml(finding.next_action || "No suggested next action available.")}</p>
+        </div>
+
+        <details>
+          <summary>Show rule trace</summary>
+          <div class="details-body"><pre>${escapeHtml(JSON.stringify(finding.rule_trace || {}, null, 2))}</pre></div>
+        </details>
+
+        <details>
+          <summary>Show related evidence JSON</summary>
+          <div class="details-body">
+            ${relatedEvidence.length ? relatedEvidence.map(evidence => `<pre>${escapeHtml(JSON.stringify(evidence, null, 2))}</pre>`).join("") : '<div class="empty">No directly linked evidence objects found.</div>'}
+          </div>
+        </details>
+
+        <details>
+          <summary>Show raw finding JSON</summary>
+          <div class="details-body"><pre>${escapeHtml(JSON.stringify(finding, null, 2))}</pre></div>
+        </details>
+
+        <div class="detail-section">
+          <h3>Record human review</h3>
+          <form id="reviewForm" class="review-form">
+            <div>
+              <label for="reviewAction">Review action</label>
+              <select id="reviewAction">
+                ${REVIEW_ACTIONS.map(action => `<option value="${action}" ${existingReview?.review_action === action ? "selected" : ""}>${action}</option>`).join("")}
+              </select>
+            </div>
+            <div>
+              <label for="reviewerId">Reviewer ID</label>
+              <input id="reviewerId" type="text" value="${escapeHtml(existingReview?.reviewer_id || "local_reviewer")}" />
+            </div>
+            <div class="full">
+              <label for="reviewerNote">Reviewer note</label>
+              <textarea id="reviewerNote" placeholder="Required for escalation, false positive, more evidence, and deferred review.">${escapeHtml(existingReview?.reviewer_note || "")}</textarea>
+            </div>
+            <div>
+              <label for="followUpRequired">Follow-up required</label>
+              <select id="followUpRequired">
+                <option value="false" ${existingReview?.follow_up_required ? "" : "selected"}>false</option>
+                <option value="true" ${existingReview?.follow_up_required ? "selected" : ""}>true</option>
+              </select>
+            </div>
+            <div>
+              <label for="followUpReason">Follow-up reason</label>
+              <input id="followUpReason" type="text" value="${escapeHtml(existingReview?.follow_up_reason || "")}" />
+            </div>
+            <div class="full controls">
+              <button type="submit">Save human review</button>
+              <button id="removeReviewBtn" class="warning" type="button" ${existingReview ? "" : "disabled"}>Remove review record</button>
+            </div>
+          </form>
+        </div>
+      `;
+
+      document.getElementById("reviewForm").addEventListener("submit", event => {
+        event.preventDefault();
+        saveReviewForFinding(finding, relatedEvidence);
+      });
+      document.getElementById("removeReviewBtn").addEventListener("click", () => {
+        state.reviewRecords = state.reviewRecords.filter(record => record.finding_id !== findingId);
+        saveStoredReviewRecords();
+        renderAll(false);
+      });
+    }
+
+    function saveReviewForFinding(finding, relatedEvidence) {
+      const findingId = getFindingId(finding);
+      const reviewAction = document.getElementById("reviewAction").value;
+      const reviewerId = document.getElementById("reviewerId").value.trim();
+      const reviewerNote = document.getElementById("reviewerNote").value.trim();
+      const followUpRequired = document.getElementById("followUpRequired").value === "true";
+      const followUpReason = document.getElementById("followUpReason").value.trim();
+
+      if (!reviewerId) return alert("reviewer_id is required.");
+      if (ACTIONS_REQUIRING_NOTE.has(reviewAction) && !reviewerNote) return alert(`reviewer_note is required for ${reviewAction}.`);
+      if (followUpRequired && !followUpReason) return alert("follow_up_reason is required when follow-up is true.");
+
+      const sourceEvidenceIds = getFindingEvidenceIds(finding).length ? getFindingEvidenceIds(finding) : relatedEvidence.map(getEvidenceId);
+      const record = {
+        finding_id: findingId,
+        review_action: reviewAction,
+        reviewer_note: reviewerNote,
+        reviewer_id: reviewerId,
+        reviewed_at: new Date().toISOString(),
+        source_report_id: getSourceReportId(),
+        source_evidence_ids: sourceEvidenceIds,
+        zero_autonomy_acknowledged: true,
+        follow_up_required: followUpRequired,
+        follow_up_reason: followUpRequired ? followUpReason : null,
+        related_document_references: [],
+        institutional_unit: null,
+        review_priority_override: null,
+        review_confidence: null
+      };
+
+      state.reviewRecords = state.reviewRecords.filter(item => item.finding_id !== findingId);
+      state.reviewRecords.push(record);
+      saveStoredReviewRecords();
+      renderAll(false);
+    }
+
+    function renderReviewRecords() {
+      if (state.reviewRecords.length === 0) {
+        els.reviewRecords.innerHTML = '<div class="empty">No human review records yet.</div>';
+        return;
+      }
+      els.reviewRecords.innerHTML = state.reviewRecords
+        .slice()
+        .sort((a, b) => String(a.finding_id).localeCompare(String(b.finding_id)))
+        .map(record => `
+          <div class="review-record">
+            <div class="finding-head">
+              <div><strong class="mono">${escapeHtml(record.finding_id)}</strong><div class="muted small">${escapeHtml(record.reviewed_at || "")}</div></div>
+              <span class="badge ok">${escapeHtml(record.review_action)}</span>
+            </div>
+            <div class="muted small">Reviewer: ${escapeHtml(record.reviewer_id)}</div>
+            <p>${escapeHtml(record.reviewer_note || "")}</p>
+          </div>
+        `).join("");
+    }
+
+    function renderBoundary() {
+      const boundary = { ...ZERO_AUTONOMY_BOUNDARY };
+      els.boundaryList.innerHTML = Object.entries(boundary).map(([key, value]) => `
+        <div class="boundary-item"><span class="mono">${escapeHtml(key)}</span><strong>${escapeHtml(String(value))}</strong></div>
+      `).join("");
+    }
+
+    function renderPackagePreview() {
+      els.packagePreview.textContent = JSON.stringify(buildPackagePreview(), null, 2);
+    }
+
+    function renderAll(rebuildFilters = true) {
+      renderMetrics();
+      renderPriorityStrip();
+      if (rebuildFilters) renderFilters();
+      renderFindingList();
+      renderFindingDetail();
+      renderReviewRecords();
+      renderBoundary();
+      renderPackagePreview();
+    }
+
+    function applyReviewPackage(packageJson) {
+      if (!isValidHumanReviewPackage(packageJson)) {
+        addStatus("Rejected package file: expected institutional_approval_human_review_package.json", "warn");
+        return;
+      }
+      state.reviewPackage = packageJson;
+      state.reviewRecords = packageJson.review_records.filter(item => item && typeof item === "object");
+      saveStoredReviewRecords();
+      addStatus("Loaded valid human review package", "ok");
+    }
+
+    function downloadPackage() {
+      const payload = buildPackagePreview();
+      const blob = new Blob([JSON.stringify(payload, null, 2) + "\n"], { type: "application/json" });
+      const url = URL.createObjectURL(blob);
+      const anchor = document.createElement("a");
+      anchor.href = url;
+      anchor.download = "institutional_approval_human_review_package.json";
+      document.body.appendChild(anchor);
+      anchor.click();
+      anchor.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    els.evidenceFile.addEventListener("change", async event => {
+      clearStatus();
+      const file = event.target.files?.[0];
+      if (!file) return;
+      try {
+        state.evidenceReport = await readFileAsJson(file);
+        state.selectedFindingId = getFindings()[0] ? getFindingId(getFindings()[0]) : null;
+        addStatus(`Loaded evidence report: ${file.name}`, "ok");
+        renderAll(true);
+      } catch (error) {
+        addStatus(`Failed to load evidence report: ${error.message}`, "warn");
+      }
+    });
+
+    els.packageFile.addEventListener("change", async event => {
+      clearStatus();
+      const file = event.target.files?.[0];
+      if (!file) return;
+      try {
+        const packageJson = await readFileAsJson(file);
+        applyReviewPackage(packageJson);
+        renderAll(false);
+      } catch (error) {
+        addStatus(`Failed to load package: ${error.message}`, "warn");
+      }
+    });
+
+    els.loadLocalReviewBtn.addEventListener("click", () => {
+      clearStatus();
+      state.reviewRecords = loadStoredReviewRecords();
+      addStatus("Loaded browser review state", "ok");
+      renderAll(false);
+    });
+
+    els.clearStateBtn.addEventListener("click", () => {
+      if (!confirm("Clear local human review records from this browser?")) return;
+      state.reviewRecords = [];
+      localStorage.removeItem(STORAGE_KEY);
+      clearStatus();
+      addStatus("Browser review state cleared", "warn");
+      renderAll(false);
+    });
+
+    els.searchInput.addEventListener("input", event => { state.filters.search = event.target.value; renderFindingList(); });
+    els.severityFilter.addEventListener("change", event => { state.filters.severity = event.target.value; renderFindingList(); });
+    els.signalFilter.addEventListener("change", event => { state.filters.signal = event.target.value; renderFindingList(); });
+    els.reviewFilter.addEventListener("change", event => { state.filters.review = event.target.value; renderFindingList(); });
+    els.refreshPreviewBtn.addEventListener("click", renderPackagePreview);
+    els.downloadPackageBtn.addEventListener("click", downloadPackage);
+
+    state.reviewRecords = loadStoredReviewRecords();
+    renderAll(true);
+  </script>
+</body>
+</html>

@@ -88,6 +88,27 @@ Any external pilot collaborations are conducted under **formal agreements and re
 
 ---
 
+# Public MVP Demo
+
+The current public MVP demonstration is:
+
+### ➜ [LEO Institutional Approval Review Demo](./demos/institutional_approval_review/README.md)
+
+This demo presents a local, human-controlled evidence-review workflow for institutional approval chains.
+
+It demonstrates:
+
+- structured input quality validation
+- approval workflow analysis
+- evidence-backed review findings
+- human reviewer actions
+- local review package export
+- zero-autonomy safety boundaries
+
+The demo does **not** approve, reject, block, punish, issue legal conclusions, mutate production records, or replace institutional authority.
+
+---
+
 # Prototype Demonstration
 
 A technical demonstration of the **LEO investigative pipeline prototype** can be viewed here:
