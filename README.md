@@ -88,13 +88,19 @@ Any external pilot collaborations are conducted under **formal agreements and re
 
 ---
 
-# Public MVP Demo
+# Public Demonstration Portfolio
 
-The current public MVP demonstration is:
+The current public demonstration portfolio is documented in:
+
+### ➜ [LEO Public Demo Catalog](./PUBLIC_DEMO_CATALOG.md)
+
+The portfolio currently includes three public demonstration tracks:
+
+## 1. Institutional Approval Review
 
 ### ➜ [LEO Institutional Approval Review Demo](./demos/institutional_approval_review/README.md)
 
-This demo presents a local, human-controlled evidence-review workflow for institutional approval chains.
+This embedded public MVP demonstrates a local, human-controlled evidence-review workflow for institutional approval chains.
 
 It demonstrates:
 
@@ -105,7 +111,25 @@ It demonstrates:
 - local review package export
 - zero-autonomy safety boundaries
 
-The demo does **not** approve, reject, block, punish, issue legal conclusions, mutate production records, or replace institutional authority.
+## 2. Procurement / Accounting Review
+
+### ➜ [LEO Procurement / Accounting Review Demo](https://github.com/BBS-contact/leo-procurement-accounting-demo)
+
+This public evaluation demo demonstrates evidence-linked procurement and accounting review signals, source-trust warnings, reviewer questions, and local export package generation.
+
+Public demo page:
+
+### ➜ [Open Procurement / Accounting Public Demo](https://bbs-contact.github.io/leo-procurement-accounting-demo/)
+
+## 3. Grant Expense Review
+
+### ➜ [LEO Grant Expense Review Demo](https://github.com/BBS-contact/leo-grant-expense-review-demo)
+
+This public evaluation demo demonstrates human-controlled grant expense review, evidence generation, documentation completeness review, budget line review, reviewer dashboard use, and review package export.
+
+All demonstrations remain human-review-only.
+
+LEO does **not** approve, reject, block, punish, issue fraud determinations, issue legal conclusions, mutate production records, or replace institutional authority.
 
 ---
 
