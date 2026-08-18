@@ -68,4 +68,4 @@ The repository serves as a public research documentation environment containing:
 - governance documentation
 - research artifacts
 
-Core runtime components remain part of the protected intellectual property of the BBS Foundation.
+Core runtime components are treated as protected LEO technology. Fundacja BBS is not represented by this document as the owner of LEO intellectual property. Current ownership and licensing status is governed by the project's IP and licensing framework and remains subject to artifact-level and professional legal review.

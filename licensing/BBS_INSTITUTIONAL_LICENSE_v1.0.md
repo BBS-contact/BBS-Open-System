@@ -1,3 +1,19 @@
+> **STATUS NOTICE — UNVERIFIED LICENSING ARTIFACT / LEGAL REVIEW REQUIRED**
+>
+> This document records a proposed institutional licensing framework for selected LEO modules and is preserved for provenance and evaluation. Repository evidence reviewed for this publication package does not establish that this document constitutes an executed agreement, an effective grant of rights to any specific institution, or the complete current legal terms governing use of any LEO artifact.
+>
+> Accordingly, this document must not be relied upon by itself as evidence of an active licence, institutional authorization, commercial right, sublicensing authority, or other legally effective grant.
+>
+> Any actual right to use a LEO artifact must be determined from the applicable artifact-level licence, provenance and rights record, and any separately executed agreement where one exists.
+>
+> References below to automatic termination, mandatory destruction of copies, commercial transition, institutional management by Fundacja BBS, and other legal consequences are preserved as part of this earlier licensing framework and require professional legal review before being represented as current enforceable terms.
+>
+> Current prospective IP and licensing architecture is described in `LEO_IP_AND_LICENSING_MODEL_v1.0.md`. Human review is required before any legally consequential licensing representation or action.
+>
+> The historical text below is intentionally preserved without substantive rewriting.
+>
+> ---
+
 BBS Institutional License v1.0
 
 This license governs the institutional, academic, and research use of selected LEO modules under authorized cooperation with Fundacja „BBS – Better Balance System”. 

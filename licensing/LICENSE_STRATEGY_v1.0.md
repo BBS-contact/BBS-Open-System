@@ -1,3 +1,15 @@
+> **STATUS NOTICE — HISTORICAL / SUPERSEDED STRATEGY**
+>
+> This document records an earlier LEO licensing strategy and is preserved for historical provenance. It must not be interpreted as the current authoritative statement of LEO ownership, licensing, institutional authority, commercial rights, or Process Mode architecture.
+>
+> In particular, references below to Fundacja BBS as an "exclusive licensee", to a separate written licensing agreement, to fixed Layer I / Layer II licence assignments, and to LEO as a solely deterministic institutional system architecture have not been established by this document as verified current legal or architectural facts.
+>
+> Current licensing architecture is defined prospectively in `LEO_IP_AND_LICENSING_MODEL_v1.0.md`, subject to artifact-level rights review and professional legal review where required.
+>
+> The historical text below is intentionally preserved without substantive rewriting.
+>
+> ---
+
 BBS / LEO Licensing Strategy v1.0
 
 Intellectual Property Owner & Author: Pavlo Martseniuk

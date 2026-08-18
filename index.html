@@ -3,505 +3,1859 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LEO – Institutional Integrity Infrastructure</title>
+
+  <title>LEO — Human-Controlled Institutional Integrity System</title>
+
+  <meta
+    name="description"
+    content="LEO is a human-controlled institutional integrity, provenance, evidence review, process characterization, anomaly analysis, and reviewed knowledge system developed by Fundacja BBS."
+  />
+
   <style>
+    :root {
+      --bg: #f4f7fa;
+      --surface: #ffffff;
+      --surface-soft: #eef4f8;
+      --surface-strong: #e3edf5;
+
+      --text: #17324d;
+      --text-soft: #53697c;
+      --text-light: #718494;
+
+      --navy: #17324d;
+      --navy-dark: #0d2235;
+
+      --border: #d7e2ea;
+      --link: #175fa8;
+      --link-hover: #0f457b;
+
+      --success-bg: #edf7f1;
+      --success-border: #a8d5b8;
+
+      --warning-bg: #fff8e8;
+      --warning-border: #e6ca7d;
+
+      --historical-bg: #f5f1f8;
+      --historical-border: #cbb8d8;
+
+      --shadow: 0 5px 20px rgba(20, 46, 70, 0.08);
+      --radius: 12px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f6f8;
       margin: 0;
-      color: #1f3c5c;
+      font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        Helvetica,
+        sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
     }
 
-    .header {
-      background: #1f3c5c;
-      color: white;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      color: #1f3c5c;
-      padding: 25px;
-      border-radius: 8px;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card a,
-    .section a,
-    .footer a {
+    a {
+      color: var(--link);
       text-decoration: none;
-      font-weight: bold;
-      color: #1f5fbf;
     }
 
-    .card a:hover,
-    .section a:hover,
-    .footer a:hover,
-    .navbar a:hover {
+    a:hover,
+    a:focus {
+      color: var(--link-hover);
       text-decoration: underline;
     }
 
-    .section {
-      margin-top: 40px;
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #87b7e5;
+      outline-offset: 3px;
     }
 
-    .system-map {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-
-    .map-box {
-      background: white;
-      color: #1f3c5c;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-      flex: 1;
-      min-width: 200px;
-    }
-
-    .footer {
-      margin-top: 50px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    .navbar {
-      background: #10293f;
-      padding: 12px 40px;
-      margin-top: 20px;
-    }
-
-    .navbar a {
+    .site-header {
+      background:
+        linear-gradient(
+          135deg,
+          var(--navy-dark) 0%,
+          var(--navy) 65%,
+          #244f72 100%
+        );
       color: #ffffff;
-      margin-right: 20px;
+      padding: 52px 24px 42px;
+    }
+
+    .header-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #cfe2f3;
+    }
+
+    .site-header h1 {
+      max-width: 880px;
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.025em;
+    }
+
+    .header-summary {
+      max-width: 900px;
+      margin: 22px 0 0;
+      font-size: 1.08rem;
+      color: #e7f0f7;
+    }
+
+    .header-status {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+    }
+
+    .status-chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 7px 11px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.09);
+      color: #ffffff;
+      font-size: 0.84rem;
+      font-weight: 650;
+    }
+
+    .institution-line {
+      margin-top: 24px;
+      color: #cfdfeb;
+      font-size: 0.94rem;
+    }
+
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(13, 34, 53, 0.97);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(8px);
+    }
+
+    .top-nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 10px 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px 8px;
+      align-items: center;
+    }
+
+    .top-nav a {
+      display: inline-block;
+      padding: 8px 10px;
+      border-radius: 7px;
+      color: #f2f7fb;
+      font-size: 0.88rem;
+      font-weight: 650;
+    }
+
+    .top-nav a:hover,
+    .top-nav a:focus {
+      background: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
       text-decoration: none;
-      font-weight: bold;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 34px 24px 70px;
+    }
+
+    section {
+      scroll-margin-top: 84px;
+      margin-top: 56px;
+    }
+
+    section:first-child {
+      margin-top: 0;
+    }
+
+    .section-heading {
+      max-width: 850px;
+      margin-bottom: 24px;
+    }
+
+    .section-heading h2 {
+      margin: 0 0 10px;
+      font-size: clamp(1.7rem, 3vw, 2.3rem);
+      line-height: 1.2;
+      color: var(--navy);
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--text-soft);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      padding: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+      color: var(--navy);
+    }
+
+    .card p {
+      margin: 0 0 16px;
+      color: var(--text-soft);
+    }
+
+    .card .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: auto;
+      padding-top: 8px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 40px;
+      padding: 9px 13px;
+      border: 1px solid var(--navy);
+      border-radius: 8px;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .button:hover,
+    .button:focus {
+      background: var(--navy-dark);
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      border-color: #b8c9d7;
+      color: var(--navy);
+    }
+
+    .button.secondary:hover,
+    .button.secondary:focus {
+      background: var(--surface-soft);
+      color: var(--navy-dark);
+    }
+
+    .button.external::after {
+      content: " ↗";
+      font-weight: 400;
+    }
+
+    .type-label {
+      display: inline-flex;
+      width: fit-content;
+      margin-bottom: 12px;
+      padding: 4px 8px;
+      border-radius: 5px;
+      background: var(--surface-soft);
+      color: var(--text-soft);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.045em;
+      text-transform: uppercase;
+    }
+
+    .type-label.current {
+      background: var(--success-bg);
+      color: #285d3b;
+    }
+
+    .type-label.runtime {
+      background: #edf3fb;
+      color: #315b82;
+    }
+
+    .type-label.historical {
+      background: var(--historical-bg);
+      color: #634d70;
+    }
+
+    .type-label.pending {
+      background: var(--warning-bg);
+      color: #735b18;
+    }
+
+    .notice {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      border-left-width: 5px;
+      border-radius: 9px;
+      background: var(--surface);
+    }
+
+    .notice strong {
+      color: var(--navy);
+    }
+
+    .notice.current {
+      border-left-color: #57966d;
+      background: var(--success-bg);
+    }
+
+    .notice.warning {
+      border-left-color: #c6a13f;
+      background: var(--warning-bg);
+    }
+
+    .notice.historical {
+      border-left-color: #8a70a0;
+      background: var(--historical-bg);
+    }
+
+    .architecture-flow {
+      margin: 24px 0;
+      padding: 20px;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--navy-dark);
+      color: #f4f8fb;
+      font-family:
+        "Cascadia Code",
+        "Consolas",
+        monospace;
+      font-size: 0.91rem;
+      line-height: 1.8;
+      white-space: pre;
+    }
+
+    .mode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .mode-card {
+      padding: 18px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: var(--surface);
+    }
+
+    .mode-card code {
       display: inline-block;
       margin-bottom: 8px;
+      padding: 3px 6px;
+      border-radius: 5px;
+      background: var(--surface-soft);
+      color: var(--navy);
+      font-size: 0.82rem;
+      font-weight: 700;
     }
 
-    .banner {
-      background: #9ec5ff;
-      padding: 15px 40px;
-      border-left: 4px solid #1f3c5c;
-      font-weight: bold;
-      color: #10293f;
-      margin-top: 20px;
+    .mode-card p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.92rem;
     }
 
-    ul {
-      line-height: 1.7;
+    .boundary-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+      gap: 12px;
+      margin: 22px 0 0;
+      padding: 0;
+      list-style: none;
     }
 
-    code {
-      background: #eef3f8;
-      padding: 2px 6px;
-      border-radius: 4px;
+    .boundary-list li {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      background: var(--surface);
+      font-weight: 650;
+      color: var(--navy);
     }
 
-    @media (max-width: 700px) {
-      .header,
-      .container,
-      .navbar,
-      .banner {
-        padding-left: 20px;
-        padding-right: 20px;
+    .quick-route {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+      gap: 16px;
+    }
+
+    .route-card {
+      padding: 20px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      box-shadow: var(--shadow);
+    }
+
+    .route-number {
+      display: inline-flex;
+      width: 32px;
+      height: 32px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      background: var(--navy);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 800;
+    }
+
+    .route-card h3 {
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+
+    .route-card p {
+      margin: 0 0 14px;
+      color: var(--text-soft);
+    }
+
+    .small-note {
+      font-size: 0.87rem;
+      color: var(--text-light);
+    }
+
+    @media (max-width: 720px) {
+      .site-header {
+        padding: 38px 18px 32px;
+      }
+
+      .top-nav-inner,
+      main {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .top-nav {
+        position: relative;
+      }
+
+      section {
+        scroll-margin-top: 20px;
       }
     }
   </style>
 </head>
+
 <body>
-  <div class="header">
-    <h1>LEO – Logical Epistemic Oversight</h1>
 
-    <div class="banner">
-      Research Prototype · Institutional Integrity Infrastructure<br />
-      Developed by Fundacja BBS – Better Balance System
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Fundacja BBS — Better Balance System</p>
+
+      <h1>LEO — Human-Controlled Institutional Integrity System</h1>
+
+      <p class="header-summary">
+        Public evaluation entry point for LEO architecture, provenance,
+        evidence review, process characterization, anomaly analysis,
+        reviewed institutional knowledge, runtime demonstrations,
+        governance boundaries, and historical engineering evidence.
+      </p>
+
+      <div class="header-status" aria-label="Current LEO status">
+        <span class="status-chip">Human review required</span>
+        <span class="status-chip">Public evaluation preparation</span>
+        <span class="status-chip">No autonomous enforcement</span>
+        <span class="status-chip">No production mutation authority</span>
+      </div>
+
+      <p class="institution-line">
+        Developed by Fundacja BBS — Better Balance System · Poland · European Union
+      </p>
     </div>
+  </header>
 
-    <div class="navbar">
-      <a href="#overview">Overview</a>
-      <a href="#system">System Map</a>
-      <a href="#infrastructure">Infrastructure</a>
-      <a href="#reports">Reports</a>
+  <nav class="top-nav" aria-label="Primary navigation">
+    <div class="top-nav-inner">
+      <a href="#start">Start Here</a>
+      <a href="#status">Current Status</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#evaluation">Public Evaluation</a>
+      <a href="#demos">Demo Portfolio</a>
+      <a href="#evidence">Evidence &amp; Reports</a>
       <a href="#governance">Governance</a>
-      <a href="#transparency">Transparency</a>
-      <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demos/institutional_approval_review">
-        Public MVP
-      </a>
-      <a href="https://github.com/BBS-contact/BBS-Open-System">Repository</a>
+      <a href="#licensing">Licensing / IP</a>
+      <a href="#repository">Repository</a>
     </div>
+  </nav>
 
-    <p>
-      Research infrastructure developed by<br />
-      <strong>Fundacja BBS – Better Balance System</strong><br />
-      Poland · European Union
-    </p>
-  </div>
+  <main>
 
-  <div class="container">
-    <div class="section">
-      <h2 id="overview">Overview</h2>
+    <!-- =========================================================
+         START HERE
+         ========================================================= -->
 
-      <p>
-        LEO (Logical Epistemic Oversight) is a research-oriented governance support
-        architecture developed by Fundacja BBS. The system explores structured anomaly
-        detection, institutional transparency and compliance-aware AI advisory systems.
-      </p>
+    <section id="start">
+      <div class="section-heading">
+        <h2>Start Here</h2>
 
-      <p>
-        The platform operates as a <strong>research and advisory infrastructure</strong>
-        designed to support institutional analysis and decision transparency. LEO does
-        not replace institutional authority and does not issue legally binding decisions.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Public Demonstration Portfolio</h2>
-
-      <p>
-        The current public demonstration portfolio includes three human-controlled
-        evidence-review demonstrations. The canonical navigation document is
-        <a href="PUBLIC_DEMO_CATALOG.md">PUBLIC_DEMO_CATALOG.md</a>.
-      </p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Institutional Approval Review</h3>
-          <p>
-            A working public demo showing input validation, evidence generation,
-            human review actions and local review package export.
-          </p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demos/institutional_approval_review">
-            View Public MVP →
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Procurement / Accounting Review</h3>
-          <p>
-            A public proof-of-work demo showing evidence-linked procurement and
-            accounting review signals, source-trust warnings, reviewer questions
-            and local export package generation.
-          </p>
-          <p>
-            Human-review-only prototype. No fraud verdict, legal certification,
-            payment decision, supplier sanction or autonomous enforcement.
-          </p>
-          <a href="https://bbs-contact.github.io/leo-procurement-accounting-demo/" target="_blank" rel="noopener noreferrer">
-            Open Public Demo →
-          </a>
-          <br />
-          <a href="https://github.com/BBS-contact/leo-procurement-accounting-demo" target="_blank" rel="noopener noreferrer">
-            View Demo Repository →
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Grant Expense Review</h3>
-          <p>
-            A public evaluation demo showing human-controlled grant expense review,
-            evidence generation, documentation completeness review, budget line review,
-            reviewer dashboard use and review package export.
-          </p>
-          <p>
-            Human-review-only prototype. No expense approval, fraud determination,
-            payment decision, production mutation or autonomous enforcement.
-          </p>
-          <a href="https://github.com/BBS-contact/leo-grant-expense-review-demo" target="_blank" rel="noopener noreferrer">
-            View Demo Repository →
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Validated Runtime Baseline</h3>
-          <p>
-            Combined runtime baseline: <strong>2451 passed in 56.87s</strong>.
-          </p>
-          <p>
-            Dashboard v0.2 manually validated. Review package round-trip validated.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Zero-Autonomy Boundary</h3>
-          <p>
-            LEO generates evidence and reviewer questions. It does not approve,
-            reject, punish, mutate production records or replace institutional authority.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 id="system">LEO System Map</h2>
-
-      <p>
-        The LEO architecture follows a structured analytical pipeline designed to detect
-        institutional anomalies and support investigative workflows.
-      </p>
-
-      <div class="banner">
-        INPUT → VALIDATION → ANALYSIS → EVIDENCE REPORT → HUMAN REVIEW → EXPORT PACKAGE
+        <p>
+          This page is designed as a navigation map for human reviewers,
+          institutional evaluators, developers, and AI-assisted evaluation.
+          Start with the current public status, then move to the architecture,
+          public demonstrations, evidence, and governance materials relevant
+          to the question being evaluated.
+        </p>
       </div>
 
-      <p>
-        Current public MVP workflow demonstrates deterministic evidence generation,
-        structured anomaly review and human-controlled institutional assessment.
-      </p>
+      <div class="quick-route">
 
-      <div class="system-map">
-        <div class="map-box">
-          <strong>Truth Ingestion</strong><br />
-          Structured acquisition and verification of institutional information.
-        </div>
+        <div class="route-card">
+          <span class="route-number">1</span>
+          <span class="type-label current">Current authority</span>
 
-        <div class="map-box">
-          <strong>Anomaly Analysis</strong><br />
-          Graph analysis, pattern detection and structural anomaly identification.
-        </div>
+          <h3>Understand what LEO is now</h3>
 
-        <div class="map-box">
-          <strong>Investigation Pipeline</strong><br />
-          Automated investigation reports and case construction.
-        </div>
-
-        <div class="map-box">
-          <strong>Institutional Alerts</strong><br />
-          Risk escalation and structured institutional notification.
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2 id="infrastructure">LEO Research Infrastructure</h2>
-
-      <div class="banner">
-        Core Operational Status · Deterministic Runtime Baseline Active
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Validated Runtime</h3>
           <p>
-            Combined runtime baseline:<br />
-            <strong>2451 passed in 56.87s</strong>
+            Read the current project-status declaration before interpreting
+            historical runtime artifacts or earlier public terminology.
           </p>
-        </div>
 
-        <div class="card">
-          <h3>Review Workflow</h3>
-          <p>
-            Evidence generation, anomaly review, human assessment
-            and export package validation operational.
-          </p>
-        </div>
-
-        <div class="card">
-          <h3>Operational Boundary</h3>
-          <p>
-            Local-first, non-autonomous and human-controlled
-            institutional review workflow.
-          </p>
-        </div>
-      </div>
-
-      <div class="cards">
-        <div class="card">
-          <h3>System Architecture</h3>
-          <p>Technical architecture and system structure of LEO.</p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture">
-            View Architecture →
+          <a
+            class="button"
+            href="PROJECT_STATUS.md"
+          >
+            Open Project Status
           </a>
         </div>
 
-        <div class="card">
-          <h3>Prototype Demonstration</h3>
-          <p>Runtime demonstration of the LEO analytical pipeline.</p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/demonstration/LEO_PROTOTYPE_DEMONSTRATION.md">
-            View Demonstration →
+        <div class="route-card">
+          <span class="route-number">2</span>
+          <span class="type-label current">Repository orientation</span>
+
+          <h3>Understand the architecture and boundaries</h3>
+
+          <p>
+            Read the repository README for the high-level architecture,
+            human-control model, current development state, and evaluation path.
+          </p>
+
+          <a
+            class="button"
+            href="README.md"
+          >
+            Open README
           </a>
         </div>
 
-        <div class="card">
+        <div class="route-card">
+          <span class="route-number">3</span>
+          <span class="type-label runtime">Public evaluation</span>
+
+          <h3>Inspect demonstrated runtime behavior</h3>
+
+          <p>
+            Use the canonical demo catalog to identify the three public
+            demonstration tracks and their documented scope.
+          </p>
+
+          <a
+            class="button"
+            href="PUBLIC_DEMO_CATALOG.md"
+          >
+            Open Demo Catalog
+          </a>
+        </div>
+
+        <div class="route-card">
+          <span class="route-number">4</span>
+          <span class="type-label historical">Historical evidence</span>
+
+          <h3>Interpret older artifacts in context</h3>
+
+          <p>
+            Earlier runtime terminology and implementation evidence remain
+            preserved for provenance. Historical evidence does not automatically
+            define current architectural authority.
+          </p>
+
+          <a
+            class="button secondary external"
+            href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demonstration"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Historical Demonstration Area
+          </a>
+        </div>
+
+      </div>
+
+      <div class="notice current">
+        <strong>Evaluation rule:</strong>
+        current governing architecture, scoped runtime evidence,
+        public evaluation artifacts, and historical evidence are different
+        artifact classes. They should not be treated as interchangeable.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CURRENT STATUS
+         ========================================================= -->
+
+    <section id="status">
+      <div class="section-heading">
+        <h2>Current Status</h2>
+
+        <p>
+          LEO is under active architectural and engineering development
+          and controlled public evaluation preparation.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Current status</span>
+
           <h3>Project Status</h3>
-          <p>Current development phase of the LEO research project.</p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/blob/main/PROJECT_STATUS.md">
-            View Status →
-          </a>
-        </div>
 
-        <div class="card">
-          <h3>Documented Reports</h3>
-          <p>Monthly reports and verification materials documenting actual progress.</p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
-            Open Reports →
-          </a>
-        </div>
+          <p>
+            Detailed public declaration of the current LEO architecture,
+            development position, governance boundaries, historical-runtime
+            treatment, and publication-readiness sequence.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PROJECT_STATUS.md">
+              Read Project Status
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Current overview</span>
+
+          <h3>Repository README</h3>
+
+          <p>
+            High-level orientation for evidence, provenance, Process Mode,
+            anomaly analysis, Reviewed / Institutional Knowledge,
+            public demonstrations, and human authority.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="README.md">
+              Read README
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Evaluation catalog</span>
+
+          <h3>Public Demo Catalog</h3>
+
+          <p>
+            Canonical catalog of public demonstrations, their runtime scope,
+            governance boundaries, and relationship to the broader architecture.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PUBLIC_DEMO_CATALOG.md">
+              Open Demo Catalog
+            </a>
+          </div>
+        </article>
+
       </div>
-    </div>
 
-    <div class="section">
-      <h2 id="reports">Reports &amp; Verification</h2>
-
-      <p>
-        This section provides documented evidence of actual development activity,
-        including monthly reports and machine-generated structural verification
-        artifacts confirming the state of the working system.
-      </p>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Development Reports Archive</h3>
-          <p>
-            Chronological development reports, verification materials and
-            runtime validation records documenting actual system evolution.
-          </p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
-            Open Development Reports →
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Verification Materials</h3>
-          <p>
-            Structural verification materials, development records and supporting
-            evidence documenting the evolution of the LEO research system.
-          </p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
-            Open Verification Materials →
-          </a>
-        </div>
-
-        <div class="card">
-          <h3>Reports Archive</h3>
-          <p>
-            Chronological archive of foundation reports and technical verification
-            materials.
-          </p>
-          <a href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports">
-            Open Reports Archive →
-          </a>
-        </div>
+      <div class="notice warning">
+        <strong>Production boundary:</strong>
+        public availability, a completed runtime baseline, passing scoped tests,
+        or a reproducible demonstration does not independently authorize
+        production deployment or production mutation.
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <h2>Regulatory Context</h2>
+    <!-- =========================================================
+         ARCHITECTURE AND PROCESS MODE
+         ========================================================= -->
 
-      <ul>
-        <li>GDPR (Regulation EU 2016/679)</li>
-        <li>EU Artificial Intelligence Act</li>
-        <li>EU Data Governance Frameworks</li>
-        <li>Polish foundation and accounting law</li>
+    <section id="architecture">
+      <div class="section-heading">
+        <h2>Architecture &amp; Process Mode</h2>
+
+        <p>
+          Current LEO architecture separates source evidence,
+          evidence-derived interpretation, signal eligibility,
+          analytical signals, process characterization, and human review.
+        </p>
+      </div>
+
+      <div class="architecture-flow" aria-label="Canonical LEO process mode pipeline">SOURCE EVIDENCE
+    ->
+EVIDENCE-DERIVED CHARACTERISTICS
+    ->
+SIGNAL ELIGIBILITY
+    ->
+DETERMINISTIC / STOCHASTIC SIGNAL COUNTS
+    ->
+PROCESS MODE PROPOSAL
+    ->
+HUMAN REVIEW</div>
+
+      <div class="notice current">
+        <strong>Signal rule:</strong>
+        only signal-eligible <code>SUPPORTED</code> characteristics may
+        contribute positive deterministic or stochastic signals.
+        <code>NOT_SUPPORTED</code>, <code>NOT_OBSERVED</code>,
+        <code>UNKNOWN</code>, and <code>CONFLICTING</code> remain
+        distinct states and do not automatically create positive or
+        opposite signals.
+      </div>
+
+      <h3>Canonical Process Mode States</h3>
+
+      <div class="mode-grid">
+
+        <div class="mode-card">
+          <code>DETERMINISTIC_PROCESS</code>
+
+          <p>
+            Process context characterized by supported deterministic
+            characteristics such as rule stability, procedural control,
+            outcome predictability, or repeatability.
+          </p>
+        </div>
+
+        <div class="mode-card">
+          <code>STOCHASTIC_PROCESS</code>
+
+          <p>
+            Process context characterized by supported stochastic
+            characteristics such as human discretion, behavioral variability,
+            or response uncertainty.
+          </p>
+        </div>
+
+        <div class="mode-card">
+          <code>MIXED_PROCESS</code>
+
+          <p>
+            Process context where meaningful deterministic and stochastic
+            characteristics are both present.
+          </p>
+        </div>
+
+        <div class="mode-card">
+          <code>UNKNOWN_REQUIRES_REVIEW</code>
+
+          <p>
+            Preserves uncertainty where available evidence does not support
+            an adequate process-mode proposal.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="card-grid" style="margin-top: 24px;">
+
+        <article class="card">
+          <span class="type-label current">Architecture</span>
+
+          <h3>Architecture Directory</h3>
+
+          <p>
+            Public architecture materials describing system structure
+            and architectural concepts preserved in the repository.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Architecture
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Evidence model</span>
+
+          <h3>Evidence Before Conclusions</h3>
+
+          <p>
+            LEO preserves the distinction between source evidence,
+            derived characteristics, analytical signals,
+            system proposals, reviewed knowledge, and human decisions.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="README.md">
+              Review Evidence Model
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Human governance</span>
+
+          <h3>Human Authority Boundary</h3>
+
+          <p>
+            Process Mode, anomaly analysis, and reviewer-support outputs
+            do not independently become authoritative institutional decisions.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PROJECT_STATUS.md">
+              Review Governance Boundaries
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <ul class="boundary-list" aria-label="LEO architectural governance boundaries">
+        <li>Human review required</li>
+        <li>No autonomous enforcement</li>
+        <li>No authoritative fraud verdicts</li>
+        <li>No authoritative legal verdicts</li>
+        <li>No production mutation without separate authorization</li>
+        <li>Provenance and evidence lineage preserved</li>
+        <li>Historical evidence remains traceable</li>
+        <li>Uncertainty remains visible</li>
       </ul>
-    </div>
 
-    <div class="section">
-      <h2 id="governance">Institutional Position</h2>
-
-      <p>
-        The LEO project is developed within the institutional framework of Fundacja
-        BBS – Better Balance System as part of a research initiative exploring new
-        models of institutional integrity infrastructure and transparent governance
-        support systems.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2 id="transparency">Institutional Transparency</h2>
-
-      <div class="cards">
-        <div class="card">
-          <h3>Institution</h3>
-          <p>Fundacja BBS – Better Balance System</p>
-        </div>
-
-        <div class="card">
-          <h3>Legal Status</h3>
-          <p>Registered non-profit foundation</p>
-        </div>
-
-        <div class="card">
-          <h3>Jurisdiction</h3>
-          <p>Poland · European Union</p>
-        </div>
+      <div class="notice historical">
+        <strong>Historical architecture note:</strong>
+        earlier concepts such as structured truth ingestion,
+        investigation pipelines, risk escalation, institutional alerts,
+        case escalation, and automatic triggering remain relevant as
+        historical engineering evidence where preserved in the repository.
+        They do not independently define the current governing LEO architecture.
       </div>
+    </section>
+
+        <!-- =========================================================
+         PUBLIC EVALUATION
+         ========================================================= -->
+
+    <section id="evaluation">
+      <div class="section-heading">
+        <h2>Public Evaluation</h2>
+
+        <p>
+          LEO is being prepared for controlled public evaluation.
+          Public evaluation means that an external reviewer should be able
+          to distinguish current architecture, demonstrated runtime behavior,
+          historical evidence, governance boundaries, and unresolved review gates.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label runtime">Evaluation entry point</span>
+
+          <h3>Public Demo Catalog</h3>
+
+          <p>
+            Canonical catalog of the current public demonstration portfolio,
+            including scope, governance boundaries, runtime interpretation,
+            and historical context.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PUBLIC_DEMO_CATALOG.md">
+              Open Demo Catalog
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Current status</span>
+
+          <h3>Project Status</h3>
+
+          <p>
+            Use this document to determine the current architectural position,
+            development state, authority boundaries, and publication-readiness sequence.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PROJECT_STATUS.md">
+              Open Project Status
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Evaluation orientation</span>
+
+          <h3>Repository README</h3>
+
+          <p>
+            High-level explanation of evidence lineage, Process Mode,
+            Reviewed / Institutional Knowledge, demos, governance,
+            licensing review boundaries, and evaluation navigation.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="README.md">
+              Open README
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="notice current">
+        <strong>Public-evaluation rule:</strong>
+        claims should remain proportional to available evidence.
+        Architecture, implementation, testing, demonstrations,
+        historical evidence, and planned functionality are different states.
+      </div>
+
+      <div class="notice warning">
+        <strong>Not a production authorization:</strong>
+        public availability, a reproducible demo, passing scoped tests,
+        or a frozen runtime baseline does not independently establish
+        complete-system production readiness.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         DEMO PORTFOLIO
+         ========================================================= -->
+
+    <section id="demos">
+      <div class="section-heading">
+        <h2>Public Demo Portfolio</h2>
+
+        <p>
+          The current portfolio contains three principal human-controlled
+          public demonstration tracks. Each demo should be evaluated
+          only within its documented runtime scope.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label runtime">Public MVP</span>
+
+          <h3>Institutional Approval Review</h3>
+
+          <p>
+            Local human-controlled review of institutional approval chains,
+            including input-quality validation, approval-workflow analysis,
+            evidence-backed findings, reviewer actions, and review-package export.
+          </p>
+
+          <p class="small-note">
+            No autonomous approval, rejection, enforcement,
+            authoritative fraud verdict, legal verdict, or production mutation.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demos/institutional_approval_review"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Institutional Approval Demo
+            </a>
+
+            <a
+              class="button secondary"
+              href="PUBLIC_DEMO_CATALOG.md"
+            >
+              Read Catalog Context
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Public evaluation demo</span>
+
+          <h3>Procurement / Accounting Review</h3>
+
+          <p>
+            Evidence-linked procurement and accounting review with
+            source-trust warnings, reviewer questions, anomaly-review support,
+            and controlled local export.
+          </p>
+
+          <p class="small-note">
+            No automatic accusation, authoritative fraud verdict,
+            legal conclusion, autonomous enforcement, or production mutation.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://bbs-contact.github.io/leo-procurement-accounting-demo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Public Demo
+            </a>
+
+            <a
+              class="button secondary external"
+              href="https://github.com/BBS-contact/leo-procurement-accounting-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Demo Repository
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Public evaluation demo</span>
+
+          <h3>Grant Expense Review</h3>
+
+          <p>
+            Human-controlled grant-expense review involving evidence generation,
+            documentation-completeness review, budget-line review,
+            reviewer-dashboard use, and review-package export.
+          </p>
+
+          <p class="small-note">
+            No expense approval authority, payment decision authority,
+            authoritative fraud determination, legal verdict,
+            autonomous enforcement, or production mutation.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/leo-grant-expense-review-demo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Grant Expense Repository
+            </a>
+
+            <a
+              class="button secondary"
+              href="PUBLIC_DEMO_CATALOG.md"
+            >
+              Read Catalog Context
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="notice current">
+        <strong>Shared demo boundary:</strong>
+        demonstrations provide analysis and reviewer support.
+        They do not independently authorize institutional action.
+      </div>
+
+      <div class="architecture-flow" aria-label="Demonstration governance relationship">PUBLIC DEMONSTRATION
+    ->
+SCOPED RUNTIME EVIDENCE
+    ->
+INSPECTABLE OUTPUT
+    ->
+HUMAN EVALUATION</div>
+
+      <div class="notice warning">
+        <strong>Do not infer complete-system implementation:</strong>
+        the public demo portfolio represents selected runtime evidence.
+        It does not prove that every current LEO architectural layer
+        has been fully implemented in each demonstration.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         RUNTIME STATUS AND HISTORICAL TEST EVIDENCE
+         ========================================================= -->
+
+    <section id="runtime">
+      <div class="section-heading">
+        <h2>Runtime Evidence</h2>
+
+        <p>
+          LEO preserves controlled runtime baselines as engineering evidence.
+          Runtime completion, freezing, testing, and production authorization
+          are intentionally treated as different states.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label runtime">Scoped runtime evidence</span>
+
+          <h3>Controlled Runtime Baselines</h3>
+
+          <p>
+            Runtime baselines document implemented and validated behavior
+            within a defined scope. They support reproducibility and evaluation,
+            but do not automatically establish complete-system readiness.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label historical">Historical test baseline</span>
+
+          <h3>Institutional Approval Test Evidence</h3>
+
+          <p>
+            A historical Institutional Approval combined runtime baseline
+            recorded:
+          </p>
+
+          <div class="architecture-flow" style="margin: 6px 0 14px;">2451 passed in 56.87s</div>
+
+          <p class="small-note">
+            This is historical scoped engineering evidence.
+            It is not asserted as the current global LEO test count.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Authority boundary</span>
+
+          <h3>Runtime Is Not Production Authorization</h3>
+
+          <p>
+            A runtime may be implemented, tested, demonstrated, or frozen
+            without being authorized for production deployment or production mutation.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="architecture-flow" aria-label="Runtime evidence distinctions">DEMONSTRATED
+!=
+COMPLETE SYSTEM IMPLEMENTATION
+
+TESTED WITHIN DEFINED SCOPE
+!=
+CURRENT GLOBAL TEST STATUS
+
+RUNTIME COMPLETE
+!=
+PRODUCTION AUTHORIZED</div>
+    </section>
+
+    <!-- =========================================================
+         EVIDENCE AND REPORTS
+         ========================================================= -->
+
+    <section id="evidence">
+      <div class="section-heading">
+        <h2>Evidence, Provenance &amp; Reports</h2>
+
+        <p>
+          LEO treats provenance, evidence lineage, reproducibility,
+          review history, and historical engineering records as part
+          of the system's institutional memory.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Documentation</span>
+
+          <h3>Institutional &amp; Research Documents</h3>
+
+          <p>
+            Public institutional, research, governance, and supporting
+            documentation preserved in the repository.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Documentation
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Evidence / verification</span>
+
+          <h3>Development Reports</h3>
+
+          <p>
+            Chronological reports and verification materials documenting
+            development activity, runtime validation, and system evolution.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Reports
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label historical">Historical runtime</span>
+
+          <h3>Prototype Demonstration Archive</h3>
+
+          <p>
+            Preserved earlier demonstration materials including legacy
+            anomaly, investigation, escalation, and institutional-alert concepts.
+          </p>
+
+          <p class="small-note">
+            Historical runtime evidence remains part of engineering provenance
+            but does not independently define current architectural authority.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demonstration"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Historical Demo Area
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Evidence lineage</span>
+
+          <h3>Evidence Model</h3>
+
+          <p>
+            Review how source evidence, derived characteristics,
+            signal eligibility, Process Mode proposals, reviewed knowledge,
+            and human decisions remain distinguishable.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="README.md">
+              Review Evidence Model
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="notice historical">
+        <strong>Preservation rule:</strong>
+        historical runtime components, earlier terminology,
+        previous demonstrations, review records, and older baselines
+        should remain traceable. Architectural evolution should use
+        explicit supersession rather than silent historical deletion.
+      </div>
+
+      <div class="notice current">
+        <strong>Evidence-lineage rule:</strong>
+        downstream analytical output should remain traceable to the
+        evidence from which it originated. Evidence, interpretation,
+        signals, proposals, reviewed knowledge, and human decisions
+        should not be collapsed into a single machine conclusion.
+      </div>
+    </section>
+
+        <!-- =========================================================
+         GOVERNANCE
+         ========================================================= -->
+
+    <section id="governance">
+      <div class="section-heading">
+        <h2>Governance &amp; Institutional Authority</h2>
+
+        <p>
+          LEO is designed as a human-controlled reviewer-support system.
+          Technical capability does not automatically create institutional authority.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Human control</span>
+
+          <h3>Human Review Required</h3>
+
+          <p>
+            Analytical outputs, Process Mode proposals, anomaly structures,
+            reviewer-support information, and Reviewed / Institutional Knowledge
+            remain subject to human review.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">No enforcement authority</span>
+
+          <h3>No Autonomous Enforcement</h3>
+
+          <p>
+            LEO does not independently convert analytical output into
+            sanctions, restrictions, approvals, rejections, suspensions,
+            punishments, or other consequential institutional actions.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">No verdict authority</span>
+
+          <h3>No Fraud or Legal Verdict Authority</h3>
+
+          <p>
+            Anomalies, inconsistencies, unusual patterns, or missing evidence
+            may justify additional review but do not independently establish
+            fraud, illegality, liability, or regulatory violation.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Production boundary</span>
+
+          <h3>No Production Mutation</h3>
+
+          <p>
+            A completed demonstration, runtime baseline, test result,
+            or public evaluation artifact does not independently authorize
+            production deployment or production-changing actions.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="architecture-flow" aria-label="Institutional authority flow">ANALYSIS
+    ->
+PROPOSAL / REVIEW SUPPORT
+    ->
+HUMAN REVIEW
+    ->
+AUTHORIZATION
+    ->
+INSTITUTIONAL ACTION</div>
+
+      <ul class="boundary-list" aria-label="Current LEO governance boundaries">
+        <li>Human review required</li>
+        <li>No autonomous enforcement</li>
+        <li>No autonomous institutional authority</li>
+        <li>No autonomous learning of institutional truth from raw evidence</li>
+        <li>No authoritative fraud verdicts</li>
+        <li>No authoritative legal verdicts</li>
+        <li>No automatic conversion of anomaly detection into accusation</li>
+        <li>No production mutation without explicit authorization</li>
+      </ul>
+
+      <div class="notice current">
+        <strong>Knowledge rule:</strong>
+        documents are evidence. Human-confirmed classifications and reviewed records
+        may become institutional knowledge under controlled governance with preserved
+        provenance, review context, and correction history.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         REGULATORY CONTEXT
+         ========================================================= -->
+
+    <section id="regulatory">
+      <div class="section-heading">
+        <h2>Regulatory Context</h2>
+
+        <p>
+          LEO is developed in Poland within the European Union.
+          Legal and regulatory frameworks may be relevant depending on the
+          specific institutional role, processing context, deployment model,
+          data categories, and operational environment.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Regulatory awareness</span>
+
+          <h3>Relevant Frameworks</h3>
+
+          <p>
+            Potentially relevant areas may include GDPR, the EU Artificial Intelligence Act,
+            data-governance requirements, Polish law, foundation law, accounting law,
+            contractual requirements, and sector-specific rules.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label pending">Separate review required</span>
+
+          <h3>Compliance Is Not Assumed</h3>
+
+          <p>
+            Governance controls, provenance, evidence lineage, human review,
+            traceability, and audit-oriented design do not independently prove
+            legal or regulatory compliance.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="architecture-flow" aria-label="Regulatory interpretation boundary">REGULATORY AWARENESS
+!=
+VERIFIED REGULATORY COMPLIANCE</div>
+
+      <div class="notice warning">
+        <strong>Compliance boundary:</strong>
+        no GDPR, EU AI Act, or other regulatory compliance claim should be inferred
+        from this site unless it is separately supported by appropriate legal,
+        technical, organizational, and evidentiary review.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         LICENSING / IP
+         ========================================================= -->
+
+    <section id="licensing">
+      <div class="section-heading">
+        <h2>Licensing / IP Review Gate</h2>
+
+        <p>
+          Licensing, intellectual-property, and third-party dependency consistency
+          remain a separate publication-readiness review gate.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label pending">Pending dedicated review</span>
+
+          <h3>Licensing Consistency Review</h3>
+
+          <p>
+            Repository-level licenses, historical licensing statements,
+            third-party dependencies, redistribution conditions,
+            attribution requirements, contribution expectations,
+            and intellectual-property positioning require dedicated review.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/licensing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Licensing Materials
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label historical">Preserved evidence</span>
+
+          <h3>Historical Licensing Statements</h3>
+
+          <p>
+            Historical licensing material remains part of repository provenance.
+            It should not be silently rewritten or treated as fully reconciled
+            before the dedicated licensing review is complete.
+          </p>
+        </article>
+
+      </div>
+
+      <div class="notice warning">
+        <strong>Dedicated gate:</strong>
+        LICENSE / IP / THIRD-PARTY LICENSING CONSISTENCY REVIEW must be completed
+        before final publication readiness is declared for broader institutional,
+        corporate, foundation, developer, or EU/institutional cooperation.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         REPOSITORY NAVIGATION
+         ========================================================= -->
+
+    <section id="repository">
+      <div class="section-heading">
+        <h2>Repository Navigation</h2>
+
+        <p>
+          Use this section to move directly to the major public artifact classes.
+          Links are grouped by purpose so evaluators can distinguish current authority,
+          runtime evidence, historical material, and pending review areas.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Current authority</span>
+
+          <h3>Project Status</h3>
+
+          <p>
+            Current public project-status and evaluation-readiness declaration.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PROJECT_STATUS.md">
+              Open Project Status
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Current overview</span>
+
+          <h3>README</h3>
+
+          <p>
+            High-level architecture, governance boundaries, demos,
+            licensing review gate, and evaluation navigation.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="README.md">
+              Open README
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Public evaluation</span>
+
+          <h3>Demo Catalog</h3>
+
+          <p>
+            Canonical navigation for public demonstration tracks and scoped runtime evidence.
+          </p>
+
+          <div class="card-actions">
+            <a class="button" href="PUBLIC_DEMO_CATALOG.md">
+              Open Demo Catalog
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Architecture</span>
+
+          <h3>Architecture Directory</h3>
+
+          <p>
+            Public architecture materials and structural descriptions.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/architecture"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Architecture
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Documentation</span>
+
+          <h3>Institutional &amp; Research Documents</h3>
+
+          <p>
+            Public institutional, research, governance, and supporting documentation.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/docs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Documentation
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label runtime">Verification evidence</span>
+
+          <h3>Development Reports</h3>
+
+          <p>
+            Development reports, verification records, and runtime-validation materials.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/foundation/reports"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Reports
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label historical">Historical evidence</span>
+
+          <h3>Prototype Demonstration Archive</h3>
+
+          <p>
+            Preserved historical runtime and prototype demonstration materials.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/demonstration"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Historical Demo Area
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="type-label pending">Licensing / IP</span>
+
+          <h3>Licensing Materials</h3>
+
+          <p>
+            Repository licensing artifacts pending dedicated consistency review.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System/tree/main/licensing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open Licensing Materials
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         PUBLICATION READINESS
+         ========================================================= -->
+
+    <section id="publication-readiness">
+      <div class="section-heading">
+        <h2>Publication-Readiness Sequence</h2>
+
+        <p>
+          Current public-repository work follows a controlled sequence.
+          Completion of one step does not authorize skipping later review gates.
+        </p>
+      </div>
+
+      <div class="architecture-flow" aria-label="Public documentation and publication sequence">PROJECT_STATUS.md
+    ->
+README.md
+    ->
+PUBLIC_DEMO_CATALOG.md
+    ->
+index.html
+    ->
+CROSS-DOCUMENT ARCHITECTURAL CONTINUITY / CONSISTENCY REVIEW
+    ->
+LICENSE / IP / THIRD-PARTY LICENSING CONSISTENCY REVIEW
+    ->
+FINAL PUBLICATION-READINESS REVIEW
+    ->
+EXPLICIT HUMAN APPROVAL
+    ->
+PUBLIC REPOSITORY UPDATE
+    ->
+FRESH-CLONE / POST-PUSH VERIFICATION</div>
+
+      <div class="notice warning">
+        <strong>Current stage:</strong>
+        this <code>index.html</code> alignment is part of public documentation alignment.
+        It does not itself authorize publication, licensing conclusions,
+        production deployment, or GitHub update.
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT
+         ========================================================= -->
+
+    <section id="contact">
+      <div class="section-heading">
+        <h2>Institutional Context &amp; Contact</h2>
+
+        <p>
+          LEO is developed by Fundacja BBS — Better Balance System in Poland,
+          within a controlled institutional, architectural, engineering,
+          and evaluation framework.
+        </p>
+      </div>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <span class="type-label current">Institution</span>
+
+          <h3>Fundacja BBS — Better Balance System</h3>
+
+          <p>
+            Poland · European Union
+          </p>
+
+          <p class="small-note">
+            Institutional, research, evaluation, collaboration, licensing,
+            and regulatory inquiries should be directed through official channels.
+          </p>
+        </article>
+
+        <article class="card">
+          <span class="type-label current">Public repository</span>
+
+          <h3>BBS Open System</h3>
+
+          <p>
+            Public-facing repository for LEO documentation,
+            selected runtime demonstrations, architecture materials,
+            reports, and evaluation artifacts.
+          </p>
+
+          <div class="card-actions">
+            <a
+              class="button external"
+              href="https://github.com/BBS-contact/BBS-Open-System"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open GitHub Repository
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer
+    style="
+      border-top: 1px solid #d7e2ea;
+      background: #ffffff;
+      padding: 34px 24px;
+    "
+  >
+    <div
+      style="
+        max-width: 1180px;
+        margin: 0 auto;
+        color: #53697c;
+        font-size: 0.9rem;
+      "
+    >
+      <strong style="color: #17324d;">
+        Fundacja BBS — Better Balance System
+      </strong>
+
+      <br />
+      Poland · European Union
+
+      <br /><br />
+
+      LEO is a human-controlled institutional integrity, provenance,
+      evidence review, process characterization, anomaly analysis,
+      and reviewed knowledge system.
+
+      <br />
+
+      Human review is required. No autonomous enforcement,
+      authoritative fraud or legal verdict authority,
+      or production mutation is established by this site.
+
+      <br /><br />
+
+      <a href="PROJECT_STATUS.md">Project Status</a>
+      &nbsp;·&nbsp;
+      <a href="README.md">README</a>
+      &nbsp;·&nbsp;
+      <a href="PUBLIC_DEMO_CATALOG.md">Demo Catalog</a>
+      &nbsp;·&nbsp;
+      <a
+        href="https://github.com/BBS-contact/BBS-Open-System"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub Repository
+      </a>
+
+      <br /><br />
+
+      © 2026 Fundacja BBS — Better Balance System
     </div>
+  </footer>
 
-    <div class="section">
-      <h2>Research Integrity Statement</h2>
-
-      <p>
-        The LEO project is developed as a research initiative focused on institutional
-        transparency and governance support.
-      </p>
-
-      <p>
-        The system operates as an analytical advisory infrastructure and does not
-        replace institutional authority or legal processes.
-      </p>
-
-      <p>
-        Development follows applicable regulatory frameworks including EU data
-        protection principles and responsible AI practices.
-      </p>
-
-      <p>
-        The objective of the project is to explore preventive integrity infrastructure
-        capable of identifying structural anomalies in institutional systems before
-        systemic failures occur.
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>Contact</h2>
-
-      <p>
-        Fundacja BBS – Better Balance System<br />
-        Poland · European Union
-      </p>
-
-      <p>
-        For institutional or research inquiries regarding the LEO project, please
-        contact the BBS Foundation through official channels.
-      </p>
-    </div>
-
-    <div class="footer">
-      <strong>Fundacja BBS – Better Balance System</strong><br />
-      Poland · European Union<br /><br />
-
-      LEO is a research-oriented institutional integrity and evidence-review project.<br />
-      The system does not replace institutional authority or legal decision-making.<br /><br />
-
-      <a href="https://github.com/BBS-contact/BBS-Open-System">
-        Public MVP Repository
-      </a><br /><br />
-
-      Repository licensing information is available in the GitHub repository.<br /><br />
-
-      © 2026 Fundacja BBS – Better Balance System
-    </div>
-  </div>
 </body>
 </html>

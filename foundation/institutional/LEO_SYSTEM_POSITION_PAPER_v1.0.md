@@ -25,7 +25,7 @@ This document clarifies what LEO is, what it is not, and under which institution
 
 ## 2. Institutional Context
 
-LEO is developed and governed by:
+LEO is developed by Pavlo Martseniuk as its Author and Developer and is advanced within an institutional governance and evaluation environment supported by:
 
 **Fundacja "BBS – Better Balance System"**
 Registered non-profit foundation under Polish law.
@@ -112,21 +112,21 @@ It is not:
 
 LEO operates under a three-layer licensing structure:
 
-### Layer I – Public Knowledge
+### Layer I – Public Knowledge & Evaluation
 
-Creative Commons BY-NC-SA 4.0
+Licensing: Determined at artifact level. Historical Creative Commons licensing remains subject to its applicable scope and provenance.
 
-### Layer II – Institutional Integration
+### Layer II – Controlled Collaboration & Integration
 
-Controlled academic/institutional license
+Access and licensing: Determined through artifact-level licensing, institutional authorization, or other reviewed collaboration terms as applicable.
 
-### Layer III – Core Runtime
+### Layer III – Protected Core Technology
 
-Proprietary intellectual property of Fundacja BBS
+Status: Protected LEO technology, subject to verified ownership, third-party rights, historical grants, and artifact-level review.
 
-Commercial deployment requires formal agreement with the Foundation.
+Commercial deployment or integration must follow the applicable artifact-level licence, rights record, and any separately required written authorization or agreement.
 
-System fragmentation without written authorization is prohibited.
+LEO seeks to preserve architectural, governance, provenance, and project-identity continuity. Any restrictions on fragmentation, derivative use, redistribution, or rebranding depend on the rights and conditions applicable to the relevant artifact.
 
 ---
 
@@ -167,7 +167,7 @@ Future development phases may include:
 * institutional pilot deployments,
 * academic research collaboration.
 
-All development remains subject to governance oversight by Fundacja BBS.
+LEO-related activities conducted through Fundacja BBS remain subject to the Foundation's applicable institutional governance and human oversight, within the scope of its legal authority and rights validly granted to it.
 
 ---
 
