@@ -486,6 +486,16 @@ Architecture and governance materials defining the current evidence model, Proce
 
 Implemented and preserved runtime behavior within explicitly defined scopes.
 
+For a current evaluator-facing evidence package covering the implemented
+Process Mode runtime path, its test-backed behavior, provenance boundaries,
+and mandatory human-review boundary, see:
+
+### [Process Mode Runtime Evidence](./evaluation/PROCESS_MODE_RUNTIME_EVIDENCE.md)
+
+This evidence package documents a defined implementation scope. It does not
+represent complete-system production readiness or autonomous institutional
+authority.
+
 ## Public Evaluation Artifacts
 
 Demonstrations, guides, documentation, outputs, and related materials organized to make selected LEO capabilities externally inspectable.

@@ -422,6 +422,15 @@ However, a completed runtime baseline does not automatically establish that the 
 
 A controlled runtime baseline demonstrates only the scope that was actually implemented, tested, reviewed, and frozen within that baseline.
 
+A current evaluator-facing Process Mode runtime evidence package is available at:
+
+[`evaluation/PROCESS_MODE_RUNTIME_EVIDENCE.md`](./evaluation/PROCESS_MODE_RUNTIME_EVIDENCE.md)
+
+It provides scoped evidence for the implemented Process Mode path and its
+review boundaries. Its presence does not change the distinction between
+implemented runtime behavior, broader architectural development, and
+production-authorized functionality.
+
 Accordingly, public status documentation must distinguish among:
 
 * implemented runtime behavior;

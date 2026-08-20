@@ -412,6 +412,21 @@ Where a demonstration predates a current architectural layer, the demonstration 
 
 The broader architecture should be evaluated through the current architectural documentation and applicable runtime evidence rather than inferred solely from the demonstration portfolio.
 
+## Process Mode Runtime Evidence
+
+The current Process Mode architecture is accompanied by a dedicated
+evaluator-facing runtime evidence package:
+
+[`evaluation/PROCESS_MODE_RUNTIME_EVIDENCE.md`](./evaluation/PROCESS_MODE_RUNTIME_EVIDENCE.md)
+
+The package connects the current architectural model to scoped implementation
+and test evidence while preserving the distinction between runtime evidence,
+human-reviewed interpretation, and production authorization.
+
+Evaluators should use this package when assessing whether the documented
+Process Mode methodology is represented by inspectable runtime behavior rather
+than architecture documentation alone.
+
 ---
 
 # Evidence and Signal Boundary
