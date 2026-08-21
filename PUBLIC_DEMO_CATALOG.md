@@ -429,6 +429,22 @@ than architecture documentation alone.
 
 ---
 
+## Anomaly Library Runtime Evidence
+
+The frozen Anomaly Library runtime baseline is accompanied by a dedicated
+evaluator-facing evidence package:
+
+[`evaluation/ANOMALY_LIBRARY_RUNTIME_EVIDENCE.md`](./evaluation/ANOMALY_LIBRARY_RUNTIME_EVIDENCE.md)
+
+The package connects the Anomaly Library architecture to implemented and
+test-backed runtime behavior, evidence-lineage and provenance validation,
+Process Mode context, and structured human-review support.
+
+Evaluators should use this package when assessing the implemented Anomaly Library
+runtime boundary. It does not establish autonomous anomaly determination,
+fraud-verdict authority, legal-verdict authority, production mutation authority,
+or complete-system production readiness.
+
 # Evidence and Signal Boundary
 
 Current LEO architecture distinguishes source evidence from evidence-derived characteristics and analytical signals.

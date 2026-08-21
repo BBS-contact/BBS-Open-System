@@ -431,6 +431,16 @@ review boundaries. Its presence does not change the distinction between
 implemented runtime behavior, broader architectural development, and
 production-authorized functionality.
 
+A corresponding evaluator-facing Anomaly Library runtime evidence package is
+available at:
+
+[`evaluation/ANOMALY_LIBRARY_RUNTIME_EVIDENCE.md`](./evaluation/ANOMALY_LIBRARY_RUNTIME_EVIDENCE.md)
+
+It documents the frozen Anomaly Library runtime baseline, implemented validation
+and orchestration behavior, test-backed evidence, evidence-lineage and provenance
+requirements, and the mandatory human-review boundary. Its presence does not
+constitute production authorization or autonomous institutional authority.
+
 Accordingly, public status documentation must distinguish among:
 
 * implemented runtime behavior;

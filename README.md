@@ -496,6 +496,17 @@ This evidence package documents a defined implementation scope. It does not
 represent complete-system production readiness or autonomous institutional
 authority.
 
+### [Anomaly Library Runtime Evidence](./evaluation/ANOMALY_LIBRARY_RUNTIME_EVIDENCE.md)
+
+This evaluator-facing evidence package documents the frozen Anomaly Library
+runtime baseline, its implemented validation and orchestration path, test-backed
+behavior, evidence-lineage and provenance requirements, and mandatory
+human-review boundary.
+
+It provides scoped runtime evidence for public evaluation. It does not establish
+complete-system production readiness, autonomous enforcement authority, fraud
+determination authority, or legal-verdict authority.
+
 ## Public Evaluation Artifacts
 
 Demonstrations, guides, documentation, outputs, and related materials organized to make selected LEO capabilities externally inspectable.
