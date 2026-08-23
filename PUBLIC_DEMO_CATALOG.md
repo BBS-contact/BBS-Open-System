@@ -445,6 +445,26 @@ runtime boundary. It does not establish autonomous anomaly determination,
 fraud-verdict authority, legal-verdict authority, production mutation authority,
 or complete-system production readiness.
 
+---
+
+## Knowledge Layer Runtime Evidence
+
+The published Knowledge Layer runtime is accompanied by a dedicated
+evaluator-facing evidence package:
+
+[`KNOWLEDGE_LAYER_RUNTIME_EVIDENCE.md`](./KNOWLEDGE_LAYER_RUNTIME_EVIDENCE.md)
+
+The package connects the Reviewed / Institutional Knowledge architecture to
+inspectable runtime components and test-backed behavior, including controlled
+knowledge-integration records, reference resolution, evidence-lineage and
+provenance validation, implementation-contract control, controlled input loading,
+and mandatory human review.
+
+Evaluators should use this package when assessing the implemented Knowledge Layer
+runtime boundary. It does not establish autonomous creation of institutional
+knowledge, production authorization, autonomous enforcement authority, or
+complete-system production readiness.
+
 # Evidence and Signal Boundary
 
 Current LEO architecture distinguishes source evidence from evidence-derived characteristics and analytical signals.

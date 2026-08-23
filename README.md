@@ -507,6 +507,18 @@ It provides scoped runtime evidence for public evaluation. It does not establish
 complete-system production readiness, autonomous enforcement authority, fraud
 determination authority, or legal-verdict authority.
 
+### [Knowledge Layer Runtime Evidence](./KNOWLEDGE_LAYER_RUNTIME_EVIDENCE.md)
+
+This evaluator-facing evidence package documents the published Knowledge Layer
+runtime boundary, including controlled knowledge-integration records, reference
+resolution, evidence-lineage and provenance validation, implementation-contract
+control, controlled input loading, test-backed behavior, and mandatory
+human-review requirements.
+
+It provides scoped runtime evidence for public evaluation. It does not establish
+complete-system production readiness, autonomous institutional authority,
+autonomous enforcement, or self-validating institutional knowledge.
+
 ## Public Evaluation Artifacts
 
 Demonstrations, guides, documentation, outputs, and related materials organized to make selected LEO capabilities externally inspectable.

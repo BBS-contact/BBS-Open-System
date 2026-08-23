@@ -441,6 +441,18 @@ and orchestration behavior, test-backed evidence, evidence-lineage and provenanc
 requirements, and the mandatory human-review boundary. Its presence does not
 constitute production authorization or autonomous institutional authority.
 
+A corresponding evaluator-facing Knowledge Layer runtime evidence package is
+available at:
+
+[`KNOWLEDGE_LAYER_RUNTIME_EVIDENCE.md`](./KNOWLEDGE_LAYER_RUNTIME_EVIDENCE.md)
+
+It documents the published Knowledge Layer runtime boundary, including controlled
+knowledge-integration records, reference resolution, evidence-lineage and
+provenance validation, implementation-contract control, controlled input loading,
+test-backed behavior, and mandatory human review. Its presence does not constitute
+production authorization, autonomous institutional authority, or self-validating
+institutional knowledge.
+
 Accordingly, public status documentation must distinguish among:
 
 * implemented runtime behavior;
