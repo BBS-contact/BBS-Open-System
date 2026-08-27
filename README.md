@@ -600,6 +600,16 @@ Historical test evidence should therefore remain associated with:
 
 This preserves useful engineering evidence without converting a historical scoped result into an unsupported current repository-wide metric.
 
+# Test Validation Matrix
+
+For reviewer-facing test inventory, validation-state interpretation, historical/current evidence separation, and future revalidation tracking, use the living [TEST_VALIDATION_MATRIX.md](TEST_VALIDATION_MATRIX.md).
+
+The matrix currently records the canonical repository test-file inventory as **198 tracked test-named Python files**, including **125 current runtime/demo test files**, **62 legacy or historical runtime test files**, **8 publication-copy test files**, and separately classified canonical, epistemic-ingestion, and auxiliary test assets.
+
+These are **test-file inventory counts**, not a current global executed-test or passed-test count. The matrix keeps tracked-file inventory, test collection, execution, pass evidence, historical execution evidence, overlap rules, provenance, and revalidation status as separate evidence dimensions.
+
+The historical `2451 passed in 56.87s` result above therefore remains attached to its Institutional Approval combined runtime baseline rather than being converted into an unsupported current repository-wide metric.
+
 ---
 
 # Public Evaluation

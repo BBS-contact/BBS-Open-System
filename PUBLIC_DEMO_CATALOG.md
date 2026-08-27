@@ -221,6 +221,14 @@ It must not be interpreted as a current global LEO repository test count.
 
 A current global test-count claim would require a new appropriately scoped validation.
 
+## Test Validation Matrix
+
+Reviewers can use the living [TEST_VALIDATION_MATRIX.md](TEST_VALIDATION_MATRIX.md) to inspect how LEO separates canonical test-file inventory, current runtime/demo scopes, historical test assets, publication copies, collection evidence, execution evidence, pass evidence, provenance, and pending revalidation.
+
+The matrix currently records **198 tracked test-named Python files repository-wide** and **125 current runtime/demo test files** at its canonical inventory baseline. These inventory figures are not asserted as a current global executed-test count.
+
+The historical `2451 passed in 56.87s` Institutional Approval result remains preserved as scoped historical evidence. `GLOBAL_TEST_COUNT_ASSERTED: NO` therefore remains the correct public boundary until a new appropriately scoped current validation establishes a new global claim.
+
 ---
 
 # 2. Procurement / Accounting Review

@@ -510,6 +510,16 @@ The correct public interpretation is therefore:
 
 This distinction prevents historical engineering evidence from being transformed into unsupported current-state metrics.
 
+## 12.1 Living Test Validation Matrix
+
+Public evaluation now includes a maintained [TEST_VALIDATION_MATRIX.md](TEST_VALIDATION_MATRIX.md) as the reviewer-facing test inventory and validation-status evidence index.
+
+The matrix preserves the distinction between current runtime/demo test assets, legacy or historical test assets, publication copies, other canonical test assets, auxiliary validation tooling, collection evidence, execution evidence, and pass evidence.
+
+Its current canonical inventory baseline records **198 tracked test-named Python files repository-wide**, of which **125 are classified as current runtime/demo test files**. This inventory must not be interpreted as a current global passed-test count.
+
+Historical execution results remain revision- and scope-specific. Future current-baseline collection or execution checkpoints are to be added to the matrix with explicit repository state, scope, command, outcome, and provenance rather than replacing historical evidence.
+
 ---
 
 ## 13. Legacy Runtime Components
