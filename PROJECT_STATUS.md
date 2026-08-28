@@ -1198,11 +1198,9 @@ This approach allows LEO to evolve without losing the evidence required to under
 
 ## 33. Current Review Decision
 
-The previous public project-status positioning no longer adequately represents the current LEO architecture.
+The public project-status realignment has been completed and incorporated into the current public-repository documentation baseline.
 
-A public status centered on structured truth ingestion, risk escalation, institutional alert pipelines, legacy phase positioning, or unsupported current test-count claims would create a material mismatch between the public description and the current governed architecture.
-
-The replacement status should instead center on:
+The current `PROJECT_STATUS.md` now centers the public description of LEO on:
 
 * source evidence;
 * provenance;
@@ -1220,20 +1218,101 @@ The replacement status should instead center on:
 * explicit governance boundaries;
 * controlled public evaluation.
 
-**Review decision: PUBLIC PROJECT STATUS REALIGNMENT REQUIRED.**
+This positioning supersedes earlier public descriptions where those descriptions no longer accurately represent the current governed architecture.
 
-The purpose of this realignment is architectural accuracy and continuity, not removal of historical evidence.
+Historical terminology, runtime components, demonstrations, and test evidence remain preserved as part of LEO's engineering and institutional provenance. Their preservation does not make them the current source of architectural authority.
+
+The current public documentation baseline must continue to distinguish:
+
+```text
+CURRENT VERIFIED CAPABILITY
+        |
+        +-- from historical evidence
+        |
+        +-- from architectural specification
+        |
+        +-- from planned or proposed capability
+        |
+        +-- from externally requested or evaluated capability
+        |
+        +-- from production authorization
+```
+
+No capability should be represented as current merely because it exists in an architectural review, historical runtime component, future implementation specification, external discussion, or evaluation plan.
+
+No external institutional requirement, observation, or evaluation criterion autonomously redefines LEO architecture. Any future architectural change remains subject to evidence review, compatibility analysis, provenance preservation, human review, and explicit authorization.
+
+**Review decision: CURRENT PUBLIC PROJECT STATUS REALIGNMENT COMPLETE — CONTINUE CONTROLLED EXTERNAL EVALUATION READINESS REVIEW.**
+
+The current task is therefore no longer replacement of the public project-status model. The current task is verification that the evaluator-facing public surface accurately represents the LEO capabilities, evidence, limitations, governance boundaries, and evaluation artifacts that actually exist.
 
 ---
 
 ## 34. Next Controlled Public-Documentation Step
 
-After this `PROJECT_STATUS.md` replacement has been reviewed, explicitly approved, applied to the correct public-repository source, and verified, the next documentation-alignment target is:
+The public `README.md` and the current `PROJECT_STATUS.md` have now been reviewed as evaluator-facing entry points within the External Evaluation Readiness Gap Inventory.
+
+The next activity is not automatic expansion or rewriting of the public documentation.
+
+The next activity is continued read-only external-evaluation gap verification across the remaining evaluator-facing artifacts, beginning with:
 
 ```text
-README.md
+TEST_VALIDATION_MATRIX.md
 ```
 
-No automatic modification of `README.md`, `PUBLIC_DEMO_CATALOG.md`, `index.html`, licensing artifacts, runtime components, historical evidence, or other repository files is authorized by this document.
+and then proceeding, subject to separate verification and human review, through the remaining public evaluation surface, including:
 
-Each subsequent change remains subject to separate controlled review and explicit human approval.
+```text
+PUBLIC_DEMO_CATALOG.md
+index.html
+public demonstration artifacts
+runtime-evidence navigation
+human-control and governance evidence
+provenance and evidence-lineage evidence
+licensing and intellectual-property boundaries
+AI Office / European Commission evidence consistency
+```
+
+Each artifact must first be inspected in its current state.
+
+A modification is justified only where verified evidence establishes a material mismatch, stale state, unsupported claim, missing evaluator-critical information, broken navigation, or another concrete external-evaluation readiness gap.
+
+The governing remediation rule remains:
+
+```text
+VERIFY FIRST
+    ->
+CLASSIFY THE GAP
+    ->
+PRESERVE VERIFIED CONTENT
+    ->
+CHANGE ONLY WHAT THE EVIDENCE REQUIRES
+    ->
+VERIFY AGAIN
+    ->
+REQUIRE HUMAN APPROVAL
+```
+
+Absence of additional explanatory material is not by itself evidence that an artifact must be expanded.
+
+Public-evaluation readiness does not authorize:
+
+* runtime implementation;
+* Profile Assembly implementation;
+* production mutation;
+* autonomous enforcement;
+* autonomous learning;
+* fraud or legal verdict authority;
+* deletion of historical evidence;
+* removal of provenance or evidence lineage;
+* unsupported regulatory or institutional claims;
+* automatic publication;
+* automatic commit or push.
+
+No claim should imply that the European Commission, the EU AI Office, or another external institution has certified, endorsed, approved, or authorized LEO unless separate primary evidence establishes that exact claim.
+
+Verified external institutional evidence may be presented only within its demonstrated scope and must remain distinguishable from LEO technical capability, regulatory compliance, certification, endorsement, or production authorization.
+
+No automatic modification of `TEST_VALIDATION_MATRIX.md`, `PUBLIC_DEMO_CATALOG.md`, `index.html`, licensing artifacts, runtime components, historical evidence, or any other repository file is authorized by this status synchronization.
+
+Each subsequent artifact remains subject to separate read-only review, evidence-based gap classification, explicit human approval, controlled modification where required, and post-modification verification.
