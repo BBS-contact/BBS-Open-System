@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pl" data-en-title="LEO demonstration panel | Fundacja BBS">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panel demonstracyjny LEO Fundacji BBS. Trzy demonstracje przeglądu dowodów z udziałem człowieka.">
+  <title>Panel demonstracyjny LEO | Fundacja BBS</title>
+  <link rel="canonical" href="https://leonexus.org/leo-panel.html">
+  <link rel="stylesheet" href="assets/site.css">
+  <script defer src="assets/site.js"></script>
+  <style>
+    .panel-top { padding-block: 1rem; border-bottom: 1px solid #d5e0db; }
+    .panel-top .wrap { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+    .panel-top a { color: #214c3c; }
+    .panel-top nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
+    .panel-top p { margin: 0; }
+    .panel-top .languages button { color: #214c3c; }
+    .panel-intro { background: #17382d; color: #fff; padding-block: clamp(2rem, 5vw, 4rem); }
+    .panel-intro h1 { color: inherit; }
+    .panel-intro p { max-width: 62ch; }
+    .panel-intro .section-label { color: #d8eada; font-weight: 600; }
+    .panel-demos { padding-block: clamp(1.8rem, 4vw, 3rem); }
+    .panel-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+    .panel-card { padding: 1.3rem; border: 1px solid #d5e0db; border-radius: 0.7rem; background: #fff; display: flex; flex-direction: column; align-items: flex-start; }
+    .panel-card h3 { margin: 0; color: #18362d; }
+    .panel-card p { margin-block: 0.65rem 1rem; }
+    .panel-card .button { margin-top: auto; }
+    .panel-card .samples { margin-top: 0.65rem; color: #214c3c; font-size: 0.95rem; }
+    .panel-foot { border-top: 1px solid #d5e0db; padding-block: 1rem 1.5rem; }
+    @media (max-width: 690px) { .panel-cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content" data-en="Skip to content">Przejdź do treści</a>
+  <header class="panel-top">
+    <div class="wrap">
+      <p><a data-page href="index.html"><strong>Fundacja BBS Better Balance System</strong></a></p>
+      <nav aria-label="LEO">
+        <a data-page href="leo.html" data-en="LEO evaluation materials">Materiały do oceny LEO</a>
+        <a data-page href="dokumenty.html#licencje" data-en="Licensing and intellectual property">Licencje i własność intelektualna</a>
+      </nav>
+      <div class="languages" role="group" aria-label="Język" data-en-label="Language" hidden>
+        <button type="button" data-language="pl" aria-pressed="true" aria-label="Polski">PL</button>
+        <button type="button" data-language="en" aria-pressed="false" aria-label="English">EN</button>
+      </div>
+    </div>
+  </header>
+  <main id="content">
+    <section class="panel-intro">
+      <div class="wrap">
+        <p class="section-label" data-en="Evaluation environment">Środowisko do oceny</p>
+        <h1 data-en="LEO demonstration panel">Panel demonstracyjny LEO</h1>
+        <p data-en="Open a browser demonstration to see how LEO organizes evidence and helps reviewers trace information to its source. Decisions remain with an authorised person or institution.">Otwórz demonstrację w przeglądarce, aby zobaczyć, jak LEO porządkuje dowody i pomaga ustalić pochodzenie informacji. Decyzje podejmuje uprawniona osoba lub instytucja.</p>
+      </div>
+    </section>
+    <section class="wrap panel-demos" aria-labelledby="demo-heading">
+      <h2 id="demo-heading" data-en="Choose a demonstration">Wybierz demonstrację</h2>
+      <p data-en="Demo interfaces are in English. Use the supplied examples when a demonstration asks for a JSON file.">Interfejsy demonstracyjne są po angielsku. Gdy moduł prosi o plik JSON, użyj udostępnionych przykładów.</p>
+      <div class="panel-cards">
+        <article class="panel-card">
+          <h3 data-en="Procurement and accounting review">Przegląd zakupów i księgowości</h3>
+          <p data-en="Review signals in procurement data and trace them to their supporting evidence.">Przejrzyj sygnały w danych zakupowych i powiązane z nimi dowody.</p>
+          <a class="button button-gold" href="https://bbs-contact.github.io/leo-procurement-accounting-demo/" data-en="Open procurement demo">Otwórz demo zakupów</a>
+          <a class="samples" href="https://github.com/BBS-contact/leo-procurement-accounting-demo/blob/2ce537910dcfc27330064bd748e42d96e2246344/output/demo_evidence_report.json" data-en="Example evidence report">Przykładowy raport dowodowy</a>
+        </article>
+        <article class="panel-card">
+          <h3 data-en="Grant expense review">Przegląd wydatków grantowych</h3>
+          <p data-en="Load the example input quality and evidence reports to review grant expenditure.">Wczytaj raport jakości danych i raport dowodowy, aby przejrzeć wydatki grantowe.</p>
+          <a class="button button-gold" href="demos/grant_expense_review/leo_grant_expense_review_dashboard.html" data-en="Open grant expense demo">Otwórz demo wydatków grantowych</a>
+          <a class="samples" href="https://github.com/BBS-contact/leo-grant-expense-review-demo/tree/9a1127d8eca9da97c26025d644b0731d058005cd/output" data-en="Example JSON reports">Przykładowe raporty JSON</a>
+        </article>
+        <article class="panel-card">
+          <h3 data-en="Institutional approval review">Przegląd zatwierdzeń instytucjonalnych</h3>
+          <p data-en="Review evidence associated with approval requests, process steps, and roles.">Przejrzyj dowody dotyczące wniosków o zatwierdzenie, etapów procesu i ról.</p>
+          <a class="button button-gold" href="demos/institutional_approval_review/leo_institutional_approval_dashboard.html" data-en="Open institutional approval demo">Otwórz demo zatwierdzeń</a>
+          <a class="samples" href="demos/institutional_approval_review/output/institutional_approval_evidence_report.json" download data-en="Download the example evidence report">Pobierz przykładowy raport dowodowy</a>
+        </article>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap panel-foot">
+    <a data-page href="index.html" data-en="Back to the Foundation website">Wróć do strony fundacji</a>
+  </footer>
+</body>
+</html>
